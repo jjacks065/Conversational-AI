@@ -1,0 +1,73 @@
+graph TD
+    %% Client Layer
+    User((Client/User))
+ 
+    subgraph AzureFD [Azure Front Door]
+        AFD[Azure FD]
+    end
+ 
+    subgraph Security_Gateway [API Management Layer]
+        APIM[Azure APIM / Gateway]
+    end
+ 
+    subgraph Nexus[Nexus]
+        NexusS[Nexus]
+    end
+ 
+    subgraph Orchestration_Layer [Databricks API]
+        API_In[API Endpoint]
+        Lookup[Data Retrieval Service]
+        State[Conversation State Manager]
+        PipelineBLOB[Plan Data Update Pipeline]
+        DB[(Blob Storage)]
+    end
+ 
+ 
+    subgraph Agentic_Process [Agent Workflow - Foundry]
+        A1[Primary Answering Agent]
+        A2[Response Enhancer & Verifier]
+        A3[Local Context]
+        A1 -->|Draft Response| A2
+        
+    end
+ 
+    subgraph Frontend [Minerva Frontend]
+        WebApp[Azure Static WebApp]
+    end
+    
+ 
+    %% Data Sources
+    subgraph Future[Future Databricks]
+        Logger[Databricks - Logging & Feedback API]
+        subgraph Data_Layer [Data Layer]
+            LogDB[(ML Flow - Q&A & Logging Store)]
+        end
+    end
+ 
+    %% Flow
+    User -->|Product ID + Year + Question| AFD
+    AFD --> APIM
+    APIM --> API_In
+    
+    API_In --> Lookup
+    Lookup -.->|Query Product/Year| DB
+    DB -.->|Plan JSON + Scripting Rules| Lookup
+    
+    %% Passing the full context down
+    Lookup -->|Question + Plan + Rules| State
+    State --> |Full Context| A3
+    A3 -->|Full Context| A1
+    A3 -->|Full Context| A2
+    
+    %% Feedback Loop
+    A2 -->|Final Verified Answer| API_In
+    API_In -->|Final Answer| APIM
+    APIM -->|Natural Language Response| AFD
+    AFD --> User
+    NexusS --JSON--> AFD
+    PipelineBLOB --Updated Data--> DB
+    %% Logging & Feedback
+    Orchestration_Layer -.-> Logger
+    Logger -.->|Store Q&A + Feedback| LogDB
+    WebApp <--> API_In
+ 
