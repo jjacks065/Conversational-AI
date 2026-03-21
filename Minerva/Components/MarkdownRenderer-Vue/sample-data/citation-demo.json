@@ -1,0 +1,6 @@
+{
+  "questionId": "citation-test-123",
+  "sessionId": "session-citation-demo",
+  "content": "# Citation Enhancement Demo\n\n## Testing Square Bracket Citations\n\nThis text contains multiple citations that should appear as superscript:\n\n**Statement 1**: Health insurance plans typically cover prenatal care [1].\n\n**Statement 2**: Out-of-network providers may charge higher rates [2] and require pre-authorization [3].\n\n**Statement 3**: Deductibles vary by plan type [4] and network status [5].\n\n### Multiple Citations in Sequence\n\nSome plans have specific coverage limits [6] [7] [8] that apply to different service categories.\n\n### Mixed Content\n\nRegular **bold text** and *italic text* should work normally, while citations [9] should be superscript.\n\n---\n\n**Sources:**\n- [1] Medicare Coverage Guidelines\n- [2] Provider Network Policies  \n- [3] Authorization Requirements\n- [4] Plan Benefit Structure\n- [5] Network Cost-Sharing Rules\n- [6] Annual Limits Documentation\n- [7] Service Category Definitions\n- [8] Coverage Exclusions List\n- [9] General Healthcare References",
+  "responseId": "resp_citation_demo"
+}

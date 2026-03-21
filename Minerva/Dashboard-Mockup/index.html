@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerva Performance Dashboard - Stellarus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stellarus Brand Guidelines - Minerva Dashboard */
+
+        /* CSS Variables for Brand Colors */
+        :root {
+          /* Stellarus Brand Colors */
+          --stellarus-primary: #2563eb;
+          --stellarus-primary-dark: #1d4ed8;
+          --stellarus-primary-light: #3b82f6;
+          --stellarus-secondary: #7c3aed;
+          --stellarus-accent: #06b6d4;
+          
+          /* Grays & Neutrals */
+          --gray-50: #f9fafb;
+          --gray-100: #f3f4f6;
+          --gray-200: #e5e7eb;
+          --gray-300: #d1d5db;
+          --gray-400: #9ca3af;
+          --gray-500: #6b7280;
+          --gray-600: #4b5563;
+          --gray-700: #374151;
+          --gray-800: #1f2937;
+          --gray-900: #111827;
+          
+          /* Status Colors */
+          --success: #10b981;
+          --warning: #f59e0b;
+          --error: #ef4444;
+          --info: #3b82f6;
+          
+          /* Typography */
+          --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          --font-size-xs: 0.75rem;
+          --font-size-sm: 0.875rem;
+          --font-size-base: 1rem;
+          --font-size-lg: 1.125rem;
+          --font-size-xl: 1.25rem;
+          --font-size-2xl: 1.5rem;
+          --font-size-3xl: 1.875rem;
+          
+          /* Spacing */
+          --spacing-1: 0.25rem;
+          --spacing-2: 0.5rem;
+          --spacing-3: 0.75rem;
+          --spacing-4: 1rem;
+          --spacing-5: 1.25rem;
+          --spacing-6: 1.5rem;
+          --spacing-8: 2rem;
+          --spacing-12: 3rem;
+          
+          /* Borders & Shadows */
+          --border-radius-sm: 0.375rem;
+          --border-radius-md: 0.5rem;
+          --border-radius-lg: 0.75rem;
+          --border-radius-xl: 1rem;
+          
+          --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+          --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+          --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+          --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        /* Global Styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: var(--font-family);
+          background: var(--gray-50);
+          color: var(--gray-900);
+          line-height: 1.5;
+          font-size: var(--font-size-base);
+        }
+
+        /* Dashboard Container */
+        .dashboard-container {
+          min-height: 100vh;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: var(--spacing-6);
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-6);
+        }
+
+        /* Header */
+        .dashboard-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: white;
+          padding: var(--spacing-6);
+          border-radius: var(--border-radius-lg);
+          box-shadow: var(--shadow);
+          border-left: 4px solid var(--stellarus-primary);
+        }
+
+        .header-left {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-6);
+        }
+
+        .stellarus-logo {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-2);
+          font-weight: 700;
+          color: var(--stellarus-primary);
+        }
+
+        .logo-icon {
+          font-size: var(--font-size-2xl);
+          background: linear-gradient(135deg, var(--stellarus-primary), var(--stellarus-secondary));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          display: flex;
+          align-items: center;
+        }
+
+        .stellarus-favicon {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+          margin-right: var(--spacing-1);
+        }
+
+        .logo-text {
+          font-size: var(--font-size-lg);
+          letter-spacing: 0.1em;
+        }
+
+        .dashboard-title {
+          font-size: var(--font-size-2xl);
+          font-weight: 600;
+          color: var(--gray-800);
+        }
+
+        .header-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: var(--spacing-3);
+        }
+
+        .user-info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+        }
+
+        .user-role {
+          font-weight: 500;
+          color: var(--gray-700);
+        }
+
+        .header-controls {
+          display: flex;
+          gap: var(--spacing-3);
+        }
+
+        .auto-refresh {
+          background: var(--success);
+          color: white;
+          border: none;
+          padding: var(--spacing-2) var(--spacing-3);
+          border-radius: var(--border-radius-md);
+          font-size: var(--font-size-xs);
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+
+        .auto-refresh:hover {
+          background: #059669;
+        }
+
+        .settings-btn {
+          background: var(--gray-100);
+          color: var(--gray-700);
+          border: 1px solid var(--gray-200);
+          padding: var(--spacing-2) var(--spacing-3);
+          border-radius: var(--border-radius-md);
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+
+        .settings-btn:hover {
+          background: var(--gray-200);
+        }
+
+        /* Time Controls */
+        .time-controls {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: white;
+          padding: var(--spacing-4);
+          border-radius: var(--border-radius-lg);
+          box-shadow: var(--shadow-sm);
+        }
+
+        .time-buttons {
+          display: flex;
+          gap: var(--spacing-2);
+        }
+
+        .time-btn {
+          background: var(--gray-100);
+          color: var(--gray-700);
+          border: 1px solid var(--gray-200);
+          padding: var(--spacing-2) var(--spacing-4);
+          border-radius: var(--border-radius-md);
+          cursor: pointer;
+          transition: all 0.2s;
+          font-weight: 500;
+        }
+
+        .time-btn.active {
+          background: var(--stellarus-primary);
+          color: white;
+          border-color: var(--stellarus-primary);
+        }
+
+        .time-btn:hover:not(.active) {
+          background: var(--gray-200);
+        }
+
+        .export-btn {
+          background: var(--stellarus-accent);
+          color: white;
+          border: none;
+          padding: var(--spacing-2) var(--spacing-4);
+          border-radius: var(--border-radius-md);
+          cursor: pointer;
+          transition: all 0.2s;
+          font-weight: 500;
+        }
+
+        .export-btn:hover {
+          background: #0891b2;
+        }
+
+        /* KPI Section */
+        .kpi-section {
+          margin: var(--spacing-4) 0;
+        }
+
+        .kpi-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--spacing-4);
+        }
+
+        .kpi-card {
+          background: white;
+          padding: var(--spacing-5);
+          border-radius: var(--border-radius-lg);
+          box-shadow: var(--shadow);
+          border: 1px solid var(--gray-100);
+          transition: all 0.2s;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .kpi-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: linear-gradient(90deg, var(--stellarus-primary), var(--stellarus-accent));
+        }
+
+        .kpi-card:hover {
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-md);
+        }
+
+        .kpi-status {
+          font-size: var(--font-size-sm);
+          font-weight: 600;
+          margin-bottom: var(--spacing-2);
+        }
+
+        .kpi-title {
+          font-size: var(--font-size-xs);
+          font-weight: 600;
+          color: var(--gray-500);
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-bottom: var(--spacing-1);
+        }
+
+        .kpi-value {
+          font-size: var(--font-size-2xl);
+          font-weight: 700;
+          color: var(--gray-900);
+          margin-bottom: var(--spacing-2);
+        }
+
+        .kpi-change {
+          font-size: var(--font-size-sm);
+          font-weight: 500;
+        }
+
+        .kpi-change.positive {
+          color: var(--success);
+        }
+
+        .kpi-change.negative {
+          color: var(--warning);
+        }
+
+        /* Charts Section */
+        .charts-section {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-4);
+        }
+
+        /* 2x2 Grid for Main Charts */
+        .charts-grid-2x2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: var(--spacing-4);
+          margin-bottom: var(--spacing-4);
+          min-height: 800px;
+        }
+
+        /* Combined Chart Sections */
+        .combined-chart-section {
+          margin-bottom: var(--spacing-3);
+        }
+
+        .combined-chart-section h4 {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: var(--text-primary);
+          margin-bottom: var(--spacing-2);
+        }
+
+        .stacked-chart.compact {
+          height: 100px;
+        }
+
+        .stacked-chart.compact .cost-bars {
+          height: 80px;
+        }
+
+        .cost-legend.compact {
+          gap: var(--spacing-2);
+        }
+
+        .cost-legend.compact span {
+          font-size: 0.75rem;
+        }
+
+        .accuracy-trend-chart.compact {
+          height: 80px;
+        }
+
+        .combined-stats {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--spacing-2);
+          font-size: 0.75rem;
+          color: var(--text-secondary);
+          margin-top: var(--spacing-2);
+        }
+
+        /* Ensure grid items maintain equal height */
+        .charts-grid-2x2 .chart-container {
+          min-height: 350px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .charts-grid-2x2 .chart-placeholder {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        /* Chart Visual Styles */
+        .line-chart {
+          display: flex;
+          gap: var(--spacing-4);
+          height: 250px;
+        }
+
+        .chart-y-axis {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: var(--font-size-xs);
+          color: var(--gray-500);
+          padding-right: var(--spacing-2);
+        }
+
+        .chart-area {
+          flex: 1;
+          position: relative;
+        }
+
+        .response-time-chart {
+          width: 100%;
+          height: 200px;
+        }
+
+        .chart-legend, .health-legend, .cost-legend {
+          display: flex;
+          gap: var(--spacing-4);
+          justify-content: center;
+          margin-top: var(--spacing-3);
+          font-size: var(--font-size-sm);
+        }
+
+        .legend-dot {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin-right: var(--spacing-1);
+        }
+
+        .legend-dot.avg { background: #3b82f6; }
+        .legend-dot.max { background: #ef4444; }
+        .legend-dot.min { background: #10b981; }
+        .legend-dot.uptime { background: #10b981; }
+        .legend-dot.errors { background: #ef4444; }
+        .legend-dot.response { background: #3b82f6; }
+        .legend-dot.session-cost { background: #7c3aed; }
+        .legend-dot.question-cost { background: #06b6d4; }
+
+        /* Bar Chart Styles */
+        .bar-chart {
+          height: 220px;
+        }
+
+        .bars-container {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          height: 180px;
+          padding: var(--spacing-4) 0;
+        }
+
+        .bar-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          flex: 1;
+        }
+
+        .bar {
+          width: 30px;
+          min-height: 20px;
+          border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+          transition: all 0.3s ease;
+        }
+
+        .bar:hover {
+          opacity: 0.8;
+          transform: scaleY(1.05);
+        }
+
+        .bar-label {
+          font-size: var(--font-size-xs);
+          color: var(--gray-600);
+          margin-top: var(--spacing-1);
+        }
+
+        /* Histogram Styles */
+        .histogram-chart {
+          height: 220px;
+        }
+
+        .histogram-bars {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          height: 180px;
+          gap: var(--spacing-2);
+          padding: var(--spacing-4) 0;
+        }
+
+        .hist-bar {
+          width: 35px;
+          min-height: 20px;
+          border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          transition: all 0.3s ease;
+          position: relative;
+        }
+
+        .hist-bar:hover {
+          opacity: 0.8;
+          transform: scaleY(1.1);
+        }
+
+        .hist-label {
+          color: white;
+          font-size: var(--font-size-xs);
+          font-weight: 600;
+          padding-bottom: var(--spacing-1);
+        }
+
+        .histogram-label {
+          text-align: center;
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+          margin-top: var(--spacing-2);
+        }
+
+        /* Health Chart Styles */
+        .health-chart {
+          height: 250px;
+        }
+
+        .multi-line-chart {
+          width: 100%;
+          height: 200px;
+        }
+
+        /* Stacked Chart Styles */
+        .stacked-chart {
+          height: 220px;
+        }
+
+        .cost-bars {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          height: 160px;
+          padding: var(--spacing-4) 0;
+        }
+
+        .cost-bar-group {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          flex: 1;
+        }
+
+        .cost-bar {
+          width: 40px;
+          min-height: 10px;
+          transition: all 0.3s ease;
+        }
+
+        .cost-bar.session {
+          background: #7c3aed;
+          border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+        }
+
+        .cost-bar.question {
+          background: #06b6d4;
+          border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+        }
+
+        .cost-label {
+          font-size: var(--font-size-xs);
+          color: var(--gray-600);
+          margin-top: var(--spacing-2);
+        }
+
+        .cost-bar-group:hover .cost-bar {
+          opacity: 0.8;
+          transform: scaleY(1.05);
+        }
+
+        /* Accuracy Trend Chart */
+        .accuracy-trend-chart {
+          height: 220px;
+        }
+
+        .accuracy-chart {
+          width: 100%;
+          height: 150px;
+        }
+
+        .accuracy-timeline {
+          display: flex;
+          justify-content: space-between;
+          font-size: var(--font-size-xs);
+          color: var(--gray-500);
+          margin-top: var(--spacing-2);
+        }
+
+        /* Pipeline Dual Chart */
+        .pipeline-dual-chart {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--spacing-6);
+          height: 220px;
+        }
+
+        .pipeline-section h4 {
+          font-size: var(--font-size-sm);
+          font-weight: 600;
+          color: var(--gray-700);
+          margin-bottom: var(--spacing-3);
+          text-align: center;
+        }
+
+        .pipeline-donut {
+          display: flex;
+          justify-content: center;
+        }
+
+        .donut-chart {
+          width: 120px;
+          height: 120px;
+        }
+
+        .update-bars {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-3);
+          padding-top: var(--spacing-2);
+        }
+
+        .update-bar {
+          display: flex;
+          align-items: center;
+          gap: var(--spacing-3);
+        }
+
+        .update-label {
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+          min-width: 60px;
+        }
+
+        .update-bar-fill {
+          height: 20px;
+          border-radius: var(--border-radius-sm);
+          transition: all 0.3s ease;
+          flex: 1;
+          max-width: 120px;
+        }
+
+        .update-bar:hover .update-bar-fill {
+          opacity: 0.8;
+          transform: scaleX(1.02);
+        }
+
+        .update-value {
+          font-size: var(--font-size-sm);
+          font-weight: 600;
+          color: var(--gray-700);
+          min-width: 40px;
+          text-align: right;
+        }
+
+        .chart-container {
+          background: white;
+          border-radius: var(--border-radius-lg);
+          box-shadow: var(--shadow);
+          border: 1px solid var(--gray-100);
+          overflow: hidden;
+        }
+
+        .chart-container.full-width {
+          grid-column: 1 / -1;
+        }
+
+        .chart-row {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--spacing-4);
+        }
+
+        .chart-header {
+          background: var(--gray-50);
+          padding: var(--spacing-4);
+          border-bottom: 1px solid var(--gray-200);
+        }
+
+        .chart-header h3 {
+          font-size: var(--font-size-lg);
+          font-weight: 600;
+          color: var(--gray-800);
+        }
+
+        .chart-placeholder {
+          padding: var(--spacing-6);
+          min-height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: var(--spacing-4);
+        }
+
+        /* Enhanced Chart Interactions */
+        .bar:hover::after, .hist-bar:hover::after {
+          content: attr(data-value);
+          position: absolute;
+          top: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: var(--gray-800);
+          color: white;
+          padding: var(--spacing-1) var(--spacing-2);
+          border-radius: var(--border-radius-sm);
+          font-size: var(--font-size-xs);
+          white-space: nowrap;
+          z-index: 10;
+        }
+
+        .donut-chart:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease;
+        }
+
+        /* Chart Animation */
+        @keyframes chartLoad {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .line-chart, .bar-chart, .histogram-chart, .health-chart, .stacked-chart, .accuracy-trend-chart, .pipeline-dual-chart {
+          animation: chartLoad 0.6s ease-out forwards;
+        }
+
+        .chart-stats, .health-stats {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--spacing-4);
+          justify-content: center;
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+        }
+
+        .chart-stats-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: var(--spacing-2);
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+          width: 100%;
+          text-align: center;
+        }
+
+        /* Detailed Section */
+        .detailed-section {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-4);
+        }
+
+        /* Product Pipeline Specific Styles */
+        .product-pipeline {
+          border-left: 4px solid var(--stellarus-secondary);
+        }
+
+        .product-pipeline .chart-header {
+          background: linear-gradient(135deg, #f8fafc, #e0e7ff);
+        }
+
+        .pipeline-stats {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: var(--spacing-4);
+          width: 100%;
+        }
+
+        .stat-group {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-2);
+          font-size: var(--font-size-sm);
+          color: var(--gray-600);
+        }
+
+        /* Alerts Footer */
+        .alerts-footer {
+          background: white;
+          border-radius: var(--border-radius-lg);
+          box-shadow: var(--shadow);
+          border: 1px solid var(--gray-200);
+          overflow: hidden;
+        }
+
+        .alerts-header {
+          background: var(--gray-50);
+          padding: var(--spacing-4);
+          border-bottom: 1px solid var(--gray-200);
+        }
+
+        .alerts-title {
+          font-weight: 600;
+          color: var(--gray-800);
+          margin-bottom: var(--spacing-3);
+          display: block;
+        }
+
+        .alerts-list {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-2);
+        }
+
+        .alert {
+          font-size: var(--font-size-sm);
+          padding: var(--spacing-2);
+          border-radius: var(--border-radius-sm);
+        }
+
+        .alert.warning {
+          background: #fef3c7;
+          color: #92400e;
+        }
+
+        .alert.info {
+          background: #dbeafe;
+          color: #1e40af;
+        }
+
+        .footer-actions {
+          padding: var(--spacing-4);
+          display: flex;
+          gap: var(--spacing-3);
+        }
+
+        .action-btn {
+          background: var(--gray-100);
+          color: var(--gray-700);
+          border: 1px solid var(--gray-200);
+          padding: var(--spacing-2) var(--spacing-4);
+          border-radius: var(--border-radius-md);
+          cursor: pointer;
+          transition: all 0.2s;
+          font-weight: 500;
+        }
+
+        .action-btn:hover {
+          background: var(--stellarus-primary);
+          color: white;
+          border-color: var(--stellarus-primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+          .dashboard-container {
+            padding: var(--spacing-4);
+          }
+          
+          .kpi-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          
+          .chart-row {
+            grid-template-columns: 1fr;
+          }
+          
+          .header-right {
+            align-items: flex-start;
+          }
+          
+          .time-controls {
+            flex-direction: column;
+            gap: var(--spacing-4);
+            align-items: stretch;
+          }
+          
+          .time-buttons {
+            justify-content: center;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .dashboard-header {
+            flex-direction: column;
+            gap: var(--spacing-4);
+            text-align: center;
+          }
+          
+          .header-left {
+            justify-content: center;
+          }
+          
+          .kpi-grid {
+            grid-template-columns: 1fr;
+          }
+          
+          .time-buttons {
+            flex-wrap: wrap;
+          }
+          
+          .footer-actions {
+            flex-wrap: wrap;
+          }
+          
+          .pipeline-stats {
+            grid-template-columns: 1fr;
+          }
+          
+          .pipeline-dual-chart {
+            grid-template-columns: 1fr;
+          }
+          
+          .dashboard-title {
+            font-size: var(--font-size-xl);
+          }
+          
+          .bars-container, .cost-bars {
+            padding: var(--spacing-2) 0;
+          }
+          
+          .bar, .cost-bar {
+            width: 25px;
+          }
+          
+          .chart-legend, .health-legend, .cost-legend {
+            flex-direction: column;
+            gap: var(--spacing-2);
+            align-items: center;
+          }
+          
+          .line-chart {
+            flex-direction: column;
+            height: auto;
+          }
+          
+          .chart-y-axis {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0;
+            margin-bottom: var(--spacing-2);
+          }
+        }
+
+        /* Animation & Transitions */
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .kpi-card, .chart-container {
+          animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        /* Focus States for Accessibility */
+        button:focus {
+          outline: 2px solid var(--stellarus-primary);
+          outline-offset: 2px;
+        }
+
+        /* Print Styles */
+        @media print {
+          .header-controls,
+          .time-controls,
+          .alerts-footer {
+            display: none;
+          }
+          
+          .dashboard-container {
+            padding: 0;
+          }
+          
+          .kpi-card,
+          .chart-container {
+            box-shadow: none;
+            border: 1px solid var(--gray-300);
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <div class="stellarus-logo">
+                    <div class="logo-icon">
+                        <img src="Stellarus-Favicon-red.png" alt="Stellarus" class="stellarus-favicon">
+                    </div>
+                    <span class="logo-text">STELLARUS</span>
+                </div>
+                <h1 class="dashboard-title">Minerva Performance Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <div class="user-info">
+                    <span class="user-role">👤 Customer Admin - ACME Corp</span>
+                    <span class="last-updated">Last Updated: 3/19/26 2:45 PM</span>
+                </div>
+                <div class="header-controls">
+                    <button class="auto-refresh active">AUTO-REFRESH: ON</button>
+                    <button class="settings-btn">⚙️ Settings</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Time Range Selector -->
+        <div class="time-controls">
+            <div class="time-buttons">
+                <button class="time-btn active">7 Days</button>
+                <button class="time-btn">30 Days</button>
+                <button class="time-btn">90 Days</button>
+                <button class="time-btn">Custom Range</button>
+            </div>
+            <button class="export-btn">📊 Export Data</button>
+        </div>
+
+        <!-- Key Performance Indicators -->
+        <section class="kpi-section">
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-status">🟢 ONLINE</div>
+                    <div class="kpi-title">SYSTEM STATUS</div>
+                    <div class="kpi-value">99.8% Uptime</div>
+                    <div class="kpi-change positive">↑0.1% from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">RESPONSE TIME</div>
+                    <div class="kpi-value">2.3s AVG</div>
+                    <div class="kpi-change negative">↑0.2s from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">ACCURACY RATE</div>
+                    <div class="kpi-value">98.7%</div>
+                    <div class="kpi-change positive">↑0.3% from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">TOTAL PRODUCTS</div>
+                    <div class="kpi-value">2,847</div>
+                    <div class="kpi-change positive">↑156 from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">SESSIONS TODAY</div>
+                    <div class="kpi-value">1,247</div>
+                    <div class="kpi-change positive">↑15% from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">API ERROR RATE</div>
+                    <div class="kpi-value">0.12%</div>
+                    <div class="kpi-change positive">↓0.05% from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">QUESTION VOLUME</div>
+                    <div class="kpi-value">8,429</div>
+                    <div class="kpi-change positive">↑12% from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">AVG SESSION TIME</div>
+                    <div class="kpi-value">4.2 min</div>
+                    <div class="kpi-change positive">↑0.3min from 7d</div>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-title">PROCESSING SPEED</div>
+                    <div class="kpi-value">245 q/min</div>
+                    <div class="kpi-change positive">↑18 q/min from 7d</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Analytics Charts - 2x2 Grid -->
+        <section class="charts-section">
+            <div class="charts-grid-2x2">
+                <!-- Top Left: Response Time Distribution -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Response Time Distribution</h3>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="line-chart">
+                            <div class="chart-y-axis">
+                                <span>12s</span>
+                                <span>9s</span>
+                                <span>6s</span>
+                                <span>3s</span>
+                                <span>0s</span>
+                            </div>
+                            <div class="chart-area">
+                                <svg class="response-time-chart" viewBox="0 0 400 200">
+                                    <!-- Average line -->
+                                    <path d="M 20 120 L 60 115 L 100 118 L 140 112 L 180 108 L 220 110 L 260 105 L 300 100 L 340 98 L 380 95" stroke="#3b82f6" stroke-width="3" fill="none"/>
+                                    <!-- Max line -->
+                                    <path d="M 20 60 L 60 65 L 100 55 L 140 70 L 180 50 L 220 45 L 260 55 L 300 48 L 340 52 L 380 45" stroke="#ef4444" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                                    <!-- Min line -->
+                                    <path d="M 20 180 L 60 175 L 100 178 L 140 172 L 180 168 L 220 170 L 260 165 L 300 160 L 340 158 L 380 155" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+                                    <!-- Data points -->
+                                    <circle cx="380" cy="95" r="4" fill="#3b82f6"/>
+                                    <circle cx="380" cy="45" r="3" fill="#ef4444"/>
+                                    <circle cx="380" cy="155" r="3" fill="#10b981"/>
+                                </svg>
+                                <div class="chart-legend">
+                                    <span><span class="legend-dot avg"></span>Average</span>
+                                    <span><span class="legend-dot max"></span>Maximum</span>
+                                    <span><span class="legend-dot min"></span>Minimum</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-stats">
+                            <span>Min: 0.8s</span>
+                            <span>Max: 12.3s</span>
+                            <span>Median: 2.1s</span>
+                            <span>95th: 4.2s</span>
+                            <span>99th: 7.8s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Right: Session Analytics -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Session Analytics</h3>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="bar-chart">
+                            <div class="bars-container">
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 80%; background: #3b82f6;"></div>
+                                    <span class="bar-label">Mon</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 65%; background: #3b82f6;"></div>
+                                    <span class="bar-label">Tue</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 70%; background: #3b82f6;"></div>
+                                    <span class="bar-label">Wed</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 90%; background: #3b82f6;"></div>
+                                    <span class="bar-label">Thu</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 85%; background: #3b82f6;"></div>
+                                    <span class="bar-label">Fri</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 45%; background: #06b6d4;"></div>
+                                    <span class="bar-label">Sat</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar" style="height: 40%; background: #06b6d4;"></div>
+                                    <span class="bar-label">Sun</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-stats-grid">
+                            <span>Daily: 1,247</span>
+                            <span>Weekly: 8,329</span>
+                            <span>Monthly: 32,156</span>
+                            <span>Quarterly: 95,468</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Left: Application Health -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Application Health</h3>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div class="health-chart">
+                            <svg class="multi-line-chart" viewBox="0 0 400 200">
+                                <!-- Grid lines -->
+                                <defs>
+                                    <pattern id="grid" width="40" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M 40 0 L 0 0 0 20" fill="none" stroke="#e5e7eb" stroke-width="1" opacity="0.5"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="400" height="200" fill="url(#grid)"/>
+                                
+                                <!-- Uptime % line (high, around 99%) -->
+                                <path d="M 20 20 L 60 18 L 100 22 L 140 19 L 180 21 L 220 18 L 260 20 L 300 17 L 340 19 L 380 16" stroke="#10b981" stroke-width="3" fill="none"/>
+                                
+                                <!-- API Error Rate % line (low, inverted scale) -->
+                                <path d="M 20 180 L 60 185 L 100 175 L 140 182 L 180 178 L 220 180 L 260 176 L 300 179 L 340 177 L 380 175" stroke="#ef4444" stroke-width="2" fill="none"/>
+                                
+                                <!-- Response Time trend (middle range) -->
+                                <path d="M 20 100 L 60 95 L 100 105 L 140 98 L 180 102 L 220 96 L 260 100 L 300 94 L 340 97 L 380 92" stroke="#3b82f6" stroke-width="2" fill="none"/>
+                                
+                                <!-- Data points for latest values -->
+                                <circle cx="380" cy="16" r="4" fill="#10b981"/>
+                                <circle cx="380" cy="175" r="3" fill="#ef4444"/>
+                                <circle cx="380" cy="92" r="3" fill="#3b82f6"/>
+                            </svg>
+                            <div class="health-legend">
+                                <span><span class="legend-dot uptime"></span>Uptime %</span>
+                                <span><span class="legend-dot errors"></span>Error Rate %</span>
+                                <span><span class="legend-dot response"></span>Response Time</span>
+                            </div>
+                        </div>
+                        <div class="health-stats">
+                            <span>Current Uptime: 99.8%</span>
+                            <span>Avg Error Rate: 0.12%</span>
+                            <span>SLA Target: 99.5%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Right: Combined Cost & Accuracy Analytics -->
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Performance & Cost Analytics</h3>
+                    </div>
+                    <div class="chart-placeholder">
+                        <!-- Cost Analysis (Top Half) -->
+                        <div class="combined-chart-section">
+                            <h4>Cost Trends</h4>
+                            <div class="stacked-chart compact">
+                                <div class="cost-bars">
+                                    <div class="cost-bar-group">
+                                        <div class="cost-bar session" style="height: 60%;"></div>
+                                        <div class="cost-bar question" style="height: 30%;"></div>
+                                        <span class="cost-label">W1</span>
+                                    </div>
+                                    <div class="cost-bar-group">
+                                        <div class="cost-bar session" style="height: 65%;"></div>
+                                        <div class="cost-bar question" style="height: 28%;"></div>
+                                        <span class="cost-label">W2</span>
+                                    </div>
+                                    <div class="cost-bar-group">
+                                        <div class="cost-bar session" style="height: 70%;"></div>
+                                        <div class="cost-bar question" style="height: 25%;"></div>
+                                        <span class="cost-label">W3</span>
+                                    </div>
+                                    <div class="cost-bar-group">
+                                        <div class="cost-bar session" style="height: 68%;"></div>
+                                        <div class="cost-bar question" style="height: 27%;"></div>
+                                        <span class="cost-label">W4</span>
+                                    </div>
+                                </div>
+                                <div class="cost-legend compact">
+                                    <span><span class="legend-dot session-cost"></span>Sessions</span>
+                                    <span><span class="legend-dot question-cost"></span>Questions</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Accuracy Analysis (Bottom Half) -->
+                        <div class="combined-chart-section">
+                            <h4>Accuracy Trend</h4>
+                            <div class="accuracy-trend-chart compact">
+                                <svg class="accuracy-chart" viewBox="0 0 300 100">
+                                    <!-- Target line at 98% -->
+                                    <line x1="20" y1="40" x2="280" y2="40" stroke="#6b7280" stroke-width="1" stroke-dasharray="3,3" opacity="0.7"/>
+                                    <text x="285" y="44" font-size="8" fill="#6b7280">Target</text>
+                                    
+                                    <!-- Accuracy trend line -->
+                                    <path d="M 20 30 L 50 27 L 80 30 L 110 23 L 140 20 L 170 17 L 200 19 L 230 15 L 260 13 L 280 12" stroke="#10b981" stroke-width="2" fill="none"/>
+                                    
+                                    <!-- Area under curve -->
+                                    <path d="M 20 30 L 50 27 L 80 30 L 110 23 L 140 20 L 170 17 L 200 19 L 230 15 L 260 13 L 280 12 L 280 100 L 20 100 Z" fill="#10b981" opacity="0.1"/>
+                                    
+                                    <!-- Data points -->
+                                    <circle cx="280" cy="12" r="3" fill="#10b981" stroke="white" stroke-width="1"/>
+                                    <circle cx="230" cy="15" r="2" fill="#10b981" stroke="white" stroke-width="1"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="combined-stats">
+                            <span>Cost/Session: $0.48</span>
+                            <span>Monthly: $15,234</span>
+                            <span>Accuracy: 98.7%</span>
+                            <span>Target: >98%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Pipeline Analytics -->
+            <div class="chart-container full-width product-pipeline">
+                <div class="chart-header">
+                    <h3>Product Pipeline Analytics</h3>
+                </div>
+                <div class="chart-placeholder">
+                    <div class="pipeline-dual-chart">
+                        <div class="pipeline-section">
+                            <h4>Success vs Failure Rates</h4>
+                            <div class="pipeline-donut">
+                                <svg class="donut-chart" viewBox="0 0 120 120">
+                                    <!-- Success arc (98.8%) -->
+                                    <circle cx="60" cy="60" r="40" fill="none" stroke="#e5e7eb" stroke-width="8"/>
+                                    <circle cx="60" cy="60" r="40" fill="none" stroke="#10b981" stroke-width="8" 
+                                            stroke-dasharray="247 4" stroke-dashoffset="0" 
+                                            transform="rotate(-90 60 60)"/>
+                                    <text x="60" y="55" text-anchor="middle" font-size="16" font-weight="600" fill="#10b981">98.8%</text>
+                                    <text x="60" y="70" text-anchor="middle" font-size="10" fill="#6b7280">Success</text>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="pipeline-section">
+                            <h4>Update Frequency</h4>
+                            <div class="update-bars">
+                                <div class="update-bar">
+                                    <span class="update-label">Daily</span>
+                                    <div class="update-bar-fill" style="width: 65%; background: #3b82f6;"></div>
+                                    <span class="update-value">156</span>
+                                </div>
+                                <div class="update-bar">
+                                    <span class="update-label">Weekly</span>
+                                    <div class="update-bar-fill" style="width: 85%; background: #06b6d4;"></div>
+                                    <span class="update-value">892</span>
+                                </div>
+                                <div class="update-bar">
+                                    <span class="update-label">Monthly</span>
+                                    <div class="update-bar-fill" style="width: 100%; background: #10b981;"></div>
+                                    <span class="update-value">3,421</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pipeline-stats">
+                        <div class="stat-group">
+                            <span>Your Products Ingested: 2,847</span>
+                            <span>Daily Updates: 156</span>
+                            <span>Failure Rate: 1.2%</span>
+                        </div>
+                        <div class="stat-group">
+                            <span>Weekly Updates: 892</span>
+                            <span>Monthly Updates: 3,421</span>
+                            <span>Success Rate: 98.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alert Status Footer -->
+        <footer class="alerts-footer">
+            <div class="alerts-header">
+                <span class="alerts-title">🔔 ACTIVE ALERTS (2):</span>
+                <div class="alerts-list">
+                    <span class="alert warning">⚠️ Response time exceeded 5s threshold (12:30 PM)</span>
+                    <span class="alert info">ℹ️ Question volume 25% above normal (1:15 PM)</span>
+                </div>
+            </div>
+            <div class="footer-actions">
+                <button class="action-btn">View All Alerts</button>
+                <button class="action-btn">Configure Alerts</button>
+                <button class="action-btn">Download Report</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dashboard.ts" type="module"></script>
+</body>
+</html>

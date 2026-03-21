@@ -1,0 +1,53 @@
+<div class="json-viewer-container">
+  <!-- Superscript Toggle -->
+  <div class="card toggle-section">
+    <div class="toggle-container">
+      <label class="toggle-label">
+        <input 
+          type="checkbox" 
+          [(ngModel)]="enableCitationSuperscript" 
+          (change)="onToggleChange()"
+          class="toggle-checkbox"
+        />
+        <span class="toggle-text">Enable Citation Superscript</span>
+        <span class="toggle-description">Transform [1], [2], etc. into superscript citations</span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Input Section -->
+  <div class="card">
+    <div class="input-header">
+      <h2>JSON Input</h2>
+      <div class="button-group">
+        <button class="btn btn-secondary" (click)="loadSampleData()">Load Sample</button>
+        <button class="btn btn-secondary" (click)="clearInput()">Clear</button>
+      </div>
+    </div>
+    
+    <textarea
+      class="json-input"
+      [(ngModel)]="jsonInput"
+      (input)="onJsonInputChange()"
+      placeholder="Paste your JSON response here..."
+      rows="12"></textarea>
+    
+    <div *ngIf="errorMessage" class="error-message">
+      <strong>Error:</strong> {{ errorMessage }}
+    </div>
+  </div>
+
+  <!-- Preview Section -->
+  <div class="card" *ngIf="showPreview">
+    <h2>Rendered Markdown</h2>
+    <div class="markdown-content" [innerHTML]="renderedMarkdown"></div>
+  </div>
+
+  <!-- Raw Content Section (optional, for debugging) -->
+  <div class="card" *ngIf="showPreview && parsedContent">
+    <details>
+      <summary><strong>Raw Markdown Content</strong> (click to expand)</summary>
+      <pre class="raw-content">{{ parsedContent }}</pre>
+    </details>
+  </div>
+</div>

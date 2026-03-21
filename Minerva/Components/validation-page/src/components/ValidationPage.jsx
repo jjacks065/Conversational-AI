@@ -1,0 +1,73 @@
+import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
+import './ValidationPage.css';
+
+const ValidationPage = () => {
+  const [apiResponse, setApiResponse] = useState('');
+  
+  const handleInputChange = (event) => {
+    setApiResponse(event.target.value);
+  };
+
+  const loadSample = () => {
+    // This simulates the exact API response format - single block with literal \n characters
+    const apiResponseText = `**Brief Answer**  \\nFor **urgent care**, the plan covers visits at **$55 per visit** when done at an in-network urgent care center; if urgent care is received in a hospital outpatient setting, it's **35% coinsurance** and **subject to the medical deductible**. For the **emergency room**, the ER facility is **35% coinsurance** and **subject to the medical deductible**, while the ER physician is **No Charge**.  \\n\\n---\\n**Detailed Explanation**\\n\\nBecause this is a HMO plan, the member must receive services from either an in-network provider or a provider associated with their medical group to be eligible for benefits. A referral from the member's primary care physician (PCP) is usually required when the member wants to see a specialist or other provider. [1]\\n\\n## A) Urgent Care Services\\n\\n### 1) Urgent Care – Freestanding outpatient facility services (Urgent care center facility)\\n**In-Network Provider** [2]  \\nFor in-network providers: [2]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nHowever, Urgent Care - Freestanding Outpatient Facility Services is not subject to the deductible. [2]  \\nThe copay for Urgent Care - Freestanding Outpatient Facility Services services is $55. [2]  \\nThe service applies to the plan's out-of-pocket maximum amount of $8,750, not to exceed $17,500 per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount. [2]  \\nWhen seeking urgent care services within their HMO service area, the member needs to verify with their primary care physician (PCP) and Independent Physician Association (IPA) or Medical Group (MG) which urgent care clinics are in-network. If outside the assigned Medical Group Service Area but within California the member may visit any urgent care center. [4]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n### 2) Urgent Care – Freestanding professional services (Provider/doctor services at urgent care)\\n**In-Network Provider** [5]  \\nFor in-network providers: [5]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nHowever, Urgent Care - Freestanding Professional Services is not subject to the deductible. [5]  \\nThe copay for Urgent Care - Freestanding Professional Services services is $55. [5]  \\nThe service applies to the plan's out-of-pocket maximum amount of $8,750, not to exceed $17,500 per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount. [5]  \\nWhen seeking urgent care services within their HMO service area, the member needs to verify with their primary care physician (PCP) and Independent Physician Association (IPA) or Medical Group (MG) which urgent care clinics are in-network. If outside the assigned Medical Group Service Area but within California the member may visit any urgent care center. [4]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n### 3) Urgent Care – Hospital outpatient facility only\\n**In-Network Provider** [6]  \\nFor in-network providers: [6]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nUrgent Care - Outpatient Hospital Facility Only is subject to this deductible. Once the deductible is met, [6]  \\nThe coinsurance is 35% of the allowed amount, and the plan will reimburse the remaining 65% of the allowed amount for Urgent Care - Outpatient Hospital Facility Only. [6]  \\nThe service applies to the plan's out-of-pocket maximum amount of $8,750, not to exceed $17,500 per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount. [6]  \\nIn addition to the hospital bill, the member can expect related professional fees for services like surgery, anesthesia, and diagnostic testing (radiological, pathology, or laboratory). [7]  \\nWhen seeking urgent care services within their HMO service area, the member needs to verify with their primary care physician (PCP) and Independent Physician Association (IPA) or Medical Group (MG) which urgent care clinics are in-network. If outside the assigned Medical Group Service Area but within California the member may visit any urgent care center. [4]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n---\\n\\n## B) Emergency Room (ER) Benefits\\n\\nEmergency or Ambulance services are covered at the participating provider cost share, even if treatment is received from a non-participating provider.  \\n\\nA member can access emergency services for an emergency medical condition at any hospital, even if it is a non-participating hospital. If a member is admitted to an out-of-network (OON) or non-participating hospital, the in-network benefits would apply until their condition stabilizes and they're able to be transferred to an in-network hospital. [8]\\n\\n### 1) Emergency room hospital (ER facility)\\n**In-Network Provider** [9]  \\nFor in-network providers: [9]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nEmergency room hospital is subject to this deductible. Once the deductible is met, [9]  \\nThe coinsurance is 35% of the allowed amount, and the plan will reimburse the remaining 65% of the allowed amount for Emergency room hospital. [9]  \\nThe service applies to the plan's out-of-pocket maximum amount of $8,750, not to exceed $17,500 per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount. [9]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n### 2) Emergency room physician (ER professional/physician services)\\n**In-Network Provider** [10]  \\nFor in-network providers: [10]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nHowever, Emergency room physician is not subject to the deductible. [10]  \\nThe plan will reimburse the provider 100% of the allowed amount for Emergency room physician. [10]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n### 3) Emergency room services resulting in admission\\n**In-Network Provider** [11]  \\nFor in-network providers: [11]  \\nthe plan has a $2,500 deductible per person, not to exceed $5,000 per family. [3]  \\nEmergency room services resulting in admission is subject to this deductible. Once the deductible is met, [11]  \\nThe coinsurance is 35% of the allowed amount, and the plan will reimburse the remaining 65% of the allowed amount for Emergency room services resulting in admission. [11]  \\nThe service applies to the plan's out-of-pocket maximum amount of $8,750, not to exceed $17,500 per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount. [11]\\n\\n**Out-of-Network Provider**  \\nFor out-of-network providers, the member is responsible for 100% of the provider's billed amount, as the plan only covers in-network providers.\\n\\n---\\n**Sources & Citations**\\n| Ref | Benefit/Service | Cost Share | Source |\\n|-----|-----------------|------------|--------|\\n| [1] | HMO plan referral/PCP coordination | N/A | RULES_JSON > levels[1] > rules[0] (Plan Disclaimer) and PLAN_DATA: planStructureType = "HMO" |\\n| [2] | Urgent Care – Freestanding outpatient facility | **$55 copay per visit**, **not subject to deductible**, **OOPM applies** | eocCategories > Urgent Care Services > Urgent Care > Freestanding outpatient facility > providerCostShares[HMO Provider] |\\n| [3] | Medical deductible | **$2,500 individual / $5,000 family** | planCostShares > costShareType:"Medical Deductible" > providerCostShares[HMO Provider] > coveredParties |\\n| [4] | Urgent care HMO service area guidance | N/A | RULES_JSON > levels[5] > rules (Urgent Care, HMO) and PLAN_DATA: planStructureType="HMO" |\\n| [5] | Urgent Care – Freestanding professional services | **$55 copay per visit**, **not subject to deductible**, **OOPM applies** | eocCategories > Urgent Care Services > Urgent Care > Freestanding professional services > providerCostShares[HMO Provider] |\\n| [6] | Urgent Care – Outpatient hospital facility only | **35% coinsurance**, **subject to deductible**, **OOPM applies** | eocCategories > Urgent Care Services > Urgent Care > Hospital facility only > providerCostShares[HMO Provider] |\\n| [7] | Outpatient hospital related professional fees disclaimer | N/A | RULES_JSON > levels[5] > rules (Hospital (Outpatient)) |\\n| [8] | Emergency services covered at in-network cost share even if non-participating | N/A | eocCategories > Emergency Benefits > content; RULES_JSON > levels[5] > rules (Emergency) |\\n| [9] | Emergency room hospital (facility) | **35% coinsurance**, **subject to deductible**, **OOPM applies** | eocCategories > Emergency Benefits > Emergency Care > Emergency room hospital > providerCostShares[HMO Provider] |\\n| [10] | Emergency room physician (professional) | **No Charge**, **not subject to deductible** | eocCategories > Emergency Benefits > Emergency Care > Emergency room physician > providerCostShares[HMO Provider] |\\n| [11] | Emergency room services resulting in admission | **35% coinsurance**, **subject to deductible**, **OOPM applies** | eocCategories > Emergency Benefits > Emergency Care > Emergency room services resulting in admission > providerCostShares[HMO Provider] |`;
+    
+    // Convert literal \n to actual newlines for proper markdown processing
+    const processedResponse = apiResponseText.replace(/\\n/g, '\n');
+    setApiResponse(processedResponse);
+  };
+
+  const clearInput = () => {
+    setApiResponse('');
+  };
+
+  return (
+    <div className="validation-page">
+      <h1>Minerva API Response Validation</h1>
+      <p className="description">
+        Convert API response text to clean HTML using markdown formatting.
+      </p>
+      
+      <div className="controls">
+        <button onClick={loadSample} className="sample-btn">
+          Load Sample
+        </button>
+        <button onClick={clearInput} className="clear-btn">
+          Clear
+        </button>
+      </div>
+
+      <div className="content-container">
+        <div className="input-section">
+          <h2>API Response Text</h2>
+          <textarea
+            value={apiResponse}
+            onChange={handleInputChange}
+            placeholder="Paste your API response text here..."
+            className="response-textarea"
+            rows={15}
+          />
+          <div className="char-count">
+            {apiResponse.length} characters
+          </div>
+        </div>
+
+        <div className="output-section">
+          <h2>Rendered Output</h2>
+          <div className="markdown-preview">
+            <ReactMarkdown 
+              rehypePlugins={[rehypeRaw]}
+              className="markdown-content"
+            >
+              {apiResponse || '*No content to display. Enter text on the left to see the rendered output.*'}
+            </ReactMarkdown>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ValidationPage;

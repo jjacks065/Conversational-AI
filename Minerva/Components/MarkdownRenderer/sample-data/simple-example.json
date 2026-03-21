@@ -1,0 +1,6 @@
+{
+  "questionId": "simple-test-123",
+  "sessionId": "session-456",
+  "content": "# Simple Markdown Example\n\nThis is a **simple example** to test the JSON Markdown Viewer.\n\n## Features Demonstrated\n\n- Headers at different levels\n- **Bold text** formatting\n- Lists with multiple items\n- Line breaks and paragraphs\n\n### Code and Tables\n\nHere's a simple table:\n\n| Feature | Status |\n|---------|--------|\n| Headers | ✅ Working |\n| Bold Text | ✅ Working |\n| Tables | ✅ Working |\n| Lists | ✅ Working |\n\n---\n\n**Conclusion**: This demonstrates basic markdown rendering capabilities!",
+  "responseId": "resp_simple_001"
+}

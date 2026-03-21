@@ -1,0 +1,6 @@
+{
+  "questionId": "readability-test-123",
+  "sessionId": "session-readability-demo",
+  "content": "# Citation Readability Enhancement Demo\n\n## Before vs After Comparison\n\n### Example 1: Citation with Single Newline\nHealth insurance plans typically cover prenatal care [1]\nand this text should flow naturally without awkward breaks.\n\n### Example 2: Citation with Paragraph Break\nOut-of-network providers may charge higher rates [2]\n\nThis should remain as a proper paragraph break since it uses double newlines.\n\n### Example 3: Multiple Citations\nDeductibles vary by plan type [3]\nand network status [4]\nwhile copayments are different [5]\nfor each service category.\n\n### Example 4: Mixed Content\nRegular text flows normally, but citations [6]\nshould not create unnecessary line breaks [7]\nthat disrupt reading flow [8]\nunless they are paragraph breaks [9]\n\nThis demonstrates improved readability.\n\n---\n\n**Key Improvements:**\n- Citations with single `\\n` should flow naturally\n- Citations with double `\\n\\n` preserve paragraph structure\n- Better text flow and readability\n- Superscript toggle still works perfectly",
+  "responseId": "resp_readability_demo"
+}
