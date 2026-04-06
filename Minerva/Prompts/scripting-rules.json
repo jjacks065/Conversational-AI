@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "version": "1.2",
+    "source": "Benefit-Response-Scripts-V1.1.xlsx",
+    "generatedAt": "2026-02-18T00:00:00.000Z",
+    "changeHistory": [
+      {
+        "version": "1.1",
+        "date": "2026-02-04",
+        "description": "Initial 6-Level Evaluation Pipeline with 42 rules"
+      },
+      {
+        "version": "1.2",
+        "date": "2026-02-18",
+        "description": "Standardized all placeholders from inconsistent bracket formats ([Insert...], [$...], [insert...], [vendor], [vendorPhoneNumber]) to consistent curly-brace format ({placeholder_name}). Distinct placeholder names: {benefit_name}, {service_category_subcategory}, {benefit_type}, {procedure_name}, {relevant_category} for benefit/service identifiers; {individual_deductible}, {family_deductible}, {copay_amount}, {coinsurance_pct}, {remaining_coinsurance_pct}, {individual_oopm}, {family_oopm} for cost shares; {vendor_name}, {vendor_phone}, {vendor_website} for vendor info; {limit_text}, {max_copay_per_day}, {max_days}, {max_amount_per_day}, {max_amount_per_rx}, {first_dollar_visits} for limits/maximums; {tier1_retail_30} through {tier4_mail_order} for Rx tiers."
+      }
+    ],
+    "architecture": "6-Level Evaluation Pipeline",
+    "levelSummary": [
+      "Level 1: Benefit Categorization (2 rules)",
+      "Level 2: Universal Rules (1 rules)",
+      "Level 3: Network Logic (4 rules)",
+      "Level 4: Cost Structure (8 rules)",
+      "Level 5: Limits & Maximums (5 rules)",
+      "Level 6: Benefit-Specific Enhancements (22 rules)"
+    ],
+    "totalLevels": 6,
+    "totalRules": 42
+  },
+  "levels": [
+    {
+      "level": 1,
+      "name": "Benefit Categorization",
+      "purpose": "Determine what type of benefit/service is being quoted",
+      "rules": [
+        {
+          "ruleGroup": "Exclusion",
+          "conditionTrigger": "benefit_excluded == true",
+          "instructionTemplate": "This is an exclusion of the health plan and member would be responsible for billed charges.",
+          "scriptOutput": "The {benefit_name} is an exclusion of this health plan. The member would be responsible for 100% of the billed amount."
+        },
+        {
+          "ruleGroup": "Not a Benefit",
+          "conditionTrigger": "category== \"Not Covered\"",
+          "instructionTemplate": "This service is not a benefit and member would be responsible for billed charges.",
+          "scriptOutput": "The {benefit_name} is not a benefit of this health plan. The member would be responsible for 100% of the billed amount."
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Universal Rules",
+      "purpose": "Exclusions + HMO disclaimers",
+      "rules": [
+        {
+          "ruleGroup": "Plan Disclaimer",
+          "conditionTrigger": "plan_type =='HMO'",
+          "instructionTemplate": "Add HMO PCP/ Medical Group coordination disclaimer.",
+          "scriptOutput": "Because this is a HMO plan, the member must receive services from either an in-network provider or a provider associated with their medical group to be eligible for benefits. A referral from the member's primary care physician (PCP) is usually required when the member wants to see a specialist or other provider."
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Network Logic",
+      "purpose": "Normalize in/out-of-network and apply wording",
+      "rules": [
+        {
+          "ruleGroup": "Network",
+          "conditionTrigger": "providerCostShareType =='participating', 'HMO Provider'",
+          "instructionTemplate": "When present, always include participating provider benefit information and make it clear the benefits apply to in-network providers.",
+          "scriptOutput": "For in-network providers:"
+        },
+        {
+          "ruleGroup": "Network",
+          "conditionTrigger": "providerCostShareType =='non-participating'",
+          "instructionTemplate": "When present, always include non-participating provider benefit information and make it clear the benefits apply to out-of-network providers.\n\nAlso include an OON billing warning.",
+          "scriptOutput": "For out-of-network providers:\n\nAn out-of-network provider has the right to bill for the balance. What this means is that the member may be responsible for the difference between the allowed amount and billed amount."
+        },
+        {
+          "ruleGroup": "Network",
+          "conditionTrigger": "providerCostShareType =='AIAN Provider'",
+          "instructionTemplate": "When present, always include AIAN provider benefit information and make it clear the benefits apply to AIAN providers.",
+          "scriptOutput": "For AIAN providers:"
+        },
+        {
+          "ruleGroup": "Network",
+          "conditionTrigger": "providerCostShareType == 'Virtual Provider'",
+          "instructionTemplate": "When present, always include Virtual provider benefit information and make it clear the benefits apply to Virtual providers.",
+          "scriptOutput": "For Virtual providers:"
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Cost Structure",
+      "purpose": "Deductible + cost share combined logic",
+      "rules": [
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "Medical Deductible is !0 (not zero)",
+          "instructionTemplate": "Provide both the individual and family deductible amounts.",
+          "scriptOutput": "the plan has a {individual_deductible} deductible per person, not to exceed {family_deductible} per family."
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "Medical Deductible is !0",
+          "instructionTemplate": "Include language that the health plan does not have a deductible. Follow with the Cost Share Information.",
+          "scriptOutput": "the plan does not have a deductible."
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "If Deductible is !0 (not zero) and \"subjectToDeductible\" = true",
+          "instructionTemplate": "Include language that the service/benefit is subject to the plan's deductible. Follow with the Cost Share information.",
+          "scriptOutput": "{service_category_subcategory} is subject to this deductible. Once the deductible is met,"
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "If Deductible is !0 (not zero) and \"subjectToDeductible\" = false",
+          "instructionTemplate": "Include lanuage that the service/ benefit is not subject to the plan's deductible.",
+          "scriptOutput": "However, {service_category_subcategory} is not subject to the deductible."
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "\"structureType\": \"No Charge\"",
+          "instructionTemplate": "Include lanugage that there is no cost share.",
+          "scriptOutput": "The plan will reimburse the provider 100% of the allowed amount for {service_category_subcategory}."
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "\"structureType\": \"Copay\"",
+          "instructionTemplate": "Include the $ copay amount.",
+          "scriptOutput": "The copay for {service_category_subcategory} services is {copay_amount}."
+        },
+        {
+          "ruleGroup": "Deductible & Cost Share",
+          "conditionTrigger": "\"structureType\": \"Coinsurance\"",
+          "instructionTemplate": "Include the % coninsuarce amount that member would be responsible for and difference to indicate what the health plan would cover.",
+          "scriptOutput": "The coinsurance is {coinsurance_pct} of the allowed amount, and the plan will reimburse the remaining {remaining_coinsurance_pct} of the allowed amount for {service_category_subcategory}."
+        },
+        {
+          "ruleGroup": "First Dollar Coverage",
+          "conditionTrigger": "\"firstDollarCoverage\": true",
+          "instructionTemplate": "Include first dollar text",
+          "scriptOutput": "First {first_dollar_visits} visits per calendar year are covered prior to meeting the calendar year medical deductible combined with physician office visits, specialist office visits, other practitioner, postnatal visits, urgent care visits, outpatient mental health visits and outpatient substance abuse visits. Subsequent visits are subject to the calendar year medical deductible."
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Limits & Maximums",
+      "purpose": "Insert any limits, maximums, or OOPM",
+      "rules": [
+        {
+          "ruleGroup": "OOP Max",
+          "conditionTrigger": "\"oopmApplies\": \"true\"",
+          "instructionTemplate": "Include Out of Pocket Maximum (OOPM) for Individual and Family amounts.",
+          "scriptOutput": "The service applies to the plan's out-of-pocket maximum amount of {individual_oopm}, not to exceed {family_oopm} per family. When the plan's out-of-pocket maximum amount is satisfied, the health plan will reimburse 100% of the allowed amount."
+        },
+        {
+          "ruleGroup": "Limits",
+          "conditionTrigger": "\"limit\" != none; \"limitText\" i!= none",
+          "instructionTemplate": "Include any limit text.",
+          "scriptOutput": "This plan has a limit of {limit_text}."
+        },
+        {
+          "ruleGroup": "Maximums",
+          "conditionTrigger": "maximum != none and includes \"per admission\"",
+          "instructionTemplate": "Include maximum text and explain.",
+          "scriptOutput": "This plan has a maximum copayment of {max_copay_per_day} per day up to {max_days} days per admission. This means after {max_days} days, the member would have no cost share for any additional days of their admission."
+        },
+        {
+          "ruleGroup": "Maximums",
+          "conditionTrigger": "maximum != none and includes \"plus all charges\"",
+          "instructionTemplate": "Include maximum text and explain.",
+          "scriptOutput": "This plan has a maximum payable amount of up to {max_amount_per_day} per day. This means the member would also be responsible for all charges above {max_amount_per_day} per day."
+        },
+        {
+          "ruleGroup": "Maximums",
+          "conditionTrigger": "maximum != none and includes \"per prescription\"",
+          "instructionTemplate": "Include maximum text and explain.",
+          "scriptOutput": "This plan has a maximum payable amount of up to {max_amount_per_rx} per prescription. This means the member would also be responsible for all charges above {max_amount_per_rx} per prescription."
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "Benefit-Specific Enhancements",
+      "purpose": "Apply special category rules (ER, maternity, colonoscopy, surgery)",
+      "rules": [
+        {
+          "ruleGroup": "Emergency",
+          "conditionTrigger": "category == 'Emergency', 'Ambulance",
+          "instructionTemplate": "Include emergency disclaimer that regardless of network status, these services are covered at the in-network benefit level. \n\nAnd include providerCostShareType =='participating' benefits only.",
+          "scriptOutput": "Emergency or Ambulance services are covered at the participating provider cost share, even if treatment is received from a non-participating provider. \n\nA member can access emergency services for an emergency medical condition at any hospital, even if it is a non-participating hospital. If a member is admitted to an out-of-network (OON) or non-participating hospital, the in-network benefits would apply until their condition stabilizes and they're able to be transferred to an in-network hospital."
+        },
+        {
+          "ruleGroup": "Discount Programs",
+          "conditionTrigger": "category == 'chiropractic', 'acupuncture', 'therapeutic massage'",
+          "instructionTemplate": "Include information on available discount programs.",
+          "scriptOutput": "Discounts for accunpuncture, chiropractic, and therapeutic massage treatments are available through the ChooseHealthy program provided by American Specialty Health Group. \n\nRefer to https://www.blueshieldca.com/en/home/be-well/live-healthy website to locate a particpating provider and learn more about what's included in this program."
+        },
+        {
+          "ruleGroup": "Discount Programs",
+          "conditionTrigger": "category == 'Fitness', 'exercise', or 'gym membership'",
+          "instructionTemplate": "Include information on available discount programs.",
+          "scriptOutput": "Blue Shield of California offers gym membership discount programs and digital fitness programs.\n\nRefer to https://www.blueshieldca.com/en/home/be-well/live-healthy to learn more."
+        },
+        {
+          "ruleGroup": "Hospital (Inpatient)",
+          "conditionTrigger": "category=='Hosptial Services'",
+          "instructionTemplate": "Include a professional services disclaimer, that member can also expect related physician fees.\n\nAnd in addition to providing Inpatient Hospital Room Services, inlcude Physician or surgeon services in an inpatient facility benefit details.",
+          "scriptOutput": "In addition to the hospital bill, the member can expect related professional fees for services like surgery, anesthesia, and diagnostic testing (radiological, pathology, or laboratory)."
+        },
+        {
+          "ruleGroup": "Hospital (Outpatient)",
+          "conditionTrigger": "category=='Hosptial Services'",
+          "instructionTemplate": "Include a professional services disclaimer, that member can also expect related physician fees.\n\nAnd in addition to provided Outpatient Hospital benefits, also include Physician or surgeon services in an outpatient facility benefit details.",
+          "scriptOutput": "In addition to the hospital bill, the member can expect related professional fees for services like surgery, anesthesia, and diagnostic testing (radiological, pathology, or laboratory)."
+        },
+        {
+          "ruleGroup": "Urgent Care",
+          "conditionTrigger": "category =='Urgent care' and plan_type =='HMO'",
+          "instructionTemplate": "Include disclaimer that member must use urgent care center associated with their member group when they are within their medical groups service area.",
+          "scriptOutput": "When seeking urgent care services within their HMO service area, the member needs to verify with their primary care physician (PCP) and Independent Physician Association (IPA) or Medical Group (MG) which urgent care clinics are in-network. If outside the assigned Medical Group Service Area but within California the member may visit any urgent care center."
+        },
+        {
+          "ruleGroup": "Dental",
+          "conditionTrigger": "category == 'Pediatric Dental Benefits'",
+          "instructionTemplate": "Include Dental Administrator name and phone number.",
+          "scriptOutput": "This member's Dental benefits are administered by {vendor_name}. Let me give you their toll-free number. The phone number is: {vendor_phone}"
+        },
+        {
+          "ruleGroup": "Vision",
+          "conditionTrigger": "category == 'Pediatric Vision Benefits'",
+          "instructionTemplate": "Include Vision Administrator name and phone number.",
+          "scriptOutput": "This member's Vision benefits are administered by {vendor_name}. Let me give you their toll-free number. The phone number is: {vendor_phone}"
+        },
+        {
+          "ruleGroup": "Prescription Drugs/ RX",
+          "conditionTrigger": "category == 'Prescription Drug Benefits'",
+          "instructionTemplate": "Include Retail (30-day supply), Retail (90-day supply) and Mail Order (90-day supply) benefits. \n\nAlso include Tier 1, Tier 2, Tier 3 and Tier 4 pharmacy benefit details.\n\nAlso include any pharmacy-specific deductible and out-of-pocket maximum information.",
+          "scriptOutput": "Retail (30-day supply)\n - Tier 1: {tier1_retail_30}\n - Tier 2: {tier2_retail_30}\n - Tier 3: {tier3_retail_30}\n - Tier 4: {tier4_retail_30}\n\nRetail (90-day supply)\n - Tier 1: {tier1_retail_90}\n - Tier 2: {tier2_retail_90}\n - Tier 3: {tier3_retail_90}\n - Tier 4: {tier4_retail_90}\n\nMail Order (90-day supply)\n - Tier 1: {tier1_mail_order}\n - Tier 2: {tier2_mail_order}\n - Tier 3: {tier3_mail_order}\n - Tier 4: {tier4_mail_order}"
+        },
+        {
+          "ruleGroup": "Prescription Drugs/ RX",
+          "conditionTrigger": "category == 'Prescription Drug Benefits'",
+          "instructionTemplate": "First, include the full tier pricing from the Prescription Drug Benefits category (all tiers for Retail 30-day, Retail 90-day, and Mail Order). Then include the over-the-counter (OTC) disclaimer. Also note the exceptions: (1) OTC drugs with a USPSTF rating of A or B when prescribed by a physician, and (2) OTC contraceptive drugs and devices. If the question is specifically about smoking cessation, add that USPSTF-approved pharmacotherapy for cessation prescribed for a non-pregnant adult is covered as an outpatient prescription drug.",
+          "scriptOutput": "Note: \nDrugs that are available without a prescription (\"over-the-counter\"), including drugs for which there is an over-the-counter (OTC) drug that has the same active ingredient and dosage as the prescription drug, are an exclusion of this health plan. This means that the plan does not cover over-the-counter drugs. This exclusion does not apply to OTC drugs with a United States Preventive Services Task Force (USPSTF) rating of A or B when prescribed by a physician or to OTC contraceptive drugs and devices."
+        },
+        {
+          "ruleGroup": "Prescription Drugs/ RX",
+          "conditionTrigger": "User asks about a specific drug by name (e.g., \"Is Atorvastatin covered?\", \"What tier is Ozempic?\", \"How much will Humira cost me?\")",
+          "instructionTemplate": "When the member asks about a specific drug by name, still include the full tier pricing from the Prescription Drug Benefits category (all tiers for Retail 30-day, Retail 90-day, and Mail Order). Do not attempt to determine which specific tier the drug falls under — the plan data has tier cost-share structures but NOT a drug formulary. After presenting all tier pricing, direct the member to the \"Price Check My Rx\" tool on their member portal for additional details on formulary status, tier placement, and cost for the specific drug.",
+          "scriptOutput": "I don't have access to this plan's drug formulary to know if a specific drug is covered and under what tier. \n\nTo check if a particular medication is covered under your plan's formulary and find out what it will cost, you can use the \"Price Check My Rx\" tool available on your member portal at blueshieldca.com. This tool provides information on your eligibility for a prescription drug, the current cost of the prescription drug, any available lower-cost alternatives based on your plan formulary, and any limits, restrictions, or requirements for each drug, if applicable. Costs may vary at the time of filling your prescription due to claims processing."
+        },
+        {
+          "ruleGroup": "BlueCard",
+          "conditionTrigger": "category == 'Services out side of California', 'Care Outside of California'\nand plan_type =='HMO' \n \"outOfStateNetwork\": \"BlueCard\"\n\"BlueCard Program\",\n          \"isIncluded\": true",
+          "instructionTemplate": "Include BlueCard Program Information and that HMO coverage outside of ca is limited to urgent and emergency services.",
+          "scriptOutput": "The Blue Shield HMO plan provides limited coverage for health care services received outside of California. Out-of-area covered health care services are restricted to emergency services, urgent services, and out-of-area follow-up care. Any other services will not be covered when processed through an Inter-Plan Arrangement unless prior authorized by Blue Shield."
+        },
+        {
+          "ruleGroup": "BlueCard",
+          "conditionTrigger": "category == 'Services out side of California', 'Care Outside of California'\nand plan_type =='PPO' or 'PSP'\n \"outOfStateNetwork\": \"BlueCard\"\n\"BlueCard Program\",\n          \"isIncluded\": true",
+          "instructionTemplate": "Include BlueCard Program Information.",
+          "scriptOutput": "Blue Shield has a variety of relationships with other Blue Cross and/or Blue Shield Licensees. Generally, these relationships are called Inter-Plan Arrangements and they work based on rules and procedures issued by the Blue Cross Blue Shield Association. Whenever a member receives Covered Services outside of California, the claims for those services may be processed through one of these Inter-Plan Arrangements described below.\n\nWhen a member accesses Covered Services outside of California, but within the United States, the Commonwealth of Puerto Rico, or the U.S. Virgin Islands (BlueCard® Service Area), a member can receive the care from one of two kinds of providers. Participating providers contract with the local Blue Cross and/or Blue Shield Licensee in that other geographic area (Host Blue). Non-participating providers don’t contract with the Host Blue."
+        },
+        {
+          "ruleGroup": "Screening and Diagnostic",
+          "conditionTrigger": "If service can be health exam screening or diagnostic, provide both screening and diagnostic benefits.",
+          "instructionTemplate": "Include explanationof screening vs. diagnostic procedures.\n\nInclude the following benefits:\nA. Annual Health Exam - Screening\n\nB. Diagnostic Procedure\n1. Physician or surgeon services outpatient facility  \n2. Hospital Services - Outpatient Surgeries\n3. Hosptial Services - Ambulatory Surgery Centers",
+          "scriptOutput": "{service_category_subcategory} can be done as a preventive screening to detect potential issues before symptoms arise. These are referred as a screening and are covered under the Annual Health Exam benefits. They can also be done when there are specific symptoms or risk factors that warrant further investigation. These are known as a diagnostic procedures."
+        },
+        {
+          "ruleGroup": "Surgeries (Outpatient)",
+          "conditionTrigger": "If type of service = surgery\nIf place of service = outpatient hospital or surgery center",
+          "instructionTemplate": "Include Surgery Disclaimer and the following benefits:\n\nA. Professional Services - Outpatient\n1. Physician and other Professional Services - Physician or surgeon services in an outpatient facility \n\nB. Facility Services - Outpatient\n1. Hospital Services Outpatient\n2. Ambulatory Surgery Centers",
+          "scriptOutput": "In addition to the surgeon's and facility bill, the member can expect related fees for professional services like anesthesia or any related to diagnostic testing (e.g., radiological, pathology, or laboratory).\n\nA surgical package includes the surgical procedure, pre-operative care medical visits on the same day of surgery and normal uncomplicated follow-up care."
+        },
+        {
+          "ruleGroup": "Surgeries (Inpatient)",
+          "conditionTrigger": "If type of service = surgery\nIf place of service = inpatient hospital",
+          "instructionTemplate": "Include Surgery Disclaimer and the following benefits:\n\nA. Professional Services - Inpatient\n1. Physician and other Professional Services - Physician or surgeon services in an inpatient facility \n\nB. Facility Services - Outpatient\n1. Hospital Services Inpatient",
+          "scriptOutput": "In addition to the surgeon's and facility bill, the member can expect related fees for professional services like anesthesia or any related to diagnostic testing (e.g., radiological, pathology, or laboratory).\n\nA surgical package includes the surgical procedure, pre-operative care medical visits on the same day of surgery and normal uncomplicated follow-up care."
+        },
+        {
+          "ruleGroup": "Pregancy",
+          "conditionTrigger": "Category = 'Pregnancy and Maternity Care'",
+          "instructionTemplate": "Include pregnancy disclaimer of what's included in benefits and break out of  the following benefits:\n \nA. Pre & Postnatal Visits:\n\nB. Diagnostic imaging - Ultrasounds:\n1. Outpatient Radiology Center  \n2. Office Location \n\nC. Delivery:\n1. Hospital\n2. Phyisican -\n3. Mid-wife non-RN\n4. Mid-wife RN \n5. Anesthesia \n\nD. Preventive Health - Prenatal Screen Program\n\nE. Newborn Services -   Nursery charges",
+          "scriptOutput": "Pregnancy and maternity care benefits include:\n\nPrenatal care;\nPostnatal care;\nInvoluntary complications of pregnancy;\nInpatient Hospital services including labor, delivery, and postpartum care\n\nThere can be additional fees for ultrasounds, services provided by a mid-wife and for the California Prenatal Screening Program (which is offered to check for genetic conditions and birth defects). Also, once the baby is born there could be newborn nursery charges.\n\nA. Pre & Postnatal Visits:\n\nB. Diagnostic imaging - Ultrasounds:\n1. Outpatient Radiology Center  \n2. Office Location \n\nC. Delivery:\n1. Hospital\n2. Phyisican -\n3. Mid-wife non-RN\n4. Mid-wife RN \n5. Anesthesia \n\nD. Preventive Health - Prenatal Screen Program\n\nE. Newborn Services -   Nursery charges"
+        },
+        {
+          "ruleGroup": "Primary Care Physician and Specialists",
+          "conditionTrigger": "Category = 'Physician and other Professional Services'\n\nQuestion is asking about any of the following provider types*:\n-General practitioners (GPs)\n-Family practitioners\n-Internists\n-OB/GYNs\n-Pediatricians\n\n*These types of providers can be primary care physicians (PCPs), but they can also be specialists.",
+          "instructionTemplate": "Include Benefits for both generalist  and specialist  visits."
+        },
+        {
+          "ruleGroup": "Vendor / Administrator",
+          "conditionTrigger": "Benefit has a vendor field that is not empty/null in providerCostShares[]",
+          "instructionTemplate": "When the benefit's vendor field is populated, first provide the full benefit response including cost shares, deductible applicability, and OOPM as you would for any benefit (per Levels 1-5). Then state that the member's benefits for this service are administered by the vendor and provide their contact information (vendorPhoneNumber, vendorWebSite if available).\n\nNote: For plans with effective dates in 2025, Magellan may appear as the vendor for mental health and substance abuse services. For plans with 2026 effective dates and later, these services are administered directly by Blue Shield of California — do not reference Magellan for 2026+ plans.",
+          "scriptOutput": "This member's {benefit_type} benefits are administered by {vendor_name}. For questions about {benefit_type}, {vendor_name} participating providers, or {benefit_type} benefits, contact {vendor_name} at {vendor_phone}. [If vendor website is available: You can also visit {vendor_website} for more information.]"
+        },
+        {
+          "ruleGroup": "Primary Care Physician and Specialists",
+          "conditionTrigger": "HMO plan AND (medicalNetwork contains \"Trio\" OR \"Access+\") AND question involves a service that may require a referral",
+          "instructionTemplate": "Check the plan's medicalNetwork value. If it contains \"Trio\", include ONLY the Trio section of the scriptOutput. If it contains \"Access+\", include ONLY the Access+ section of the scriptOutput. Do NOT include both — only the section that matches the member's plan network.\n\nFor Trio plans: State that the patient does not need a referral for Emergency Services, Urgent Services, Trio+ Specialist visits, OB/GYN services within medical group, and PCP office visits. For Access+ plans: State that the patient does not need a referral for Emergency Services, Urgent Services, Access+ Specialist visits, OB/GYN services within medical group, and PCP office visits. For Access+ plans, also note that Access+ specialist visits include: examination, conventional X-rays, laboratory services, and diagnostic/treatment procedures.",
+          "scriptOutput": "Trio: The patient does not need a referral for: Emergency Services; Urgent Services; Trio+ Specialist visits; OB/GYN services by an obstetrician, gynecologist, or family practice Physician within the patient's Medical Group; and Office visits with the patient's primary care physician (PCP). Access+: The patient does not need a referral for: Emergency Services; Urgent Services; Access+ Specialist visits; OB/GYN services by an obstetrician, gynecologist, or family practice Physician within the patient's Medical Group; and Office visits with the patient's primary care physician (PCP). The Access+ specialist visit includes: (1) An examination or consultation without referral from personal physician; (2) Conventional X-rays; (3) Laboratory Services; (4) Diagnostic or treatment procedures which a plan specialist would regularly provide under a referral."
+        },
+        {
+          "ruleGroup": "Prior Authorization",
+          "conditionTrigger": "Question asks whether prior authorization is required for a service",
+          "instructionTemplate": "When the member asks about prior authorization for any service, do not guess. State that the plan documents do not contain prior authorization information and direct the representative to the Medical Policy Department.",
+          "scriptOutput": "The plan documents provided do not indicate whether prior authorization is required. You will need to research the most current Prior Auth Lists on the Medical Policy Department SharePoint to verify if the service requires prior authorization."
+        },
+        {
+          "ruleGroup": "Procedure Classification",
+          "conditionTrigger": "Question about a medical procedure where the cost share depends on the place of service, procedure type, or clinical purpose (screening vs diagnostic)",
+          "instructionTemplate": "When a question asks about a medical procedure, determine the correct Benefit IDs to look up based on: (A) Place of service — If the procedure is typically inpatient (joint replacement, appendectomy, colectomy, abdominal hysterectomy, C-section, cardiac catheter, mastectomy/reconstruction), look up inpatient professional (Benefit ID 121) and facility (Benefit ID 75). If typically outpatient (colonoscopy, endoscopy, cataract removal, laparoscopic hysterectomy, tonsillectomy, hernia repair, gallbladder removal, carpal tunnel, skin lesion removal, arthroscopy, endometriosis), look up outpatient professional (Benefit ID 520) and facility (Benefit IDs 78, 74). If unknown, include both. (B) Clinical purpose — If the procedure can serve different clinical purposes (e.g., colonoscopy: screening vs diagnostic), present cost shares for each purpose. Screening/preventive procedures map to the Annual Health Exam benefit (Benefit ID 156). Diagnostic/symptomatic procedures map to the relevant surgical/outpatient benefit. (C) Component services — For any procedure, include cost shares for all component services: professional fees, facility fees, anesthesia, and diagnostic testing (radiology, pathology, lab).",
+          "scriptOutput": "In addition to the surgeon's and facility bill, the patient can expect related fees for services like anesthesia, and professional services related to diagnostic testing (e.g., radiological, pathology, or laboratory). A surgical package includes the surgical procedure, pre-operative care medical visits on the same day of surgery and normal uncomplicated follow-up care. Then list the relevant Benefit IDs with cost shares based on classification. For screening vs diagnostic procedures: {procedure_name} can be done as a preventive screening... covered under the Annual Health Exam benefits. {procedure_name} can also be done when there are specific symptoms... covered under the {relevant_category} benefits."
+        }
+      ]
+    }
+  ]
+}
