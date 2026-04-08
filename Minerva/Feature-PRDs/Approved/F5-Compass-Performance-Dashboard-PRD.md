@@ -217,3 +217,130 @@ How will we measure success in reporting accurate system and product health? Inc
           
 [View All Alerts] [Configure Alerts] [Download Report]
 ```
+
+---
+
+## 📋 Linear Development Issues
+
+*Following the Linear Method, these issues are written as actionable, scoped technical tasks rather than user stories.*
+
+### Project: Dashboard Foundation & Data Layer
+
+#### [CPD-01] Scaffold Next.js Application and CI/CD Pipeline
+**Context:** A foundational repository is required to establish the frontend tooling, routing, and deployment processes so parallel engineering can begin.
+**Scope:**
+- Initialize Next.js 14+ (App Router) with TypeScript and Tailwind CSS.
+- Setup Prettier, ESLint, and Husky pre-commit hooks.
+- Configure GitHub Actions pipeline to run tests, lint checks, and deploy a skeleton build to the staging environment.
+**Acceptance Criteria:**
+- Repository is accessible and runs locally without errors.
+- Pushing to `main` triggers a successful CI/CD deployment to staging.
+
+#### [CPD-02] Implement Databricks & MLflow Connection Utilities
+**Context:** The dashboard requires backend access to real-time performance telemetry housed in Databricks and MLflow.
+**Scope:**
+- Implement server-side client wrappers utilizing the Databricks SQL Connector and MLflow REST APIs.
+- Establish a caching layer (e.g., node-cache or Redis) with a 30-second TTL to support real-time polling without overloading the data stores.
+**Acceptance Criteria:**
+- Utility methods successfully return raw performance data from both Databricks and MLflow.
+- Repeated requests within the 30-second TTL correctly serve data from the cache.
+
+#### [CPD-03] Implement Multi-Tenant Authentication (NextAuth)
+**Context:** We need to authenticate two separate groups: Customer Operations (via their respective SSO) and Internal Stellarus users.
+**Scope:**
+- Configure `NextAuth.js` with SAML/OAuth2 providers for customers and internal corporate providers for Stellarus.
+- Map and append custom claims to the JWT session: `role` (customer | stellarus) and `tenant_id`.
+**Acceptance Criteria:**
+- Users are successfully redirected to their respective SSO log-in and securely authenticated.
+- The application session exposes accurate `tenant_id` and `role` properties.
+
+#### [CPD-04] Enforce Tenant Data Isolation Middleware
+**Context:** Misconfigured API routes risk leaking data across customer bounds. Isolation must be handled systematically before data is fetched.
+**Scope:**
+- Create a Next.js server-side utility/middleware that intercepts data fetches and injects `WHERE tenant_id = ?` into Databricks queries.
+- Reject any cross-tenant query request automatically unless the user has the `stellarus` role.
+**Acceptance Criteria:**
+- Customer API requests explicitly return only data scoped to their `tenant_id`.
+- Test coverage confirms requests for arbitrary tenant IDs by customer roles return a 403 Forbidden.
+
+### Project: Customer-Facing Analytics
+
+#### [CPD-05] Build Real-Time KPI Cards Component
+**Context:** Users need an at-a-glance visualization of core health metrics at the top of the dashboard.
+**Scope:**
+- Build the reusable `<KpiCard />` React component.
+- Implement SWR/React Query hooks to poll the backend data endpoints every 30 seconds.
+- Implement frontend logic to calculate the (↑/↓) change from a 7-day trailing average.
+**Acceptance Criteria:**
+- 6 KPI cards render accurately according to the wireframes.
+- Values auto-refresh on screen without page reloads.
+- Components render loading skeleton states during data fetches.
+
+#### [CPD-06] Develop Response Time & Health Distribution Charts
+**Context:** Deep-dive line charts are needed to evaluate historical application performance.
+**Scope:**
+- Integrate charting library (e.g., Recharts or Chart.js).
+- Build the "Response Time Distribution" line chart charting Min/Max/Avg/Median/StdDev.
+- Build the "Application Health" multi-line chart charting Uptime % and Error Rates.
+**Acceptance Criteria:**
+- Charts handle 1000+ data points cleanly without UI lag.
+- Tooltips on hover expose the exact timestamps and metric values.
+- Time Range toggles (7/30/90 Days) dynamically update the chart data.
+
+#### [CPD-07] Implement Session & Product Pipeline Analytics
+**Context:** Dashboards require visibility into customer usage patterns and product pipeline ingestion success metrics.
+**Scope:**
+- Build the "Session Analytics" bar chart and "Questions per Session" histogram.
+- Develop the dual-chart interface for Product Pipeline analytics (Success vs Failure rates).
+**Acceptance Criteria:**
+- Data automatically groups into daily/weekly/monthly buckets based on the selected time range.
+- Numerical axes format cleanly (e.g., 1.2K instead of 1200).
+
+### Project: Internal Stellarus Analytics
+
+#### [CPD-08] Build Internal Cost Management Dashboard
+**Context:** The Stellarus finance and operations teams require a view to monitor infrastructure cost efficiency.
+**Scope:**
+- Build a stacked bar chart mapping Cost per Question vs. Cost per Session.
+- Implement the aggregation logic across all tenants (Internal access only).
+**Acceptance Criteria:**
+- Logged in `stellarus` users can view the global, cross-tenant Cost Analysis chart.
+- Requests from `customer` users to this view/API immediately return 403 Forbidden.
+
+#### [CPD-09] Build Business Intelligence Module (Churn & Growth)
+**Context:** We must automatically flag at-risk and high-growth accounts based on their telemetry data.
+**Scope:**
+- Write the backend Databricks queries that calculate relative session velocity across a 30-day window.
+- Render a tabulated "Customer Health" data table summarizing Revenue, Usage Deltas, and Risk Scores.
+**Acceptance Criteria:**
+- Customers with >25% drop in sessions are explicitly highlighted as "Churn Risk".
+- Table allows sorting by Risk Score and Expansion Opportunity.
+
+### Project: Alerting & Exporting
+
+#### [CPD-10] Implement Secure CSV Data Export Endpoint
+**Context:** Operations personnel require raw data extracts for use in external compliance/reporting tools.
+**Scope:**
+- Build an API endpoint `/api/export` that generates a streamed CSV from the telemetry queries.
+- Strictly enforce the existing Data Isolation logic within the export generation.
+**Acceptance Criteria:**
+- Download button successfully yields a well-formatted CSV matching the user's dashboard view.
+- Customer CSV exports never contain rows belonging to another `tenant_id`.
+
+#### [CPD-11] Build Custom Alert Configuration UI
+**Context:** Teams need to be notified when performance degrades past customized thresholds.
+**Scope:**
+- Build a settings UI form allowing users to select a metric, an operator (>, <), and a threshold value.
+- Provide a multi-select for Notification preferences (Email, UI, Slack).
+**Acceptance Criteria:**
+- Configurations persist to the database.
+- Users can edit, disable, or delete existing alert thresholds.
+
+#### [CPD-12] Implement Background Alert Evaluation Worker
+**Context:** Alert rules need to run constantly without depending on an active browser session.
+**Scope:**
+- Build a standalone Node.js cron/worker that polls the Databricks/MLflow data layer every 2 minutes.
+- If threshold logic is breached, generate a database alert record and trigger the appropriate email/Slack integrations.
+**Acceptance Criteria:**
+- Deliberately spiked data in the staging environment triggers an alert notification within the 2-minute SLA.
+- Triggered alerts surface on the Dashboard's UI footer.
