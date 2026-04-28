@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "title": "CSR Chat Customer Roadmap 2026-2027",
+    "pageTitle": "🚀 CSR Chat Roadmap",
+    "logoPath": "./Stellarus_logo_2C_whiteype.png",
+    "disclaimer": "🔒 CUSTOMER PARTNERSHIP ROADMAP - STRATEGIC PLANNING",
+    "theme": {
+      "primaryGradient": "linear-gradient(135deg, #08285E 0%, #436DB3 100%)",
+      "accentColor": "#F4454E"
+    }
+  },
+  "navigation": [
+    {"id": 0, "label": "Overview", "section": "overview"},
+    {"id": 1, "label": "Q2 Details", "section": "q2-details"},
+    {"id": 2, "label": "Q3-Q1", "section": "q3-q1-roadmap"}
+  ],
+  "sections": {
+    "overview": {
+      "title": "Strategic Overview",
+      "metrics": [
+        {
+          "type": "accuracy",
+          "value": ">98%",
+          "label": "Accuracy Target",
+          "icon": "✅"
+        },
+        {
+          "type": "adoption",
+          "value": ">90%",
+          "label": "Agent Adoption",
+          "icon": "👥"
+        },
+        {
+          "type": "performance",
+          "value": "<15s",
+          "label": "Response Time",
+          "icon": "⚡"
+        }
+      ],
+      "transformation": {
+        "title": "Intelligent CSR Chat Evolution",
+        "description": "Transform <strong>CSR Chat (Minerva)</strong> from a single-purpose support tool into an <strong>intelligent, self-adapting customer service copilot</strong> that autonomously optimizes performance, expands coverage, and enhances agent capabilities. Drive strategic business value through sub-15 second response times, comprehensive plan intelligence, and premium agent experiences that scale seamlessly across the enterprise while continuously learning and improving operational excellence."
+      },
+      "quarterOverview": {
+        "title": "Year Overview",
+        "quarters": [
+          {
+            "quarter": "Q2 2026",
+            "subheader": "Foundation & Performance",
+            "description": "Performance infrastructure + Plan Expansion + Enhanced UX"
+          },
+          {
+            "quarter": "Q3 2026",
+            "subheader": "Growth & Scale",
+            "description": "Formulary Integration + Agent Experience + Full Plan Expansion"
+          },
+          {
+            "quarter": "Q4 2026",
+            "subheader": "Product Maturity",
+            "description": "Self-Adapting, Optimized, Sustainable Performance"
+          },
+          {
+            "quarter": "Q1 2027",
+            "subheader": "Platform Innovation",
+            "description": "Advanced Capabilities & Market Leadership"
+          }
+        ]
+      }
+    },
+    "q2-details": {
+      "title": "🎯 Q2 2026: Foundation & Performance - Detailed Implementation",
+      "cards": [
+        {
+          "title": "🚀 Performance and Concurrency Improvments",
+          "color": "#ff6b6b",
+          "target": "63% response times reduction (40s→15s) <br> 8→40 concurrent requests",
+          "features": [
+            {
+              "name": "Increase Concurrent Requests",
+              "description": "<li>Increase threshold for concurrent requests per minute</li><li>Support scaling across all contact center agents and lines-of-business</li><li>Reduce error rate and timeout events to zero or near zero</li>"
+            },
+            {
+              "name": "Performance Evaluation & Improvement",
+              "description": "<li>Evaluate opportunities to improve performance</li><li>Reduce response times to sub 15 seconds (63%)</li><li>Maintin 98% accuracy</li><li>Maintain 40 rpm concurrency</li>"
+            },
+            {
+              "name": "🤝 Phase 2 Alignment",
+              "description": "<b>HyperCare Live Issue Log</b><li>ID:19 Increase Concurrency / Eliminate timeouts</li><li>ID:20 Latency exceeds 15 second requirement</li><b>UX Focus Group</b><li>Agents can't predict latency; compensates by switching tools</li><li>Generic errors stop task completion.</li>"
+            }          
+          ]
+        },
+        {
+          "title": "📈 Comprehensive Plan Data Platform",
+          "color": "#4ecdc4",
+          "scope": "Expand EOC coverage to Large Group and Custom plan types",
+          "features": [
+            {
+              "name": "Support Plan Expansion",
+              "description": "<li>Complete onboarding of Individual/Family Plans (IFP) and Small Group (SG)</li><li>Expand plan support to Large Group (LG), and Custom plan types</li><li>Ongoing support for validating and enhancing prompt and script logic</li>"
+            },
+            {
+              "name": "Prototype AI Validation with Self-Adapting Intelligence",
+              "description": "<li>Prototype intelligent Discovery, Verification, and Self-Adapting processes</li><li>Automatic plan data inconsistency detection</li><li>Human-In-The-Loop verification and correction validation</li><li>Continuous quality improvements</li><li>Maintaining >98% data accuracy while reducing manual intervention by 50%</li>"
+            },
+            {
+              "name": "🤝 Phase 2 Alignment",
+              "description": "<b>HyperCare Live Issue Log</b><li>ID:36 Large group minerva responses are not accurate where the response should match Phase 1</li><b>Phase 2 Scope (Multiple Sources)</b><li>Expand data corpus (2700+ IFP/SG/LG/Custom plans)</li><li>Plan Year / Annual Changes</li>"
+            }          
+          ]
+        },
+        {
+          "title": "📊 Product Performance Analytics",
+          "color": "#45b7d1",
+          "target": "Insights Across Product and Agent Performance",
+          "features": [
+            {
+              "name": "Performance Dashboard",
+              "description": "<li>Build a secure, role-based analytics dashboard</li><li>Provide real-time and historic visibility into performance, adoption, quality, and feedback</li>"
+            },
+            {
+              "name": "Enhance Plan Delta Monitoring",
+              "description": "<li>Establish measurements for plan data changes</li><li>Real-time tracking of change frequency, significance, and quality degredation</li><li>Notifications of significant change events</li>"
+            },
+            {
+              "name": "Request-Response Report",
+              "description": "<li>Execute a daily extract of all Request-Response data</li><li>Extract of all Feedback</li>"
+            },
+            {
+              "name": "🤝 Phase 2 Alignment",
+              "description": "<b>HyperCare Live Issue Log</b><li>ID:17 Minerva AI Reporting (MVP Scope)</li><b>Phase 2/3 Scope (Multiple Sources)</b><li>Plan Year / Annual Changes (visualize delta)</li>"
+            }          
+          ]
+        },
+        {
+          "title": "🎨 Enhanced Agent Experience",
+          "color": "#9b59b6",
+          "target": "Improved user experience and workflow efficiency",
+          "features": [
+            {
+              "name": "Establish New CSR Chat Experience",
+              "description": "<li>Release no-code/low-code user interface</li><li>Contextual panel and configurable architecture</li><li>Seamless integration into existing agent workflows</li>"
+            },
+            {
+              "name": "Customer Application Integration",
+              "description": "<li>Reduces workflow disruption through in-context information display</li><li>Eliminates need for full-screen transitions</li><li>Maintains agent focus on customer interactions</li>"
+            },
+            {
+              "name": "Increased Agent Confidence",
+              "description": "<li>Real-time guidance capabilities</li><li>Progress indicators to reduce confusion</li><li>Proactive error prevention</li><li>Automated quality checks</li><li>Contextual help reducing parsing time</li>"
+            },
+            {
+              "name": "🤝 Phase 2 Alignment",
+              "description": "<b>HyperCare Live Issue Log</b><li>ID:4-11 UI Display Issues</li><b>UX Focus Group</b><li>Address entire set with new UI</li>"
+            }          
+          ]
+        }
+      ]
+    },
+    "q3-q1-roadmap": {
+      "title": "🚀 Q3 2026 - Q1 2027: Platform Excellence Roadmap",
+      "quarters": [
+        {
+          "quarter": "Q3 2026",
+          "theme": "Growth & Scale",
+          "subtitle": "Formulary Integration + Agent Experience + Full Plan Expansion",
+          "objectives": [
+            "💊 Expand Support for Pharmacy and Formulary Logic<br><i>🤝 Phase 2 Alignment</i>",
+            "Complete Plan Coverage Deployment<br><i>🤝 Phase 2 Alignment</i>",
+            "Agent Experience Evolution and Enhancements<br><i>🤝 Phase 2 Alignment</i>"            
+          ]
+        },
+        {
+          "quarter": "Q4 2026",
+          "theme": "Product Maturity",
+          "subtitle": "Self-Adapting, Optimized, Sustainable Performance",
+          "objectives": [
+            "Self-Adapting Baseline (Ground Truth) Workflows<br><i>🤝 Phase 2/3 Alignment</i>",
+            "Sustainable Conversational Performance",
+            "Performance Optimization"
+          ]
+        },
+        {
+          "quarter": "Q1 2027",
+          "theme": "Platform Innovation",
+          "subtitle": "Advanced Capabilities & Market Leadership",
+          "objectives": [
+            "Predictive Analytics Platform",
+            "Workflow Automation Evolution",
+            "Performance Benchmarking & Standards"
+          ]
+        }
+      ]
+    },
+    "metrics": {
+      "title": "🤝 Phase 2 Alignment",
+      "costOptimization": {
+        "title": "Minerva 2026 Roadmap ⟺ Phase 2 Requests+",
+        "metrics": [
+          {
+            "type": "response-time",
+            "label": "Q2 & Q3",
+            "value": "2700+ Plans / 3000+ Agents",
+            "detail": "Planned expansion monitoring performance and quality",
+            "icon": "👥"
+          },
+          {
+            "type": "throughput",
+            "label": "Q2 → Q4",
+            "value": "Plan Change",
+            "detail": "Quarterly improvement",
+            "icon": "Δ"
+          },
+          {
+            "type": "accuracy",
+            "label": "Platform Accuracy",
+            "value": ">98%",
+            "detail": "Sustained performance",
+            "icon": "🎯"
+          },
+          {
+            "type": "uptime",
+            "label": "System Availability",
+            "value": "99.9%",
+            "detail": "Enterprise SLA",
+            "icon": "🔧"
+          }
+        ]
+      },
+      "agentExperience": {
+        "title": "Agent Experience & Adoption (Critical Success Enabler)",
+        "metrics": [
+          {
+            "type": "growth",
+            "label": "Q2 Agent Adoption",
+            "value": ">40%",
+            "detail": "Enhanced UX Foundation",
+            "icon": "📈"
+          },
+          {
+            "type": "success",
+            "label": "Q3 Agent Adoption",
+            "value": ">70%",
+            "detail": "Full Intelligence Platform",
+            "icon": "🚀"
+          },
+          {
+            "type": "adoption",
+            "label": "Q4 Agent Adoption",
+            "value": ">90%",
+            "detail": "Complete Integration",
+            "icon": "👥"
+          },
+          {
+            "type": "satisfaction",
+            "label": "Agent Satisfaction",
+            "value": "4.5/5",
+            "detail": "Information clarity & speed",
+            "icon": "⭐"
+          },
+          {
+            "type": "efficiency",
+            "label": "Workflow Efficiency",
+            "value": "+65%",
+            "detail": "Task completion improvement",
+            "icon": "💪"
+          }
+        ]
+      },
+      "platformCapabilities": {
+        "title": "Platform Capabilities & Coverage",
+        "metrics": [
+          {
+            "type": "coverage",
+            "label": "Plan Type Coverage",
+            "value": "100%",
+            "detail": "All plan types (IFP, SG, LG, Custom)",
+            "icon": "📋"
+          },
+          {
+            "type": "formulary",
+            "label": "Formulary Accuracy",
+            "value": ">95%",
+            "detail": "Real-time formulary intelligence",
+            "icon": "💊"
+          },
+          {
+            "type": "integration",
+            "label": "System Integration",
+            "value": "Seamless",
+            "detail": "Nexus & enterprise systems",
+            "icon": "🔗"
+          }
+        ]
+      },
+      "riskMitigation": {
+        "title": "⚠️ Strategic Risk Management",
+        "risks": [
+          {
+            "title": "Performance vs. Feature Development Balance",
+            "mitigation": "Integrated development approach ensuring all feature enhancements directly support performance excellence and agent experience optimization"
+          },
+          {
+            "title": "Scale & Adoption Coordination",
+            "mitigation": "Phased rollout strategy with continuous feedback loops ensuring platform capability growth aligns with agent adoption and satisfaction targets"
+          }
+        ]
+      }
+    }
+  }
+}

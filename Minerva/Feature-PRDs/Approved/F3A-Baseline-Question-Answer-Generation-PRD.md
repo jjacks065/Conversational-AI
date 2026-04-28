@@ -50,7 +50,7 @@ What's explicitly out of scope?
 - Human validation workflow integration and approval processes
 - Cross-customer baseline learning and pattern recognition
 - Real-time baseline updates during live conversations
-- Advanced Auto-Calibrating Truth automation and drift detection
+- Adaptive Baseline automation and drift detection
 - Custom baseline editing and management interfaces
 
 ## 🏁 Definition of Done

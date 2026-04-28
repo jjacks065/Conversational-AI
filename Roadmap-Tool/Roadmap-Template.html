@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">CSR Chat Roadmap Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Urbane', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #08285E 0%, #436DB3 100%);
+            color: white;
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .header {
+            background: #08285E;
+            padding: 1rem 2rem;
+            border-bottom: 2px solid #436DB3;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .logo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            font-family: 'Urbane', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: white;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.02em;
+        }
+
+        .title-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: white;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background: rgba(67, 109, 179, 0.3);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-btn:hover {
+            background: rgba(244, 69, 78, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .nav-btn.active {
+            background: #F4454E;
+            border-color: #F4454E;
+        }
+
+        .top-header {
+            background: #08285E;
+            padding: 0.75rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .top-header .stellarus-brand {
+            font-family: 'Urbane', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+
+        .disclaimer {
+            background: rgba(244, 69, 78, 0.9);
+            color: white;
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #F4454E;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .metric-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .transformation-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .quarter-overview {
+            margin: 2rem 0;
+        }
+
+        .quarter-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .quarter-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #F4454E;
+        }
+
+        .quarter-item strong {
+            color: #F4454E;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .kr-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .kr-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .kr-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .kr-card .target {
+            background: rgba(244, 69, 78, 0.2);
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #F4454E;
+        }
+
+        .kr-card .scope {
+            background: rgba(67, 109, 179, 0.3);
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #436DB3;
+        }
+
+        .feature-item {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .feature-name {
+            font-weight: bold;
+            color: #F4454E;
+            margin-bottom: 0.25rem;
+        }
+
+        .feature-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .roadmap-quarters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .quarter-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .quarter-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quarter-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #F4454E;
+            margin-bottom: 0.5rem;
+        }
+
+        .quarter-theme {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quarter-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .objectives-list {
+            list-style: none;
+        }
+
+        .objectives-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #F4454E;
+        }
+
+        .metrics-section {
+            margin: 2rem 0;
+        }
+
+        .metrics-category {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #F4454E;
+        }
+
+        .risk-item {
+            background: rgba(244, 69, 78, 0.2);
+            border: 1px solid rgba(244, 69, 78, 0.5);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .risk-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #F4454E;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 1rem;
+            }
+            
+            .header {
+                padding: 1rem;
+            }
+            
+            .top-header {
+                padding: 0.5rem 1rem;
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+            
+            .navigation {
+                flex-wrap: wrap;
+            }
+            
+            .nav-btn {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="stellarus-brand">Stellarus</div>
+        <div class="disclaimer" id="disclaimer-text"></div>
+    </div>
+    
+    <header class="header">
+        <div class="logo-section">
+            <h1 class="title-text" id="main-title"></h1>
+        </div>
+        <nav class="navigation" id="navigation"></nav>
+    </header>
+
+    <div class="container">
+        <!-- Overview Section -->
+        <div id="overview" class="section active">
+            <h2 class="section-title">Strategic Overview</h2>
+            <div class="metrics-grid" id="overview-metrics"></div>
+            
+            <div class="transformation-section">
+                <h3 id="transformation-title"></h3>
+                <p id="transformation-description"></p>
+            </div>
+            
+            <div class="quarter-overview">
+                <h3 id="year-overview-title"></h3>
+                <div class="quarter-list" id="quarter-list"></div>
+            </div>
+        </div>
+
+        <!-- Q2 Details Section -->
+        <div id="q2-details" class="section">
+            <h2 class="section-title" id="q2-title"></h2>
+            <div class="cards-container" id="q2-cards"></div>
+        </div>
+
+        <!-- Q3-Q1 Roadmap Section -->
+        <div id="q3-q1-roadmap" class="section">
+            <h2 class="section-title" id="roadmap-title"></h2>
+            <div class="roadmap-quarters" id="roadmap-quarters"></div>
+        </div>
+
+        <!-- Metrics Section -->
+        <div id="metrics" class="section">
+            <h2 class="section-title" id="metrics-title"></h2>
+            <div id="metrics-content"></div>
+        </div>
+    </div>
+
+    <script>
+        let roadmapData = {};
+        let currentSection = 0;
+
+        // Load data from JSON file
+        async function loadRoadmapData() {
+            try {
+                const response = await fetch('./roadmap-data.json');
+                roadmapData = await response.json();
+                initializeTemplate();
+            } catch (error) {
+                console.error('Error loading roadmap data:', error);
+                // Fallback to embedded data or show error
+                showError('Failed to load roadmap data. Please check that roadmap-data.json exists.');
+            }
+        }
+
+        function showError(message) {
+            document.body.innerHTML = `
+                <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; color: white;">
+                    <h2>⚠️ Error Loading Roadmap</h2>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        function initializeTemplate() {
+            // Set metadata
+            document.getElementById('page-title').textContent = roadmapData.metadata.title;
+            document.getElementById('main-title').textContent = roadmapData.metadata.pageTitle;
+            // Logo is now static text - no need to set src
+            document.getElementById('disclaimer-text').textContent = roadmapData.metadata.disclaimer;
+
+            // Build navigation
+            buildNavigation();
+            
+            // Populate sections
+            populateOverviewSection();
+            populateQ2Section();
+            populateRoadmapSection();
+            populateMetricsSection();
+        }
+
+        function buildNavigation() {
+            const nav = document.getElementById('navigation');
+            roadmapData.navigation.forEach(item => {
+                const btn = document.createElement('button');
+                btn.className = `nav-btn ${item.id === 0 ? 'active' : ''}`;
+                btn.textContent = item.label;
+                btn.onclick = () => showSection(item.id, item.section);
+                nav.appendChild(btn);
+            });
+        }
+
+        function populateOverviewSection() {
+            const overviewData = roadmapData.sections.overview;
+            
+            // Metrics
+            const metricsGrid = document.getElementById('overview-metrics');
+            overviewData.metrics.forEach(metric => {
+                const card = document.createElement('div');
+                card.className = 'metric-card';
+                card.innerHTML = `
+                    <div class="metric-icon">${metric.icon}</div>
+                    <div class="metric-value">${metric.value}</div>
+                    <div class="metric-label">${metric.label}</div>
+                `;
+                metricsGrid.appendChild(card);
+            });
+
+            // Transformation
+            document.getElementById('transformation-title').textContent = overviewData.transformation.title;
+            document.getElementById('transformation-description').innerHTML = overviewData.transformation.description;
+
+            // Quarter overview
+            document.getElementById('year-overview-title').textContent = overviewData.quarterOverview.title;
+            const quarterList = document.getElementById('quarter-list');
+            overviewData.quarterOverview.quarters.forEach(quarter => {
+                const item = document.createElement('div');
+                item.className = 'quarter-item';
+                item.innerHTML = `<strong>${quarter.quarter}</strong>: <em>${quarter.subheader}</em> - ${quarter.description}`;
+                quarterList.appendChild(item);
+            });
+        }
+
+        function populateQ2Section() {
+            const q2Data = roadmapData.sections['q2-details'];
+            document.getElementById('q2-title').textContent = q2Data.title;
+            
+            const cardsContainer = document.getElementById('q2-cards');
+            q2Data.cards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'kr-card';
+                
+                let cardContent = `<h3>${card.title}</h3>`;
+                
+                if (card.target) {
+                    cardContent += `<div class="target"><strong>Target:</strong> ${card.target}</div>`;
+                }
+                if (card.scope) {
+                    cardContent += `<div class="scope"><strong>Scope:</strong> ${card.scope}</div>`;
+                }
+
+                card.features.forEach(feature => {
+                    cardContent += `
+                        <div class="feature-item">
+                            <div class="feature-name">${feature.name}</div>
+                            <div class="feature-description">${feature.description}</div>
+                        </div>
+                    `;
+                });
+
+                cardElement.innerHTML = cardContent;
+                cardsContainer.appendChild(cardElement);
+            });
+        }
+
+        function populateRoadmapSection() {
+            const roadmapData_section = roadmapData.sections['q3-q1-roadmap'];
+            document.getElementById('roadmap-title').textContent = roadmapData_section.title;
+            
+            const quartersContainer = document.getElementById('roadmap-quarters');
+            roadmapData_section.quarters.forEach(quarter => {
+                const quarterCard = document.createElement('div');
+                quarterCard.className = 'quarter-card';
+                
+                let objectivesList = '';
+                quarter.objectives.forEach(objective => {
+                    objectivesList += `<li>${objective}</li>`;
+                });
+
+                quarterCard.innerHTML = `
+                    <div class="quarter-header">${quarter.quarter}</div>
+                    <div class="quarter-theme">${quarter.theme}</div>
+                    <div class="quarter-subtitle">${quarter.subtitle}</div>
+                    <ul class="objectives-list">${objectivesList}</ul>
+                `;
+                quartersContainer.appendChild(quarterCard);
+            });
+        }
+
+        function populateMetricsSection() {
+            const metricsData = roadmapData.sections.metrics;
+            document.getElementById('metrics-title').textContent = metricsData.title;
+            
+            const metricsContent = document.getElementById('metrics-content');
+            
+            // Cost optimization metrics
+            const costSection = document.createElement('div');
+            costSection.className = 'metrics-category';
+            costSection.innerHTML = `
+                <h3 class="category-title">${metricsData.costOptimization.title}</h3>
+                <div class="metrics-grid" id="cost-metrics"></div>
+            `;
+            metricsContent.appendChild(costSection);
+
+            const costMetricsGrid = costSection.querySelector('#cost-metrics');
+            metricsData.costOptimization.metrics.forEach(metric => {
+                const card = document.createElement('div');
+                card.className = 'metric-card';
+                card.innerHTML = `
+                    <div class="metric-icon">${metric.icon}</div>
+                    <div class="metric-value">${metric.value}</div>
+                    <div class="metric-label">${metric.label}</div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">${metric.detail}</div>
+                `;
+                costMetricsGrid.appendChild(card);
+            });
+
+            // Agent experience metrics
+            const agentSection = document.createElement('div');
+            agentSection.className = 'metrics-category';
+            agentSection.innerHTML = `
+                <h3 class="category-title">${metricsData.agentExperience.title}</h3>
+                <div class="metrics-grid" id="agent-metrics"></div>
+            `;
+            metricsContent.appendChild(agentSection);
+
+            const agentMetricsGrid = agentSection.querySelector('#agent-metrics');
+            metricsData.agentExperience.metrics.forEach(metric => {
+                const card = document.createElement('div');
+                card.className = 'metric-card';
+                card.innerHTML = `
+                    <div class="metric-icon">${metric.icon}</div>
+                    <div class="metric-value">${metric.value}</div>
+                    <div class="metric-label">${metric.label}</div>
+                    <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.5rem;">${metric.detail}</div>
+                `;
+                agentMetricsGrid.appendChild(card);
+            });
+
+            // Risk mitigation
+            const riskSection = document.createElement('div');
+            riskSection.className = 'metrics-category';
+            riskSection.innerHTML = `<h3 class="category-title">${metricsData.riskMitigation.title}</h3>`;
+            
+            metricsData.riskMitigation.risks.forEach(risk => {
+                const riskItem = document.createElement('div');
+                riskItem.className = 'risk-item';
+                riskItem.innerHTML = `
+                    <div class="risk-title">${risk.title}</div>
+                    <div>${risk.mitigation}</div>
+                `;
+                riskSection.appendChild(riskItem);
+            });
+            
+            metricsContent.appendChild(riskSection);
+        }
+
+        function showSection(index, sectionId) {
+            // Update navigation
+            document.querySelectorAll('.nav-btn').forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            // Update sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            
+            currentSection = index;
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', loadRoadmapData);
+    </script>
+</body>
+</html>

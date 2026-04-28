@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "title": "CSR Chat Internal Roadmap 2026-2027",
+    "pageTitle": "🚀 CSR Chat (aka. Minerva) Platform Evolution",
+    "logoPath": "./Stellarus_logo_2C_whiteype.png",
+    "disclaimer": "🔒 STELLARUS INTERNAL USE ONLY - CONFIDENTIAL ROADMAP",
+    "theme": {
+      "primaryGradient": "linear-gradient(135deg, #08285E 0%, #436DB3 100%)",
+      "accentColor": "#F4454E"
+    }
+  },
+  "navigation": [
+    {"id": 0, "label": "Overview", "section": "overview"},
+    {"id": 1, "label": "Q2 Details", "section": "q2-details"},
+    {"id": 2, "label": "Q3-Q1", "section": "q3-q1-roadmap"},
+    {"id": 3, "label": "Metrics", "section": "metrics"}
+  ],
+  "sections": {
+    "overview": {
+      "title": "Strategic Overview",
+      "metrics": [
+        {
+          "type": "cost-reduction",
+          "value": "70%",
+          "label": "Cost Reduction",
+          "icon": "💰"
+        },
+        {
+          "type": "target",
+          "value": "≤$0.08",
+          "label": "Target Per Query",
+          "icon": "🎯"
+        },
+        {
+          "type": "accuracy",
+          "value": ">98%",
+          "label": "Accuracy Target",
+          "icon": "✅"
+        },
+        {
+          "type": "adoption",
+          "value": ">90%",
+          "label": "Agent Adoption",
+          "icon": "👥"
+        }
+      ],
+      "transformation": {
+        "title": "Strategic Transformation",
+        "description": "Transform <strong>CSR Chat (aka. Minerva)</strong> from single customer, single sourced, capability-focused application to <strong>economically sustainable platform</strong> achieving profitable unit economics while maintaining enterprise-grade performance and premium agent experience."
+      },
+      "quarterOverview": {
+        "title": "Year Overview",
+        "quarters": [
+          {"quarter": "Q2 2026", "focus": "Foundation - Cost optimization infrastructure + UX platform"},
+          {"quarter": "Q3 2026", "focus": "Intelligence & Optimization - Advanced AI Integration"},
+          {"quarter": "Q4 2026", "focus": "Integration & Scale - Platform Maturation"},
+          {"quarter": "Q1 2027", "focus": "Innovation & Growth - Market Leadership"}
+        ]
+      }
+    },
+    "q2-details": {
+      "title": "🎯 Q2 2026: Foundation Quarter - Detailed Implementation",
+      "cards": [
+        {
+          "title": "🏗️ Cost Optimization Foundation",
+          "color": "#ff6b6b",
+          "target": "$0.15 per query (44% reduction)",
+          "features": [
+            {
+              "name": "Baseline Cost Measurement",
+              "description": "Real-time cost monitoring and alerting system deployment"
+            },
+            {
+              "name": "Core Query Processing Optimization",
+              "description": "Architectural efficiency improvements and resource allocation"
+            },
+            {
+              "name": "Resource Efficiency Monitoring",
+              "description": "Intelligent resource management and optimization validation"
+            }
+          ]
+        },
+        {
+          "title": "📊 Plan Data Management",
+          "color": "#4ecdc4",
+          "scope": "All core plan types (IFP, SG, LG, Custom)",
+          "features": [
+            {
+              "name": "Plan Type Onboarding",
+              "description": "Blue Shield partnership - cost-optimized processing workflows"
+            },
+            {
+              "name": "DVH Process Enhancement",
+              "description": "Discovery, Verification, and Healing process optimization"
+            }
+          ]
+        },
+        {
+          "title": "💊 Formulary Intelligence Launch",
+          "color": "#45b7d1",
+          "target": "40% processing efficiency improvement",
+          "features": [
+            {
+              "name": "Formulary Data Integration",
+              "description": "External data source connectors with intelligent caching"
+            },
+            {
+              "name": "Cost-Optimized Query Logic",
+              "description": "Efficient query routing and batch processing implementation"
+            },
+            {
+              "name": "Advanced Analytics Integration",
+              "description": "Real-time formulary insights and predictive cost modeling"
+            }
+          ]
+        },
+        {
+          "title": "🎨 Agent Experience Foundation",
+          "color": "#9b59b6",
+          "target": "60% workflow disruption reduction + >40% agent adoption",
+          "features": [
+            {
+              "name": "Low-Code/No-Code UI Platform",
+              "description": "Contextual panel architecture replacing disruptive full-screen interfaces"
+            },
+            {
+              "name": "Nexus Integration Framework",
+              "description": "Seamless workflow integration enabling parallel verification"
+            }
+          ]
+        }
+      ]
+    },
+    "q3-q1-roadmap": {
+      "title": "🚀 Q3 2026 - Q1 2027: Platform Maturation Roadmap",
+      "quarters": [
+        {
+          "quarter": "Q3 2026",
+          "theme": "Intelligence & Optimization",
+          "subtitle": "Advanced AI Integration",
+          "objectives": [
+            "Machine Learning Cost Optimization",
+            "Analytics Platform",
+            "Agent Experience Excellence"
+          ]
+        },
+        {
+          "quarter": "Q4 2026",
+          "theme": "Integration & Scale",
+          "subtitle": "Platform Maturation", 
+          "objectives": [
+            "Multi-tenant Architecture",
+            "Enterprise Integration Suite",
+            "Advanced Reporting & Analytics"
+          ]
+        },
+        {
+          "quarter": "Q1 2027",
+          "theme": "Innovation & Growth",
+          "subtitle": "Market Leadership",
+          "objectives": [
+            "AI-Powered Predictive Analytics",
+            "Advanced Workflow Automation",
+            "Strategic Partnership Integration"
+          ]
+        }
+      ]
+    },
+    "metrics": {
+      "title": "📊 Success Metrics & Strategic Objectives",
+      "costOptimization": {
+        "title": "Cost Optimization Excellence (Primary KPIs)",
+        "metrics": [
+          {
+            "type": "cost-down",
+            "label": "Per-Query Cost",
+            "value": "$0.25→$0.08",
+            "detail": "Real-time monitoring",
+            "icon": "📉"
+          },
+          {
+            "type": "cost-reduction",
+            "label": "Cost Reduction",
+            "value": "<5%",
+            "detail": "Monthly variance",
+            "icon": "💰"
+          },
+          {
+            "type": "efficiency",
+            "label": "Resource Efficiency",
+            "value": ">10%",
+            "detail": "Quarterly improvement",
+            "icon": "⚡"
+          }
+        ]
+      },
+      "agentExperience": {
+        "title": "Agent Experience & Adoption (Critical Success Enabler)",
+        "metrics": [
+          {
+            "type": "growth",
+            "label": "Q2 Agent Adoption",
+            "value": ">40%",
+            "detail": "UX Foundation",
+            "icon": "📈"
+          },
+          {
+            "type": "success",
+            "label": "Q3 Agent Adoption",
+            "value": ">70%",
+            "detail": "Intelligence Phase",
+            "icon": "🚀"
+          },
+          {
+            "type": "adoption",
+            "label": "Q4 Agent Adoption",
+            "value": ">90%",
+            "detail": "Integration Complete",
+            "icon": "👥"
+          },
+          {
+            "type": "satisfaction",
+            "label": "Agent Satisfaction",
+            "value": "4.5/5",
+            "detail": "Information clarity",
+            "icon": "⭐"
+          }
+        ]
+      },
+      "riskMitigation": {
+        "title": "⚠️ Risk Mitigation Strategy",
+        "risks": [
+          {
+            "title": "UX Development vs. Cost Optimization Trade-off",
+            "mitigation": "Integrated development ensuring UX PRDs directly support cost optimization through improved adoption and reduced support overhead"
+          }
+        ]
+      }
+    }
+  }
+}
