@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Compass CSR Chat — One Pager (Printable)</title>
+  <style>
+    /* Print settings - letter (8.5x11) */
+    @page { size: letter; margin: 0.5in; }
+    :root{
+      --brand:#0b5cff;
+      --accent:#0b76ff;
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --card:#f8fafc;
+      --ink:#0f172a;
+      --accent-2:#10b981;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:var(--ink);font-size:13px;line-height:1.3}
+    .page{width:100%;height:100%;box-sizing:border-box;padding:0.25in;}
+
+    /* Layout grid: header + two-column body + footer */
+    .header{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #e6eef9;padding-bottom:10px;margin-bottom:10px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    .title h1{margin:0;font-size:20px;letter-spacing:-0.5px}
+    .title p{margin:0;color:var(--muted);font-size:11px}
+
+    .content{display:grid;grid-template-columns:1fr 0.95fr;gap:14px;margin-top:12px}
+    .card{background:var(--card);border-radius:8px;padding:8px;box-sizing:border-box;border:1px solid rgba(15,23,42,0.04)}
+
+    /* Left column */
+    .left .section{margin-bottom:10px}
+    .kicker{font-size:11px;color:var(--muted);font-weight:600;margin-bottom:6px}
+    .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .feature{display:flex;gap:8px;align-items:flex-start}
+    .feature .icon{width:36px;height:36px;border-radius:6px;background:white;display:flex;align-items:center;justify-content:center;border:1px solid rgba(15,23,42,0.06)}
+    .feature strong{display:block;font-size:12px}
+    .feature span{display:block;color:var(--muted);font-size:11px}
+
+    .metrics{display:flex;gap:10px;margin-top:8px}
+    .metric{flex:1;background:linear-gradient(180deg,#ffffff,#f1f7ff);padding:8px;border-radius:6px;text-align:center}
+    .metric .val{font-size:18px;font-weight:700;color:var(--brand)}
+    .metric .lbl{font-size:11px;color:var(--muted)}
+
+    /* Right column */
+    .right .section{margin-bottom:10px}
+    .arch{height:280px;display:flex;align-items:center;justify-content:center}
+    .timeline{padding:8px;background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:6px}
+    .timeline h4{margin:0 0 8px 0}
+    .timeline .item{display:flex;gap:8px;align-items:flex-start;margin-bottom:8px}
+    .timeline .when{min-width:64px;font-weight:700;color:var(--brand)}
+    .timeline .what{color:var(--muted);font-size:12px}
+
+    .footer{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:10px;color:var(--muted)}
+
+    /* Ensure single page, avoid breaks */
+    .page, .card, .content, .header, .footer { page-break-inside: avoid }
+
+    /* Small-screen friendly but optimized for print */
+    @media (max-width:800px){.content{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="logo">
+        <div class="mark">C</div>
+        <div class="title">
+          <h1>Compass CSR Chat</h1>
+          <p>AI-assisted agent experience for accurate, real-time benefit quoting</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700;color:var(--muted);font-size:11px">Minerva — Compass CSR Chat</div>
+        <div style="font-size:11px;color:var(--muted)">Printable: Letter (8.5 x 11)</div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="left">
+        <div class="card section">
+          <div class="kicker">Product Snapshot</div>
+          <h3 style="margin:6px 0 10px 0">What it is</h3>
+          <p style="margin:0;color:var(--muted);font-size:12px">Compass CSR Chat (Minerva) is a GenAI-powered agent assist that delivers on-demand, compliance-scripted benefit answers using Nexus benefit data and provider contract information to enable fast, accurate member quoting in the contact center.</p>
+        </div>
+
+        <div class="card section">
+          <div class="kicker">Core Features</div>
+          <div class="feature-list" style="margin-top:8px">
+            <div class="feature">
+              <div class="icon">🧭</div>
+              <div>
+                <strong>Real-time Benefit Quoting</strong>
+                <span>Natural-language answers drawn from Nexus product data for IFP/SG and beyond</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">🏷️</div>
+              <div>
+                <strong>Provider Allowed Amounts</strong>
+                <span>Integrates Facets/Experience Cube to quote allowed amounts and network-based pricing</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="icon">🧠</div>
+              <div>
+                <strong>Session & Persistent Memory</strong>
+                <span>STM + LTM for multi-turn context and continuity across agent sessions</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">⚖️</div>
+              <div>
+                <strong>Compliance Script Enforcement</strong>
+                <span>Templatized responses and LLM-as-judge checks for policy alignment</span>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="icon">🧩</div>
+              <div>
+                <strong>Agent-Assisted UI</strong>
+                <span>Chat UI embedded into CSR workflow with quick actions and copy-to-note</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="icon">📈</div>
+              <div>
+                <strong>Telemetry & Reporting</strong>
+                <span>Databricks reports and usage telemetry for QA and continuous improvement</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metrics" style="margin-top:10px">
+            <div class="metric">
+              <div class="val">95%+</div>
+              <div class="lbl">Target Accuracy (MVP1 baseline)</div>
+            </div>
+            <div class="metric">
+              <div class="val">~2 min</div>
+              <div class="lbl">Average Handle Time Reduction (target)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card section">
+          <div class="kicker">Benefits to the Contact Center</div>
+          <ul style="margin:6px 0 0 16px;color:var(--muted);font-size:12px">
+            <li>Faster, standardized answers for benefit questions</li>
+            <li>Reduced manual search errors and compliance risk</li>
+            <li>Operational visibility via structured logs and Databricks reports</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="card section">
+          <div class="kicker">High-level Architecture</div>
+          <div class="arch">
+            <!-- High-level architecture: reoriented, full-canvas usage, clearer routing -->
+            <svg width="100%" height="100%" viewBox="0 0 1160 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="High-level architecture diagram">
+              <style>
+                .box{fill:#ffffff;stroke:#bfe3ff;stroke-width:1.8}
+                .label{font-family:Inter, Arial, sans-serif;font-size:16px;fill:#08122a;font-weight:700}
+                .sub{font-family:Inter, Arial, sans-serif;font-size:13px;fill:#374151}
+                .arrow{stroke:#0b5cff;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+                .dash{stroke:#9ca3af;stroke-width:1.2;fill:none;stroke-dasharray:6 4}
+              </style>
+
+              <defs>
+                <marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+                  <path d="M0 0 L10 5 L0 10 z" fill="#0b5cff"/>
+                </marker>
+              </defs>
+
+              <!-- Top-row horizontal connectors (use the top lane) -->
+              <g class="connectors" fill="none">
+                <path d="M220 70 H250" class="arrow" marker-end="url(#arr)"/>
+                <path d="M450 70 H480" class="arrow" marker-end="url(#arr)"/>
+                <path d="M680 70 H710" class="arrow" marker-end="url(#arr)"/>
+                <path d="M910 70 H940" class="arrow" marker-end="url(#arr)"/>
+
+                <!-- Orchestration down to Agentic (clear vertical) -->
+                <path d="M580 120 V160" class="arrow" marker-end="url(#arr)"/>
+
+                <!-- WebApp -> Orchestration (route under top row using a short vertical then horizontal then up) -->
+                <path d="M220 210 V140 H480 V70" class="arrow" marker-end="url(#arr)"/>
+
+                <!-- Orchestration -> Telemetry (dashed, routed to avoid Agentic) -->
+                <path d="M680 120 H920 V210 H1040" class="dash"/>
+              </g>
+
+              <!-- Boxes (drawn after connectors so labels remain unobstructed) -->
+              <rect x="20" y="20" width="200" height="100" rx="8" class="box"/>
+              <text x="120" y="60" text-anchor="middle" class="label">Client / Agent</text>
+
+              <rect x="250" y="20" width="200" height="100" rx="8" class="box"/>
+              <text x="350" y="60" text-anchor="middle" class="label">Ingress</text>
+              <text x="350" y="80" text-anchor="middle" class="sub">Azure Front Door + APIM</text>
+
+              <rect x="480" y="20" width="200" height="100" rx="8" class="box"/>
+              <text x="580" y="60" text-anchor="middle" class="label">Orchestration / API</text>
+              <text x="580" y="80" text-anchor="middle" class="sub">Databricks API, Session State</text>
+
+              <rect x="710" y="20" width="200" height="100" rx="8" class="box"/>
+              <text x="810" y="60" text-anchor="middle" class="label">Model Serving</text>
+              <text x="810" y="80" text-anchor="middle" class="sub">Mosaic AI / LLM</text>
+
+              <rect x="940" y="20" width="200" height="100" rx="8" class="box"/>
+              <text x="1040" y="60" text-anchor="middle" class="label">Data Layer</text>
+              <text x="1040" y="80" text-anchor="middle" class="sub">Blob / Vector DB / Nexus / Facets</text>
+
+              <!-- Bottom-row boxes aligned under corresponding top boxes -->
+              <rect x="20" y="160" width="200" height="100" rx="8" class="box"/>
+              <text x="120" y="200" text-anchor="middle" class="label">WebApp</text>
+              <text x="120" y="220" text-anchor="middle" class="sub">Azure Static WebApp (Frontend)</text>
+
+              <rect x="480" y="160" width="200" height="120" rx="8" class="box"/>
+              <text x="580" y="200" text-anchor="middle" class="label">Agentic Process</text>
+              <text x="580" y="220" text-anchor="middle" class="sub">Primary Answering + Verifier</text>
+
+              <rect x="940" y="160" width="200" height="100" rx="8" class="box"/>
+              <text x="1040" y="200" text-anchor="middle" class="label">Telemetry & Logging</text>
+              <text x="1040" y="220" text-anchor="middle" class="sub">Databricks Logger & LogDB</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="card section">
+          <div class="kicker">Release Highlights</div>
+          <div class="timeline">
+            <h4 style="margin-top:0">Near-term roadmap</h4>
+            <div class="item"><div class="when">Q2 2026</div><div class="what">MVP2 onboarding: Nexus integration + Facets allowed-amount quoting; LG & Custom plan coverage begins</div></div>
+            <div class="item"><div class="when">Q3 2026</div><div class="what">Pharmacy workflows, formulary integration, expanded coverage</div></div>
+            <div class="item"><div class="when">Q4 2026</div><div class="what">Performance & concurrency optimization; performance dashboard (observability)</div></div>
+            <div class="item"><div class="when">2027+</div><div class="what">Scale to enterprise lines and advanced reporting/ML Ops</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>Sources: MVP1 & MVP2 summaries, Approved PRDs</div>
+      <div>Contact: Product — Minerva Team</div>
+    </footer>
+  </div>
+</body>
+</html>

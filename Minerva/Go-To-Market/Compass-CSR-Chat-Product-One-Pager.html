@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass CSR Chat - Product Overview</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            padding: 0.4in;
+            background: white;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 0.25in;
+            padding-bottom: 0.15in;
+            border-bottom: 3px solid #08285E;
+        }
+        
+        .header h1 {
+            font-size: 32pt;
+            color: #08285E;
+            margin-bottom: 0.05in;
+            font-weight: 700;
+        }
+        
+        .header .tagline {
+            font-size: 14pt;
+            color: #F4454E;
+            font-weight: 600;
+            margin-bottom: 0.05in;
+        }
+        
+        .header .subtitle {
+            font-size: 9pt;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.2in;
+            margin-bottom: 0.2in;
+        }
+        
+        .section {
+            margin-bottom: 0.15in;
+        }
+        
+        .section-title {
+            font-size: 12pt;
+            color: #08285E;
+            font-weight: 700;
+            margin-bottom: 0.08in;
+            padding-bottom: 0.03in;
+            border-bottom: 2px solid #F4454E;
+        }
+        
+        .overview-box {
+            background: linear-gradient(135deg, #08285E 0%, #436DB3 100%);
+            color: white;
+            padding: 0.15in;
+            border-radius: 8px;
+            margin-bottom: 0.2in;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        
+        .overview-box h2 {
+            font-size: 11pt;
+            margin-bottom: 0.08in;
+            color: #F4454E;
+        }
+        
+        .overview-box p {
+            font-size: 9pt;
+            line-height: 1.3;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.1in;
+        }
+        
+        .feature-item {
+            background: #f8f9fa;
+            padding: 0.1in;
+            border-radius: 6px;
+            border-left: 3px solid #F4454E;
+            font-size: 8pt;
+        }
+        
+        .feature-item strong {
+            color: #08285E;
+            display: block;
+            margin-bottom: 0.03in;
+            font-size: 9pt;
+        }
+        
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.1in;
+            margin-bottom: 0.2in;
+        }
+        
+        .kpi-card {
+            background: white;
+            border: 2px solid #436DB3;
+            padding: 0.1in;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .kpi-value {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #F4454E;
+            display: block;
+            margin-bottom: 0.03in;
+        }
+        
+        .kpi-label {
+            font-size: 7.5pt;
+            color: #666;
+            line-height: 1.2;
+        }
+        
+        .architecture-box {
+            background: #f8f9fa;
+            padding: 0.12in;
+            border-radius: 8px;
+            border: 2px solid #436DB3;
+            margin-bottom: 0.15in;
+        }
+        
+        .arch-diagram {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.08in;
+            margin-top: 0.08in;
+        }
+        
+        .arch-layer {
+            background: white;
+            padding: 0.08in;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .arch-layer-title {
+            font-size: 8pt;
+            font-weight: 700;
+            color: #08285E;
+            margin-bottom: 0.05in;
+        }
+        
+        .arch-component {
+            font-size: 7pt;
+            background: #e9ecef;
+            padding: 0.04in;
+            margin-bottom: 0.03in;
+            border-radius: 4px;
+            color: #333;
+        }
+        
+        .arch-component:last-child {
+            margin-bottom: 0;
+        }
+        
+        .roadmap-timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.08in;
+        }
+        
+        .roadmap-quarter {
+            background: white;
+            border: 2px solid #436DB3;
+            padding: 0.08in;
+            border-radius: 6px;
+        }
+        
+        .roadmap-quarter.current {
+            border-color: #F4454E;
+            background: #fff5f5;
+        }
+        
+        .quarter-header {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #08285E;
+            margin-bottom: 0.03in;
+        }
+        
+        .quarter-theme {
+            font-size: 7.5pt;
+            color: #F4454E;
+            font-weight: 600;
+            margin-bottom: 0.05in;
+        }
+        
+        .quarter-items {
+            font-size: 7pt;
+            line-height: 1.3;
+        }
+        
+        .quarter-items li {
+            margin-bottom: 0.02in;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 0.15in;
+            padding-top: 0.1in;
+            border-top: 2px solid #08285E;
+            font-size: 8pt;
+            color: #666;
+        }
+        
+        .footer strong {
+            color: #08285E;
+            font-size: 10pt;
+        }
+        
+        @media print {
+            body {
+                width: 8.5in;
+                height: 11in;
+            }
+            
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Compass CSR Chat</h1>
+        <div class="tagline">The Intelligent Co-pilot for Customer Service Excellence</div>
+        <div class="subtitle">Powered by Stellarus AI | Transforming Agent Productivity & Member Experience</div>
+    </div>
+
+    <!-- Product Overview -->
+    <div class="overview-box">
+        <h2>🎯 What is Compass CSR Chat?</h2>
+        <p>
+            Compass CSR Chat (codenamed Minerva) is a state-of-the-art Generative AI solution that empowers customer service agents with instant, accurate, and compliant answers to complex member questions about plan details, coverage, and cost-sharing. By integrating seamlessly into agent workflows, Compass dramatically reduces manual research time from minutes to seconds, improves response accuracy from mid-80s to >98%, and transforms the member experience across 4 million annual calls.
+        </p>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <span class="kpi-value">>98%</span>
+            <span class="kpi-label">Response Accuracy</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-value">2 Min</span>
+            <span class="kpi-label">AHT Reduction per Call</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-value"><15s</span>
+            <span class="kpi-label">Response Time</span>
+        </div>
+        <div class="kpi-card">
+            <span class="kpi-value">>90%</span>
+            <span class="kpi-label">Agent Adoption Target</span>
+        </div>
+    </div>
+
+    <!-- Content Grid -->
+    <div class="content-grid">
+        <!-- Core Features -->
+        <div class="section">
+            <div class="section-title">✨ Core Features</div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>Natural Language Query</strong>
+                    Agents ask questions in plain English—no complex syntax required.
+                </div>
+                <div class="feature-item">
+                    <strong>Comprehensive Coverage</strong>
+                    All plan types: IFP, SG, Large Group, and Custom plans (2700+ plans).
+                </div>
+                <div class="feature-item">
+                    <strong>Formulary Intelligence</strong>
+                    Precise medication tier, coverage, and alternative recommendations.
+                </div>
+                <div class="feature-item">
+                    <strong>Real-time Responses</strong>
+                    Compliant, templatized answers delivered in <15 seconds.
+                </div>
+                <div class="feature-item">
+                    <strong>Performance Analytics</strong>
+                    Dedicated dashboard with usage, accuracy, and quality insights.
+                </div>
+                <div class="feature-item">
+                    <strong>Seamless Integration</strong>
+                    Operates within existing agent desktop (Nexus) workflow.
+                </div>
+            </div>
+        </div>
+
+        <!-- Business Impact -->
+        <div class="section">
+            <div class="section-title">📈 Business Impact</div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>30% of Calls</strong>
+                    Benefit inquiries represent ~30% of 4M annual member calls.
+                </div>
+                <div class="feature-item">
+                    <strong>Accuracy Jump</strong>
+                    From mid-80s (manual) to >98% (AI-assisted).
+                </div>
+                <div class="feature-item">
+                    <strong>$1M+ Annual Savings</strong>
+                    Through reduced handle time and improved first-call resolution.
+                </div>
+                <div class="feature-item">
+                    <strong>Enhanced Member Trust</strong>
+                    Consistent, accurate, compliant benefit information delivery.
+                </div>
+                <div class="feature-item">
+                    <strong>Agent Confidence</strong>
+                    Reduced stress and increased job satisfaction with reliable AI support.
+                </div>
+                <div class="feature-item">
+                    <strong>Regulatory Compliance</strong>
+                    Built-in guardrails ensure script compliance and disclosure accuracy.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="section">
+        <div class="section-title">🏗️ High-Level Architecture</div>
+        <div class="architecture-box">
+            <div class="arch-diagram">
+                <div class="arch-layer">
+                    <div class="arch-layer-title">Data Ingestion</div>
+                    <div class="arch-component">Nexus Plan Documents</div>
+                    <div class="arch-component">Formulary Data Sources</div>
+                    <div class="arch-component">Facets/Experience Cube</div>
+                    <div class="arch-component">Provider Network Rates</div>
+                </div>
+                <div class="arch-layer">
+                    <div class="arch-layer-title">AI Platform</div>
+                    <div class="arch-component">Vector Database (RAG)</div>
+                    <div class="arch-component">Query Router</div>
+                    <div class="arch-component">LLM (Databricks Mosaic AI)</div>
+                    <div class="arch-component">Compliance Guardrails</div>
+                </div>
+                <div class="arch-layer">
+                    <div class="arch-layer-title">Agent Experience</div>
+                    <div class="arch-component">Nexus UI Integration</div>
+                    <div class="arch-component">Contextual Panel</div>
+                    <div class="arch-component">Response Templating</div>
+                    <div class="arch-component">Performance Dashboard</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Roadmap -->
+    <div class="section">
+        <div class="section-title">🚀 2026-2027 Roadmap: From Tool to Autonomous Platform</div>
+        <div class="roadmap-timeline">
+            <div class="roadmap-quarter current">
+                <div class="quarter-header">Q2 2026</div>
+                <div class="quarter-theme">Foundation & Performance</div>
+                <ul class="quarter-items">
+                    <li>✅ Performance optimization (40s→15s)</li>
+                    <li>✅ Concurrency scaling (8→40 RPM)</li>
+                    <li>🔄 Enhanced agent UX</li>
+                    <li>🔄 LG/Custom plan expansion</li>
+                </ul>
+            </div>
+            <div class="roadmap-quarter">
+                <div class="quarter-header">Q3 2026</div>
+                <div class="quarter-theme">Growth & Scale</div>
+                <ul class="quarter-items">
+                    <li>Formulary integration</li>
+                    <li>Complete plan coverage</li>
+                    <li>Agent experience evolution</li>
+                    <li>Self-service capabilities</li>
+                </ul>
+            </div>
+            <div class="roadmap-quarter">
+                <div class="quarter-header">Q4 2026</div>
+                <div class="quarter-theme">Product Maturity</div>
+                <ul class="quarter-items">
+                    <li>Self-adapting baselines</li>
+                    <li>Auto-calibration workflows</li>
+                    <li>Sustainable performance</li>
+                    <li>Quality automation</li>
+                </ul>
+            </div>
+            <div class="roadmap-quarter">
+                <div class="quarter-header">Q1 2027</div>
+                <div class="quarter-theme">Platform Innovation</div>
+                <ul class="quarter-items">
+                    <li>Predictive analytics</li>
+                    <li>Workflow automation</li>
+                    <li>Multi-modal capabilities</li>
+                    <li>Market leadership</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <strong>Stellarus AI</strong> | Transforming Customer Experience Through Intelligent Automation<br>
+        <em>Document Date: April 30, 2026 | Version: 1.0 | Classification: Customer-Facing</em>
+    </div>
+</body>
+</html>
