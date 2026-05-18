@@ -22,8 +22,13 @@ This system generates **self-contained HTML roadmap presentations** from JSON da
 - `generate-roadmap.py` - **Main generator script** - creates self-contained HTML files
 - `quick-generate.sh` - One-click generation script
 
+### Schema & Validation
+- `roadmap-schema.json` - **JSON Schema contract** - defines the structure for all roadmaps
+- `validate-roadmap.py` - **Schema validator** - validates JSON against the schema
+- `SCHEMA-DOCUMENTATION.md` - Complete schema reference guide
+- `SCHEMA-PROJECT-SUMMARY.md` - Schema project overview
+
 ### Utilities
-- `validate-roadmap.py` - Validation utility for JSON structure
 - `update-roadmap.py` - Interactive utility for common updates
 - `README.md` - This documentation file
 - `SAMPLE-UPDATES.md` - Examples of common roadmap modifications
@@ -73,10 +78,37 @@ python3 generate-roadmap.py . -t /path/to/template.html
 ### Quick Updates
 To update roadmap content:
 1. Edit `roadmap-data.json` with your changes
-2. Run `./quick-generate.sh` to regenerate
-3. Share the new HTML file
+2. **Validate**: `python3 validate-roadmap.py -j roadmap-data.json`
+3. Run `./quick-generate.sh` to regenerate
+4. Share the new HTML file
 
 > **Advantage**: No more CORS issues, no server needed, perfect for presentations and sharing!
+
+### 🔍 **Validation (Recommended)**
+
+Before generating, validate your roadmap JSON against the schema:
+
+```bash
+# Validate default roadmap file
+python3 validate-roadmap.py
+
+# Validate specific file
+python3 validate-roadmap.py -j my-roadmap.json
+
+# Use custom schema
+python3 validate-roadmap.py -j roadmap.json -s custom-schema.json
+
+# Install validation dependencies (optional, but recommended)
+pip3 install jsonschema
+```
+
+**Benefits of validation:**
+- Catch structural errors before generation
+- Ensure all required fields are present
+- Verify data types and formats (colors, dates, currency)
+- Get detailed error messages with fix suggestions
+
+See [SCHEMA-DOCUMENTATION.md](SCHEMA-DOCUMENTATION.md) for complete schema reference.
 
 ## Data Structure
 

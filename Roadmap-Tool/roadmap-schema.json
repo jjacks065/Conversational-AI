@@ -1,0 +1,668 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://stellarus.com/schemas/roadmap-v1.json",
+  "title": "Stellarus Roadmap Schema",
+  "description": "JSON Schema for validating Stellarus roadmap presentation documents",
+  "type": "object",
+  "required": ["metadata", "navigation", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "description": "Roadmap metadata and presentation configuration",
+      "required": ["title", "pageTitle", "disclaimer", "theme"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Browser tab title",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "pageTitle": {
+          "type": "string",
+          "description": "Main page header title (supports emoji and HTML)",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "logoPath": {
+          "type": "string",
+          "description": "Relative path to logo image file",
+          "pattern": "^\\./.*\\.(png|jpg|jpeg|svg|gif)$"
+        },
+        "disclaimer": {
+          "type": "string",
+          "description": "Confidentiality or usage disclaimer text",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "theme": {
+          "type": "object",
+          "description": "Visual theme and color configuration",
+          "required": ["primaryGradient", "accentColor"],
+          "properties": {
+            "primaryGradient": {
+              "type": "string",
+              "description": "CSS gradient for primary background",
+              "pattern": "^(linear-gradient|radial-gradient)\\(.*\\)$"
+            },
+            "accentColor": {
+              "type": "string",
+              "description": "Hex color code for accent elements",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "costColor": {
+              "type": "string",
+              "description": "Hex color code for cost-related elements",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            },
+            "warningColor": {
+              "type": "string",
+              "description": "Hex color code for warning elements",
+              "pattern": "^#[0-9A-Fa-f]{6}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "version": {
+          "type": "string",
+          "description": "Roadmap version identifier",
+          "pattern": "^[0-9]+\\.[0-9]+(\\-[A-Za-z0-9\\-]+)?$"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "description": "Last update date (YYYY-MM-DD format)",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "navigation": {
+      "type": "array",
+      "description": "Navigation menu items linking to sections",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "section"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Unique navigation item identifier",
+            "minimum": 0
+          },
+          "label": {
+            "type": "string",
+            "description": "Display text for navigation item",
+            "minLength": 1,
+            "maxLength": 50
+          },
+          "section": {
+            "type": "string",
+            "description": "Section ID to navigate to (must match a key in sections)",
+            "pattern": "^[a-z0-9\\-]+$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sections": {
+      "type": "object",
+      "description": "Content sections of the roadmap",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z0-9\\-]+$": {
+          "type": "object",
+          "required": ["title"],
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Section heading",
+              "minLength": 1,
+              "maxLength": 200
+            },
+            "metrics": {
+              "type": "array",
+              "description": "Direct metrics array for the section",
+              "items": {
+                "$ref": "#/definitions/metric"
+              }
+            },
+            "transformation": {
+              "$ref": "#/definitions/transformation"
+            },
+            "quarterOverview": {
+              "$ref": "#/definitions/quarterOverview"
+            },
+            "financialSummary": {
+              "$ref": "#/definitions/financialSummary"
+            },
+            "quarterBudget": {
+              "type": "string",
+              "description": "Quarter budget amount",
+              "pattern": "^\\$[0-9,]+$"
+            },
+            "costBreakdown": {
+              "type": "object",
+              "description": "Cost breakdown by category",
+              "patternProperties": {
+                "^[a-zA-Z]+$": {
+                  "type": "string",
+                  "pattern": "^\\$[0-9,]+$"
+                }
+              }
+            },
+            "cards": {
+              "type": "array",
+              "description": "Feature or initiative cards (typically for Q2 details)",
+              "items": {
+                "$ref": "#/definitions/card"
+              }
+            },
+            "quarterSummary": {
+              "$ref": "#/definitions/quarterSummary"
+            },
+            "quarters": {
+              "type": "array",
+              "description": "Quarterly breakdown (typically for Q3-Q1 roadmap)",
+              "items": {
+                "$ref": "#/definitions/quarterRoadmap"
+              }
+            },
+            "costOptimization": {
+              "$ref": "#/definitions/metricsGroup"
+            },
+            "agentExperience": {
+              "$ref": "#/definitions/metricsGroup"
+            },
+            "platformCapabilities": {
+              "$ref": "#/definitions/metricsGroup"
+            },
+            "financialKPIs": {
+              "$ref": "#/definitions/metricsGroup"
+            },
+            "riskMitigation": {
+              "$ref": "#/definitions/riskMitigation"
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "definitions": {
+    "metric": {
+      "type": "object",
+      "description": "A single metric with value and presentation details",
+      "required": ["value", "label", "icon"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Metric category type",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "description": "Metric value (can include units, operators, currency)",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "description": "Display label for the metric",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "icon": {
+          "type": "string",
+          "description": "Emoji or icon for visual representation",
+          "minLength": 1,
+          "maxLength": 10
+        },
+        "detail": {
+          "type": "string",
+          "description": "Additional detail or explanation"
+        },
+        "costImpact": {
+          "type": "string",
+          "description": "Cost impact description"
+        },
+        "costImplication": {
+          "type": "string",
+          "description": "Cost implication description (alias for costImpact)"
+        },
+        "baseline": {
+          "type": "string",
+          "description": "Baseline value for comparison"
+        },
+        "q2Target": {
+          "type": "string",
+          "description": "Q2 target value"
+        },
+        "q3Target": {
+          "type": "string",
+          "description": "Q3 target value"
+        },
+        "q4Target": {
+          "type": "string",
+          "description": "Q4 target value"
+        },
+        "q1'27Target": {
+          "type": "string",
+          "description": "Q1 2027 target value"
+        },
+        "improvement": {
+          "type": "string",
+          "description": "Overall improvement percentage or amount"
+        },
+        "q2": {
+          "type": "string",
+          "description": "Q2 value"
+        },
+        "q3": {
+          "type": "string",
+          "description": "Q3 value"
+        },
+        "q4": {
+          "type": "string",
+          "description": "Q4 value"
+        },
+        "q1'27": {
+          "type": "string",
+          "description": "Q1 2027 value"
+        },
+        "annual": {
+          "type": "string",
+          "description": "Annual total value"
+        },
+        "optimization": {
+          "type": "string",
+          "description": "Optimization details"
+        },
+        "q2End": {
+          "type": "string",
+          "description": "End of Q2 value"
+        },
+        "q3End": {
+          "type": "string",
+          "description": "End of Q3 value"
+        },
+        "q4End": {
+          "type": "string",
+          "description": "End of Q4 value"
+        },
+        "q1'27End": {
+          "type": "string",
+          "description": "End of Q1 2027 value"
+        },
+        "paybackMonth": {
+          "type": "string",
+          "description": "Month when payback is achieved"
+        },
+        "q1Baseline": {
+          "type": "string",
+          "description": "Q1 baseline value"
+        }
+      },
+      "additionalProperties": false
+    },
+    "transformation": {
+      "type": "object",
+      "description": "Transformation vision and description",
+      "required": ["title", "description"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Transformation initiative title",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed transformation description (supports HTML)",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "quarterOverview": {
+      "type": "object",
+      "description": "Overview of quarters with high-level themes",
+      "required": ["title", "quarters"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Quarter overview section title"
+        },
+        "quarters": {
+          "type": "array",
+          "description": "Array of quarter summaries",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["quarter", "subheader", "description"],
+            "properties": {
+              "quarter": {
+                "type": "string",
+                "description": "Quarter identifier (e.g., Q2 2026)",
+                "pattern": "^Q[1-4] [0-9]{4}$"
+              },
+              "subheader": {
+                "type": "string",
+                "description": "Theme or focus area"
+              },
+              "description": {
+                "type": "string",
+                "description": "Quarter description"
+              },
+              "budget": {
+                "type": "string",
+                "description": "Quarter budget",
+                "pattern": "^\\$[0-9,]+$"
+              },
+              "costPerRequest": {
+                "type": "string",
+                "description": "Target cost per request"
+              },
+              "projectedSavings": {
+                "type": "string",
+                "description": "Projected savings amount",
+                "pattern": "^\\$[0-9,]+$"
+              },
+              "roi": {
+                "type": "string",
+                "description": "Return on investment percentage"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "financialSummary": {
+      "type": "object",
+      "description": "Financial impact summary",
+      "required": ["title"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "totalInvestment": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "projectedSavings": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "netBenefit": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "paybackPeriod": {
+          "type": "string"
+        },
+        "breakdown": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["category", "amount", "percentage"],
+            "properties": {
+              "category": {
+                "type": "string"
+              },
+              "amount": {
+                "type": "string",
+                "pattern": "^\\$[0-9,]+$"
+              },
+              "percentage": {
+                "type": "string",
+                "pattern": "^[0-9]+%$"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "card": {
+      "type": "object",
+      "description": "Feature or initiative card",
+      "required": ["title", "color", "features"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Card title (supports emoji)",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "color": {
+          "type": "string",
+          "description": "Hex color code for card background",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "target": {
+          "type": "string",
+          "description": "Target metric or goal"
+        },
+        "scope": {
+          "type": "string",
+          "description": "Scope of the initiative"
+        },
+        "budget": {
+          "type": "string",
+          "description": "Initiative budget",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "costMetrics": {
+          "type": "object",
+          "description": "Cost breakdown by category",
+          "patternProperties": {
+            "^[a-zA-Z]+$": {
+              "type": "string",
+              "pattern": "^\\$[0-9,]+$"
+            }
+          }
+        },
+        "costBenefit": {
+          "type": "object",
+          "description": "Cost benefit analysis"
+        },
+        "features": {
+          "type": "array",
+          "description": "Feature list for this card",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "description"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Feature name",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "description": "Feature description (supports HTML lists)",
+                "minLength": 1
+              },
+              "costDrivers": {
+                "type": "string",
+                "description": "Cost driver details (supports HTML lists)"
+              },
+              "costSavings": {
+                "type": "string",
+                "description": "Cost savings details (supports HTML lists)"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "quarterSummary": {
+      "type": "object",
+      "description": "Quarter financial and performance summary",
+      "properties": {
+        "totalBudget": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "totalSavings": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "projectedSavings": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "netBenefit": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "roi": {
+          "type": "string"
+        },
+        "costPerRequest": {
+          "type": "string"
+        },
+        "infrastructureRunRate": {
+          "type": "string"
+        },
+        "keyMetrics": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "quarterRoadmap": {
+      "type": "object",
+      "description": "Quarterly roadmap with objectives",
+      "required": ["quarter", "theme", "subtitle"],
+      "properties": {
+        "quarter": {
+          "type": "string",
+          "pattern": "^Q[1-4] [0-9]{4}$"
+        },
+        "theme": {
+          "type": "string",
+          "description": "Quarter theme"
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "Quarter subtitle or focus"
+        },
+        "budget": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "costPerRequest": {
+          "type": "string"
+        },
+        "projectedSavings": {
+          "type": "string",
+          "pattern": "^\\$[0-9,]+$"
+        },
+        "roi": {
+          "type": "string"
+        },
+        "objectives": {
+          "type": "array",
+          "description": "Objectives for this quarter (can be strings or objects)",
+          "items": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "required": ["title", "description"],
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "alignment": {
+                    "type": "string"
+                  },
+                  "budget": {
+                    "type": "string",
+                    "pattern": "^\\$[0-9,]+$"
+                  },
+                  "costBreakdown": {
+                    "type": "object"
+                  },
+                  "costBenefit": {
+                    "type": "object"
+                  },
+                  "initiatives": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "quarterSummary": {
+          "$ref": "#/definitions/quarterSummary"
+        }
+      },
+      "additionalProperties": false
+    },
+    "metricsGroup": {
+      "type": "object",
+      "description": "A group of related metrics",
+      "required": ["title", "metrics"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Metrics group title"
+        },
+        "metrics": {
+          "type": "array",
+          "description": "Array of metrics in this group",
+          "items": {
+            "$ref": "#/definitions/metric"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "riskMitigation": {
+      "type": "object",
+      "description": "Risk management and mitigation strategies",
+      "required": ["title", "risks"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "mitigation"],
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "mitigation": {
+                "type": "string"
+              },
+              "costImpact": {
+                "type": "string"
+              },
+              "monitoringKPI": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
