@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Folders and all contents to ignore 
+Communications/
+Minerva/Feature-PRDs/First-Pass/
+Minerva/Feature-PRDs/Second-Pass/

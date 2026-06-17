@@ -1,0 +1,545 @@
+{
+  "base_url": "https://apim-external-cub3dqcrgsdnebcb.a01.azurefd.net/benefits-prd/plan-list/",
+  "csv_path": "prod_mlflow_tracking_v3_export.csv",
+  "day_summaries": [
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-07",
+      "row_count": 143
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-08",
+      "row_count": 238
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-09",
+      "row_count": 280
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-10",
+      "row_count": 215
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-11",
+      "row_count": 21
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-12",
+      "row_count": 1
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-13",
+      "row_count": 143
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-14",
+      "row_count": 204
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-15",
+      "row_count": 247
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-16",
+      "row_count": 257
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-17",
+      "row_count": 359
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-18",
+      "row_count": 130
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-19",
+      "row_count": 5161
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-20",
+      "row_count": 740
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-21",
+      "row_count": 370
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-22",
+      "row_count": 442
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-23",
+      "row_count": 466
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-24",
+      "row_count": 416
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-25",
+      "row_count": 64
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-26",
+      "row_count": 2
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-27",
+      "row_count": 541
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-28",
+      "row_count": 576
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-29",
+      "row_count": 585
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-04-30",
+      "row_count": 489
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-01",
+      "row_count": 459
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-02",
+      "row_count": 46
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-03",
+      "row_count": 1
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-04",
+      "row_count": 345
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-05",
+      "row_count": 595
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-06",
+      "row_count": 529
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-07",
+      "row_count": 552
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-08",
+      "row_count": 458
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-09",
+      "row_count": 58
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-10",
+      "row_count": 3
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-11",
+      "row_count": 444
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-12",
+      "row_count": 566
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-13",
+      "row_count": 523
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-14",
+      "row_count": 624
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-15",
+      "row_count": 443
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-16",
+      "row_count": 80
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-17",
+      "row_count": 1
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-18",
+      "row_count": 601
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-19",
+      "row_count": 622
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-20",
+      "row_count": 506
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-21",
+      "row_count": 484
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-22",
+      "row_count": 398
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-23",
+      "row_count": 44
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-24",
+      "row_count": 2
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-25",
+      "row_count": 3
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-26",
+      "row_count": 608
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-27",
+      "row_count": 576
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-28",
+      "row_count": 503
+    },
+    {
+      "dataset": "mlflow_tracking_v3",
+      "event_date": "2026-05-29",
+      "row_count": 487
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-07",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-08",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-09",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-10",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-11",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-12",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-13",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-14",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-15",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-16",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-17",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-18",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-19",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-20",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-21",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-22",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-23",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-24",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-25",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-26",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-27",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-28",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-29",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-04-30",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-01",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-02",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-03",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-04",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-05",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-06",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-07",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-08",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-09",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-10",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-11",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-12",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-13",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-14",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-15",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-16",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-17",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-18",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-19",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-20",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-21",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-22",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-23",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-24",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-25",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-26",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-27",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-28",
+      "row_count": 289
+    },
+    {
+      "dataset": "benefitsquote_feedback",
+      "event_date": "2026-05-29",
+      "row_count": 289
+    }
+  ],
+  "end_date": "2026-05-29",
+  "include_failures": true,
+  "row_count": 22651,
+  "source_mode": "merged_tracking_feedback",
+  "start_date": "2026-04-07",
+  "total_pages": {
+    "benefitsquote_feedback": 53,
+    "mlflow_tracking_v3": 53
+  }
+}

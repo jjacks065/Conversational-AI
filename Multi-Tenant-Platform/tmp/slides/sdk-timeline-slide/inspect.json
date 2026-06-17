@@ -1,0 +1,407 @@
+{
+  "sourcePath": "/Users/jjacks20/jjacks/Conversational-AI/Multi-Tenant-Platform/SDK-Timeline.mmd",
+  "title": "Mem-Chat Platform Delivery Timeline",
+  "tasks": [
+    {
+      "section": "SDK Foundation",
+      "label": "Complete MVP Mem-Chat Direct Genesis/Sierra.ai SDKs",
+      "id": "memchat_MVP",
+      "start": "2026-06-04",
+      "end": "2026-07-01"
+    },
+    {
+      "section": "SDK Foundation",
+      "label": "Stellarus-MemChat SDK (With Genesis/Sierra.ai)",
+      "id": "Stellarus_SDK_MVP",
+      "start": "2026-06-04",
+      "end": "2026-07-15"
+    },
+    {
+      "section": "Helm Platform <dark prod>",
+      "label": "Helm <compass> Platform (With Genesis/Sierra.ai)",
+      "id": "platform_MVP",
+      "start": "2026-06-04",
+      "end": "2026-08-15"
+    },
+    {
+      "section": "Helm Platform <dark prod>",
+      "label": "Help <compass> Platform Telemetry Dashboard",
+      "id": "platform_MVP",
+      "start": "2026-07-01",
+      "end": "2026-08-01"
+    },
+    {
+      "section": "Help Platform <live>",
+      "label": "Connect Stellarus Mem-Chat-SDK to Helm <compass> Platform",
+      "id": "platform_MVP_Live",
+      "start": "2026-08-15",
+      "end": "2026-09-01"
+    }
+  ],
+  "inspect": [
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "title",
+      "text": "Mem-Chat Platform Delivery Timeline",
+      "textChars": 35,
+      "textLines": 1,
+      "bbox": {
+        "left": 48,
+        "top": 18,
+        "width": 760,
+        "height": 40
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "date-range",
+      "text": "June 4 - September 1, 2026",
+      "textChars": 26,
+      "textLines": 1,
+      "bbox": {
+        "left": 930,
+        "top": 28,
+        "width": 300,
+        "height": 28
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "axis-label",
+      "text": "Jun 4",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 300,
+        "top": 126,
+        "width": 90,
+        "height": 22
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "axis-label",
+      "text": "Sep 1",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 1076,
+        "top": 126,
+        "width": 104,
+        "height": 22
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Jun 4",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 303,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Jul 1",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 542.6629213483146,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Jul 15",
+      "textChars": 6,
+      "textLines": 1,
+      "bbox": {
+        "left": 666.9325842696629,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Aug 1",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 817.8314606741574,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Aug 15",
+      "textChars": 6,
+      "textLines": 1,
+      "bbox": {
+        "left": 942.1011235955056,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "tick-label",
+      "text": "Sep 1",
+      "textChars": 5,
+      "textLines": 1,
+      "bbox": {
+        "left": 1093,
+        "top": 564,
+        "width": 70,
+        "height": 20
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "section",
+      "text": "SDK Foundation",
+      "textChars": 14,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 204,
+        "width": 216,
+        "height": 22
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-label",
+      "text": "Complete MVP Mem-Chat Direct Genesis/Sierra.ai SDKs",
+      "textChars": 51,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 231,
+        "width": 230,
+        "height": 30
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-dates",
+      "text": "Jun 4 - Jul 1",
+      "textChars": 13,
+      "textLines": 1,
+      "bbox": {
+        "left": 346,
+        "top": 207,
+        "width": 223.66292134831463,
+        "height": 26
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-label",
+      "text": "Stellarus-MemChat SDK (With Genesis/Sierra.ai)",
+      "textChars": 46,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 303,
+        "width": 230,
+        "height": 30
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-dates",
+      "text": "Jun 4 - Jul 15",
+      "textChars": 14,
+      "textLines": 1,
+      "bbox": {
+        "left": 346,
+        "top": 279,
+        "width": 347.9325842696629,
+        "height": 26
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "section",
+      "text": "Helm Platform <dark prod>",
+      "textChars": 25,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 348,
+        "width": 216,
+        "height": 22
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-label",
+      "text": "Helm <compass> Platform (With Genesis/Sierra.ai)",
+      "textChars": 48,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 375,
+        "width": 230,
+        "height": 30
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-dates",
+      "text": "Jun 4 - Aug 15",
+      "textChars": 14,
+      "textLines": 1,
+      "bbox": {
+        "left": 346,
+        "top": 351,
+        "width": 623.1011235955056,
+        "height": 26
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-label",
+      "text": "Help <compass> Platform Telemetry Dashboard",
+      "textChars": 43,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 447,
+        "width": 230,
+        "height": 30
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-dates",
+      "text": "Jul 1 - Aug 1",
+      "textChars": 13,
+      "textLines": 1,
+      "bbox": {
+        "left": 585.6629213483146,
+        "top": 423,
+        "width": 259.1685393258427,
+        "height": 26
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "section",
+      "text": "Help Platform <live>",
+      "textChars": 20,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 492,
+        "width": 216,
+        "height": 22
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-label",
+      "text": "Connect Stellarus Mem-Chat-SDK to Helm <compass> Platform",
+      "textChars": 57,
+      "textLines": 1,
+      "bbox": {
+        "left": 72,
+        "top": 519,
+        "width": 230,
+        "height": 30
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "task-dates",
+      "text": "Aug 15 - Sep 1",
+      "textChars": 14,
+      "textLines": 1,
+      "bbox": {
+        "left": 985.1011235955056,
+        "top": 495,
+        "width": 134.8988764044944,
+        "height": 26
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "legend",
+      "text": "SDK Foundation",
+      "textChars": 14,
+      "textLines": 1,
+      "bbox": {
+        "left": 120,
+        "top": 605,
+        "width": 270,
+        "height": 24
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "legend",
+      "text": "Helm Platform <dark prod>",
+      "textChars": 25,
+      "textLines": 1,
+      "bbox": {
+        "left": 450,
+        "top": 605,
+        "width": 270,
+        "height": 24
+      }
+    },
+    {
+      "kind": "textbox",
+      "slide": 1,
+      "role": "legend",
+      "text": "Help Platform <live>",
+      "textChars": 20,
+      "textLines": 1,
+      "bbox": {
+        "left": 780,
+        "top": 605,
+        "width": 270,
+        "height": 24
+      }
+    }
+  ]
+}
