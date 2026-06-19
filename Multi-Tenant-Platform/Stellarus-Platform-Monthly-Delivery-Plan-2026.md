@@ -31,15 +31,15 @@ The September MVP is successful when BSC can run member chat as the first custom
 
 ## Workstreams
 
-| Workstream | Outcome |
-|---|---|
-| Product scope and release governance | MVP scope, launch gates, risk owners, weekly readiness cadence |
-| SDK and customer integration | SDK/API v1, SDK/API v2 escalation, docs, samples, versioning |
-| Broker and orchestration | Chat API, streaming, sessions, Sierra integration, data enrichment, telemetry |
-| Data services | Benefits all-LoB readiness, coverage checks, future data-service contracts |
-| Escalation and CCaaS | Genesys routing discovery, SDK escalation action, handoff tracking |
-| AI agents | Sierra stabilization, Member Agent/CSR Agent contract and transition plan |
-| Operations | Dashboards, runbooks, failure modes, rollout/rollback, support model |
+| Workstream                           | Outcome                                                                       |
+| ------------------------------------ | ----------------------------------------------------------------------------- |
+| Product scope and release governance | MVP scope, launch gates, risk owners, weekly readiness cadence                |
+| SDK and customer integration         | SDK/API v1, SDK/API v2 escalation, docs, samples, versioning                  |
+| Broker and orchestration             | Chat API, streaming, sessions, Sierra integration, data enrichment, telemetry |
+| Data services                        | Benefits all-LoB readiness, coverage checks, future data-service contracts    |
+| Escalation and CCaaS                 | Genesys routing discovery, SDK escalation action, handoff tracking            |
+| AI agents                            | Sierra stabilization, Member Agent/CSR Agent contract and transition plan     |
+| Operations                           | Dashboards, runbooks, failure modes, rollout/rollback, support model          |
 
 ## Month-by-Month Plan
 
@@ -185,14 +185,14 @@ The September MVP is successful when BSC can run member chat as the first custom
 
 ## Cross-Month Decision Log
 
-| Decision | Needed By | Owner Recommendation | Notes |
-|---|---:|---|---|
-| Specialty LoB source and ingestion path | 06/28/2026 | Apps + Data | Blocks confident July and September data readiness |
-| SDK v1 surface area | 06/30/2026 | Apps | Needed for July 15 alpha |
-| Genesys escalation mechanics | 07/19/2026 | Apps + PTP + BSC | Needed for SDK v2 and August RC |
-| September MVP launch gates | 07/15/2026 | Product + Apps | Should be stable before alpha review |
-| Sierra temporary logic deprecation | 08/15/2026 | Product + Apps | Should be decided by release candidate |
-| Q4 agent expansion priority | 09/15/2026 | Product + Data Science + Apps | Determines October and November capacity allocation |
+| Decision                                |  Needed By | Owner Recommendation          | Notes                                               |
+| --------------------------------------- | ---------: | ----------------------------- | --------------------------------------------------- |
+| Specialty LoB source and ingestion path | 06/28/2026 | Apps + Data                   | Blocks confident July and September data readiness  |
+| SDK v1 surface area                     | 06/30/2026 | Apps                          | Needed for July 15 alpha                            |
+| Genesys escalation mechanics            | 07/19/2026 | Apps + PTP + BSC              | Needed for SDK v2 and August RC                     |
+| September MVP launch gates              | 07/15/2026 | Product + Apps                | Should be stable before alpha review                |
+| Sierra temporary logic deprecation      | 08/15/2026 | Product + Apps                | Should be decided by release candidate              |
+| Q4 agent expansion priority             | 09/15/2026 | Product + Data Science + Apps | Determines October and November capacity allocation |
 
 ## MVP Launch Gates
 
