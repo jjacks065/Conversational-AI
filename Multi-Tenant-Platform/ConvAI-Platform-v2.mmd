@@ -1,0 +1,80 @@
+---
+config:
+  flowchart:
+    defaultRenderer: elk
+    htmlLabels: true
+    stroke: {
+      color: "#cccccc",
+      width: 2
+    }
+    style:
+      node:
+        shape: "box"
+        style: "filled"
+        fillcolor: "#f9f9f9"
+        fontname: "Helvetica Neue"
+        fontsize: 12
+        fontcolor: "#333333"
+      edge:
+        color: "#cccccc"
+        arrowhead: "normal"
+        arrowsize: 0.5
+---
+flowchart TB
+
+  subgraph Customer["Customer / Channels"]
+  direction LR
+    subgraph CustomerPortal["Customer Portal"]
+      CustomUI["Custom UI"]
+    end
+    subgraph StellarusPortal["Stellarus Portal"]
+      StellarusUI["Stellarus UI"]
+    end
+
+    StellarusSDK["Stellarus SDK"]
+
+    CustomUI---StellarusSDK
+    StellarusUI---StellarusSDK
+  end
+
+  subgraph StellarusPlatform["Stellarus Platform"]
+    direction TB
+    CCS["Customer Config Service"]
+
+    subgraph IntBroker["Chat Broker"]
+      DataEnrich["Data Enrichment"]
+      Conversation["Conversation Mgmt."]
+
+
+      DataEnrich --- Conversation
+    end
+
+    subgraph StellarusAI["Stellarus AI"]
+    direction TB
+      SierraAI["Sierra.ai"]
+      MemberAgent["Member Agent"]
+      CSRAgent["CSR Agent"]
+    end
+    
+    subgraph DataServices["Data Services"]
+      direction TB
+      BenefisService["Benefis Service"]
+      DataX["DataX Service"]
+      DataY["DataY Service"]
+      DataZ["DataZ Service"]
+    end
+    %% StellarusAI---DataServices
+
+    CCS---IntBroker
+    IntBroker---StellarusAI
+    IntBroker---DataServices
+    
+  end
+  CustomerCCaS["CustomerCCaS<br/>Genesys, etc."]
+  ExtIntegrations["External Integrations<br/>ZocDoc, etc."]
+
+
+
+  Customer---StellarusPlatform
+  StellarusPlatform ---|Escalations| CustomerCCaS
+  StellarusPlatform --- ExtIntegrations
