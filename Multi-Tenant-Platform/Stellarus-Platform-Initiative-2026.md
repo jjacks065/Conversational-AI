@@ -1,4 +1,4 @@
-# Stellarus Conversational AI Platform Strategic Objective
+# Stellarus Conversational AI Platform Initiative
 
 **PDLC Phase:** Definition
 **Status:** Draft

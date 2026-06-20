@@ -1,4 +1,4 @@
-# Stellarus Conversational AI Platform Monthly Delivery Plan
+# Stellarus Conversational AI Platform Delivery Plan
 
 **Status:** Draft
 **Authored Date:** 06/18/2026
