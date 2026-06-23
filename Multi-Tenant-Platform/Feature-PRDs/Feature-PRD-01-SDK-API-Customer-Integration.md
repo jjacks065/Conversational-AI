@@ -1,4 +1,4 @@
-# 🧩 Project Name: SDK/API Customer Integration Path
+# 🧩 SDK/API Customer Integration Path
 
 **PDLC Phase:** Definition
 **Authored Date:** 2026-06-22
@@ -13,7 +13,7 @@ BSC member chat cannot become a reusable platform implementation if customer UI 
 
 ## 💡 Proposed Solution
 
-Publish a versioned SDK/API integration path that customer-controlled UI or Stellarus demo UI can use to start chat sessions, stream broker responses, pass session metadata, handle standard errors, emit analytics hooks, and capture escalation actions.
+Publish a versioned SDK/API integration path that enable customer-controlled UI or Stellarus hosted UI to start chat sessions, stream broker responses, pass session metadata, handle standard errors, emit analytics hooks, and capture escalation actions.
 
 The SDK/API path should make customer integration repeatable by documenting required configuration, versioning rules, sample implementation behavior, supported events, and failure semantics.
 
@@ -73,4 +73,3 @@ The SDK/API path should make customer integration repeatable by documenting requ
 * [ ] Analytics hooks and correlation IDs are emitted for chat start, stream lifecycle, error, and escalation events.
 * [ ] A non-core Apps engineer completes the sample integration dry run and documents any remaining blockers.
 * [ ] Product, Apps, and Support accept the SDK/API path as ready for August 15 release-candidate validation.
-
