@@ -73,4 +73,4 @@ The release should provide enough data inventory, validation, fallback ownership
 * [ ] Release candidate includes passing evidence for data available, data missing, tenant mismatch, stale data, and fallback scenarios.
 * [ ] Quality review sample set and acceptance threshold are approved before go/no-go.
 * [ ] Product, Data, and Apps agree on the Benefits Service source-of-truth and temporary-path deprecation decisions.
-
+* [ ] Telemetry instrumented with evidence showing each benefits grounding request can be traced by tenant and LoB.

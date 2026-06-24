@@ -72,4 +72,4 @@ The solution should fail closed for missing, malformed, expired, unauthorized, o
 * [ ] Correlation IDs are present in logs and telemetry across UI/BFF, broker, Sierra.ai, Benefits Service, and escalation.
 * [ ] Sensitive-log redaction expectations are documented and verified in release-candidate evidence.
 * [ ] Release candidate includes passing checklist evidence for auth failure, scope failure, tenant mismatch, and support traceability.
-
+* [ ] Complete telemetry implemented across UI/BFF, broker, Benefits Service, Sierra.ai, and escalation paths to verify context completeness, fail-closed behavior, tenant isolation, and correlation ID propagation against the success metrics.
