@@ -53,7 +53,7 @@ What's explicitly out of scope?
 - Adaptive Baseline automation and drift detection
 - Custom baseline editing and management interfaces
 
-## 🏁 Definition of Done
+## 🏁 Exit Criteria
 
 Task list of statements that define when implementation of this PRD would be considered complete.
 

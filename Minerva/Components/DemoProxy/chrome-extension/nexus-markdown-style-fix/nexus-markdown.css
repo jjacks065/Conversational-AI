@@ -1,0 +1,108 @@
+.results .vhtml {
+  color: #111827 !important;
+  display: block !important;
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+  max-width: min(100%, 92vw) !important;
+  overflow-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+.results .vhtml :is(h3, h4, h5, h6) {
+  color: #111827 !important;
+  display: block !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+
+.results .vhtml h3 {
+  font-size: 1.125rem !important;
+  line-height: 1.35 !important;
+  margin: 1rem 0 0.45rem !important;
+}
+
+.results .vhtml h4 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin: 0.85rem 0 0.35rem !important;
+  text-decoration: underline !important;
+}
+
+.results .vhtml h5,
+.results .vhtml h6 {
+  font-size: 0.95rem !important;
+  line-height: 1.4 !important;
+  margin: 0.65rem 0 0.2rem !important;
+}
+
+.results .vhtml p {
+  margin: 0.5rem 0 !important;
+}
+
+.results .vhtml :is(strong, b) {
+  font-weight: 700 !important;
+}
+
+.results .vhtml :is(ul, ol) {
+  margin: 0.5rem 0 0.75rem 1.5rem !important;
+  padding-left: 1rem !important;
+}
+
+.results .vhtml ul {
+  list-style-type: disc !important;
+}
+
+.results .vhtml ol {
+  list-style-type: decimal !important;
+}
+
+.results .vhtml li {
+  margin: 0.25rem 0 !important;
+  padding-left: 0.15rem !important;
+}
+
+.results .vhtml hr {
+  border: 0.5px !important;
+  border-top: 1.5px solid #525253 !important;
+  margin: 1rem 0 !important;
+}
+
+.results .vhtml table {
+  border-collapse: collapse !important;
+  font-size: 0.875rem !important;
+  margin: 0.75rem 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.results .vhtml th,
+.results .vhtml td {
+  border: 1px solid #cbd5e1 !important;
+  padding: 0.4rem 0.5rem !important;
+  text-align: left !important;
+  vertical-align: top !important;
+}
+
+.results .vhtml th {
+  background: #e5e7eb !important;
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+.results .vhtml tr:nth-child(even) td {
+  background: #f8fafc !important;
+}
+
+.results .vhtml code {
+  background: #e5e7eb !important;
+  border-radius: 0.25rem !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-size: 0.85em !important;
+  padding: 0.1rem 0.25rem !important;
+}
+
+.results .vhtml sup {
+  font-size: 0.75em !important;
+  line-height: 0 !important;
+}

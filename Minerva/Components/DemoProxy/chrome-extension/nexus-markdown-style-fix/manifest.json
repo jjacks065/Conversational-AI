@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Nexus Markdown Style Fix",
+  "description": "Injects scoped CSS to improve Mira markdown response presentation in Nexus.",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://nexus-cloud-web-stg.bsc.bscal.com/*"
+      ],
+      "css": [
+        "nexus-markdown.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

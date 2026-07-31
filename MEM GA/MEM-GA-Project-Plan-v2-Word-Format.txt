@@ -1,0 +1,304 @@
+Blue Shield CA Generative Agent Chat Interface
+
+Project Plan - BSC Member Pilot Launch (Version 2.0)
+
+Version: 2.0
+Date: April 28, 2026
+Updated by: Julie Hughes
+Previous Version: MEM-GA-Project-Plan.md v1.0
+For Review: Stellarus Team
+
+═══════════════════════════════════════════════════════════════════
+
+Executive Summary
+
+Build a generative agent (GA) chat interface within the Blue Shield CA member portal focused exclusively on benefits support, with initial pilot launch to BSC employees who have BSC insurance. Future expansion to other lines of business and use cases will take place through 2027.
+
+Key Scope Decisions:
+• Benefits support only (excludes claims, billing, other use cases)
+• BSC members who are employees as pilot group
+• Member portal/Genesys integration
+• Sierra.ai for managing the GA
+• End of Q2 2026 target launch with BSC Employees (stretch goal, not required by the MEM team)
+
+═══════════════════════════════════════════════════════════════════
+
+Project Phases Overview - UPDATED
+
+Phase                                    Duration  Dates            Key Activities                                               Dependencies
+Phase 0: Business Foundation             6 weeks   Mar 9-Apr 17     Contract finalization, pricing, governance                   Contract negotiations
+Phase 1: Product Discovery               3 weeks   Mar 9-27         MEM and Stellarus team requirements discussions              
+Phase 2: Technical Planning and Architecture  3 weeks   Mar 23- Apr 13   Engineering kickoff, architecture, delivery foundations      NOT dependent on phase 0
+Phase 3: UX Design                       4 weeks   Apr 6- May 11    UX design, interface mockups, user flow optimization         Phase 1 complete
+Phase 4: Core EVP Development            6 weeks   Apr 13- May 22   Chat experience, knowledge integration, Sierra configuration Phase 1 complete
+Phase 5: QA & UAT                        4 weeks   May 25-Jun 19    Testing, security validation, performance                    Partial Phase 4 overlap
+Phase 6: Pilot Preparation/Business Readiness  3 weeks   May 25- Jun 12   Documentation, training, escalation, analytics, pilot setup  Phase 5 complete
+Phase 7: BSC Member Pilot                Ongoing   End of June      Pilot launch, monitoring, feedback collection                Phase 5 and 6 complete
+Phase 8: Iteration and Tuning            Ongoing   TBD              Performance tuning, expansion planning                       Phase 7 complete
+
+Total Timeline: ~20-25 weeks (achievable for Q2 2026 end target)
+
+═══════════════════════════════════════════════════════════════════
+
+Detailed Phase Breakdown
+
+Phase 0: Business Foundation (6 weeks) - Mar 9-Apr 17
+
+1. ✓ Finalize contract between Blue Shield and Stellarus
+2. Complete pricing negotiations and agreements
+3. Establish project governance and stakeholder communication plan
+4. Confirm resource allocation and team assignment
+
+Phase 1: Product Discovery (3 weeks) - Mar 9-27
+
+MEM and Stellarus team requirements alignment
+
+5. Requirements discussions between MEM and Stellarus teams
+6. User needs discovery of BSC members
+7. Scope validation and success criteria alignment
+8. Stakeholder alignment on product vision and objectives
+
+Phase 2: Technical Planning and Architecture (3 weeks) - Mar 23-Apr 13
+
+Critical foundation for development phases (NOT dependent on Phase 0)
+
+Core Technical Planning
+
+9. Engineering kickoff with full Stellarus team
+10. Architecture deep dive and technical specification refinement
+11. Linear stories creation and development planning
+12. Technical design review and approval
+
+Delivery Foundations
+
+13. Confirm chat architecture and delivery approach
+14. Decide pilot data source and boundaries
+15. Define team ownership and delivery handoffs
+16. Finalize pilot success metrics and reporting scope
+
+Phase 3: UX Design (4 weeks) - Apr 6-May 11
+
+User experience design and interface optimization
+
+17. User persona refinement for BSC employee members and benefits use cases
+18. Chat interface wireframes and user flow design (parallel with Phase 4 development)
+19. Member portal integration UX design and navigation flow
+20. Accessibility compliance review and design adjustments
+21. Design system alignment with existing BSC member portal standards
+22. Early employee feedback planning and validation strategy development for BSC employee pilot group
+
+Phase 4: Core EVP Development (6 weeks) - Apr 13-May 22
+
+Foundation chat interface capabilities
+
+Project Kickoffs and Infrastructure
+
+23. Project kick offs
+    a. Broader BSC team
+    b. Stellarus GTM
+    c. BSC GTM alignments and milestone launch
+24. Development environment setup and CI/CD pipeline establishment
+
+Chat Experience
+
+25. Integrate chat entry in member portal
+26. Implement authenticated member chat session flow
+27. Build core benefits question handling paths
+28. Add copy, disclosures, and guardrails
+
+Knowledge and Genesys Integration
+
+29. Connect approved benefits content sources to chat within Sierra
+    • Knowledge: Plan data and procedures integration
+    • Data: Member info like MemberID, PlanID connection
+30. Build the Knowledge Benefit module/API within the Stellarus Agentic AI platform
+31. Connect Knowledge Benefit API to chat within Sierra for starting the Knowledge module within the Stellarus platform
+32. Deployment of finalized chat script and Genesys API configuration for portal (Map plan data for member authenticated plan)
+33. Genesys to Sierra architect flow and bring your own bot integration
+34. Capture member interaction and store in Salesforce CDP
+35. Validate scope excludes PHI, PII, and accumulators
+36. Resolve critical gaps:
+    • Define generative agent training methodology for BSC member benefits use cases
+    • Design error handling and customer service escalation workflows
+    • Establish member portal/Genesys authentication and BSC member identification
+
+Phase 5: QA & UAT (4 weeks) - May 25-Jun 19
+
+Comprehensive validation and user acceptance testing
+
+37. Comprehensive testing suite development and execution
+38. Security validation and member data protection testing (parallel with step 37)
+39. Performance testing and optimization for member portal load
+40. User acceptance testing with stakeholder (BSC Ops/CE) validation
+41. Integration testing with existing member portal systems
+
+Phase 6: Pilot Preparation/Business Readiness (3 weeks) - May 25-Jun 12
+
+Pilot launch readiness and business preparation
+
+Core Pilot Preparation
+
+42. Member-facing documentation and help guides
+43. Internal BSC employee communication about pilot program
+44. Early testing with select BSC employee members (validates Phase 5 outcomes)
+45. Customer service team training on GA chat support processes
+46. Prepare employee pilot access and enablement
+47. Set transcript retention and operational controls
+
+Analytics and Monitoring
+
+48. Set up Sierra Insights for tracking success metrics
+49. Enable transcript review and feedback monitoring in Sierra
+
+Final Validation
+
+50. Run end-to-end validation and launch checklist
+
+Phase 7: BSC Member Pilot (X weeks) - End of June
+
+Controlled pilot rollout
+
+51. Phased rollout to BSC employees with BSC insurance
+52. Real-time monitoring and customer support during pilot
+53. Member feedback collection and immediate issue resolution
+54. Pilot success validation and expansion readiness review
+
+Phase 8: Iteration and Tuning (Ongoing)
+
+Continuous improvement and future planning
+
+55. Performance monitoring and model tuning for BSC member benefits accuracy
+56. BSC member feedback analysis and feature iteration
+57. Expansion planning for other lines of business members
+
+═══════════════════════════════════════════════════════════════════
+
+Technical Architecture Context
+
+Based on existing MEM GA planning decisions:
+
+Data Sources
+
+• Primary: Nexus platform (80% JSON format, benefits data repository)
+• Secondary: Facets system (plan customizations, specialty benefits)
+• Supplementary: SharePoint/portal (desktop procedures, PDFs)
+
+Integration Points
+
+• Member Portal/Genesys: Existing authentication and session management
+• Customer Service: Escalation workflows and support processes
+• Monitoring: Performance tracking and feedback collection systems
+• Stellarus Agentic AI Platform: Knowledge Benefit module and API
+• Salesforce CDP: Member interaction tracking and analytics
+
+Training Approach
+
+• BSC-Specific: Unique training required for BSC member benefits use cases
+• Iterative: Ongoing tuning to prevent model drift
+• Compliance: 7-year transcript storage, bias avoidance protocols
+
+═══════════════════════════════════════════════════════════════════
+
+Success Criteria & Validation
+
+Phase Gates
+
+Each phase requires stakeholder approval and success criteria met before proceeding
+
+Critical Checkpoints
+
+1. Phase 2: BSC member benefits training methodology validated, member portal/Genesys integration approach confirmed, delivery foundations established
+2. Phase 4: Chat experience functional, knowledge integration complete, Stellarus platform connected
+3. Phase 5: Member data protection validated, performance benchmarks met, UAT completed
+4. Phase 6: Customer service teams trained, escalation workflows tested, analytics instrumented, pilot group prepared
+5. Phase 7: Pilot group feedback scores >7/10, escalation rate <5%
+
+Launch Readiness Criteria
+
+✓ All integration tests passing
+✓ Security validation complete
+✓ Customer service teams trained on GA support
+✓ BSC member pilot group onboarded
+✓ Real-time monitoring systems operational
+✓ Knowledge Benefit API fully functional
+✓ Escalation workflows validated
+✓ Analytics and feedback systems operational
+
+═══════════════════════════════════════════════════════════════════
+
+Team Assignments Summary
+
+Team Members                     Primary Phases    Key Responsibilities
+All Teams                        Phase 2           Delivery foundations, architecture confirmation, team coordination
+Tarun, Manish, Ross             Phase 4           Portal integration, authentication, session management
+Chance, Julie                   Phase 4           Benefits content, GA training, knowledge integration, compliance
+Ross                            Phase 4           Genesys architecture, Salesforce CDP integration
+Ross, Infosys                   Phase 4           Genesys API configuration, deployment
+Bharath, Sneha, Ketema          Phase 4           Knowledge Benefit API development
+All Teams                       Phase 6, 7        Escalation setup, analytics instrumentation, pilot execution
+
+═══════════════════════════════════════════════════════════════════
+
+Risk Mitigation & Considerations
+
+Primary Risks
+
+1. Contract Timeline: If negotiations extend beyond 4 weeks, leverage Phase 2 parallel technical planning (NOT dependent on Phase 0)
+2. Member Portal/Genesys Integration: Early validation of integration approach in Phase 2 critical
+3. Knowledge Integration Complexity: Phase 4 has significant technical complexity with Stellarus platform integration
+4. Team Coordination: Multiple parallel tracks require careful coordination and clear handoff protocols
+5. BSC Member Engagement: Leverage insider knowledge for detailed feedback, but ensure member perspective maintained
+
+Technical Considerations for Engineering Review
+
+1. Performance Requirements: Member portal load patterns and response time expectations
+2. Security Requirements: Member data protection and authentication integration approach
+3. Scalability Planning: Architecture decisions for future lines of business expansion
+4. Monitoring Strategy: Real-time performance tracking and issue detection during pilot
+5. Knowledge API Performance: Stellarus platform integration performance and reliability
+
+Future Expansion Path
+
+• Phase 9+: Core/Premier member segments based on BSC pilot success metrics
+• Scope Expansion: Claims and billing functionality (separate future project)
+• Technology Evolution: Voice agent integration (referenced in existing planning sessions)
+
+═══════════════════════════════════════════════════════════════════
+
+Engineering Team Feedback Requested
+
+Please review and provide feedback on:
+
+1. Technical Architecture: Are the integration approaches (member portal/Genesys, Nexus, Facets, Sierra, Stellarus platform) feasible with our current capabilities?
+2. Timeline Reality Check: Are the updated phase timelines realistic for the described scope?
+3. Resource Requirements: What team size and skill mix is needed for parallel development tracks?
+4. Risk Assessment: What technical risks or dependencies are we missing?
+5. Testing Strategy: Are the QA phases adequate for member-facing production launch?
+6. Scalability Concerns: How should we prepare the architecture for future lines of business expansion?
+7. Knowledge Integration: Is the Stellarus platform integration approach technically sound?
+
+═══════════════════════════════════════════════════════════════════
+
+Next Steps
+
+1. Engineering team review and feedback incorporation on updated plan
+2. Team assignment finalization for Knowledge Benefit API development
+3. Revised plan presentation to BSC MEM team
+4. Phase 2 execution continuation with delivery foundations
+5. Phase 4 preparation for chat experience and knowledge integration
+
+═══════════════════════════════════════════════════════════════════
+
+Changes from Version 1.0
+
+• Enhanced Phase 2 with detailed delivery foundations (architecture confirmation, data boundaries, team ownership, success metrics)
+• Expanded Phase 4 with Chat Experience and Knowledge Personalization sub-categories
+• Enhanced Phase 6 with escalation operations and analytics instrumentation
+• Added specific team assignments for each workstream and deliverable
+• Detailed technical integration steps for Stellarus platform and Genesys configuration
+• Preserved original timeline while adding granular execution detail
+• Added comprehensive team coordination and handoff protocols
+
+═══════════════════════════════════════════════════════════════════
+
+This document builds on existing MEM GA planning sessions from March 2026 and incorporates Stellarus team capabilities and constraints. For detailed background context, see supporting documentation in Sierra/MEM GA/Background/ folder.

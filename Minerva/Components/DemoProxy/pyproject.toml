@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demo-response-proxy"
+version = "0.1.0"
+description = "Cross-platform local response-transformation proxy"
+requires-python = ">=3.12"
+dependencies = [
+    "mitmproxy==12.2.3",
+    "PyYAML==6.0.3",
+]
+
+[tool.setuptools.packages.find]
+include = ["proxy*"]
