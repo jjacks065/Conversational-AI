@@ -1,0 +1,54 @@
+flowchart TB
+    Request[Inbound HTTP request]
+
+    subgraph Pipeline[Global request pipeline]
+        Jwt[JwtAuthGuard]
+        ContextGuard[Shared ContextTokenGuard]
+        ScopeGuard[RequireScopesGuard]
+        TenantInterceptor[TenantContextInterceptor]
+        ALS[AsyncLocalStorage tenant context]
+        Jwt --> ContextGuard --> ScopeGuard --> TenantInterceptor --> ALS
+    end
+
+    subgraph Routes[Controllers]
+        HealthController[HealthController]
+        DispatchController[ChatController at /api/dispatch]
+        CompatController[Compatibility controllers at /v1/chat and /v1/chat/completions]
+        PlanController[PlanController at /api/plan]
+    end
+
+    subgraph ChatCore[Chat orchestration]
+        ChatHandler[ChatHandlerService]
+        Resolver[Resolver and ConfigLoader]
+        Adapter[Resolved query or streaming adapter]
+        TokenCounter[TokenCounter]
+        RateLimiter[In-memory token bucket]
+        CircuitBreaker[In-memory circuit breaker]
+        SierraClient[SierraClient]
+        SSEWriter[SSEWriter]
+        NoOpSession[NoOpSessionStore]
+    end
+
+    subgraph PlanCore[Plan orchestration]
+        PlanHandler[PlanHandlerService]
+    end
+
+    Request --> Pipeline
+    ALS --> Routes
+    DispatchController --> ChatHandler
+    CompatController --> ChatHandler
+    PlanController --> PlanHandler
+
+    ChatHandler --> Resolver
+    Resolver --> Adapter
+    ChatHandler --> TokenCounter
+    ChatHandler --> RateLimiter
+    ChatHandler --> CircuitBreaker
+    ChatHandler --> SierraClient
+    Adapter --> SierraClient
+    ChatHandler --> SSEWriter
+    SSEWriter --> NoOpSession
+
+    PlanHandler --> Benefits[Benefits service]
+    SierraClient --> Sierra[Sierra Headless API]
+    SSEWriter --> Stream[SSE response]

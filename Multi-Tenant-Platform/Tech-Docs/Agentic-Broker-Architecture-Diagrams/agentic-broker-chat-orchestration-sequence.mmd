@@ -1,0 +1,34 @@
+sequenceDiagram
+    autonumber
+    participant BFF as Chat BFF
+    participant Guards as JWT, context, scope guards
+    participant ALS as Tenant interceptor and ALS
+    participant Handler as ChatHandlerService
+    participant Resolver as Resolver and adapter
+    participant Budget as Token counter and rate limiter
+    participant CB as Circuit breaker
+    participant Sierra as Sierra or streaming adapter
+    participant Writer as SSEWriter
+
+    BFF->>Guards: POST chat with Bearer and x-context-token
+    Guards->>ALS: Verified principal and customer_slug
+    ALS->>Handler: Validated ChatRequest in tenant scope
+    Handler->>Handler: Validate message, tenant, plan query, attestation
+    opt Capability is present and attestation status is absent
+        Handler->>Resolver: resolve capability for customer_slug
+        alt Query adapter
+            Resolver-->>Handler: plan or other data
+            Handler->>Handler: Build optional Sierra variables
+        else Streaming adapter
+            Resolver-->>Handler: streaming adapter and descriptor
+        end
+    end
+    Handler->>Budget: Count input tokens and reserve budget
+    Handler->>CB: Preflight canCall
+    Handler-->>BFF: Commit SSE headers
+    Handler->>Sierra: Start NDJSON or resolver event stream
+    Sierra-->>Writer: Provider or resolver events
+    Writer-->>BFF: session, message, usage, done SSE events
+    opt Streaming or writer failure
+        Handler->>Budget: Refund reserved input tokens once
+    end

@@ -1,0 +1,42 @@
+flowchart TB
+    subgraph Browser[Browser execution]
+        Page[ChatPage]
+        PlanUI[PlanLookupPanel and PlanPreviewPanel]
+        Messages[AssistantMessage and SuggestionChips]
+        Hook[useChatState external store]
+        ChatSDK[Opaque @stellarus/chat client]
+
+        Page --> PlanUI
+        Page --> Messages
+        Page --> Hook
+        Hook --> ChatSDK
+    end
+
+    subgraph NextServer[Next.js server execution]
+        Middleware[Auth middleware]
+        Health[GET /api/health]
+        PlanRoute[GET /api/plan]
+        ChatRouteA[POST /api/chat]
+        ChatRouteB[POST /v1/chat/completions]
+        ProxyHandler[Shared chat proxy handler]
+        Escalation[POST /api/escalation]
+        AuthToken[Auth0 access-token helper]
+        CcsHelper[CCS context-token helper]
+
+        ChatRouteA --> ProxyHandler
+        ChatRouteB --> ProxyHandler
+        ProxyHandler --> AuthToken
+        ProxyHandler --> CcsHelper
+        PlanRoute --> CcsHelper
+        Escalation --> AuthToken
+        Escalation --> CcsHelper
+    end
+
+    Middleware --> Page
+    PlanUI -->|GET /api/plan| PlanRoute
+    ChatSDK -->|same-origin streamed request| ChatRouteB
+    ProxyHandler -->|POST /v1/chat/completions| BrokerApi[Agentic Broker API]
+    PlanRoute --> Benefits[Benefits service]
+    CcsHelper --> CCS[CCS]
+    AuthToken --> Auth0[Auth0 server session]
+    Escalation -. incompatible current target .-> BrokerApi

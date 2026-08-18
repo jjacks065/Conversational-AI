@@ -1,0 +1,24 @@
+sequenceDiagram
+    autonumber
+    participant User as CSR
+    participant Page as ChatPage
+    participant PlanBFF as GET /api/plan in chat app
+    participant CCS as CCS
+    participant Benefits as Benefits service
+
+    User->>Page: Enter plan ID and select Find Plan
+    Page->>PlanBFF: GET /api/plan?planId&effectiveDate
+    PlanBFF->>CCS: POST /api/validate/api-key
+    CCS-->>PlanBFF: context_token
+    PlanBFF->>Benefits: GET /api/v1/plans/:planId with x-context-token
+    alt Plan found
+        Benefits-->>PlanBFF: 200 plan document
+        PlanBFF-->>Page: HTTP 200 with status and contextData
+    else Plan not found
+        Benefits-->>PlanBFF: 404
+        PlanBFF-->>Page: HTTP 200 with status 404 and null contextData
+    else Service unavailable
+        Benefits-->>PlanBFF: 5xx or network failure
+        PlanBFF-->>Page: HTTP 200 with status 503, null contextData, warning
+    end
+    Note over PlanBFF,Page: Current Page source reads planValidationStatus and planData instead of status and contextData.

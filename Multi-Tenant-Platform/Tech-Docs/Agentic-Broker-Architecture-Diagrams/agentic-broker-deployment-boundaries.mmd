@@ -1,0 +1,16 @@
+flowchart TB
+    subgraph ChatContainer[agentic-broker-chat container]
+        NextServer[Next.js standalone server]
+        BrowserBundle[React client bundle]
+        NextServer --- BrowserBundle
+        ChatPort[Production port 3000]
+    end
+
+    subgraph ApiContainer[agentic-broker-api container]
+        NodeServer[NestJS on Fastify]
+        ApiPort[Production port 3001]
+        NodeServer --- ApiPort
+    end
+
+    BrowserBundle -->|same-origin routes| NextServer
+    NextServer -->|NEXT_PUBLIC_BROKER_URL| NodeServer

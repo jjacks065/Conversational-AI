@@ -1,0 +1,36 @@
+flowchart LR
+    CSR[CSR user and browser]
+    Probe[Container or Kubernetes probes]
+
+    subgraph Chat[agentic-broker-chat]
+        UI[Next.js CSR chat UI]
+        BFF[Next.js route handlers and auth proxy]
+    end
+
+    subgraph Broker[agentic-broker-api]
+        HTTP[NestJS and Fastify HTTP boundary]
+        Orchestrator[Chat and plan orchestration]
+    end
+
+    Auth0[Auth0 session and JWKS]
+    CCS[Customer Configuration Service]
+    Benefits[Benefits service]
+    Sierra[Sierra Headless API]
+    ResolverConfig[Resolver YAML configuration]
+
+    CSR -->|HTTPS page and same-origin API calls| UI
+    UI -->|same process boundary| BFF
+    BFF -->|server-session access token| Auth0
+    BFF -->|API key exchange for context token| CCS
+    BFF -->|plan validation| Benefits
+    BFF -->|Bearer token plus x-context-token| HTTP
+
+    HTTP --> Orchestrator
+    HTTP -->|JWT key retrieval| Auth0
+    HTTP -->|context-token verification material| CCS
+    Orchestrator -->|plan lookup| Benefits
+    Orchestrator -->|NDJSON chat stream| Sierra
+    ResolverConfig -->|adapter registrations| Orchestrator
+
+    Probe -->|GET /api/health| BFF
+    Probe -->|GET /health| HTTP

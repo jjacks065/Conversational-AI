@@ -1,0 +1,23 @@
+sequenceDiagram
+    autonumber
+    participant Page as ChatPage and useChatState
+    participant SDK as Opaque @stellarus/chat
+    participant BFF as Chat proxy
+    participant Auth as Auth0 session
+    participant CCS as CCS
+    participant API as Broker API
+    participant Sierra as Sierra
+
+    Page->>SDK: message, session, plan query, plan attestation
+    SDK->>BFF: POST /v1/chat/completions
+    BFF->>Auth: getAccessToken
+    Auth-->>BFF: Bearer access token
+    BFF->>CCS: acquire fresh context_token
+    CCS-->>BFF: x-context-token value
+    BFF->>API: POST /v1/chat/completions with both credentials
+    API->>API: Guards, tenant ALS, validation, budget, circuit breaker
+    API->>Sierra: POST /chat with agent variables when available
+    Sierra-->>API: NDJSON event stream
+    API-->>BFF: Normalized SSE stream
+    BFF-->>SDK: Relayed SSE body
+    SDK-->>Page: Async session, message, usage, error, done events
