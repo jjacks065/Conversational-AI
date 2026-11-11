@@ -1,0 +1,208 @@
+[
+  {
+    "part": "ppt/slides/slide1.xml",
+    "shapes": [
+      {
+        "id": "2",
+        "name": "Title 1",
+        "text": "COMPASS \u2013 CSR Chat",
+        "position": null,
+        "fonts": [
+          {
+            "lang": "en-US",
+            "dirty": "0"
+          },
+          {
+            "lang": "en-US",
+            "sz": "3000",
+            "b": "1",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Content Placeholder 6",
+        "text": "[Product name]  /  [Owner]  /  [Date]",
+        "position": null,
+        "fonts": []
+      },
+      {
+        "id": "5",
+        "name": "pitch-label",
+        "text": "Product Overview",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"1619250\" /><ns0:ext cx=\"10287000\" cy=\"247650\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "lang": "en-US",
+            "sz": "1600",
+            "b": "1",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "pitch",
+        "text": "[Product] helps [target customer] achieve [primary outcome] through [how it works].",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"1943100\" /><ns0:ext cx=\"10382250\" cy=\"523875\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "lang": "en-US",
+            "sz": "2000",
+            "b": "0",
+            "dirty": "0"
+          },
+          {
+            "sz": "2000",
+            "b": "0",
+            "dirty": "0"
+          },
+          {
+            "lang": "en-US",
+            "sz": "2000",
+            "b": "0",
+            "dirty": "0"
+          },
+          {
+            "sz": "2000",
+            "b": "0",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "customer-heading",
+        "text": "The customer and problem",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"2724150\" /><ns0:ext cx=\"4819650\" cy=\"266700\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1600",
+            "b": "1"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "customer-body",
+        "text": "[User / buyer] needs to [job or goal]. Today, [problem or workaround] costs [time, money, or risk].",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"3048000\" /><ns0:ext cx=\"4819650\" cy=\"704850\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1400",
+            "b": "0"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "solution-heading",
+        "text": "The solution",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"6419850\" y=\"2724150\" /><ns0:ext cx=\"4819650\" cy=\"266700\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1600",
+            "b": "1"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "solution-body",
+        "text": "[Core capability] enables [key workflow]. Customers get started with [setup or integration].",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"6419850\" y=\"3048000\" /><ns0:ext cx=\"4819650\" cy=\"704850\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1400",
+            "b": "0",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "value-heading",
+        "text": "The value proposition",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"3962400\" /><ns0:ext cx=\"4819650\" cy=\"266700\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1600",
+            "b": "1"
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "value-body",
+        "text": "Deliver [measurable benefit] in [timeframe]. Compared with [alternative], we offer [difference] because [advantage].",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"4286250\" /><ns0:ext cx=\"4819650\" cy=\"704850\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1400",
+            "b": "0",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "offer-heading",
+        "text": "The offer and next step",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"5276850\" /><ns0:ext cx=\"10287000\" cy=\"266700\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "sz": "1600",
+            "b": "1"
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "name": "offer-body",
+        "text": "Which phase of the lifecycle are we in? Next step: [action] by [date]. Success: [metric]. Contact: [email / link].",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"933450\" y=\"5600700\" /><ns0:ext cx=\"10287000\" cy=\"495300\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "lang": "en-US",
+            "sz": "1400",
+            "b": "0",
+            "dirty": "0"
+          },
+          {
+            "sz": "1400",
+            "b": "0",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "17",
+        "name": "solution-heading",
+        "text": "Competitors",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"6419850\" y=\"3988799\" /><ns0:ext cx=\"4819650\" cy=\"266700\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "lang": "en-US",
+            "sz": "1600",
+            "b": "1",
+            "dirty": "0"
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "solution-body",
+        "text": "Known competing products",
+        "position": "<ns0:xfrm xmlns:ns0=\"http://schemas.openxmlformats.org/drawingml/2006/main\"><ns0:off x=\"6419850\" y=\"4312649\" /><ns0:ext cx=\"4819650\" cy=\"704850\" /></ns0:xfrm>",
+        "fonts": [
+          {
+            "lang": "en-US",
+            "dirty": "0"
+          }
+        ]
+      }
+    ],
+    "notes": "Replace bracketed prompts with concise customer language. Keep each block to two or three lines.\nThe pitch: Identify the product category if it will help the audience understand the offer.\nCustomer and problem: Name a specific user, buyer, buying trigger, and current alternative. Quantify the cost of the problem where possible.\nSolution: Explain the customer workflow and the mechanism that produces the benefit.\nValue proposition: State one primary measurable outcome, timeframe, meaningful comparison, and reason to believe.\nEvidence: Cite the source, date, sample size, and baseline for any result. Distinguish tested results from assumptions. If no evidence exists, state the hypothesis and how you will validate it.\nOffer and next step: Specify the pricing unit, one clear action, owner or contact, deadline, and success measure."
+  }
+]

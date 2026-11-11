@@ -1,0 +1,4418 @@
+{
+  "customerId": "b7d41e2c-9a58-4f36-8c07-1d5e6a9b3f24",
+  "customerSlug": "demo",
+  "data": {
+    "account": "Small Group",
+    "accountType": "Small Business Portfolio",
+    "accumulatorPeriodCode": "CALENDARYEAR",
+    "commercialMarketStatus": "Marketed",
+    "customProviderNetworks": [],
+    "customerServicePhone": "1-888-555-0111",
+    "effectiveDate": "20260101",
+    "eocCategories": [
+      {
+        "nexusId": 3028,
+        "name": "Rehabilitative and Habilitative Services",
+        "content": "<h2>Rehabilitative and Habilitative Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3259,
+            "name": "Outpatient",
+            "benefits": [
+              {
+                "categoryBenefitId": 32000,
+                "nexusId": 4191,
+                "name": "Physical therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": true,
+                    "mappedBenefitId": 4191,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Physical therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Occupational therapy",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Occupational therapy."
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32001,
+                "nexusId": 4192,
+                "name": "Occupational therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4192,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Occupational therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32002,
+                "nexusId": 4193,
+                "name": "Speech therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4193,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Speech therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Cardiac rehabilitation",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Cardiac rehabilitation."
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32003,
+                "nexusId": 4194,
+                "name": "Cardiac rehabilitation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4194,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Cardiac rehabilitation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32004,
+                "nexusId": 4195,
+                "name": "Pulmonary rehabilitation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4195,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Pulmonary rehabilitation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Habilitative physical therapy",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Habilitative physical therapy."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3260,
+            "name": "Other Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32005,
+                "nexusId": 4196,
+                "name": "Habilitative physical therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4196,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Habilitative physical therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32006,
+                "nexusId": 4197,
+                "name": "Habilitative occupational therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4197,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Habilitative occupational therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit",
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Habilitative speech therapy",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Habilitative speech therapy."
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32007,
+                "nexusId": 4198,
+                "name": "Habilitative speech therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4198,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Habilitative speech therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32008,
+                "nexusId": 4199,
+                "name": "Habilitative services multidisciplinary",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4199,
+                    "nexusBenefitCategory": "Rehabilitative and Habilitative Services",
+                    "nexusBenefitName": "Habilitative services multidisciplinary",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Acupuncture evaluation and treatment by a Doctor of Medicine",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Acupuncture evaluation and treatment by a Doctor of Medicine."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3029,
+        "name": "Skilled Nursing Facility (SNF) services",
+        "content": "<h2>Skilled Nursing Facility (SNF) services</h2><p>Covered services require medical necessity and may require advance review. Members should confirm eligibility, use the listed provider tier, and follow claim and referral procedures. Limits and exclusions appear in the governing plan document.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3261,
+            "name": "Inpatient Facility",
+            "benefits": [
+              {
+                "categoryBenefitId": 32009,
+                "nexusId": 4200,
+                "name": "Skilled nursing facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4200,
+                    "nexusBenefitCategory": "Skilled Nursing Facility (SNF) services",
+                    "nexusBenefitName": "Skilled nursing facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32010,
+                "nexusId": 4201,
+                "name": "Freestanding skilled nursing facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4201,
+                    "nexusBenefitCategory": "Skilled Nursing Facility (SNF) services",
+                    "nexusBenefitName": "Freestanding skilled nursing facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32011,
+                "nexusId": 4202,
+                "name": "Hospital based skilled nursing facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4202,
+                    "nexusBenefitCategory": "Skilled Nursing Facility (SNF) services",
+                    "nexusBenefitName": "Hospital based skilled nursing facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3030,
+        "name": "Transplant Services",
+        "content": "<h2>Transplant Services</h2><p>Covered services require medical necessity and may require advance review. Members should confirm eligibility, use the listed provider tier, and follow claim and referral procedures. Limits and exclusions appear in the governing plan document.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3262,
+            "name": "Inpatient Facility",
+            "benefits": [
+              {
+                "categoryBenefitId": 32012,
+                "nexusId": 4203,
+                "name": "Transplant facility services designated center",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4203,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Transplant facility services designated center",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32013,
+                "nexusId": 4204,
+                "name": "Transplant facility services non-designated center",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4204,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Transplant facility services non-designated center",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32014,
+                "nexusId": 4205,
+                "name": "Bone marrow transplant services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4205,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Bone marrow transplant services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3264,
+            "name": "Other Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32015,
+                "nexusId": 4207,
+                "name": "Organ procurement services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4207,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Organ procurement services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32016,
+                "nexusId": 4208,
+                "name": "Living donor services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4208,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Living donor services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3263,
+            "name": "Inpatient Professional",
+            "benefits": [
+              {
+                "categoryBenefitId": 32017,
+                "nexusId": 4206,
+                "name": "Transplant professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4206,
+                    "nexusBenefitCategory": "Transplant Services",
+                    "nexusBenefitName": "Transplant professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3031,
+        "name": "Urgent Care Services",
+        "content": "<h2>Urgent Care Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3265,
+            "name": "Urgent Care",
+            "benefits": [
+              {
+                "categoryBenefitId": 32018,
+                "nexusId": 4209,
+                "name": "Freestanding professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4209,
+                    "nexusBenefitCategory": "Urgent Care Services",
+                    "nexusBenefitName": "Freestanding professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "URGNTCAREFSPROFSVC",
+                "codeLabel": "Freestanding professional services"
+              },
+              {
+                "categoryBenefitId": 32019,
+                "nexusId": 4210,
+                "name": "Urgent care center visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4210,
+                    "nexusBenefitCategory": "Urgent Care Services",
+                    "nexusBenefitName": "Urgent care center visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32020,
+                "nexusId": 4211,
+                "name": "Urgent care after hours visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4211,
+                    "nexusBenefitCategory": "Urgent Care Services",
+                    "nexusBenefitName": "Urgent care after hours visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32021,
+                "nexusId": 4212,
+                "name": "Urgent care received outside the service area",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4212,
+                    "nexusBenefitCategory": "Urgent Care Services",
+                    "nexusBenefitName": "Urgent care received outside the service area",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3032,
+        "name": "Eye Examination Benefits",
+        "content": "<h2>Eye Examination Benefits</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3266,
+            "name": "Eye Examination",
+            "benefits": [
+              {
+                "categoryBenefitId": 32022,
+                "nexusId": 4213,
+                "name": "Adult routine eye examination",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4213,
+                    "nexusBenefitCategory": "Eye Examination Benefits",
+                    "nexusBenefitName": "Adult routine eye examination",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3001,
+        "name": "Acupuncture Services",
+        "content": "<h2>Acupuncture Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3201,
+            "name": "Acupuncture Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32023,
+                "nexusId": 4001,
+                "name": "Acupuncture evaluation and treatment by a Doctor of Medicine",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4001,
+                    "nexusBenefitCategory": "Acupuncture Services",
+                    "nexusBenefitName": "Acupuncture evaluation and treatment by a Doctor of Medicine",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32024,
+                "nexusId": 4002,
+                "name": "Acupuncture evaluation and treatment by a licensed acupuncturist",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4002,
+                    "nexusBenefitCategory": "Acupuncture Services",
+                    "nexusBenefitName": "Acupuncture evaluation and treatment by a licensed acupuncturist",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit",
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Acupuncture self-referred visits",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Acupuncture self-referred visits."
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32025,
+                "nexusId": 4003,
+                "name": "Acupuncture self-referred visits",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4003,
+                    "nexusBenefitCategory": "Acupuncture Services",
+                    "nexusBenefitName": "Acupuncture self-referred visits",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3002,
+        "name": "Allergy Testing and Immunotherapy Benefits",
+        "content": "<h2>Allergy Testing and Immunotherapy Benefits</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3202,
+            "name": "Allergy services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32026,
+                "nexusId": 4004,
+                "name": "Allergy testing",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4004,
+                    "nexusBenefitCategory": "Allergy Testing and Immunotherapy Benefits",
+                    "nexusBenefitName": "Allergy testing",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32027,
+                "nexusId": 4005,
+                "name": "Allergy injections",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4005,
+                    "nexusBenefitCategory": "Allergy Testing and Immunotherapy Benefits",
+                    "nexusBenefitName": "Allergy injections",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32028,
+                "nexusId": 4006,
+                "name": "Allergy serum",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4006,
+                    "nexusBenefitCategory": "Allergy Testing and Immunotherapy Benefits",
+                    "nexusBenefitName": "Allergy serum",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32029,
+                "nexusId": 4007,
+                "name": "Allergy immunotherapy administration",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4007,
+                    "nexusBenefitCategory": "Allergy Testing and Immunotherapy Benefits",
+                    "nexusBenefitName": "Allergy immunotherapy administration",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3003,
+        "name": "Ambulance Services",
+        "content": "<h2>Ambulance Services</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3203,
+            "name": "Ambulance Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32030,
+                "nexusId": 4008,
+                "name": "Emergency transport surface",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4008,
+                    "nexusBenefitCategory": "Ambulance Services",
+                    "nexusBenefitName": "Emergency transport surface",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "SRFCAMBU",
+                "codeLabel": "Emergency transport - surface"
+              },
+              {
+                "categoryBenefitId": 32031,
+                "nexusId": 4009,
+                "name": "Emergency transport air",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4009,
+                    "nexusBenefitCategory": "Ambulance Services",
+                    "nexusBenefitName": "Emergency transport air",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3004,
+        "name": "Bariatric Surgery Benefits",
+        "content": "<h2>Bariatric Surgery Benefits</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3204,
+            "name": "Inpatient Facility",
+            "benefits": [
+              {
+                "categoryBenefitId": 32032,
+                "nexusId": 4013,
+                "name": "Bariatric surgery inpatient facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4013,
+                    "nexusBenefitCategory": "Bariatric Surgery Benefits",
+                    "nexusBenefitName": "Bariatric surgery inpatient facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3205,
+            "name": "Inpatient Professional",
+            "benefits": [
+              {
+                "categoryBenefitId": 32033,
+                "nexusId": 4014,
+                "name": "Bariatric surgery inpatient professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4014,
+                    "nexusBenefitCategory": "Bariatric Surgery Benefits",
+                    "nexusBenefitName": "Bariatric surgery inpatient professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3206,
+            "name": "Outpatient",
+            "benefits": [
+              {
+                "categoryBenefitId": 32034,
+                "nexusId": 4015,
+                "name": "Bariatric surgery outpatient facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4015,
+                    "nexusBenefitCategory": "Bariatric Surgery Benefits",
+                    "nexusBenefitName": "Bariatric surgery outpatient facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3005,
+        "name": "Chiropractic Services",
+        "content": "<h2>Chiropractic Services</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3207,
+            "name": "Chiropractic Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32035,
+                "nexusId": 4016,
+                "name": "Chiropractic evaluation and treatment",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4016,
+                    "nexusBenefitCategory": "Chiropractic Services",
+                    "nexusBenefitName": "Chiropractic evaluation and treatment",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "limitValue": 20,
+                    "limitType": "visits",
+                    "limitInterval": "per year",
+                    "limit": "20 visits per year",
+                    "limitCombinedWith": "Chiropractic radiology services",
+                    "limitText": "Coverage is limited to 20 visits per year, combined with Chiropractic radiology services.",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32036,
+                "nexusId": 4017,
+                "name": "Chiropractic radiology services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4017,
+                    "nexusBenefitCategory": "Chiropractic Services",
+                    "nexusBenefitName": "Chiropractic radiology services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3006,
+        "name": "Diabetes Care Services",
+        "content": "<h2>Diabetes Care Services</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3208,
+            "name": "Diabetes Care",
+            "benefits": [
+              {
+                "categoryBenefitId": 32037,
+                "nexusId": 4018,
+                "name": "Diabetes equipment and supplies",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4018,
+                    "nexusBenefitCategory": "Diabetes Care Services",
+                    "nexusBenefitName": "Diabetes equipment and supplies",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32038,
+                "nexusId": 4019,
+                "name": "Diabetes self-management training",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4019,
+                    "nexusBenefitCategory": "Diabetes Care Services",
+                    "nexusBenefitName": "Diabetes self-management training",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32039,
+                "nexusId": 4020,
+                "name": "Insulin pumps and related supplies",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4020,
+                    "nexusBenefitCategory": "Diabetes Care Services",
+                    "nexusBenefitName": "Insulin pumps and related supplies",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32040,
+                "nexusId": 4021,
+                "name": "Continuous glucose monitors",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4021,
+                    "nexusBenefitCategory": "Diabetes Care Services",
+                    "nexusBenefitName": "Continuous glucose monitors",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32041,
+                "nexusId": 4022,
+                "name": "Medical nutrition therapy for diabetes",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4022,
+                    "nexusBenefitCategory": "Diabetes Care Services",
+                    "nexusBenefitName": "Medical nutrition therapy for diabetes",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3007,
+        "name": "Dialysis Benefits",
+        "content": "<h2>Dialysis Benefits</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3209,
+            "name": "Dialysis Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32042,
+                "nexusId": 4023,
+                "name": "Outpatient hemodialysis",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4023,
+                    "nexusBenefitCategory": "Dialysis Benefits",
+                    "nexusBenefitName": "Outpatient hemodialysis",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32043,
+                "nexusId": 4024,
+                "name": "Peritoneal dialysis",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4024,
+                    "nexusBenefitCategory": "Dialysis Benefits",
+                    "nexusBenefitName": "Peritoneal dialysis",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32044,
+                "nexusId": 4025,
+                "name": "Home dialysis services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4025,
+                    "nexusBenefitCategory": "Dialysis Benefits",
+                    "nexusBenefitName": "Home dialysis services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32045,
+                "nexusId": 4026,
+                "name": "Dialysis training",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4026,
+                    "nexusBenefitCategory": "Dialysis Benefits",
+                    "nexusBenefitName": "Dialysis training",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32046,
+                "nexusId": 4027,
+                "name": "Freestanding dialysis center services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4027,
+                    "nexusBenefitCategory": "Dialysis Benefits",
+                    "nexusBenefitName": "Freestanding dialysis center services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3008,
+        "name": "Durable Medical Equipment",
+        "content": "<h2>Durable Medical Equipment</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3210,
+            "name": "Medical Equipment and Supplies",
+            "benefits": [
+              {
+                "categoryBenefitId": 32047,
+                "nexusId": 4028,
+                "name": "Medical equipment/supplies",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4028,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Medical equipment/supplies",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ],
+                "code": "DMEPROVDISPNS",
+                "codeLabel": "Medical equipment/supplies"
+              },
+              {
+                "categoryBenefitId": 32048,
+                "nexusId": 4029,
+                "name": "Prosthetic devices",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4029,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Prosthetic devices",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32049,
+                "nexusId": 4030,
+                "name": "Orthotic devices and appliances",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4030,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Orthotic devices and appliances",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32050,
+                "nexusId": 4031,
+                "name": "Breast pumps and supplies",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4031,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Breast pumps and supplies",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32051,
+                "nexusId": 4032,
+                "name": "Oxygen and oxygen equipment",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4032,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Oxygen and oxygen equipment",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32052,
+                "nexusId": 4033,
+                "name": "Hospital beds and mobility equipment",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4033,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Hospital beds and mobility equipment",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32053,
+                "nexusId": 4034,
+                "name": "Wigs following treatment for a covered condition",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4034,
+                    "nexusBenefitCategory": "Durable Medical Equipment",
+                    "nexusBenefitName": "Wigs following treatment for a covered condition",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3009,
+        "name": "Emergency Benefits",
+        "content": "<h2>Emergency Benefits</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3211,
+            "name": "Emergency Care",
+            "benefits": [
+              {
+                "categoryBenefitId": 32054,
+                "nexusId": 4035,
+                "name": "Emergency room hospital",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4035,
+                    "nexusBenefitCategory": "Emergency Benefits",
+                    "nexusBenefitName": "Emergency room hospital",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "ERFAC",
+                "codeLabel": "Emergency room hospital"
+              },
+              {
+                "categoryBenefitId": 32055,
+                "nexusId": 4036,
+                "name": "Emergency room physician",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4036,
+                    "nexusBenefitCategory": "Emergency Benefits",
+                    "nexusBenefitName": "Emergency room physician",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ],
+                "code": "ERPROFSVC",
+                "codeLabel": "Emergency room physician"
+              },
+              {
+                "categoryBenefitId": 32056,
+                "nexusId": 4037,
+                "name": "Emergency room visit resulting in inpatient admission",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per admission",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4037,
+                    "nexusBenefitCategory": "Emergency Benefits",
+                    "nexusBenefitName": "Emergency room visit resulting in inpatient admission",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per admission"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32057,
+                "nexusId": 4038,
+                "name": "Emergency services received outside the service area",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4038,
+                    "nexusBenefitCategory": "Emergency Benefits",
+                    "nexusBenefitName": "Emergency services received outside the service area",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3010,
+        "name": "Family Planning and Infertility Benefits",
+        "content": "<h2>Family Planning and Infertility Benefits</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3212,
+            "name": "Contraceptives",
+            "benefits": [
+              {
+                "categoryBenefitId": 32058,
+                "nexusId": 4039,
+                "name": "Contraceptive drugs and devices retail",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4039,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Contraceptive drugs and devices retail",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "CNTRCPRTL",
+                "codeLabel": "Contraceptive Drugs/Devices Retail"
+              }
+            ]
+          },
+          {
+            "nexusId": 3213,
+            "name": "Family Planning",
+            "benefits": [
+              {
+                "categoryBenefitId": 32059,
+                "nexusId": 4042,
+                "name": "Voluntary sterilization for male members",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4042,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Voluntary sterilization for male members",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32060,
+                "nexusId": 4043,
+                "name": "Voluntary sterilization for female members",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4043,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Voluntary sterilization for female members",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3214,
+            "name": "Diagnosis and Treatment of the Cause of Infertility",
+            "benefits": [
+              {
+                "categoryBenefitId": 32061,
+                "nexusId": 4044,
+                "name": "Infertility diagnostic services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4044,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Infertility diagnostic services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32062,
+                "nexusId": 4045,
+                "name": "Infertility treatment professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4045,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Infertility treatment professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3215,
+            "name": "Abortion Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32063,
+                "nexusId": 4046,
+                "name": "Abortion services outpatient facility",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4046,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Abortion services outpatient facility",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32064,
+                "nexusId": 4047,
+                "name": "Abortion services professional",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4047,
+                    "nexusBenefitCategory": "Family Planning and Infertility Benefits",
+                    "nexusBenefitName": "Abortion services professional",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3011,
+        "name": "Fertility Preservation Services",
+        "content": "<h2>Fertility Preservation Services</h2><p>Covered services require medical necessity and may require advance review. Members should confirm eligibility, use the listed provider tier, and follow claim and referral procedures. Limits and exclusions appear in the governing plan document.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3216,
+            "name": "Fertility Preservation Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32065,
+                "nexusId": 4048,
+                "name": "Fertility preservation oocyte or sperm cryopreservation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4048,
+                    "nexusBenefitCategory": "Fertility Preservation Services",
+                    "nexusBenefitName": "Fertility preservation oocyte or sperm cryopreservation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32066,
+                "nexusId": 4049,
+                "name": "Fertility preservation annual storage",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4049,
+                    "nexusBenefitCategory": "Fertility Preservation Services",
+                    "nexusBenefitName": "Fertility preservation annual storage",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32067,
+                "nexusId": 4050,
+                "name": "Fertility preservation for iatrogenic infertility",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4050,
+                    "nexusBenefitCategory": "Fertility Preservation Services",
+                    "nexusBenefitName": "Fertility preservation for iatrogenic infertility",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3012,
+        "name": "Hearing Aid Services",
+        "content": "<h2>Hearing Aid Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3217,
+            "name": "Other Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32068,
+                "nexusId": 4051,
+                "name": "Hearing aid instruments and fitting",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4051,
+                    "nexusBenefitCategory": "Hearing Aid Services",
+                    "nexusBenefitName": "Hearing aid instruments and fitting",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32069,
+                "nexusId": 4052,
+                "name": "Hearing aid evaluation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4052,
+                    "nexusBenefitCategory": "Hearing Aid Services",
+                    "nexusBenefitName": "Hearing aid evaluation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32070,
+                "nexusId": 4053,
+                "name": "Hearing aid repairs and batteries",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4053,
+                    "nexusBenefitCategory": "Hearing Aid Services",
+                    "nexusBenefitName": "Hearing aid repairs and batteries",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32071,
+                "nexusId": 4054,
+                "name": "Cochlear implant services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4054,
+                    "nexusBenefitCategory": "Hearing Aid Services",
+                    "nexusBenefitName": "Cochlear implant services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3013,
+        "name": "Home Health Services",
+        "content": "<h2>Home Health Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3218,
+            "name": "Home Care",
+            "benefits": [
+              {
+                "categoryBenefitId": 32072,
+                "nexusId": 4055,
+                "name": "Home health agency visits",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4055,
+                    "nexusBenefitCategory": "Home Health Services",
+                    "nexusBenefitName": "Home health agency visits",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32073,
+                "nexusId": 4056,
+                "name": "Home health skilled nursing visits",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4056,
+                    "nexusBenefitCategory": "Home Health Services",
+                    "nexusBenefitName": "Home health skilled nursing visits",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32074,
+                "nexusId": 4057,
+                "name": "Home infusion therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4057,
+                    "nexusBenefitCategory": "Home Health Services",
+                    "nexusBenefitName": "Home infusion therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32075,
+                "nexusId": 4058,
+                "name": "Home health aide services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4058,
+                    "nexusBenefitCategory": "Home Health Services",
+                    "nexusBenefitName": "Home health aide services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3014,
+        "name": "Hospice Program Services",
+        "content": "<h2>Hospice Program Services</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3219,
+            "name": "Hospice Program",
+            "benefits": [
+              {
+                "categoryBenefitId": 32076,
+                "nexusId": 4059,
+                "name": "Routine home care",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4059,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Routine home care",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32077,
+                "nexusId": 4060,
+                "name": "Continuous home care",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4060,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Continuous home care",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32078,
+                "nexusId": 4061,
+                "name": "Inpatient respite care",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4061,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Inpatient respite care",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32079,
+                "nexusId": 4062,
+                "name": "General inpatient hospice care",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per admission",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4062,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "General inpatient hospice care",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per admission",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32080,
+                "nexusId": 4063,
+                "name": "Bereavement counseling",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4063,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Bereavement counseling",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32081,
+                "nexusId": 4064,
+                "name": "Hospice durable medical equipment",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4064,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Hospice durable medical equipment",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3220,
+            "name": "Palliative Care",
+            "benefits": [
+              {
+                "categoryBenefitId": 32082,
+                "nexusId": 4065,
+                "name": "Palliative care consultation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4065,
+                    "nexusBenefitCategory": "Hospice Program Services",
+                    "nexusBenefitName": "Palliative care consultation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3015,
+        "name": "Hospital Services",
+        "content": "<h2>Hospital Services</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3221,
+            "name": "Inpatient (Excludes Maternity)",
+            "benefits": [
+              {
+                "categoryBenefitId": 32083,
+                "nexusId": 4066,
+                "name": "Inpatient",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4066,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Inpatient",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ],
+                "code": "HOSPROOMFAC",
+                "codeLabel": "Inpatient"
+              },
+              {
+                "categoryBenefitId": 32084,
+                "nexusId": 4071,
+                "name": "Blood and blood products",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4071,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Blood and blood products",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3222,
+            "name": "Outpatient",
+            "benefits": [
+              {
+                "categoryBenefitId": 32085,
+                "nexusId": 4072,
+                "name": "Outpatient surgery hospital facility",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4072,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Outpatient surgery hospital facility",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32086,
+                "nexusId": 4073,
+                "name": "Outpatient surgery professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4073,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Outpatient surgery professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32087,
+                "nexusId": 4074,
+                "name": "Outpatient diagnostic services hospital",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4074,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Outpatient diagnostic services hospital",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32088,
+                "nexusId": 4075,
+                "name": "Observation stay",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4075,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Observation stay",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3223,
+            "name": "Ambulatory Surgery Centers",
+            "benefits": [
+              {
+                "categoryBenefitId": 32089,
+                "nexusId": 4076,
+                "name": "Ambulatory surgery center facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4076,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Ambulatory surgery center facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "URGNTCAREFSOPFAC",
+                "codeLabel": "Freestanding outpatient facility"
+              },
+              {
+                "categoryBenefitId": 32090,
+                "nexusId": 4077,
+                "name": "Ambulatory surgery center professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4077,
+                    "nexusBenefitCategory": "Hospital Services",
+                    "nexusBenefitName": "Ambulatory surgery center professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3016,
+        "name": "Infertility - Assisted Reproductive Benefits",
+        "content": "<h2>Infertility - Assisted Reproductive Benefits</h2><p>Coverage is available when clinically appropriate and remains subject to applicable limits. Advance review may apply before non-emergency services. The member is responsible for the stated cost share and for confirming provider participation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3224,
+            "name": "Infertility Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32091,
+                "nexusId": 4078,
+                "name": "Artificial insemination professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4078,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Artificial insemination professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32092,
+                "nexusId": 4079,
+                "name": "Artificial insemination assisted",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4079,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Artificial insemination assisted",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32093,
+                "nexusId": 4080,
+                "name": "Intrauterine insemination",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4080,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Intrauterine insemination",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32094,
+                "nexusId": 4081,
+                "name": "In vitro fertilization services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4081,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "In vitro fertilization services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32095,
+                "nexusId": 4082,
+                "name": "Gamete intrafallopian transfer services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4082,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Gamete intrafallopian transfer services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32096,
+                "nexusId": 4083,
+                "name": "Zygote intrafallopian transfer services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4083,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Zygote intrafallopian transfer services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32097,
+                "nexusId": 4084,
+                "name": "Oocyte retrieval professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4084,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Oocyte retrieval professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32098,
+                "nexusId": 4085,
+                "name": "Embryo transfer",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4085,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Embryo transfer",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32099,
+                "nexusId": 4086,
+                "name": "Embryo cryopreservation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4086,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Embryo cryopreservation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32100,
+                "nexusId": 4087,
+                "name": "Embryo annual storage",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4087,
+                    "nexusBenefitCategory": "Infertility - Assisted Reproductive Benefits",
+                    "nexusBenefitName": "Embryo annual storage",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3017,
+        "name": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+        "content": "<h2>Medical treatment of the teeth, gums, jaw joints, and jaw bones</h2><p>Covered services require medical necessity and may require advance review. Members should confirm eligibility, use the listed provider tier, and follow claim and referral procedures. Limits and exclusions appear in the governing plan document.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3225,
+            "name": "Dental Medical Treatment",
+            "benefits": [
+              {
+                "categoryBenefitId": 32101,
+                "nexusId": 4088,
+                "name": "Dental services related to accidental injury",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4088,
+                    "nexusBenefitCategory": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+                    "nexusBenefitName": "Dental services related to accidental injury",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32102,
+                "nexusId": 4089,
+                "name": "Treatment of temporomandibular joint disorder",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4089,
+                    "nexusBenefitCategory": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+                    "nexusBenefitName": "Treatment of temporomandibular joint disorder",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32103,
+                "nexusId": 4090,
+                "name": "Dental anesthesia for covered members",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4090,
+                    "nexusBenefitCategory": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+                    "nexusBenefitName": "Dental anesthesia for covered members",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32104,
+                "nexusId": 4091,
+                "name": "Orthognathic surgery",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4091,
+                    "nexusBenefitCategory": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+                    "nexusBenefitName": "Orthognathic surgery",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32105,
+                "nexusId": 4092,
+                "name": "Extraction of teeth prior to radiation therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4092,
+                    "nexusBenefitCategory": "Medical treatment of the teeth, gums, jaw joints, and jaw bones",
+                    "nexusBenefitName": "Extraction of teeth prior to radiation therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3018,
+        "name": "Mental Health and Substance Use Disorder Benefits",
+        "content": "<h2>Mental Health and Substance Use Disorder Benefits</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3226,
+            "name": "Behavioral Health Treatment",
+            "benefits": [
+              {
+                "categoryBenefitId": 32106,
+                "nexusId": 4093,
+                "name": "Behavioral health treatment for autism-related conditions",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4093,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Behavioral health treatment for autism-related conditions",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32107,
+                "nexusId": 4094,
+                "name": "Applied behavior analysis",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4094,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Applied behavior analysis",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3229,
+            "name": "Outpatient",
+            "benefits": [
+              {
+                "categoryBenefitId": 32108,
+                "nexusId": 4101,
+                "name": "Other outpatient services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4101,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Other outpatient services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "OUTPTNTMNTLHLTH",
+                "codeLabel": "Other outpatient services"
+              },
+              {
+                "categoryBenefitId": 32109,
+                "nexusId": 4102,
+                "name": "Outpatient mental health office visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4102,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Outpatient mental health office visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32110,
+                "nexusId": 4103,
+                "name": "Outpatient substance use disorder office visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4103,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Outpatient substance use disorder office visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32111,
+                "nexusId": 4104,
+                "name": "Intensive outpatient program",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4104,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Intensive outpatient program",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32112,
+                "nexusId": 4105,
+                "name": "Partial hospitalization program",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4105,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Partial hospitalization program",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32113,
+                "nexusId": 4106,
+                "name": "Outpatient detoxification services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4106,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Outpatient detoxification services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32114,
+                "nexusId": 4107,
+                "name": "Psychological and neuropsychological testing",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4107,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Psychological and neuropsychological testing",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32115,
+                "nexusId": 4108,
+                "name": "Virtual behavioral health visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4108,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Virtual behavioral health visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ],
+                "code": "VIRTUALCAREBEHAVIORALHEALTH",
+                "codeLabel": "Virtual behavioral health"
+              }
+            ]
+          },
+          {
+            "nexusId": 3227,
+            "name": "Inpatient Facility",
+            "benefits": [
+              {
+                "categoryBenefitId": 32116,
+                "nexusId": 4095,
+                "name": "Inpatient mental health facility services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4095,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Inpatient mental health facility services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3228,
+            "name": "Inpatient Professional",
+            "benefits": [
+              {
+                "categoryBenefitId": 32117,
+                "nexusId": 4099,
+                "name": "Inpatient mental health professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4099,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Inpatient mental health professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32118,
+                "nexusId": 4100,
+                "name": "Inpatient substance use disorder professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4100,
+                    "nexusBenefitCategory": "Mental Health and Substance Use Disorder Benefits",
+                    "nexusBenefitName": "Inpatient substance use disorder professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3019,
+        "name": "Pediatric Dental Benefits",
+        "content": "<h2>Pediatric Dental Benefits</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3230,
+            "name": "Preventive and Diagnostic Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32119,
+                "nexusId": 4109,
+                "name": "Pediatric dental oral evaluation",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4109,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental oral evaluation",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32120,
+                "nexusId": 4110,
+                "name": "Pediatric dental cleaning",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4110,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental cleaning",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32121,
+                "nexusId": 4111,
+                "name": "Pediatric dental radiographs",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4111,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental radiographs",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32122,
+                "nexusId": 4112,
+                "name": "Pediatric dental emergency palliative treatment",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4112,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental emergency palliative treatment",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3231,
+            "name": "Basic and Major Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32123,
+                "nexusId": 4113,
+                "name": "Pediatric dental restorative services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4113,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental restorative services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32124,
+                "nexusId": 4114,
+                "name": "Pediatric dental endodontic services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4114,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental endodontic services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32125,
+                "nexusId": 4115,
+                "name": "Pediatric dental periodontal services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4115,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental periodontal services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32126,
+                "nexusId": 4116,
+                "name": "Pediatric dental oral surgery",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4116,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental oral surgery",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32127,
+                "nexusId": 4117,
+                "name": "Pediatric dental medically necessary orthodontia",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4117,
+                    "nexusBenefitCategory": "Pediatric Dental Benefits",
+                    "nexusBenefitName": "Pediatric dental medically necessary orthodontia",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3020,
+        "name": "Pediatric Vision Benefits",
+        "content": "<h2>Pediatric Vision Benefits</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3232,
+            "name": "Eye Examination",
+            "benefits": [
+              {
+                "categoryBenefitId": 32128,
+                "nexusId": 4118,
+                "name": "Pediatric routine eye examination",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4118,
+                    "nexusBenefitCategory": "Pediatric Vision Benefits",
+                    "nexusBenefitName": "Pediatric routine eye examination",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3233,
+            "name": "Eyewear",
+            "benefits": [
+              {
+                "categoryBenefitId": 32129,
+                "nexusId": 4119,
+                "name": "Pediatric eyeglass lenses and frames",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4119,
+                    "nexusBenefitCategory": "Pediatric Vision Benefits",
+                    "nexusBenefitName": "Pediatric eyeglass lenses and frames",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32130,
+                "nexusId": 4120,
+                "name": "Pediatric contact lenses",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4120,
+                    "nexusBenefitCategory": "Pediatric Vision Benefits",
+                    "nexusBenefitName": "Pediatric contact lenses",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32131,
+                "nexusId": 4121,
+                "name": "Pediatric low vision services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4121,
+                    "nexusBenefitCategory": "Pediatric Vision Benefits",
+                    "nexusBenefitName": "Pediatric low vision services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3021,
+        "name": "PKU formulas and special food products",
+        "content": "<h2>PKU formulas and special food products</h2><p>The plan covers eligible care subject to clinical review, stated limitations, and the displayed member cost share. Emergency care does not require advance approval; other services may require authorization or referral.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3234,
+            "name": "PKU services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32132,
+                "nexusId": 4122,
+                "name": "PKU formulas",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4122,
+                    "nexusBenefitCategory": "PKU formulas and special food products",
+                    "nexusBenefitName": "PKU formulas",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32133,
+                "nexusId": 4123,
+                "name": "PKU special food products",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4123,
+                    "nexusBenefitCategory": "PKU formulas and special food products",
+                    "nexusBenefitName": "PKU special food products",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nexusId": 3022,
+        "name": "Physician and other Professional Services",
+        "content": "<h2>Physician and other Professional Services</h2><p>Eligible care is covered when ordered or delivered by qualified providers. Utilization review, visit limits, and exclusions may apply. Members should obtain authorization when required and retain supporting service documentation.</p><p>Small Business Primary Connect HMO 500/25 applies the cost-sharing terms displayed for each covered service.</p>",
+        "benefitSubCategories": [
+          {
+            "nexusId": 3235,
+            "name": "In-office services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32134,
+                "nexusId": 4124,
+                "name": "Generalist consultations",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$25 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4124,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Generalist consultations",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 25,
+                    "copayInterval": "per visit",
+                    "firstDollarCoverage": true,
+                    "firstDollarCoverageVisits": 3,
+                    "firstDollarCoverageLimitText": "The first 3 primary care visits are covered before the deductible applies."
+                  }
+                ],
+                "code": "OFCVSTGENIST",
+                "codeLabel": "Generalist consultations"
+              }
+            ]
+          },
+          {
+            "nexusId": 3240,
+            "name": "Basic Imaging Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32135,
+                "nexusId": 4138,
+                "name": "Diagnostic radiology services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4138,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Diagnostic radiology services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32136,
+                "nexusId": 4139,
+                "name": "Diagnostic ultrasound services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4139,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Diagnostic ultrasound services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3241,
+            "name": "Laboratory and Pathology Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32137,
+                "nexusId": 4140,
+                "name": "Diagnostic laboratory and pathology services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": true,
+                    "mappedBenefitId": 4140,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Diagnostic laboratory and pathology services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32138,
+                "nexusId": 4141,
+                "name": "Genetic testing when medically necessary",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4141,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Genetic testing when medically necessary",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3242,
+            "name": "Other Outpatient Non-Invasive Diagnostic Testing",
+            "benefits": [
+              {
+                "categoryBenefitId": 32139,
+                "nexusId": 4142,
+                "name": "Electrocardiogram and other non-invasive testing",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$100 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4142,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Electrocardiogram and other non-invasive testing",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 100,
+                    "copayInterval": "per visit",
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32140,
+                "nexusId": 4143,
+                "name": "Outpatient sleep study",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4143,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Outpatient sleep study",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3237,
+            "name": "Physician home visits",
+            "benefits": [
+              {
+                "categoryBenefitId": 32141,
+                "nexusId": 4133,
+                "name": "Physician home visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4133,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Physician home visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3236,
+            "name": "In-hospital services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32142,
+                "nexusId": 4129,
+                "name": "Inpatient physician visits",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4129,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Inpatient physician visits",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32143,
+                "nexusId": 4130,
+                "name": "Surgeon and assistant surgeon services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4130,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Surgeon and assistant surgeon services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32144,
+                "nexusId": 4131,
+                "name": "Anesthesiologist services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4131,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Anesthesiologist services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32145,
+                "nexusId": 4132,
+                "name": "Second surgical opinion",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$50 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4132,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Second surgical opinion",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 50,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3243,
+            "name": "Other Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32146,
+                "nexusId": 4144,
+                "name": "Chemotherapy and infusion therapy outpatient",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4144,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Chemotherapy and infusion therapy outpatient",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32147,
+                "nexusId": 4145,
+                "name": "Radiation therapy",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4145,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Radiation therapy",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32148,
+                "nexusId": 4146,
+                "name": "Dialysis professional services",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4146,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Dialysis professional services",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3238,
+            "name": "Telehealth Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32149,
+                "nexusId": 4134,
+                "name": "Virtual primary care visit",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4134,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Virtual primary care visit",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ],
+                "code": "VIRTUALCARE",
+                "codeLabel": "Virtual care visit"
+              },
+              {
+                "categoryBenefitId": 32150,
+                "nexusId": 4135,
+                "name": "Telehealth consultation with a network provider",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4135,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Telehealth consultation with a network provider",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "nexusId": 3239,
+            "name": "Advanced Imaging Services",
+            "benefits": [
+              {
+                "categoryBenefitId": 32151,
+                "nexusId": 4136,
+                "name": "MRI, MRA, CT, CTA and PET imaging",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "10% coinsurance",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4136,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "MRI, MRA, CT, CTA and PET imaging",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Coinsurance",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "coinsurancePct": 10,
+                    "coinsurancePenaltyCostShare": 25,
+                    "coinsurancePenaltyIntervalCostShare": "of purchase price"
+                  }
+                ]
+              },
+              {
+                "categoryBenefitId": 32152,
+                "nexusId": 4137,
+                "name": "Nuclear medicine imaging",
+                "isCustomBenefit": false,
+                "providerCostShares": [
+                  {
+                    "costShareText": "$75 per visit",
+                    "customDeductibleName": "",
+                    "isCarvedOut": false,
+                    "mappedBenefitId": 4137,
+                    "nexusBenefitCategory": "Physician and other Professional Services",
+                    "nexusBenefitName": "Nuclear medicine imaging",
+                    "oopmApplies": true,
+                    "providerCostShareType": "HMO Provider",
+                    "structureType": "Copay",
+                    "subjectToDeductible": true,
+                    "tieredBenefit": false,
+                    "copayAmt": 75,
+                    "copayInterval": "per visit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "eocSections": [
+      {
+        "code": "21",
+        "name": "Prior Authorization",
+        "nexusId": 21,
+        "eocItems": [
+          {
+            "code": "21A",
+            "content": "<h3>When decisions are made</h3><p>This section explains the applicable process, member responsibilities, and service limitations. Contact customer service before scheduled care when advance review is required.</p>",
+            "name": "When decisions are made",
+            "nexusId": 20001
+          }
+        ]
+      },
+      {
+        "code": "22",
+        "name": "Exclusions and Limitations",
+        "nexusId": 22,
+        "eocItems": [
+          {
+            "code": "22A",
+            "content": "<h3>General Exclusions</h3><p>Members should follow the procedures described here, provide requested clinical information, and verify coverage before receiving non-emergency services.</p>",
+            "name": "General Exclusions",
+            "nexusId": 20002
+          },
+          {
+            "code": "22B",
+            "content": "<h3>Prescription Drugs</h3><p>Members should follow the procedures described here, provide requested clinical information, and verify coverage before receiving non-emergency services.</p>",
+            "name": "Prescription Drugs",
+            "nexusId": 20003
+          }
+        ]
+      },
+      {
+        "code": "23",
+        "name": "Customer Service",
+        "nexusId": 23,
+        "eocItems": [
+          {
+            "code": "23A",
+            "content": "<h3>Contacting Customer Service</h3><p>Members should follow the procedures described here, provide requested clinical information, and verify coverage before receiving non-emergency services.</p>",
+            "name": "Contacting Customer Service",
+            "nexusId": 20006
+          },
+          {
+            "code": "23B",
+            "content": "<h3>Outpatient Prescription Drugs</h3><p>This section explains the applicable process, member responsibilities, and service limitations. Contact customer service before scheduled care when advance review is required.</p>",
+            "name": "Outpatient Prescription Drugs",
+            "nexusId": 20007
+          }
+        ]
+      },
+      {
+        "code": "24",
+        "name": "Clinical Trials",
+        "nexusId": 24,
+        "eocItems": [
+          {
+            "code": "24A",
+            "content": "<h3>Clinical Trial Information</h3><p>This section explains the applicable process, member responsibilities, and service limitations. Contact customer service before scheduled care when advance review is required.</p>",
+            "name": "Clinical Trial Information",
+            "nexusId": 20008
+          }
+        ]
+      },
+      {
+        "code": "25",
+        "name": "Services Outside the Service Area",
+        "nexusId": 25,
+        "eocItems": [
+          {
+            "code": "25A",
+            "content": "<h3>Care Outside the Service Area</h3><p>This section explains the applicable process, member responsibilities, and service limitations. Contact customer service before scheduled care when advance review is required.</p>",
+            "name": "Care Outside the Service Area",
+            "nexusId": 20009
+          },
+          {
+            "code": "25B",
+            "content": "<h3>Out-of-area Services</h3><p>This section explains the applicable process, member responsibilities, and service limitations. Contact customer service before scheduled care when advance review is required.</p>",
+            "name": "Out-of-area Services",
+            "nexusId": 20010
+          }
+        ]
+      },
+      {
+        "code": "28",
+        "name": "Deductible and OOPM",
+        "nexusId": 28,
+        "eocItems": [
+          {
+            "code": "28A",
+            "content": "<h3>First Dollar Services</h3><p>Members should follow the procedures described here, provide requested clinical information, and verify coverage before receiving non-emergency services.</p>",
+            "name": "First Dollar Services",
+            "nexusId": 20013
+          }
+        ]
+      }
+    ],
+    "facetsProductDescription": "HMO Primary Connect ACO 500 deductible",
+    "facetsProductId": "S7200003",
+    "fundingMethodType": "Fully Insured",
+    "isGrandfathered": false,
+    "isVirtualBlue": false,
+    "lastPublished": "2026-04-10T12:00:13.1234573Z",
+    "marketType": "Commercial",
+    "medicalNetwork": "Primary Connect ACO",
+    "nexusId": 42003,
+    "opportunityType": "New",
+    "outOfStateNetwork": "National Access Network",
+    "planANumber": "A62009",
+    "planCostShares": [
+      {
+        "costShareType": "OOP Maximum",
+        "providerCostShares": [
+          {
+            "providerCostShareType": "HMO Provider",
+            "coveredParties": [
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 4500,
+                "coveredPartyType": "Individual",
+                "coveredPartyTypeCode": "INDIVIDUAL",
+                "sortIndex": 1
+              },
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 9000,
+                "coveredPartyType": "Family",
+                "coveredPartyTypeCode": "FAMILY",
+                "sortIndex": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "costShareType": "Medical Deductible",
+        "providerCostShares": [
+          {
+            "providerCostShareType": "HMO Provider",
+            "coveredParties": [
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 500,
+                "coveredPartyType": "Individual",
+                "coveredPartyTypeCode": "INDIVIDUAL",
+                "sortIndex": 1
+              },
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 1000,
+                "coveredPartyType": "Family",
+                "coveredPartyTypeCode": "FAMILY",
+                "sortIndex": 6
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "costShareType": "Pharmacy Deductible",
+        "providerCostShares": [
+          {
+            "providerCostShareType": "HMO Provider",
+            "coveredParties": [
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 150,
+                "coveredPartyType": "Individual",
+                "coveredPartyTypeCode": "INDIVIDUAL",
+                "sortIndex": 1
+              },
+              {
+                "accruesToMedicalOopm": true,
+                "accruesToOopm": true,
+                "amount": 300,
+                "coveredPartyType": "Family",
+                "coveredPartyTypeCode": "FAMILY",
+                "sortIndex": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "planName": "Small Business Primary Connect HMO 500/25",
+    "planStructureType": "HMO",
+    "planStructureTypeCode": "STD",
+    "planType": "Medical",
+    "plans": [
+      {
+        "aNumber": "A62009",
+        "fourthQuarterCarryover": false,
+        "hasValueBasedBenefits": false,
+        "nexusPlanId": 52009,
+        "planName": "Small Business Primary Connect HMO 500/25",
+        "planType": "Medical"
+      },
+      {
+        "aNumber": "A62010",
+        "fourthQuarterCarryover": false,
+        "hasValueBasedBenefits": false,
+        "nexusPlanId": 52010,
+        "planName": "Small Business Primary Connect HMO 500/25 Pharmacy",
+        "planType": "Pharmacy"
+      }
+    ],
+    "productClassification": "Commercial",
+    "productConfigurationType": "Portfolio",
+    "productLineOfBusiness": "Small Business",
+    "programCategories": [
+      {
+        "nexusId": 11,
+        "name": "Health Management",
+        "programs": [
+          {
+            "isIncluded": true,
+            "name": "Nurse Advice Line 24/7",
+            "nexusId": 301
+          },
+          {
+            "isIncluded": false,
+            "name": "Maternity Support Program",
+            "nexusId": 302
+          },
+          {
+            "isIncluded": true,
+            "name": "Diabetes Prevention Program",
+            "nexusId": 303
+          },
+          {
+            "isIncluded": false,
+            "name": "Chronic Condition Care Program",
+            "nexusId": 304
+          },
+          {
+            "isIncluded": true,
+            "name": "Complex Care Coordination Program",
+            "nexusId": 305
+          }
+        ]
+      },
+      {
+        "nexusId": 12,
+        "name": "Lifestyle Management",
+        "programs": [
+          {
+            "isIncluded": false,
+            "name": "Wellness Rewards Program",
+            "nexusId": 311
+          },
+          {
+            "isIncluded": true,
+            "name": "Tobacco Cessation Program",
+            "nexusId": 312
+          },
+          {
+            "isIncluded": false,
+            "name": "Digital Fitness Program",
+            "nexusId": 313
+          },
+          {
+            "isIncluded": true,
+            "name": "Weight Management Program",
+            "nexusId": 314
+          }
+        ]
+      },
+      {
+        "nexusId": 13,
+        "name": "Other",
+        "programs": [
+          {
+            "isIncluded": true,
+            "name": "Member Advocacy Service",
+            "nexusId": 321
+          },
+          {
+            "isIncluded": false,
+            "name": "Care Concierge Service",
+            "nexusId": 322
+          },
+          {
+            "isIncluded": true,
+            "name": "Employee Assistance Referrals 24/7",
+            "nexusId": 323
+          },
+          {
+            "isIncluded": false,
+            "name": "National Access Program",
+            "nexusId": 324
+          },
+          {
+            "isIncluded": true,
+            "name": "Inclusive Care Navigation",
+            "nexusId": 325
+          },
+          {
+            "isIncluded": false,
+            "name": "Health Information Exchange",
+            "nexusId": 326
+          },
+          {
+            "isIncluded": true,
+            "name": "Behavioral Health Coaching",
+            "nexusId": 327
+          },
+          {
+            "isIncluded": false,
+            "name": "Out-of-Area Services Program",
+            "nexusId": 328
+          }
+        ]
+      },
+      {
+        "nexusId": 14,
+        "name": "Palliative Care",
+        "programs": [
+          {
+            "isIncluded": false,
+            "name": "Palliative Care Program",
+            "nexusId": 331
+          }
+        ]
+      },
+      {
+        "nexusId": 16,
+        "name": "Utilization Management",
+        "programs": [
+          {
+            "isIncluded": true,
+            "name": "Advanced Imaging Review",
+            "nexusId": 341
+          },
+          {
+            "isIncluded": false,
+            "name": "Oncology Review",
+            "nexusId": 342
+          },
+          {
+            "isIncluded": true,
+            "name": "Spine and Pain Review",
+            "nexusId": 343
+          }
+        ]
+      }
+    ],
+    "publishedBy": "OPS\\pubsvc02",
+    "regulatoryAgency": "MANAGED CARE AGENCY",
+    "sourceSystemCode": "PBC",
+    "drugFormulary": "Enhanced Formulary",
+    "drugFormularyId": 41001,
+    "pharmacyNetwork": "Rx Broad",
+    "medicarePartDStatus": "Creditable",
+    "firstDollarCoverage": true
+  },
+  "effectiveDate": "20260101",
+  "id": "9f4e3a05-03ff-4971-96e6-0ea0d95d9c93",
+  "planId": "S7200003",
+  "sourceId": "S7200003-20260101",
+  "sourceName": "pbcore",
+  "updatedAt": "2026-07-04T16:44:23.893Z"
+}

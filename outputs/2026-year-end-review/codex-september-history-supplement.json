@@ -1,0 +1,193 @@
+{
+  "id": "01a0f960-93c0-7d21-bdf1-9d75757b3b90",
+  "title": "Analyze September Compass CSR Chat",
+  "page": {
+    "order": "newest_first",
+    "limit": 10,
+    "nextCursor": null,
+    "hasMore": false
+  },
+  "turns": [
+    {
+      "status": "completed",
+      "startedAt": 1790954924,
+      "completedAt": 1790955212,
+      "messages": [
+        {
+          "type": "userMessage",
+          "id": "01a0fd3b-6a0f-74a1-b6b6-1c2f8098f558",
+          "content": [
+            {
+              "type": "text",
+              "text": "Of those 48 inactive what was the frequency of activity after reacquistion?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abfcdafc68487d0b8438499bb946679",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M1\nTASK: Measure the 48 reacquired users’ activity frequency after their September return.\nWORKFLOW: Rebuild the validated cohort → measure queries, active days, cadence, and repeat usage after each first September return → summarize the distribution and retention signal\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nI’m using the Spreadsheets skill to analyze the monthly extracts. I’ll treat “frequency after reacquisition” as activity from each user’s first September return through September 30, reporting query volume, active-day frequency, and whether they returned again. This does not change any files.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abfce3c835087d0b12a38ed4af31d43",
+          "text": "The cohort rebuilt to 49 rather than the previously reported 48, so I’m reconciling the single-user discrepancy before reporting frequency. The likely cause is an identifier-normalization detail; I’ll preserve the original 48-user definition rather than silently changing the cohort.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abfcec6f36487d0a19b87c5f9c0b71e",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M4\nTASK: Measure post-reacquisition activity frequency for the 48 users.\nWORKFLOW: Reconciled cohort → measured activity after first return → adjusted cadence for business-day availability\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: PASS\n- PM Template Gate: N-A — not a PM PRD\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: PASS\nNEEDS CLARIFICATION: None\n\nFrom each user’s first September return through September 30:\n\n| Measure | Result |\n|---|---:|\n| Total queries | 331 |\n| Median queries per user | 3 |\n| Average queries per user | 6.9 |\n| Median active days | 2 |\n| Median active weeks | 2 |\n| Returned on another day | 27 users (56.3%) |\n| Active in a later week | 25 users (52.1%) |\n| Only active on reacquisition day | 21 users (43.8%) |\n\nQuery frequency:\n\n- 1 query: 12 users (25.0%)\n- 2–4 queries: 22 (45.8%)\n- 5–9 queries: 7 (14.6%)\n- 10+ queries: 7 (14.6%)\n\nAfter adjusting the opportunity window to weekdays, the median user was active on **18.3% of available business days**, approximately once every 5–6 workdays. Weekend activity was negligible.\n\nThe average is skewed by heavy users: the four most active users generated **174 queries—52.6% of the cohort’s total**. The clearest retention signal is therefore that reacquisition led to repeat, later-date usage for slightly more than half the cohort, while 44% remained a one-day return.\n\nSource: :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-09.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"}\n\nF: September query extract analyzed against the validated 48-user cohort.  \nT: Reconciled 48 users, 331 queries, 134 user-active days, and zero duplicate user-timestamp records.  \nC: Frequency includes the reacquisition session; repeat-use measures isolate subsequent dates and weeks.  \nO: Read-only statistical analysis completed; no source files changed.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "status": "completed",
+      "startedAt": 1790954728,
+      "completedAt": 1790954809,
+      "messages": [
+        {
+          "type": "userMessage",
+          "id": "01a0fd38-6dd9-7303-bc68-fcb2a9f01607",
+          "content": [
+            {
+              "type": "text",
+              "text": "Of those 48 reacquired that were inactive i August how long were they inactive?\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abfccf2684887d09f27a0908efc4234",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M1\nTASK: Measure how long September’s 48 reacquired users were inactive before returning.\nWORKFLOW: Reapply the validated user and test-account filters → identify each reacquired user’s last pre-August activity and first September activity → calculate elapsed and fully inactive days → summarize the distribution and verify the cohort count.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nI’m using the Spreadsheets skill for a read-only cohort analysis. I’ll distinguish the time between observed queries from the number of complete inactive calendar days.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abfcd3476dc87d090d37fcfebde2c6e",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M4\nTASK: Measure how long September’s 48 reacquired users were inactive.\nWORKFLOW: Reconciled cohort → calculated inactivity gaps → validated distribution\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: PASS\n- PM Template Gate: N-A — not a PM PRD\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: PASS\nNEEDS CLARIFICATION: None\n\nThe typical reacquired user had been inactive for **58 complete days** before returning in September—**59.1 days** measured precisely between queries.\n\n- **Average:** 64.2 inactive days\n- **Range:** 34–146 days\n- **31–44 days:** 8 users (16.7%)\n- **45–60 days:** 17 users (35.4%)\n- **61+ days:** 23 users (47.9%)\n\nThe key takeaway is that **40 of 48 users (83.3%) had been inactive for at least 45 days**. Although the cohort had no August activity, the lapse often began earlier: 35 last appeared in July, 10 in June, and 3 in April or May.\n\n“Inactive” means no recorded Compass CSR Chat queries—not an account-status change.\n\nF: April–September monthly query extracts analyzed.  \nT: Reacquired cohort independently reconciled to 48 users; distribution and percentile checks completed.  \nC: Used complete inactive calendar days as the clearest business measure; exact query-to-query duration is also reported.  \nO: Read-only workbook analysis performed; no files changed.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "status": "completed",
+      "startedAt": 1790893827,
+      "completedAt": 1790893939,
+      "messages": [
+        {
+          "type": "userMessage",
+          "id": "01a0f997-2450-73c1-a06e-e4b0af8b8e9c",
+          "content": [
+            {
+              "type": "text",
+              "text": "Add to the slide now details about the September Churn/Acquisition/re-acquisiion\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abedf0e42e487d0bfb06b5eacca342d",
+          "text": "PERSONA: AUTO->DEV\nPERSONA LOCK: DEV\nUCAF VERSION: 2.4\nMACRO: DEV-M1\nTASK: Use Presentations skill version 26.905.11957 to add September churn, acquisition, and reacquisition details to the existing month-review slide.\nWORKFLOW: Reopen the validated September deck → add a matching user-movement section in the open content area → include lapsed, new, reacquired, and net-user metrics → update methodology notes → finalize and visually verify the revised slide.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: PASS—CONFIRMED\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nI’m using the Presentations skill to preserve the existing slide’s typography, colors, spacing, and editable objects. The additions will use the previously validated September cohort definitions.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abedf584f8487d0b6af9f61835104aa",
+          "text": "The new section fits the slide cleanly and balances the two existing charts. I’m tightening the reacquisition caption to make the cohort definition explicit: these users were inactive in August and returned in September.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abedf70404c87d0a527956be686aece",
+          "text": "PERSONA: AUTO->DEV\nPERSONA LOCK: DEV\nUCAF VERSION: 2.4\nMACRO: DEV-M5\nTASK: Deliver the slide with September user-movement details.\nWORKFLOW: Completed cohort section → updated notes → finalized → visually verified.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: PASS—CONFIRMED\n- Execution Gate (DEV only): N-A\n- Evidence Gate: PASS\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: PASS\nNEEDS CLARIFICATION: None\n\nUpdated deck: :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/Outputs/Compass-CSR-Chat-September-Month-In-Review-v4.pptx\" purpose=\"output\"}\n\nAdded:\n\n- 231 lapsed users\n- 227 new users\n- 48 reacquired users\n- Net MAU growth of 44 users\n\n**F:** Revised one-slide PowerPoint created.  \n**T:** Structural, font, re-import, text-fit, and visual checks passed.  \n**C:** “Lapsed” represents monthly inactivity, not confirmed account churn.  \n**O:** Deck finalized and rendered successfully; no Git operations occurred.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "status": "completed",
+      "startedAt": 1790892125,
+      "completedAt": 1790892387,
+      "messages": [
+        {
+          "type": "userMessage",
+          "id": "01a0f97d-2cc7-7863-a195-fbf40abbb793",
+          "content": [
+            {
+              "type": "text",
+              "text": "Understand the overall content on [Montly-Update-Slide.pptx](/Users/jjacks20/jjacks/Conversational-AI/Minerva/Background/Montly-Update-Slide.pptx) and the analysis from the raw data. Produce an updated slide with the same style that represents the Semptember Month In Review.\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed864bffc87d08f9e2a787898f405",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M1\nTASK: Use Presentations skill version 26.905.11957 to create a September Month in Review slide matching the supplied deck’s style.\nWORKFLOW: Inspect the reference deck and presentation instructions → identify the existing slide’s narrative and visual system → map the validated September analysis into that structure → transition to DEV under pre-authorized file creation → build, render, and visually verify the updated PowerPoint.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: PASS—PRE-AUTHORIZED\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nI’m using the Presentations skill because the task requires editing a PowerPoint artifact while preserving an existing visual language. The source deck and monthly extracts will remain unchanged.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed8c9999887d09a418bb4527ab33c",
+          "text": "PERSONA: AUTO->DEV\nPERSONA LOCK: DEV\nUCAF VERSION: 2.4\nMACRO: DEV-M1\nTASK: Build the September Month in Review PowerPoint by editing the supplied one-slide template.\nWORKFLOW: Reuse the existing slide and all branding → replace August-period metrics with validated September metrics → extend both charts through September → update speaker-note methodology → finalize and visually compare against the source.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: PASS—PRE-AUTHORIZED\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A — no executable behavior change\n- TDD Sequence Gate (DEV only): N-A — no executable behavior change\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nTransition: PM-M4 → DEV-M1. The source deck, validated September metrics, intended one-slide narrative, and unchanged scope satisfy the PM exit and DEV entry criteria. The request pre-authorizes creation of the updated deck. SCOPE DELTA: NONE.\n\nThe updated slide will preserve the navy sidebar, KPI strip, two-chart layout, typography, footer, and logos. It will show September retention, cumulative interactions, daily activity, response time, MAU, and WAU P50.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed92da6bc87d098962a1c506bd2f4",
+          "text": "The first render matches the reference deck and all September chart values are correct. One inherited subtitle remained unchanged because it spans two separately formatted paragraphs; I’m correcting that paragraph-level edit and rerunning the final visual check.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed95fbb0487d09c1fb0a4effc4c21",
+          "text": "PERSONA: AUTO->DEV\nPERSONA LOCK: DEV\nUCAF VERSION: 2.4\nMACRO: DEV-M5\nTASK: Deliver the September Month in Review PowerPoint.\nWORKFLOW: Completed template reuse → metric update → chart update → structural validation → visual verification.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: PASS—PRE-AUTHORIZED\n- Execution Gate (DEV only): N-A\n- Evidence Gate: PASS\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: PASS\nNEEDS CLARIFICATION: None\n\nCreated :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/Outputs/Compass-CSR-Chat-September-Month-In-Review-v2.pptx\" purpose=\"output\"}.\n\n- **F:** One-slide September deck created; source template remained unchanged.\n- **T:** Package integrity, slide dimensions, Arial font policy, re-import, text fit, and full-slide visual review passed.\n- **C:** Preserved the supplied layout and branding while updating retention, KPIs, MAU, WAU P50, charts, and speaker-note methodology.\n- **O:** Imported, edited, finalized, rendered, and inspected with the presentation tooling. No Git operations occurred.",
+          "phase": "final_answer"
+        }
+      ]
+    },
+    {
+      "status": "completed",
+      "startedAt": 1790890535,
+      "completedAt": 1790890906,
+      "messages": [
+        {
+          "type": "userMessage",
+          "id": "01a0f964-ead0-71a2-ac19-b348a3295089",
+          "content": [
+            {
+              "type": "text",
+              "text": "Run a statistical analysis of Compass CSR Chat as a month in review for September.\\\n\n\nAll contextual data found in [Monthly-Extracts](/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/) per month.\n\n\n\n1. How many unique users appear over the month.&#x20;\n2. Looking for daily active, weekly active users (P50, P95)\n3. Daily, Weekly, and Monthly Active as a Month-over-Month analysis\n4. Any insights on user churn and re-acquired\n5. Any more broad insights on user engagement and maximization of product usage\n\n\n\nNote: Business hours are heavily limited on Saturdays and closed on Sundays. Account for this with any statistical weighting.\n"
+            }
+          ]
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed229cc7087d0a26d6f6d18bfad7a",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M1\nTASK: Analyze Compass CSR Chat usage for September and produce a business-hours-adjusted month-in-review.\nWORKFLOW: Inspect the monthly extracts and spreadsheet-analysis instructions → identify September and comparison-month fields → validate identities and activity definitions → calculate DAU/WAU/MAU, P50/P95, month-over-month movement, churn/re-acquisition, and engagement findings → verify results and report evidence.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: N-A\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: FAIL\nNEEDS CLARIFICATION: None\n\nBootstrap: active policy is the repository-root `AGENTS.md`, version 2.4; persona is PM, starting in PM-M1.\n\nI’m using the Spreadsheets skill because this request requires structured analysis of monthly extract files. Its workflow will guide the calculations and validation; no source data will be modified.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed2757b5087d0bb8c4570c0320f3a",
+          "text": "The extract naming is consistent once timestamps are converted to Pacific time: the September workbook contains September 1–30 locally, even though its first visible UTC records fall on October 1. I’m using Pacific-local dates, excluding the clearly labeled `ci-smoke` automation account from human adoption metrics, and will show that exclusion explicitly.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed356120c87d0aee70738a4321413",
+          "text": "The September results are now stable after removing all explicitly labeled smoke/test accounts (36 rows total). The main adoption story is growth in depth more than reach: queries rose materially faster than monthly active users. I’m doing one independent row-level reconciliation of the September workbook before reporting the conclusions.",
+          "phase": "commentary"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_073813f49fdef575016abed389ce4087d0971a7e7618f8e804",
+          "text": "PERSONA: AUTO->PM\nPERSONA LOCK: PM\nUCAF VERSION: 2.4\nMACRO: PM-M4\nTASK: Analyze Compass CSR Chat usage for September and produce a business-hours-adjusted month-in-review.\nWORKFLOW: Reconcile extracts → normalize Pacific dates → exclude test traffic → calculate activity, retention, and engagement metrics → independently validate September totals → report findings.\nSCOPE DELTA: NONE\nBEHAVIOR IDS: N-A\nTEST TRACK: N-A\nGATE CHECK:\n- Persona Gate: PASS\n- Ambiguity Gate: PASS\n- Approval Gate: N-A\n- Execution Gate (DEV only): N-A\n- Evidence Gate: PASS\n- PM Template Gate: N-A — not a PM PRD request\n- Strategy Quality Gate (PM only): N-A\n- BDD Scenario Gate (DEV only): N-A\n- TDD Sequence Gate (DEV only): N-A\n- Persona Conformance Gate: PASS\n- Completion Gate: PASS\nNEEDS CLARIFICATION: None\n\n## September executive summary\n\n- **1,336 unique human users** generated **32,114 queries**.\n- Gross count was **1,338 users**; two explicitly labeled test accounts (`ci-smoke`, `test_id`) and their 36 queries were excluded.\n- MAU grew **3.4% MoM**, while queries grew **8.7%**. Engagement depth grew faster than audience reach.\n- Business-weighted DAU was **423**, or **441** after also excluding the apparent September 7 holiday closure.\n- Rolling WAU averaged **914**, equivalent to **68.4% of MAU**.\n- August-to-September retention was **82.1%**; **231 users lapsed**, while 227 new and 48 reacquired users produced net growth of 44.\n\n## Activity distribution\n\nActivity means at least one query. I used Pacific-local dates, weekday weight 1.0, Saturday 0.25, and Sunday 0.\n\n| September metric | P50 | P95 |\n|---|---:|---:|\n| Business-weighted DAU | 458 | 520 |\n| Rolling seven-day WAU | 913 | 973 |\n| Queries per user | 13 | 80 |\n| Active days per user | 6 | 18 |\n| Distinct products per user | 7 | 22 |\n\nSeptember 7 recorded only 20 active users versus roughly 400–530 on normal weekdays. Treating it as a closure changes weighted mean DAU from 423 to 441 but barely changes P50/P95, so the percentile findings are robust.\n\n## Month-over-month trend\n\nApril is partial, beginning April 7.\n\n| Month | Weighted DAU | Rolling WAU | MAU | Queries | Queries/user |\n|---|---:|---:|---:|---:|---:|\n| Apr | 91 | 173 | 404 | 6,308 | 15.6 |\n| May | 158 | 335 | 562 | 10,573 | 18.8 |\n| Jun | 213 | 460 | 724 | 13,515 | 18.7 |\n| Jul | 329 | 666 | 1,107 | 24,810 | 22.4 |\n| Aug | 407 | 883 | 1,292 | 29,537 | 22.9 |\n| **Sep** | **423** | **914** | **1,336** | **32,114** | **24.0** |\n| **Sep MoM** | **+3.8%** | **+3.5%** | **+3.4%** | **+8.7%** | **+5.1%** |\n\nThe product is still growing, but reach growth slowed materially after July and August. September growth came primarily from existing users using the product more frequently.\n\n## Churn and reacquisition\n\nSeptember’s active population comprised:\n\n- **1,061 retained from August:** 79.4% of September MAU\n- **227 first-time users:** 17.0%\n- **48 reacquired users:** 3.6%\n\nOf August’s 1,292 users, **231 were inactive in September**, a monthly lapse rate of **17.9%**. The 48 reacquired users represent **11.8%** of the 408 previously seen users who were inactive in August.\n\nThis measures monthly inactivity, not confirmed account churn. True September churn cannot be determined until October data is available.\n\n## Engagement findings\n\n- **16.2%** of September users appeared on only one day.\n- **34.2%** used the product on at least 10 days; only 10 users used it on 20 or more days.\n- The top 10% of users generated **36.3% of queries**, showing meaningful but not extreme concentration.\n- Median session depth was **one query**; mean was 1.8. This could indicate efficient one-shot resolution, but also limited follow-up exploration.\n- Median response time was **11 seconds**, with P95 at **25 seconds**. Retry incidence was only **0.08%**.\n- Feedback coverage was just **0.21%**. The 61 positive and two negative ratings are too sparse to infer overall answer quality.\n\n## Recommended focus\n\n1. **Prioritize second-use activation.** Target the 216 one-day users with contextual onboarding or follow-up reminders.\n2. **Run a lapsed-user recovery program.** The 48 reacquisitions demonstrate recoverability; analyze the 231 August users who disappeared.\n3. **Grow session depth carefully.** Test suggested follow-up questions and retained conversational context, while guarding response time and resolution quality.\n4. **Plan for roughly 520 DAU at peak.** Tuesday was the busiest weekday, averaging approximately 486 active users.\n5. **Improve outcome measurement.** Capture passive resolution signals or selectively request feedback; the current feedback sample is statistically inadequate.\n6. **Add an eligible-user roster.** Without the total CSR population, adoption penetration and true non-user opportunity cannot be measured.\n\nSources: :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-04.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"} :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-05.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"} :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-06.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"} :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-07.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"} :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-08.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"} :codex-file-citation{path=\"/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-09.xlsx\" purpose=\"source\" artifact_kind=\"workbook\"}\n\n**Evidence**\n\n- **F:** Six monthly workbooks covering April–September were inspected; September contained 32,150 source rows.\n- **T:** Independent row-level reconciliation reproduced 32,114 human queries and 1,336 unique human users.\n- **C:** UTC timestamps were converted to Pacific time; explicitly named smoke/test accounts were excluded; weekend weighting assumptions are disclosed above.\n- **O:** Source inventory, statistical calculations, cohort analysis, and an independent workbook reconciliation completed successfully. No files or repository state were changed.",
+          "phase": "final_answer"
+        }
+      ]
+    }
+  ]
+}

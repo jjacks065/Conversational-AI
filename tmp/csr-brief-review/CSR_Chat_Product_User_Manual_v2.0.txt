@@ -1,0 +1,381 @@
+Compass CSR Chat 
+Product User Manual
+
+DOCUMENT STATUS: DETAILED DRAFT REVIEWThis manual is
+
+
+Document Control
+Version
+Date
+Owner
+Description
+Approval
+0.1
+August, 2026
+Jason Jackson, Product Owner
+Internal working 
+Pending Final UX, content approvals
+
+
+
+Table of Contents
+1. Introduction
+2. Product Concept and Workflow
+3. Information Sources
+4. Access and Prerequisites
+5. Interface
+6. Start a Session
+7. Ask a Question
+8. Understand a Response
+9. Review and Validate
+10. Follow-Up Questions
+11. Common Workflows
+12. When Compass CSR Chat Cannot Answer
+13. Responsible Use
+14. Tips and Best Practices
+15. Troubleshooting
+16. Frequently Asked Questions
+17. Known Limitations
+18. Getting Help
+19. Glossary
+20. Open Questions and SME Validation
+Appendix A. Recommended Screenshots
+Appendix B. Research and Publication Checklist
+
+1. Introduction
+Compass CSR Chat, is a customer-service software capability that enables customer service representatives and other authorized agents to work with an AI-powered assistant. Its purpose is to help agents locate, synthesize, and review health-plan-related information while handling customer inquiries.
+Human accountabilityCompass CSR Chat assists the agent in locating and understanding information. It does not replace required business processes, authoritative source documentation, or human judgment. The agent remains responsible for following applicable procedures and validating information before communicating it to a customer.
+
+1.1 Intended Audience
+The expected primary audience is the front-line customer service representative or authorized agent. 
+1.2 What This Manual Covers
+The product concept and role of AI
+Candidate categories of information Compass CSR Chat may use
+A safe, general pattern for asking questions and reviewing responses
+Provisional workflow templates for common health-plan inquiries
+Responsible-use principles and validation points
+Known evidence gaps that must be resolved before publication
+1.3 What This Manual Does Not Cover
+Formal benefit interpretation policy
+Claims adjudication or authorization processing
+Legal, privacy, regulatory, or compliance requirements not established by approved materials
+Undocumented product controls, integrations, error messages, service levels, or escalation paths
+2. Product Concept and Workflow
+At a conceptual level, Compass CSR Chat sits between the agent and approved enterprise information sources. The agent enters a customer question, Compass CSR Chat searches or retrieves relevant information, and the application presents a synthesized response and, where supported, source information for agent review.
+Stage
+Primary actor
+Description
+1. Receive inquiry
+CSR/agent
+Understand the customer question and identify the relevant member, plan, benefit, provider, or document context.
+2. Ask Compass CSR Chat
+CSR/agent
+Enter a clear question using only information permitted by approved policy.
+3. Retrieve and synthesize
+Compass Compass CSR Chat / AI assistant
+Locate and summarize relevant information from supported approved sources. Exact retrieval behavior requires validation.
+4. Review
+CSR/agent
+Read the response and inspect supporting sources or other authoritative systems as required.
+5. Resolve or continue
+CSR/agent
+Ask a follow-up, use another approved process, or escalate according to documented procedures.
+6. Communicate
+CSR/agent
+Provide the customer response only after completing required validation.
+
+[SME VALIDATION REQUIRED - Validate this sequence against the current production workflow and identify any mandatory systems or checkpoints.]
+3. Information Sources
+AtlasIQ is the primary information source for Compass products.  Data within the platform will include health plan benefit, network, demographic and other data sourced directly from health plan sources.
+3.1 Benefit Documents
+Compass CSR Chat may retrieve information that is sourced from health plan benefit document data, Evidence of Coverage data, and related benefit references. These sources may describe covered services, cost sharing, limitations, exclusions, and plan rules.
+3.2 Provider and Network Information
+Compass CSR Chat may retrieve information from network or provider databases to support provider-network questions.
+3.3 Plan, Product, and Internal Knowledge
+Compass CSR Chat may use plan and product reference information, internal knowledge sources, and other approved health-plan or customer-service data sources.
+
+4. Access and Prerequisites
+Product-specific access instructions cannot be written without verified source material.
+Topic
+Required evidence
+Eligibility and role
+Authorized roles, training prerequisites, licensing, and approval process
+Authentication
+Sign-in method, multifactor authentication, session behavior, and access restrictions
+Launch path
+Verified application URL, portal, desktop integration, or embedded workspace
+Member context
+Whether a member must be selected in another system before launching Compass CSR Chat
+Environment
+Supported browser, device, network, and production versus test environment
+
+SCREENSHOT REQUIREDCapture the approved launch location and first screen. Include the screen name, relevant control, purpose, and any prerequisite context. Do not capture live PHI or PII.
+
+5. Interface
+The current interface has not been verified. The following components are common documentation topics, not confirmed Compass CSR Chat controls.
+Potential component
+What must be validated
+Conversation or chat pane
+Placement, purpose, supported message types, and empty-state behavior
+Question entry field
+Verified label, character limits, submission method, and input restrictions
+AI response area
+Response structure, status messages, and formatting
+Source or citation area
+Whether sources appear, how they open, and what metadata is shown
+Member/customer context
+What context is displayed, inherited, or selected
+New conversation
+Verified control name and when to use it
+Conversation history
+Retention, access, search, and privacy behavior
+Feedback
+Controls, categories, routing, and follow-up process
+
+[SME VALIDATION REQUIRED - Replace this section with current approved screenshots and verified control descriptions.]
+6. Start a Session
+Complete all required access and authentication steps.
+Open Compass CSR Chat using the approved launch path.
+Confirm that the correct customer, member, plan, or inquiry context is available, if the product uses contextual data.
+Start a new conversation when required by documented conversation-management rules.
+Enter the first question.
+Review the response and supporting source information before using it.
+[Jason -  Confirmthis above
+7. Ask a Question
+Write a direct question that identifies the information needed. Include only context permitted by approved privacy and security guidance. Examples below are illustrative and do not guarantee a response or confirm a supported capability.
+Inquiry type
+Illustrative question
+Specialist cost share
+What is the member's specialist copay?
+Covered service
+Is physical therapy covered under this plan?
+Deductible
+What is the deductible for in-network services?
+Provider network
+Is this provider in network?
+Emergency care
+What are the member's emergency room benefits?
+
+Question-writing pattern
+Ask one primary question at a time.
+Name the benefit, service, provider, or plan element precisely.
+Add relevant context only when approved and necessary.
+Use a follow-up question to clarify ambiguous terms or request detail.
+Do not assume that a fluent response is correct.
+8. Understand a Response
+The exact Compass CSR Chat response format is not verified. A response may contain a synthesized answer and could include benefit details, plan information, provider information, source references, links, disclaimers, or suggested follow-up questions. Each element must be confirmed in current product evidence.
+Response element
+Agent review question
+Main answer
+Does it directly address the customer question?
+Plan or benefit detail
+Is it specific to the correct plan, service, network tier, and effective period?
+Provider/network detail
+Does it identify the correct provider, location, specialty, and network context?
+Citation or source
+Is the source authoritative, current, and applicable?
+Limitations or exclusions
+Are material conditions clearly shown?
+Follow-up prompt
+Would clarification improve accuracy, or should a new conversation begin?
+
+[Jason - Confirm each of these response elements exist and remove what doesn’t belong
+9. Review and Validate
+When relying on a Compass CSR Chat response, agents should be prepared to note the following parameters that determine a complete answer:
+Correct member and plan context
+Benefit category and service description
+Network tier and provider participation
+Cost share, deductible, limitations, exclusions, and authorization conditions
+Effective dates and plan year
+Applicable source document and section
+Conflicts between Compass CSR Chat and another authoritative system
+Do not treat AI output as finalA concise or confident answer can still be incomplete, outdated, inapplicable, or misunderstood. Use approved  systems and source documents as a second verified source, as required.
+
+
+10. Follow-Up Questions
+If Compass CSR Chat supports conversational context, follow-up questions can refine a previous answer. This capability and context boundaries require validation.
+Purpose
+Illustrative follow-up
+Clarify scope
+Does that apply to in-network services only?
+Request detail
+What limitations apply to that benefit?
+Check a related cost
+Does the deductible apply before coinsurance?
+Refine provider question
+Is the provider in network at the specific location?
+Change topic
+Start a new conversation if required by documented context rules.
+
+[Jason  - how long does conversational context persists and when agents must start a new chat.]
+
+11. Common Workflows
+The workflows below are provisional templates. Publish only those supported by current product evidence.
+Benefit inquiry
+CSR objective: Determine whether and how a service is covered.
+Example question: Is physical therapy covered under this plan?
+Confirm the correct inquiry context.
+Ask the question in clear, specific language.
+Review the full response.
+Open or consult the supporting source when available and required.
+Validate the answer using approved procedures.
+If the answer cannot be confirmed, use the approved fallback or escalation process.
+Review: Plan, service category, limitations, exclusions, authorization rules, effective period, and source document.
+[SME VALIDATION REQUIRED - Confirm that this workflow is supported and add product-specific steps, controls, and escalation requirements.]
+Cost-share inquiry
+CSR objective: Identify a copay, coinsurance, or deductible condition.
+Example question: What is the member's specialist copay?
+Confirm the correct inquiry context.
+Ask the question in clear, specific language.
+Review the full response.
+Open or consult the supporting source when available and required.
+Validate the answer using approved procedures.
+If the answer cannot be confirmed, use the approved fallback or escalation process.
+Review: Network tier, benefit category, deductible applicability, visit limits, effective period, and source.
+[SME VALIDATION REQUIRED - Confirm that this workflow is supported and add product-specific steps, controls, and escalation requirements.]
+Provider-network inquiry
+CSR objective: Determine whether a provider participates in the applicable network.
+Example question: Is this provider in network?
+Confirm the correct inquiry context.
+Ask the question in clear, specific language.
+Review the full response.
+Open or consult the supporting source when available and required.
+Validate the answer using approved procedures.
+If the answer cannot be confirmed, use the approved fallback or escalation process.
+Review: Provider identity, location, specialty, network/product, data freshness, and authoritative network system.
+[SME VALIDATION REQUIRED - Confirm that this workflow is supported and add product-specific steps, controls, and escalation requirements.]
+Plan-document inquiry
+CSR objective: Locate relevant language in an approved plan document.
+Example question: Where does the plan document describe emergency room benefits?
+Confirm the correct inquiry context.
+Ask the question in clear, specific language.
+Review the full response.
+Open or consult the supporting source when available and required.
+Validate the answer using approved procedures.
+If the answer cannot be confirmed, use the approved fallback or escalation process.
+Review: Correct document, plan year, section, page, applicability, and any overriding source.
+[SME VALIDATION REQUIRED - Confirm that this workflow is supported and add product-specific steps, controls, and escalation requirements.]
+Follow-up customer question
+CSR objective: Clarify a prior answer without losing applicable context.
+Example question: Does that benefit require prior authorization?
+Confirm the correct inquiry context.
+Ask the question in clear, specific language.
+Review the full response.
+Open or consult the supporting source when available and required.
+Validate the answer using approved procedures.
+If the answer cannot be confirmed, use the approved fallback or escalation process.
+Review: Connection to the original topic, correct plan context, and authoritative source.
+[SME VALIDATION REQUIRED - Confirm that this workflow is supported and add product-specific steps, controls, and escalation requirements.]
+12. When Compass CSR Chat Cannot Answer
+Do not guess or fill gaps on Compass CSR Chat's behalf. The approved manual must specify the operational response for each condition below.
+Condition
+Safe interim direction pending validation
+No answer or information not found
+Rephrase once if the question may be ambiguous, then use the approved authoritative system or support path.
+Source unavailable
+Do not rely on an unsupported statement. Use the approved source or fallback process.
+Sources conflict
+Do not silently choose. Identify the conflict and apply documented source precedence or escalate.
+Response appears incorrect
+Stop, verify in authoritative sources, and report through the approved feedback or incident process.
+Response is incomplete
+Ask a focused follow-up or use another approved information source.
+Network result is unclear
+Verify provider identity, location, specialty, plan/network, and source freshness.
+Application error
+Preserve allowed diagnostic details and follow the approved technical support process.
+
+[SME VALIDATION REQUIRED - Replace interim directions with approved procedures, error messages, severity criteria, and escalation contacts.]
+13. Responsible Use
+Responsible use requirements must come from approved governance, privacy, security, compliance, and operations materials. Until those are reviewed, this manual cannot define what PHI or PII may be entered, stored, or shared in Compass CSR Chat.
+Use Compass CSR Chat only for approved business purposes.
+Apply human review before communicating information.
+Use only approved sources and workflows.
+Do not enter information that approved policy prohibits.
+Do not copy, export, or share content unless the action is explicitly permitted.
+Report suspected inaccurate information, privacy concerns, or security issues through approved channels.
+[SME VALIDATION REQUIRED - Validate every item above and insert the authoritative governance citations, permitted-data rules, prohibited uses, retention rules, feedback process, and incident reporting procedure.]
+14. Tips and Best Practices
+These are general drafting recommendations, not verified Compass CSR Chat training guidance.
+Use plain, specific language.
+Ask one main question at a time.
+Include the applicable service, plan, network, or provider context when permitted.
+Read the entire answer rather than relying on the first sentence.
+Check the displayed source and effective date when available.
+Use follow-up questions for clarification.
+Start a new conversation when the topic or member changes, if required by documented context rules.
+Use another approved application or process when Compass CSR Chat cannot provide a verifiable answer.
+[SME VALIDATION REQUIRED - Replace or supplement with best practices found in training, demonstrations, pilot feedback, and SME discussions.]
+15. Troubleshooting
+Issue
+Possible cause
+Recommended action
+Cannot access Compass CSR Chat
+Permissions, authentication, launch path, or service availability not established
+Follow approved access and support procedures. [SME VALIDATION REQUIRED]
+No response
+Question, source availability, or service condition unknown
+Rephrase only if appropriate; otherwise use approved fallback. [SME VALIDATION REQUIRED]
+Unexpected answer
+Context mismatch, source issue, or AI misunderstanding
+Confirm context and source; do not communicate until validated. [SME VALIDATION REQUIRED]
+Citation/link does not open
+Permission, link, or source availability unknown
+Use approved source-access or support process. [SME VALIDATION REQUIRED]
+Provider result is ambiguous
+Provider identity, location, specialty, or network context may be incomplete
+Refine the inquiry and verify in the authoritative network system. [SME VALIDATION REQUIRED]
+
+16. Frequently Asked Questions
+Does Compass CSR Chat replace benefit documents or other authoritative systems?
+No. The supplied product description states that AI assistance must not be presented as replacing required processes, source documentation, or human judgment.
+Are Compass CSR Chat responses always correct?
+No. AI-generated responses require agent review and any validation mandated by approved procedures.
+What information can Compass CSR Chat access?
+The brief names benefit documents, Evidence of Coverage materials, network/provider databases, plan and product information, internal knowledge, and other approved sources. The production source list is unverified.
+Can I enter PHI or PII?
+[SME VALIDATION REQUIRED - No approved privacy and data-entry policy was available.]
+How do I report an inaccurate response?
+[SME VALIDATION REQUIRED - Feedback and escalation processes were not available.]
+17. Known Limitations
+No product-specific limitation has been validated from internal evidence. The final manual should distinguish current, pilot, planned, deprecated, and unverified capabilities. Do not infer limitations from prototypes or old meeting discussions.
+Supported lines of business and plan years
+Source coverage and update timing
+Question types not supported
+Context and conversation limits
+Provider/network data limits
+Document retrieval and citation limits
+Response latency and availability
+Export, copy, print, history, or retention limits
+Browser, device, or environment limits
+[SME VALIDATION REQUIRED - Populate only from current approved documentation or validated product-owner statements.]
+18. Getting Help
+[SME VALIDATION REQUIRED - Add the approved help desk, product support, supervisor support, issue-reporting, escalation, and feedback processes. Do not publish placeholder contact information.]
+19. Glossary
+Term
+Definition / validation note
+AI
+Artificial intelligence. In this manual, the technology Compass CSR Chat uses to assist with retrieving and synthesizing information.
+AI assistant / AI agent
+The AI capability within Compass CSR Chat. Official preferred term requires validation.
+Benefit
+A health-plan provision describing coverage or related conditions.
+Benefit document
+An approved document describing plan benefits, cost sharing, limitations, exclusions, or related provisions.
+Citation
+A reference to supporting source information. Whether and how Compass CSR Chat displays citations requires validation.
+CSR
+Customer Service Representative.
+Compass CSR Chat
+The customer-service application described in the request; also called Compass CSR Chat.
+Compass CSR Chat
+Alternate product name for Compass CSR Chat, subject to official branding validation.
+Network
+A group of participating providers associated with a plan or product.
+PHI
+Protected Health Information. Product-specific handling rules require approved governance sources.
+PII
+Personally Identifiable Information. Product-specific handling rules require approved governance sources.
+Source document
+An authoritative or approved information source used to support an answer.
+

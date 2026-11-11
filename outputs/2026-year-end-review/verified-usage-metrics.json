@@ -1,0 +1,81 @@
+{
+  "method": "Recombine monthly extracts; interpret Excel timestamps as UTC; convert all timestamps to America/Los_Angeles; trim user IDs, preserve case; exclude ci-smoke and test_id. Response times in seconds.",
+  "files": [
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-04.xlsx",
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-05.xlsx",
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-06.xlsx",
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-07.xlsx",
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-08.xlsx",
+    "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/Monthly-Extracts/compass-csr-chat-queries-2026-09.xlsx"
+  ],
+  "months": [
+    {
+      "month": "2026-04",
+      "rawQueries": 6392,
+      "excludedTestQueries": 48,
+      "humanQueries": 6344,
+      "monthlyActiveUsers": 405,
+      "responseP50": 42.0,
+      "responseP95": 125.0
+    },
+    {
+      "month": "2026-05",
+      "rawQueries": 10551,
+      "excludedTestQueries": 11,
+      "humanQueries": 10540,
+      "monthlyActiveUsers": 562,
+      "responseP50": 38.0,
+      "responseP95": 78.0
+    },
+    {
+      "month": "2026-06",
+      "rawQueries": 13607,
+      "excludedTestQueries": 44,
+      "humanQueries": 13563,
+      "monthlyActiveUsers": 726,
+      "responseP50": 27.0,
+      "responseP95": 74.0
+    },
+    {
+      "month": "2026-07",
+      "rawQueries": 24852,
+      "excludedTestQueries": 25,
+      "humanQueries": 24827,
+      "monthlyActiveUsers": 1109,
+      "responseP50": 11.0,
+      "responseP95": 24.0
+    },
+    {
+      "month": "2026-08",
+      "rawQueries": 29529,
+      "excludedTestQueries": 47,
+      "humanQueries": 29482,
+      "monthlyActiveUsers": 1290,
+      "responseP50": 12.0,
+      "responseP95": 29.0
+    },
+    {
+      "month": "2026-09",
+      "rawQueries": 32150,
+      "excludedTestQueries": 36,
+      "humanQueries": 32114,
+      "monthlyActiveUsers": 1336,
+      "responseP50": 11.0,
+      "responseP95": 25.0
+    }
+  ],
+  "humanQueriesAprThroughSep": 116870,
+  "septemberRetentionFromAugust": {
+    "retainedUsers": 1060,
+    "augustMAU": 1290,
+    "rate": 0.8217054263565892
+  },
+  "mayToSeptemberMAUGrowth": 1.3772241992882561,
+  "historicalDiscrepancy": {
+    "reportedCumulativeQueries": 116857,
+    "freshCumulativeQueries": 116870,
+    "reportedAugustMAU": 1292,
+    "freshAugustMAU": 1290,
+    "decision": "Omit exact cumulative and retention figures from review; use independently reconciled September and May-to-September MAU. Historical naive Excel dates were interpreted as Pacific; workbook creation history says UTC instants were retained. Source-of-truth reconciliation remains open."
+  }
+}

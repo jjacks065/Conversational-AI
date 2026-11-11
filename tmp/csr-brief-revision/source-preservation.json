@@ -1,0 +1,225 @@
+{
+  "source_docx_sha256": "466bc7407e81d9c605c436e5eca1e27ae430d36c7491455c0fdce0ccd207825d",
+  "preserved_tail_elements": 79,
+  "section_2_onward_c14n_sha256": "3ccf199f17d464ffd81b3c2d09afda6a10f6203182243824147df451c870e4b6",
+  "source_pdf_sha256": "a487fed75eb76e19a8e8c7880cd0f3e8ab111d43ce43c1ae4d245cc1ef1e0461",
+  "output_docx": "/Users/jjacks20/jjacks/Conversational-AI/output/pdf/Compass CSR Chat - Product Brief Revised.docx",
+  "front_matter_elements": 52,
+  "toc": [
+    [
+      "1. Product Overview",
+      3,
+      0
+    ],
+    [
+      "1.1 How CSR Chat works",
+      3,
+      1
+    ],
+    [
+      "1.2 Capabilities available today",
+      3,
+      1
+    ],
+    [
+      "1.3 Users and customer configuration",
+      3,
+      1
+    ],
+    [
+      "1.4 Product scope and boundaries",
+      3,
+      1
+    ],
+    [
+      "2. Problem and Value",
+      4,
+      0
+    ],
+    [
+      "2.1 The customer service challenge",
+      4,
+      1
+    ],
+    [
+      "2.2 How Compass CSR Chat helps",
+      4,
+      1
+    ],
+    [
+      "2.3 Expected outcomes",
+      4,
+      1
+    ],
+    [
+      "3. Capabilities",
+      5,
+      0
+    ],
+    [
+      "3.1 Current capabilities",
+      5,
+      1
+    ],
+    [
+      "3.2 Answer configuration",
+      5,
+      1
+    ],
+    [
+      "3.3 Delivery options",
+      6,
+      1
+    ],
+    [
+      "3.4 Roadmap context",
+      6,
+      1
+    ],
+    [
+      "4. Use Cases",
+      7,
+      0
+    ],
+    [
+      "4.1 Benefit coverage",
+      7,
+      1
+    ],
+    [
+      "4.2 Cost sharing and conditions",
+      7,
+      1
+    ],
+    [
+      "4.3 Plan interpretation",
+      7,
+      1
+    ],
+    [
+      "5. Customer Journeys",
+      8,
+      0
+    ],
+    [
+      "5.1 Representative journey",
+      8,
+      1
+    ],
+    [
+      "5.2 Operations journey",
+      8,
+      1
+    ],
+    [
+      "5.3 Implementation journey",
+      8,
+      1
+    ],
+    [
+      "6. Responsible Use and Boundaries",
+      9,
+      0
+    ],
+    [
+      "7. Getting Started",
+      9,
+      0
+    ],
+    [
+      "8. Product Success and Decision Framework",
+      9,
+      0
+    ],
+    [
+      "Related Product Documentation",
+      10,
+      0
+    ]
+  ],
+  "source_section_2_body_index": 45,
+  "final_pdf": "/Users/jjacks20/jjacks/Conversational-AI/output/pdf/Compass CSR Chat - Product Brief Revised.pdf",
+  "final_pages": 10,
+  "pdf_preservation": "Pages 4 to 10 reuse source PDF pages 3 to 9; only page-number footer text replaced.",
+  "footer_changes": [
+    {
+      "revised_page": 4,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 5,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 6,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 7,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 8,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 9,
+      "footer_text_blocks_replaced": 3
+    },
+    {
+      "revised_page": 10,
+      "footer_text_blocks_replaced": 3
+    }
+  ],
+  "final_validation": {
+    "page_count": 10,
+    "source_files_unchanged": true,
+    "non_body_docx_parts_identical": true,
+    "section_2_onward_xml_identical": true,
+    "contents_page_numbers_verified": true,
+    "downstream_pdf_checks": [
+      {
+        "source_page": 3,
+        "revised_page": 4,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 4,
+        "revised_page": 5,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 5,
+        "revised_page": 6,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 6,
+        "revised_page": 7,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 7,
+        "revised_page": 8,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 8,
+        "revised_page": 9,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      },
+      {
+        "source_page": 9,
+        "revised_page": 10,
+        "body_text_identical": true,
+        "body_pixels_identical": true
+      }
+    ]
+  }
+}

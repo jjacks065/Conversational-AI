@@ -1,0 +1,26 @@
+Compass CSR Chat  ·  Product Brief
+8 of 8
+6. Responsible Use and Boundaries
+ Thee representative remains responsible for following approved procedures and communicating the fitnal 
+answer.
+ Compass CSR Chat does not replace formal plan documents, legal determinations, claims adjudication, 
+or coverage decisions.
+ Thee calling application supplies the applicable customer and plan context; Compass CSR Chat does not 
+independently identify a member or determine which plan applies.
+ Queestions outside the available approved context are not answered.
+ Customer-specifitc privacy, security, retention, and PHI requirements are governed by the applicable 
+agreements and the Technical Architecture & Security Overview.
+ Roadmap capabilities must not be represented as available until their source data, integration, controls, 
+and validation are complete.
+7. Getting Started
+Thee recommended next step is a joint discovery session with Product, Implementation, customer operations, 
+data, identity, security, and benefitt subject matteer experts.
+DISCOVERY DECISION OUTPUT
+Priority use cases and representative 
+population
+Iniial implemenaion scope and pilo group
+Plan data availability and ownership Daa invenory, ransfer approach, and refresh expecaions
+Delivery and authentication model Hosed, embedded, or API pah wih ideniy responsibiliies
+Answer requirements Terminology, presenaion, disclosures, and validaion crieria
+Outcome measures Baseline merics and launch success crieria
+Security and compliance review Required agreemens, approvals, and archiecure review

@@ -1,0 +1,198 @@
+[
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "Title 1",
+    "text": "COMPASS – CSR Chat",
+    "textChars": 18,
+    "textLines": 1,
+    "bbox": {
+      "left": 82.77,
+      "top": 72.46,
+      "width": 1109.23,
+      "height": 57.02
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "Content Placeholder 6",
+    "text": "CSR Chat  /  Jason Jackson  /  October 23, 2026  /  v2",
+    "textChars": 54,
+    "textLines": 1,
+    "bbox": {
+      "left": 81.44,
+      "top": 662.77,
+      "width": 794.13,
+      "height": 29.08
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "pitch-label",
+    "text": "Product Overview",
+    "textChars": 16,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 170,
+      "width": 1080,
+      "height": 26
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "pitch",
+    "text": "CSR Chat helps health plan service teams answer benefit questions faster with structured, plan-specific guidance grounded in approved benefit data.",
+    "textChars": 147,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 204,
+      "width": 1090,
+      "height": 68
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "customer-heading",
+    "text": "The customer and problem",
+    "textChars": 24,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 286,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "customer-body",
+    "text": "Health plan CSRs navigate complex plan data during live calls. Manual lookup increases handling time and the risk of inconsistent benefit explanations.",
+    "textChars": 151,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 320,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-heading",
+    "text": "The solution",
+    "textChars": 12,
+    "textLines": 1,
+    "bbox": {
+      "left": 674,
+      "top": 286,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-body",
+    "text": "Ask in plain language. CSR Chat returns coverage, cost sharing, limits and required disclosures from approved plan data for representative review.",
+    "textChars": 146,
+    "textLines": 1,
+    "bbox": {
+      "left": 674,
+      "top": 320,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "value-heading",
+    "text": "The value proposition",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 416,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "value-body",
+    "text": "BSC, Sep 2026: 11 sec median answer time.\n32,114 interactions. 1,336 monthly active users.\nGoal: less manual benefit research during calls.",
+    "textChars": 139,
+    "textLines": 3,
+    "bbox": {
+      "left": 98,
+      "top": 450,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "offer-heading",
+    "text": "The offer and next step",
+    "textChars": 23,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 554,
+      "width": 1080,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "offer-body",
+    "text": "Core in production at BSC. Standalone pilots in development. Next: scope a non-PHI pilot with Jason Jackson.\nTargets: ≥95% approved-case pass rate and launch within 7 days of signature, with inputs and approvals ready.",
+    "textChars": 218,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 588,
+      "width": 1080,
+      "height": 60
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-heading",
+    "text": "Competitors",
+    "textChars": 11,
+    "textLines": 1,
+    "bbox": {
+      "left": 674,
+      "top": 418.77,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-body",
+    "text": "NiCE CXone Copilot and Genesys Agent Copilot.\nCSR Chat focus: health plan benefit interpretation,\napproved disclosures and representative review.",
+    "textChars": 145,
+    "textLines": 3,
+    "bbox": {
+      "left": 674,
+      "top": 452.77,
+      "width": 506,
+      "height": 80
+    }
+  }
+]

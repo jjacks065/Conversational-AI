@@ -1,0 +1,67 @@
+{"id":"sh/547294r6","name":"Rectangle 1","kind":"shape","position":{"left":-0.65,"top":-0.65,"width":306.67,"height":721.29}}
+{"id":"sh/k3yl0zql","name":"TextBox 2","kind":"textbox","text":"IN PRODUCTION","position":{"left":37.33,"top":46.67,"width":255.2,"height":17.77}}
+{"id":"sh/7qp4be9c","name":"TextBox 3","kind":"textbox","text":"CSR Chat","position":{"left":37.33,"top":74.67,"width":238.96,"height":51.7}}
+{"id":"sh/65g3298r","name":"TextBox 4","kind":"textbox","text":"October MTD review\nOct 1 - 26, 2026","position":{"left":37.33,"top":133.27,"width":238.96,"height":42.66}}
+{"id":"sh/ts7md4r2","name":"TextBox 5","kind":"textbox","text":"MTD RETENTION","position":{"left":37.33,"top":521.43,"width":255.2,"height":17.6}}
+{"id":"sh/sryl4zqx","name":"TextBox 6","kind":"textbox","text":"77.2%","position":{"left":37.33,"top":552.93,"width":255.2,"height":59.74}}
+{"id":"sh/fu94fe98","name":"TextBox 7","kind":"textbox","text":"September users returned","position":{"left":37.33,"top":607.52,"width":238.96,"height":18.13}}
+{"id":"sh/utg3698n","name":"Rectangle 8","kind":"shape","position":{"left":349.33,"top":101.89,"width":212,"height":83.39}}
+{"id":"sh/wn6dc7eh","name":"TextBox 9","kind":"textbox","text":"146,086","position":{"left":365.33,"top":116.55,"width":198,"height":33.6}}
+{"id":"sh/hofulsf2","name":"TextBox 10","kind":"textbox","text":"interactions since launch","position":{"left":365.33,"top":153.89,"width":198,"height":14.54}}
+{"id":"sh/ul4vaxgb","name":"Rectangle 11","kind":"shape","position":{"left":574.67,"top":101.89,"width":212,"height":83.39}}
+{"id":"sh/vmdcj2xw","name":"TextBox 12","kind":"textbox","text":"1,652","position":{"left":590.67,"top":116.55,"width":198,"height":33.6}}
+{"id":"sh/4r6dg7et","name":"TextBox 13","kind":"textbox","text":"weekday queries/day (avg)","position":{"left":590.67,"top":153.89,"width":198,"height":14.4}}
+{"id":"sh/5sfepcfe","name":"Rectangle 14","kind":"shape","position":{"left":800,"top":101.89,"width":212,"height":83.39}}
+{"id":"sh/ipovexwn","name":"TextBox 15","kind":"textbox","text":"501","position":{"left":816,"top":116.55,"width":198,"height":33.6}}
+{"id":"sh/3qxwn2x8","name":"TextBox 16","kind":"textbox","text":"weekday active users P50","position":{"left":816,"top":153.89,"width":198,"height":14.4}}
+{"id":"sh/sfqdkrep","name":"Rectangle 17","kind":"shape","position":{"left":1025.33,"top":101.89,"width":212,"height":83.39}}
+{"id":"sh/dgzetcfa","name":"TextBox 18","kind":"textbox","text":"9 sec","position":{"left":1041.33,"top":116.55,"width":198,"height":33.6}}
+{"id":"sh/1cvuxc7e","name":"TextBox 19","kind":"textbox","text":"median answer time","position":{"left":1041.33,"top":153.89,"width":198,"height":14.54}}
+{"id":"sh/ozmd8r65","name":"Rectangle 24","kind":"shape","position":{"left":649.53,"top":249.97,"width":287.6,"height":349.26}}
+{"id":"sh/nydczmpk","name":"Rectangle 25","kind":"shape","position":{"left":949.73,"top":249.97,"width":287.6,"height":349.26}}
+{"id":"sh/wr6xwbq1","name":"TextBox 57","kind":"textbox","text":"MONTHLY ACTIVE\nUSERS","position":{"left":668.43,"top":266.07,"width":153.98,"height":34.9}}
+{"id":"sh/dc7md8fe","name":"Rectangle 59","kind":"shape","position":{"left":846.21,"top":264.32,"width":80,"height":29.4}}
+{"id":"sh/cby5k3yt","name":"TextBox 60","kind":"textbox","text":"+15.6%","position":{"left":850.51,"top":270.4,"width":71.39,"height":19.2}}
+{"id":"sh/ilw3etgr","name":"TextBox 66","kind":"textbox","text":"Jul","position":{"left":688.73,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/9kr6lsfm","name":"TextBox 67","kind":"textbox","text":"+52.8%","position":{"left":684.53,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/7q1kfudo","name":"TextBox 70","kind":"textbox","text":"Aug","position":{"left":743.32,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/8ra1oze9","name":"TextBox 71","kind":"textbox","text":"+16.6%","position":{"left":739.12,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/jm1kbuds","name":"TextBox 74","kind":"textbox","text":"Sep","position":{"left":797.91,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/kna1kzed","name":"TextBox 75","kind":"textbox","text":"+3.5%","position":{"left":793.71,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/3ilknedw","name":"TextBox 78","kind":"textbox","text":"Oct","position":{"left":852.51,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/rehk7e50","name":"TextBox 79","kind":"textbox","text":"+15.6%","position":{"left":848.31,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/qd8jy94v","name":"TextBox 80","kind":"textbox","text":"month-over-month change","position":{"left":674.73,"top":553.03,"width":236.57,"height":10.23}}
+{"id":"sh/d0j29on6","name":"TextBox 81","kind":"textbox","text":"WEEKLY ACTIVE\nUSERS P50","position":{"left":968.63,"top":266.07,"width":153.98,"height":34.9}}
+{"id":"sh/3ahk3u54","name":"Rectangle 83","kind":"shape","position":{"left":1146.41,"top":264.32,"width":80,"height":29.4}}
+{"id":"sh/298ju94j","name":"TextBox 84","kind":"textbox","text":"+8.9%","position":{"left":1150.71,"top":270.4,"width":71.39,"height":19.2}}
+{"id":"sh/5cvy903q","name":"TextBox 90","kind":"textbox","text":"Jul","position":{"left":988.93,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/ip4zyl4f","name":"TextBox 91","kind":"textbox","text":"+54.0%","position":{"left":984.73,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/tgfyd032","name":"TextBox 94","kind":"textbox","text":"Aug","position":{"left":1043.52,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/6d4z25kb","name":"TextBox 95","kind":"textbox","text":"+28.0%","position":{"left":1039.32,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/9kby1g3i","name":"TextBox 98","kind":"textbox","text":"Sep","position":{"left":1098.11,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/yhkza1wv","name":"TextBox 99","kind":"textbox","text":"+2.4%","position":{"left":1093.91,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/l4by5wv6","name":"TextBox 102","kind":"textbox","text":"Oct","position":{"left":1152.71,"top":509.64,"width":50.39,"height":10.67}}
+{"id":"sh/654ze1wr","name":"TextBox 103","kind":"textbox","text":"+8.9%","position":{"left":1148.51,"top":532.03,"width":58.79,"height":10.13}}
+{"id":"sh/76dg76dc","name":"TextBox 104","kind":"textbox","text":"month-over-month change","position":{"left":974.93,"top":553.03,"width":236.57,"height":10.23}}
+{"id":"sh/na9gvmd8","name":"TextBox 108","kind":"textbox","text":"COMPANY CONFIDENTIAL — INTERNAL USE ONLY","position":{"left":346.67,"top":682.67,"width":322.24,"height":11.31}}
+{"id":"sh/pgzax4jm","name":"Rectangle 109","kind":"shape","position":{"left":1021.07,"top":669.33,"width":229.59,"height":30.67}}
+{"id":"im/z2pgrid0","name":"Picture 110","kind":"image","position":{"left":1035.74,"top":676,"width":68.65,"height":17.33}}
+{"id":"im/cfexwne9","name":"Picture 111","kind":"image","position":{"left":1120.39,"top":678.33,"width":115.61,"height":12.67}}
+{"id":"sh/2d8rm9kb","name":"September User Movement Panel","kind":"shape","position":{"left":349.33,"top":249.97,"width":287.6,"height":349.26}}
+{"id":"sh/dkja1ojy","name":"September User Movement Title","kind":"textbox","text":"OCTOBER MTD\nUSER MOVEMENT","position":{"left":368.23,"top":266.07,"width":164,"height":36}}
+{"id":"sh/cjatsj2d","name":"September Net User Badge","kind":"shape","position":{"left":538,"top":264.32,"width":88,"height":29.4}}
+{"id":"sh/bi1sze1s","name":"September Net User Badge Text","kind":"textbox","text":"+208 NET","position":{"left":542,"top":270.4,"width":80,"height":19.39}}
+{"id":"sh/qhsbq9k7","name":"User Movement Value 1","kind":"textbox","text":"304","position":{"left":374,"top":327,"width":68,"height":38}}
+{"id":"sh/tofapkju","name":"User Movement Label 1","kind":"textbox","text":"INACTIVE MTD","position":{"left":451,"top":329,"width":158,"height":18}}
+{"id":"sh/sn69gf29","name":"User Movement Detail 1","kind":"textbox","text":"22.8% of September users","position":{"left":451,"top":350,"width":160,"height":24}}
+{"id":"sh/kratwza5","name":"User Movement Value 2","kind":"textbox","text":"447","position":{"left":374,"top":415,"width":68,"height":38}}
+{"id":"sh/lsja54ra","name":"User Movement Label 2","kind":"textbox","text":"NEW","position":{"left":451,"top":417,"width":158,"height":18}}
+{"id":"sh/ypsbupsz","name":"User Movement Detail 2","kind":"textbox","text":"First seen in October","position":{"left":451,"top":438,"width":160,"height":24}}
+{"id":"sh/jq1s3u9k","name":"User Movement Value 3","kind":"textbox","text":"65","position":{"left":374,"top":503,"width":68,"height":38}}
+{"id":"sh/svut0za1","name":"User Movement Label 3","kind":"textbox","text":"REACQUIRED","position":{"left":451,"top":505,"width":158,"height":18}}
+{"id":"sh/tw3a94rm","name":"User Movement Detail 3","kind":"textbox","text":"Inactive in September","position":{"left":451,"top":526,"width":160,"height":24}}
+{"id":"sh/6tsbypsv","name":"User Movement Divider 1","kind":"shape","position":{"left":368.23,"top":399,"width":250,"height":0.7}}
+{"id":"sh/7u1s7u9g","name":"User Movement Divider 2","kind":"shape","position":{"left":368.23,"top":487,"width":250,"height":0.7}}
+{"id":"sh/ofil8fm5","name":"October Partial Month Badge","kind":"textbox","text":"PARTIAL MONTH","position":{"left":37.33,"top":184,"width":112,"height":24}}
+{"id":"ch/x8jmps7m","name":"Monthly Active Users Native Chart","kind":"chart","position":{"left":672,"top":318,"width":242,"height":188}}
+{"id":"ch/wnalwnqh","name":"Weekly Active Users Native Chart","kind":"chart","position":{"left":972,"top":318,"width":242,"height":188}}

@@ -1,0 +1,213 @@
+[#GAI-174] Implement Pega Voice AI integration using Audiohook to enable real-time voice analytics and conversational insights for customer interactions (Risk - Medium)
+[GAI-174] Implement Pega Voice AI integration using Audiohook to enable real-time voice analytics and conversational insights for customer interactions (Risk - Medium)
+Created: 14/Jan/26                    Updated: 02/Sep/26
+Due: 30/Apr/26
+Status:
+Approved for Testing
+Project:
+Stellarus AI Governance Intake
+Components:
+None
+Affects versions:
+None
+Fix versions:
+None
+Type:
+Intake
+Priority:
+3 - Minor
+Reporter:
+Hina Khan
+Assignee:
+Karen Levine-Flandrup
+Resolution:
+Unresolved
+Votes:
+0
+Labels:
+business-form, business-form-11143, med-risk, security-has-questions
+Σ Remaining Estimate:
+Not Specified
+Remaining Estimate:
+Not Specified
+Σ Time Spent:
+Not Specified
+Time Spent:
+Not Specified
+Σ Original Estimate:
+Not Specified
+Original estimate:
+Not Specified
+Attachments:
+Voice AI - BSC AI Use Case Template.xlsx
+AI Use Case Risk Assessment Questionnaire - GAI-174.xlsx
+Re- ExtMsg- Re- [JIRA] Andres Hermosilla mentioned you on GAI-174.eml
+GAI-174 - PEGA Voice AI.xlsx
+Sub-tasks:
+Key
+Summary
+Type
+Status
+Assignee
+GAI-178
+EA Assessment
+Subtask
+Completed
+Aman Sharma
+GAI-179
+Risk Assessment
+Subtask
+Completed
+Michelle Minnick
+GAI-180
+Compliance Assessment
+Subtask
+Completed
+Dawn Kinneer
+GAI-181
+Security Assessment
+Subtask
+Completed
+Andres Hermosilla
+Use Case Driver (POC):
+Sonya Wade
+Business Sponsor:
+Kari Hayes
+MVP Success Criteria / Expected Benefit:
+The solution will leverage Voice AI to automate call summarization, reduce manual steps, allowing the agent to focus on quality of customer service to the member and improve call summary quality.
+Vendor Involvement:
+Yes
+Technical Approach/Platform/Vendors:
+Pega Partners are engaged
+Willingness to Fund:
+Yes
+Requires BSC Data:
+Yes
+Data Classification:
+Public Data - Data shown publicly
+Start date:
+16/Feb/26
+Rank:
+2|hz1alb:a0i
+Description
+We need to deliver the technical integration of Pega Voice AI through Audiohook, providing the architecture, infrastructure, and readiness required for future voice-driven business capabilities. The scope includes establishing secure audio streaming, configuring APIs, and ensuring compliance with enterprise standards.
+Comments
+Comment by
+Karen Levine-Flandrup
+[
+22/Jan/26
+]
+Hina Khan this process was transitioned to my team in early January.  We do not see approvals for this to go to production.  Do you have an approval message from Mike Catania that you can share?  Otherwise you are in the backlog of the process and does not currently have approvals to go to production on requested date of april.
+Please advise.
+Comment by
+Hina Khan
+[
+22/Jan/26
+]
+Thank you, Karen Levine-Flandrup , for the update. We do not have any approval yet, and April is the date the business is considering at the moment. We have involved Ian Lopez  and his team and completed a review. Next, we have a follow-up regarding the EA decision.
+During our last call, we learned about the IT Sterllus process for AI approval, so we would like to begin that process with your team. If April is not feasible, could you please let me know the process and any follow-ups required with you and your team so we can outline and define our processes? Thank you.
+CC: Brian Dees , Vidya Rai , Rajeev Haswani
+Comment by
+Chendra Sekhar Grandhi
+[
+28/Jan/26
+]
+EA has assessed the capabilities of Pega Voice AI and find it appropriate to be used as ‘Agent Assist’ to BSC customer service team using Pega Shield Advisor today. EA recommends the pilot as BSC already uses Pega Shield Advisor and Pega Voice AI is an addon in the platform to help pre-fill forms/feedback with on Pega Shield Advisor. EA approves to go ahead with the Pega Voice AI pilot.
+Comment by
+Karen Levine-Flandrup
+[
+03/Feb/26
+]
+Aman Sharma see below for EA approval?  Please update your subtask.
+Michelle Minnick Dawn Kinneer looks complete enough to kick off.  Thanks.
+Comment by
+Joe Martinez
+[
+06/Feb/26
+]
+Risk = Medium, per attached assessment. Per question support available, AI Use Case Risk Assessment – Process Support Guide - Information Security & Risk Management - Confluence. Please let me know if you have any questions.
+Overall Summary:
+The AI Use Case Risk Questionnaire identifies this Voice AI implementation as Medium risk, driven primarily by the presence of PHI, reliance on vendor cloud‑based processing, and the early‑stage maturity of operational controls. The use case remains assistive—not decision‑making—and includes human review of all summaries, reducing safety and fairness risk areas while still requiring appropriate safeguards.
+Recommended Mitigations:
+To manage a Medium‑risk profile, the team should focus on strengthening documentation, enhancing monitoring and drift/bias checks, and ensuring formal security validation prior to scaling beyond pilot. Additional emphasis should be placed on hardening vendor integrations, confirming HIPAA‑aligned safeguards, and maturing operational oversight so the solution can safely progress from pilot to wider deployment.
+Comment by
+Dawn Kinneer (Inactive)
+[
+09/Feb/26
+]
+Following review, the AI tool and associated functionality as presented during the assessment are considered acceptable for use within the defined scope and subject to the controls, safeguards, and operating conditions documented in this review.
+Comment by
+Freyda Tran
+[
+12/Feb/26
+]
+Andres Hermosilla - assessments have been completed by EA, Risk and Compliance. Assigning subtask to kick off Security’s review. Thanks!
+Comment by
+Andres Hermosilla
+[
+19/Feb/26
+]
+Hina Khan can you confirm whether there will be PHI data involved?
+Comment by
+Hina Khan
+[
+20/Feb/26
+]
+Hi Andres Hermosilla  - Voice AI does not store any PHI, Voice AI is able to listen to the call, but, it does not store any of this information.
+Comment by
+Andres Hermosilla
+[
+23/Feb/26
+]
+Okay, can be PHI be exchanged via a call, eg by the customer or by reading back data to the customer from the AI?
+Comment by
+Hina Khan
+[
+23/Feb/26
+]
+Hi Andres Hermosilla  - Voice AI is able to listen to the call, which means it can access PHI during the conversation. However, it does not retain or store any of this information after the call ends. This ensures that while Voice AI processes the audio in real time, no PHI is saved or kept within the system.
+Comment by
+Andres Hermosilla
+[
+24/Feb/26
+]
+Hina Khan  how does it access PHI? How does voice AI integrate with our data?
+Comment by
+Hina Khan
+[
+24/Feb/26
+]
+Andres Hermosilla , I have reached out to the Pega team for clarification and included you for further guidance and support. I’ll do my best to get this clarification as soon as possible. Thank you!!
+Comment by
+Andres Hermosilla
+[
+03/Mar/26
+]
+Hina Khan following up on this, thank you!
+Comment by
+Hina Khan
+[
+11/Mar/26
+]
+Andres Hermosilla, could you please review the email? Apologies, I missed the last email from the Pega team, so I'm sorry for the delay.
+Comment by
+Karen Levine-Flandrup
+[
+12/Mar/26
+]
+Passed STellarus AI Governance on 3/12. Ready for BSC Governance.  BSC AI Governance is required prior to testing due to your usage of BSC data.
+Comment by
+Mukul Sinvhal
+[
+24/Apr/26
+]
+4/22/2026: Approved by BSC AI Gov
+GAI-174 - PEGA Voice AI.xlsx
+Comment by
+Hina Khan
+[
+02/Sep/26
+]
+Thank you for the updates, Karen Levine-Flandrup  please let us know if you need anything else from our side.
+CC: Rajeev Haswani , Amiya Kumar Rath , Vidya Rai , Shawna Maitia , Sonya Wade
+Generated at Fri Nov 06 18:48:11 UTC 2026 by Jason Jackson using Jira 1001.0.0-SNAPSHOT#100295-rev:30f301faa123fbef7f33006c52a9db372ad7afa7.

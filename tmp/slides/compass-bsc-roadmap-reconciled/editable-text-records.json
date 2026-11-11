@@ -1,0 +1,807 @@
+[
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "title",
+    "text": "One Compass vision, delivered in bounded releases",
+    "textChars": 49,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "page-number",
+    "text": "1",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "lead",
+    "text": "Connect member intent, permitted data and the CSR experience\nthrough Compass Voice and Compass CSR Chat.",
+    "textChars": 104,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1090,
+      "height": 90
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-01",
+    "text": "01",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-01",
+    "text": "Understand\nmember intent",
+    "textChars": 24,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-01",
+    "text": "Front-door vision: recognize need,\nthen resolve or route.",
+    "textChars": 57,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 21
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-02",
+    "text": "02",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 467,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-02",
+    "text": "Carry context\nto the CSR",
+    "textChars": 24,
+    "textLines": 2,
+    "bbox": {
+      "left": 467,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-02",
+    "text": "Permitted information arrives\nwith the member’s request.",
+    "textChars": 56,
+    "textLines": 2,
+    "bbox": {
+      "left": 467,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 21
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-03",
+    "text": "03",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 836,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-03",
+    "text": "Reduce manual\nagent effort",
+    "textChars": 26,
+    "textLines": 2,
+    "bbox": {
+      "left": 836,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-03",
+    "text": "Compass knowledge and Voice\nassistance in Shield Advisor.",
+    "textChars": 57,
+    "textLines": 2,
+    "bbox": {
+      "left": 836,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 21
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "first-release-label",
+    "text": "PROPOSED FIRST BSC RELEASE",
+    "textChars": 26,
+    "textLines": 1,
+    "bbox": {
+      "left": 116,
+      "top": 568,
+      "width": 1044,
+      "height": 25
+    },
+    "fontSize": 17
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "first-release",
+    "text": "One authenticated inbound journey with trusted intent and Atlas context.",
+    "textChars": 72,
+    "textLines": 1,
+    "bbox": {
+      "left": 116,
+      "top": 602,
+      "width": 1044,
+      "height": 34
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "title",
+    "text": "Compass prepares context; Genesys routes the call",
+    "textChars": 49,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "page-number",
+    "text": "2",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "service-subtitle",
+    "text": "First service: use an agreed post-authentication intent checkpoint.",
+    "textChars": 67,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 55
+    },
+    "fontSize": 25
+  },
+  {
+    "kind": "table",
+    "slide": 2,
+    "role": "context-service-features",
+    "text": "Proposed Compass feature\nWhat the service provides\nDelivery boundary\nTrusted intent\nand identity\nInterpret the agreed intent and\nvalidate caller/service authority.\nConfirm intent producer and\ntrusted identity propagation.\nAtlas context\nservice\nReturn permitted context, status,\nfreshness and an approved route class.\nValidate required fields, access\nand data coverage.\nContext delivery\nand fallback\nDeliver context to an authorized\nCSR or accepted AI destination.\nGenesys enforces routing and\nfallback; late results cannot reroute.",
+    "textChars": 531,
+    "textLines": 4,
+    "bbox": {
+      "left": 98,
+      "top": 248,
+      "width": 1080,
+      "height": 310
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "service-integration-label",
+    "text": "INTEGRATION DECISION",
+    "textChars": 20,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 587,
+      "width": 1080,
+      "height": 27
+    },
+    "fontSize": 17
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "service-integration",
+    "text": "SDK / adapter or direct API: validate hosting, identity and the wait budget.",
+    "textChars": 76,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 620,
+      "width": 1080,
+      "height": 34
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "title",
+    "text": "Agent assistance has separate delivery tracks",
+    "textChars": 45,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "page-number",
+    "text": "3",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-subtitle",
+    "text": "Compass features for GAI-174 and GAI-663, alongside the context service.",
+    "textChars": 72,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 55
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 3,
+    "role": "agent-assist-tracks",
+    "text": "BSC need\nCompass feature direction\nReadiness and timing\nBenefits and\nknowledge lookup\nCSR Chat benefit answers and\napproved KB / SMP retrieval\nin Shield Advisor.\nBenefit Q&A foundation.\nBSC integration to validate.\nQ1 planning track.*\nTranscription and\ncall summaries\nCompass Voice transcription and\ndraft summaries for CSR review.\nSeparate voice/audio scope.\nQ2 planning track.*\nAgree retention and writeback.\nAgent queries and\nworkflow support\nProposed live queries, case/rule\nguidance, response and follow-up\ndrafts for CSR review.\nProposed extension.\nQ3 query planning track.*\nCase/rule scope to agree.",
+    "textChars": 606,
+    "textLines": 4,
+    "bbox": {
+      "left": 98,
+      "top": 246,
+      "width": 1080,
+      "height": 344
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-accountability",
+    "text": "The context service can support these features; each needs its own delivery acceptance.",
+    "textChars": 87,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 610,
+      "width": 1080,
+      "height": 31
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-source-note",
+    "text": "*Directional sequence, not committed releases. The CSR owns final communication and actions.",
+    "textChars": 92,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 643,
+      "width": 1080,
+      "height": 21
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "title",
+    "text": "February MVP target; expansion follows results",
+    "textChars": 46,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "page-number",
+    "text": "4",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "roadmap-summary-subtitle",
+    "text": "Planning windows from December 2026 through Q4 2027; readiness governs release.",
+    "textChars": 79,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 39
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "table",
+    "slide": 4,
+    "role": "roadmap-summary",
+    "text": "Stage\nTiming\nCompass focus\n0  Prove\nDec 2026\nDemonstrate one journey; agree intent, context,\nPega overlap, interface and accountable owners.\n1  MVP\nFeb 1–28, 2027\nLaunch target\nOne journey with context before routing. Self-service\nrequires an accepted voice / AI destination.\n2  Widen\nMar–Jun 2027\nMonthly releases\nExpand validated intents toward the Top 20 ambition;\nseparate agent-assist features need their own acceptance.\n3  Routing pilots\nQ2 discovery\nQ3 2027 proposed\nDesign all-LOB routing, digital context, callbacks and\nsupervisory assistance; pilot selected scopes.\n4  Expand\nQ4 2027\nProposed\nScale proven inbound scope; retire only accepted\nPega AI functions. Outbound / new channels remain future.",
+    "textChars": 709,
+    "textLines": 6,
+    "bbox": {
+      "left": 98,
+      "top": 226,
+      "width": 1080,
+      "height": 370
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "roadmap-conflict",
+    "text": "Schedule conflict: source plan has Mar–Apr pilot / May–Jun production.\nFebruary remains a target; reconcile scope, dependencies and owner-approved readiness.",
+    "textChars": 157,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 611,
+      "width": 1080,
+      "height": 49
+    },
+    "fontSize": 18
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "title",
+    "text": "Prove service quality before claiming business value",
+    "textChars": 52,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "page-number",
+    "text": "5",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "measurement-subtitle",
+    "text": "Baseline the first service; measure later features against their own outcomes.",
+    "textChars": 78,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 39
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 5,
+    "role": "outcome-scorecard",
+    "text": "Outcome\nMeasures to baseline and track\nIntent and context\nIntent accuracy, Atlas data quality\nand context delivery success\nCall continuity\nAdded wait, correct destination,\nfallback success and availability\nAgent / member\noutcomes\nAHT, FCR, research/summary effort,\nrepeat contact, quality and adoption\nEconomics\nCost per eligible interaction; later,\nCCaaS + AI cost per resolved contact\nAccess and\nlifecycle\nAuthorized data, context freshness,\nexpiry and exposure incidents",
+    "textChars": 473,
+    "textLines": 6,
+    "bbox": {
+      "left": 98,
+      "top": 238,
+      "width": 726,
+      "height": 364
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decisions-heading",
+    "text": "Pilot decisions",
+    "textChars": 15,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 243,
+      "width": 300,
+      "height": 40
+    },
+    "fontSize": 26
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-01",
+    "text": "01",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 309,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-01",
+    "text": "Exact service and\nPega overlap",
+    "textChars": 30,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 308,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-02",
+    "text": "02",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 405,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-02",
+    "text": "Named owners,\nbaselines and thresholds",
+    "textChars": 38,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 404,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-03",
+    "text": "03",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 501,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-03",
+    "text": "Compass data flow and\nproduction acceptance",
+    "textChars": 43,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 500,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "measurement-note",
+    "text": "Savings remain a hypothesis. Compare like-for-like cohorts and include added wait / AI cost.",
+    "textChars": 92,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 625,
+      "width": 1080,
+      "height": 32
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "title",
+    "text": "Compass roadmap: December 2026 through Q4 2027",
+    "textChars": 46,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "page-number",
+    "text": "6",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "roadmap-subtitle",
+    "text": "Proposed delivery approach and evidence to proceed; dates are planning targets.",
+    "textChars": 79,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 32
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "table",
+    "slide": 6,
+    "role": "detailed-roadmap",
+    "text": "Stage\nTiming\nDelivery approach\nDecision to proceed\n0  Prove\nDec 2026\nOne journey; agree intent, Atlas fields,\nPega overlap and interface.\nScope, contracts and\nowners accepted.\nReadiness\nJan 2027\nProve identity, approved reads, typed result\nand selected SDK / API path.\nEnd-to-end, timeout and\nlate-result checks pass.\n1  MVP target\nFeb 1–28, 2027\nContext before routing; human fallback.\nVoice-agent readiness gates self-service.\nBSC launch acceptance;\nsupport and rollback ready.\n2  Widen\nMar–Jun 2027\nMonthly releases\nExpand validated intents toward Top 20;\nagent assist has separate release gates.\nContext, wait, routing,\nquality and cost accepted.\nPhase 2\ndiscovery\nQ2 2027\nParallel work\nDesign all-LOB routing, digital journeys,\ncallbacks and supervisory assistance.\nPilot scope, signals, owners\nand capacity agreed.\n3  Pilots*\nQ3 2027\nPilot selected flows; validate exact Pega\nfunction transition where selected.\nService continuity and\nattributable value accepted.\n4  Expand*\nQ4 2027\nScale proven inbound scope; retire only\naccepted migrated Pega AI functions.\nSustained value and\noperational ownership.",
+    "textChars": 1108,
+    "textLines": 8,
+    "bbox": {
+      "left": 98,
+      "top": 214,
+      "width": 1080,
+      "height": 411
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "roadmap-note",
+    "text": "Schedule conflict: source plan has Mar–Apr pilot / May–Jun production; February target needs reconciliation.\n*Proposed allocation. Outbound and additional channels remain future scope.",
+    "textChars": 184,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 632,
+      "width": 1080,
+      "height": 32
+    },
+    "fontSize": 15
+  }
+]

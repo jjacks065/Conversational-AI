@@ -1,0 +1,1202 @@
+[
+  {
+    "n": 1,
+    "style": "",
+    "text": "  Stellarus"
+  },
+  {
+    "n": 2,
+    "style": "",
+    "text": "COMPASS"
+  },
+  {
+    "n": 3,
+    "style": "",
+    "text": "Compass CSR Chat"
+  },
+  {
+    "n": 4,
+    "style": "",
+    "text": "Product Brief"
+  },
+  {
+    "n": 5,
+    "style": "",
+    "text": "Prepared by    Stellarus"
+  },
+  {
+    "n": 6,
+    "style": "",
+    "text": "Date    October 2026"
+  },
+  {
+    "n": 7,
+    "style": "",
+    "text": "ABOUT THIS DOCUMENT"
+  },
+  {
+    "n": 8,
+    "style": "",
+    "text": "This brief defines the product strategy and current-state positioning for Compass CSR Chat: the customer problem it solves, target users, product promise, current capabilities, measurable value, supported use cases, product boundaries, and the decisions required to adopt it responsibly. Technical design, implementation execution, training, and post-launch operating procedures are maintained in companion documents."
+  },
+  {
+    "n": 9,
+    "style": "",
+    "text": "Contents"
+  },
+  {
+    "n": 10,
+    "style": "",
+    "text": "1. Product Snapshot"
+  },
+  {
+    "n": 11,
+    "style": "",
+    "text": "1.1 What Compass CSR Chat is"
+  },
+  {
+    "n": 12,
+    "style": "",
+    "text": "1.2 Who it serves"
+  },
+  {
+    "n": 13,
+    "style": "",
+    "text": "1.3 Product scope"
+  },
+  {
+    "n": 14,
+    "style": "",
+    "text": "2. Problem and Value"
+  },
+  {
+    "n": 15,
+    "style": "",
+    "text": "2.1 The customer service challenge"
+  },
+  {
+    "n": 16,
+    "style": "",
+    "text": "2.2 How Compass CSR Chat helps"
+  },
+  {
+    "n": 17,
+    "style": "",
+    "text": "2.3 Expected outcomes"
+  },
+  {
+    "n": 18,
+    "style": "",
+    "text": "3. Capabilities"
+  },
+  {
+    "n": 19,
+    "style": "",
+    "text": "3.1 Current capabilities"
+  },
+  {
+    "n": 20,
+    "style": "",
+    "text": "3.2 Answer configuration"
+  },
+  {
+    "n": 21,
+    "style": "",
+    "text": "3.3 Delivery options"
+  },
+  {
+    "n": 22,
+    "style": "",
+    "text": "3.4 Roadmap context"
+  },
+  {
+    "n": 23,
+    "style": "",
+    "text": "4. Use Cases"
+  },
+  {
+    "n": 24,
+    "style": "",
+    "text": "4.1 Benefit coverage"
+  },
+  {
+    "n": 25,
+    "style": "",
+    "text": "4.2 Cost sharing and conditions"
+  },
+  {
+    "n": 26,
+    "style": "",
+    "text": "4.3 Plan interpretation"
+  },
+  {
+    "n": 27,
+    "style": "",
+    "text": "5. Customer Journeys"
+  },
+  {
+    "n": 28,
+    "style": "",
+    "text": "5.1 Representative journey"
+  },
+  {
+    "n": 29,
+    "style": "",
+    "text": "5.2 Operations journey"
+  },
+  {
+    "n": 30,
+    "style": "",
+    "text": "5.3 Implementation journey"
+  },
+  {
+    "n": 31,
+    "style": "",
+    "text": "6. Responsible Use and Boundaries"
+  },
+  {
+    "n": 32,
+    "style": "",
+    "text": "7. Getting Started"
+  },
+  {
+    "n": 33,
+    "style": "Heading1",
+    "text": "1. Product Snapshot"
+  },
+  {
+    "n": 34,
+    "style": "",
+    "text": "Compass CSR Chat is an AI-powered decision-support product for health plan customer service representatives. During a live member or provider interaction, a representative asks a benefit question in natural language and receives a structured, plan-specific response grounded in the health plan's approved benefit data. The product is designed to reduce the effort required to locate and interpret benefit information while preserving human review and established customer procedures."
+  },
+  {
+    "n": 35,
+    "style": "",
+    "text": "PRODUCT PROMISEHelp representatives find, interpret, and communicate plan-specific benefit information faster and more consistently, while keeping the representative accountable for the final customer communication."
+  },
+  {
+    "n": 36,
+    "style": "Heading2",
+    "text": "1.1 What Compass CSR Chat is"
+  },
+  {
+    "n": 37,
+    "style": "",
+    "text": "Compass CSR Chat brings benefit interpretation into the representative workflow. It retrieves the plan context supplied with the request, identifies relevant benefit information, and generates an answer using that context. When the available context does not support an answer, the product is designed to say that it cannot answer rather than rely on general knowledge."
+  },
+  {
+    "n": 38,
+    "style": "Heading2",
+    "text": "1.2 Who it serves"
+  },
+  {
+    "n": 39,
+    "style": "",
+    "text": "Audience"
+  },
+  {
+    "n": 40,
+    "style": "",
+    "text": "Need"
+  },
+  {
+    "n": 41,
+    "style": "",
+    "text": "How Compass CSR Chat supports them"
+  },
+  {
+    "n": 42,
+    "style": "",
+    "text": "Customer service representatives"
+  },
+  {
+    "n": 43,
+    "style": "",
+    "text": "Find and explain plan-specific benefit information during live interactions"
+  },
+  {
+    "n": 44,
+    "style": "",
+    "text": "Natural-language questions and structured answers grounded in approved plan data"
+  },
+  {
+    "n": 45,
+    "style": "",
+    "text": "Supervisors and operations leaders"
+  },
+  {
+    "n": 46,
+    "style": "",
+    "text": "Improve consistency, confidence, and service efficiency"
+  },
+  {
+    "n": 47,
+    "style": "",
+    "text": "Standardized answer patterns, feedback, and operational monitoring"
+  },
+  {
+    "n": 48,
+    "style": "",
+    "text": "Benefit and quality reviewers"
+  },
+  {
+    "n": 49,
+    "style": "",
+    "text": "Validate accuracy, disclosures, and product behavior"
+  },
+  {
+    "n": 50,
+    "style": "",
+    "text": "Customer-specific validation sets, human review, and release controls"
+  },
+  {
+    "n": 51,
+    "style": "",
+    "text": "Technology and security teams"
+  },
+  {
+    "n": 52,
+    "style": "",
+    "text": "Confirm integration, access, and operating requirements"
+  },
+  {
+    "n": 53,
+    "style": "",
+    "text": "Defined delivery patterns and a separate architecture and security review"
+  },
+  {
+    "n": 54,
+    "style": "Heading2",
+    "text": "1.3 Product scope"
+  },
+  {
+    "n": 55,
+    "style": "",
+    "text": "The current product scope is representative-assisted benefit inquiry. Supported plan populations depend on which benefit data has been integrated and validated for the health plan. Additional domains are enabled only after their source data, rules, and validation are complete."
+  },
+  {
+    "n": 56,
+    "style": "ListBullet",
+    "text": "Agent-facing: Compass CSR Chat supports representatives; it is not a member-facing chatbot."
+  },
+  {
+    "n": 57,
+    "style": "ListBullet",
+    "text": "Decision support: It assists with benefit questions; it is not a system of record or claims adjudication system."
+  },
+  {
+    "n": 58,
+    "style": "ListBullet",
+    "text": "Plan-grounded: It answers from approved customer context; it is not permitted to answer from general knowledge."
+  },
+  {
+    "n": 59,
+    "style": "Heading1",
+    "text": "2. Problem and Value"
+  },
+  {
+    "n": 60,
+    "style": "Heading2",
+    "text": "2.1 The customer service challenge"
+  },
+  {
+    "n": 61,
+    "style": "",
+    "text": "Benefit inquiries create a time-sensitive knowledge problem. Representatives may need to navigate multiple plan documents, internal tools, and policy sources while a member or provider waits, then interpret specialized language and communicate the applicable conditions consistently. The result can be avoidable search effort, variable interpretation, and limited visibility into recurring knowledge gaps."
+  },
+  {
+    "n": 62,
+    "style": "",
+    "text": "Challenge"
+  },
+  {
+    "n": 63,
+    "style": "",
+    "text": "Operational effect"
+  },
+  {
+    "n": 64,
+    "style": "",
+    "text": "Manual navigation across sources"
+  },
+  {
+    "n": 65,
+    "style": "",
+    "text": "Longer time to locate and interpret the relevant benefit detail"
+  },
+  {
+    "n": 66,
+    "style": "",
+    "text": "Complex plan language"
+  },
+  {
+    "n": 67,
+    "style": "",
+    "text": "Dependence on individual experience and benefit literacy"
+  },
+  {
+    "n": 68,
+    "style": "",
+    "text": "Inconsistent interpretation"
+  },
+  {
+    "n": 69,
+    "style": "",
+    "text": "Variation in responses, disclosures, and escalation behavior"
+  },
+  {
+    "n": 70,
+    "style": "",
+    "text": "Context switching"
+  },
+  {
+    "n": 71,
+    "style": "",
+    "text": "Higher representative effort and reduced confidence during live calls"
+  },
+  {
+    "n": 72,
+    "style": "",
+    "text": "Limited visibility"
+  },
+  {
+    "n": 73,
+    "style": "",
+    "text": "Difficulty identifying recurring gaps and improvement opportunities"
+  },
+  {
+    "n": 74,
+    "style": "Heading2",
+    "text": "2.2 How Compass CSR Chat helps"
+  },
+  {
+    "n": 75,
+    "style": "",
+    "text": "Compass CSR Chat creates a controlled path from approved benefit data to a representative-ready response. The application uses the supplied health plan and plan context, retrieves relevant benefit information, and generates a structured answer for representative review. Customer-specific configuration controls terminology, presentation, and required disclosure language. Unsupported questions are declined when the approved context cannot support an answer."
+  },
+  {
+    "n": 76,
+    "style": "Heading2",
+    "text": "2.3 Expected outcomes"
+  },
+  {
+    "n": 77,
+    "style": "Heading3",
+    "text": "Value hypothesis"
+  },
+  {
+    "n": 78,
+    "style": "",
+    "text": "Compass CSR Chat is intended to improve representative efficiency and consistency without transferring decision accountability to the AI. The value case should be measured against each health plan’s baseline before and after deployment."
+  },
+  {
+    "n": 79,
+    "style": "ListBullet",
+    "text": "Faster access to benefit information during live interactions."
+  },
+  {
+    "n": 80,
+    "style": "ListBullet",
+    "text": "More consistent interpretation and presentation across representatives."
+  },
+  {
+    "n": 81,
+    "style": "ListBullet",
+    "text": "Greater representative confidence when handling complex benefit questions."
+  },
+  {
+    "n": 82,
+    "style": "ListBullet",
+    "text": "A repeatable validation and feedback loop for improving answer quality."
+  },
+  {
+    "n": 83,
+    "style": "ListBullet",
+    "text": "A scalable foundation for additional plans and approved information domains."
+  },
+  {
+    "n": 84,
+    "style": "",
+    "text": "MEASUREMENT APPROACHBaseline and target measures are established with each health plan before launch. Recommended measures include median time to answer, validated-answer accuracy, required-disclosure compliance, representative adoption, feedback rate, unsupported-question rate, and benefit-inquiry handle time. Results depend on source-data quality, implementation scope, workflow design, and adoption; the brief does not commit to unvalidated performance targets."
+  },
+  {
+    "n": 85,
+    "style": "Heading1",
+    "text": "3. Capabilities"
+  },
+  {
+    "n": 86,
+    "style": "Heading2",
+    "text": "3.1 Current capabilities"
+  },
+  {
+    "n": 87,
+    "style": "",
+    "text": "Capability"
+  },
+  {
+    "n": 88,
+    "style": "",
+    "text": "Description"
+  },
+  {
+    "n": 89,
+    "style": "",
+    "text": "Customer value"
+  },
+  {
+    "n": 90,
+    "style": "",
+    "text": "Natural-language benefit inquiry"
+  },
+  {
+    "n": 91,
+    "style": "",
+    "text": "Representatives ask benefit questions in plain language"
+  },
+  {
+    "n": 92,
+    "style": "",
+    "text": "Reduces manual navigation and specialized query syntax"
+  },
+  {
+    "n": 93,
+    "style": "",
+    "text": "Plan-grounded answers"
+  },
+  {
+    "n": 94,
+    "style": "",
+    "text": "Answers are generated from benefit data associated with supplied plan identifiers"
+  },
+  {
+    "n": 95,
+    "style": "",
+    "text": "Keeps responses tied to approved customer information"
+  },
+  {
+    "n": 96,
+    "style": "",
+    "text": "Structured answer presentation"
+  },
+  {
+    "n": 97,
+    "style": "",
+    "text": "Responses can present plan details, conditions, and required language in a consistent pattern"
+  },
+  {
+    "n": 98,
+    "style": "",
+    "text": "Supports clarity and consistency during live calls"
+  },
+  {
+    "n": 99,
+    "style": "",
+    "text": "Answer guardrails"
+  },
+  {
+    "n": 100,
+    "style": "",
+    "text": "Unsupported questions are declined when the retrieved context cannot support an answer"
+  },
+  {
+    "n": 101,
+    "style": "",
+    "text": "Reduces reliance on unsupported model knowledge"
+  },
+  {
+    "n": 102,
+    "style": "",
+    "text": "Human feedback"
+  },
+  {
+    "n": 103,
+    "style": "",
+    "text": "Representatives can provide feedback on answers for quality review"
+  },
+  {
+    "n": 104,
+    "style": "",
+    "text": "Creates a path for identifying and addressing recurring issues"
+  },
+  {
+    "n": 105,
+    "style": "",
+    "text": "Performance monitoring"
+  },
+  {
+    "n": 106,
+    "style": "",
+    "text": "Availability, response time, error behavior, and operational signals are monitored"
+  },
+  {
+    "n": 107,
+    "style": "",
+    "text": "Provides the operational visibility needed to manage reliability and improvement"
+  },
+  {
+    "n": 108,
+    "style": "Heading2",
+    "text": "3.2 Answer configuration"
+  },
+  {
+    "n": 109,
+    "style": "",
+    "text": "The health plan's data determines the substance of an answer. Customer-specific configuration determines how that information is expressed and presented."
+  },
+  {
+    "n": 110,
+    "style": "",
+    "text": "Configuration area"
+  },
+  {
+    "n": 111,
+    "style": "",
+    "text": "Examples"
+  },
+  {
+    "n": 112,
+    "style": "",
+    "text": "Voice and terminology"
+  },
+  {
+    "n": 113,
+    "style": "",
+    "text": "Preferred product, program, network, and benefit terms"
+  },
+  {
+    "n": 114,
+    "style": "",
+    "text": "Presentation"
+  },
+  {
+    "n": 115,
+    "style": "",
+    "text": "Answer structure and the plan details shown together"
+  },
+  {
+    "n": 116,
+    "style": "",
+    "text": "Disclosure language"
+  },
+  {
+    "n": 117,
+    "style": "",
+    "text": "Required wording by health plan, regulator, or line of business"
+  },
+  {
+    "n": 118,
+    "style": "",
+    "text": "Branding"
+  },
+  {
+    "n": 119,
+    "style": "",
+    "text": "Health plan visual identity for the Stellarus-hosted interface"
+  },
+  {
+    "n": 120,
+    "style": "Heading2",
+    "text": "3.3 Delivery options"
+  },
+  {
+    "n": 121,
+    "style": "",
+    "text": "Option"
+  },
+  {
+    "n": 122,
+    "style": "",
+    "text": "Description"
+  },
+  {
+    "n": 123,
+    "style": "",
+    "text": "Common fit"
+  },
+  {
+    "n": 124,
+    "style": "",
+    "text": "Stellarus-hosted interface"
+  },
+  {
+    "n": 125,
+    "style": "",
+    "text": "A white-labeled web experience with health plan identity-provider sign-in"
+  },
+  {
+    "n": 126,
+    "style": "",
+    "text": "Pilot and early production"
+  },
+  {
+    "n": 127,
+    "style": "",
+    "text": "Embedded experience"
+  },
+  {
+    "n": 128,
+    "style": "",
+    "text": "Compass CSR Chat is integrated into the representative desktop through a customer-operated backend"
+  },
+  {
+    "n": 129,
+    "style": "",
+    "text": "Scaled production workflows"
+  },
+  {
+    "n": 130,
+    "style": "",
+    "text": "SDK integration"
+  },
+  {
+    "n": 131,
+    "style": "",
+    "text": "The health plan builds its own experience against the Compass CSR Chat SDK"
+  },
+  {
+    "n": 132,
+    "style": "",
+    "text": "Organizations with established interface standards"
+  },
+  {
+    "n": 133,
+    "style": "Heading2",
+    "text": "3.4 Roadmap context"
+  },
+  {
+    "n": 134,
+    "style": "",
+    "text": "The baseline product described in this brief is representative-assisted benefit inquiry grounded in integrated and validated plan data. Additional information domains and platform capabilities remain roadmap or deployment-specific until their source data, integration, controls, and customer validation are complete. Roadmap items should not be represented as committed customer functionality unless explicitly approved for the implementation."
+  },
+  {
+    "n": 135,
+    "style": "",
+    "text": "Area"
+  },
+  {
+    "n": 136,
+    "style": "",
+    "text": "Current positioning"
+  },
+  {
+    "n": 137,
+    "style": "",
+    "text": "Expanded plan coverage"
+  },
+  {
+    "n": 138,
+    "style": "",
+    "text": "Enabled as plan data is integrated and validated"
+  },
+  {
+    "n": 139,
+    "style": "",
+    "text": "Operational dashboard"
+  },
+  {
+    "n": 140,
+    "style": "",
+    "text": "Deployment-specific availability and access are confirmed during implementation"
+  },
+  {
+    "n": 141,
+    "style": "",
+    "text": "Eligibility, accumulators, formulary, claims, and provider navigation"
+  },
+  {
+    "n": 142,
+    "style": "",
+    "text": "Roadmap or discovery areas; not represented as current baseline capability"
+  },
+  {
+    "n": 143,
+    "style": "",
+    "text": "Configurable agent experience"
+  },
+  {
+    "n": 144,
+    "style": "",
+    "text": "Planned platform evolution; delivery model is confirmed per implementation"
+  },
+  {
+    "n": 145,
+    "style": "Heading1",
+    "text": "4. Use Cases"
+  },
+  {
+    "n": 146,
+    "style": "Heading2",
+    "text": "4.1 Benefit coverage"
+  },
+  {
+    "n": 147,
+    "style": "",
+    "text": "A representative asks whether a service is covered under the applicable plan. Compass CSR Chat returns the available plan-specific coverage detail and relevant conditions for review."
+  },
+  {
+    "n": 148,
+    "style": "",
+    "text": "Illustrative question: “Is physical therapy covered under this plan?”"
+  },
+  {
+    "n": 149,
+    "style": "Heading2",
+    "text": "4.2 Cost sharing and conditions"
+  },
+  {
+    "n": 150,
+    "style": "",
+    "text": "A representative asks about copays, coinsurance, deductibles, visit limits, network tiers, or other conditions contained in the loaded benefit data."
+  },
+  {
+    "n": 151,
+    "style": "",
+    "text": "Illustrative question: “What cost sharing applies to an in-network specialist visit?”"
+  },
+  {
+    "n": 152,
+    "style": "Heading2",
+    "text": "4.3 Plan interpretation"
+  },
+  {
+    "n": 153,
+    "style": "",
+    "text": "A representative asks for the applicable benefit language to be summarized in a consistent, customer-approved answer structure, including relevant limitations or disclosure language."
+  },
+  {
+    "n": 154,
+    "style": "",
+    "text": "Illustrative question: “What limitations apply to this durable medical equipment benefit?”"
+  },
+  {
+    "n": 155,
+    "style": "",
+    "text": "Use-case boundary"
+  },
+  {
+    "n": 156,
+    "style": "",
+    "text": "Illustrative questions do not guarantee that every plan or information domain is available. A use case is supported only when the required source data and rules are in scope and have passed customer validation."
+  },
+  {
+    "n": 157,
+    "style": "Heading1",
+    "text": "5. Customer Journeys"
+  },
+  {
+    "n": 158,
+    "style": "Heading2",
+    "text": "5.1 Representative journey"
+  },
+  {
+    "n": 159,
+    "style": "",
+    "text": "Stage"
+  },
+  {
+    "n": 160,
+    "style": "",
+    "text": "Representative action"
+  },
+  {
+    "n": 161,
+    "style": "",
+    "text": "Compass CSR Chat role"
+  },
+  {
+    "n": 162,
+    "style": "",
+    "text": "Prepare"
+  },
+  {
+    "n": 163,
+    "style": "",
+    "text": "Open the approved application and confirm the correct plan context"
+  },
+  {
+    "n": 164,
+    "style": "",
+    "text": "Receives authenticated customer and plan context"
+  },
+  {
+    "n": 165,
+    "style": "",
+    "text": "Ask"
+  },
+  {
+    "n": 166,
+    "style": "",
+    "text": "Enter one clear benefit question"
+  },
+  {
+    "n": 167,
+    "style": "",
+    "text": "Retrieves relevant approved information"
+  },
+  {
+    "n": 168,
+    "style": "",
+    "text": "Review"
+  },
+  {
+    "n": 169,
+    "style": "",
+    "text": "Read the answer, conditions, and any displayed supporting context"
+  },
+  {
+    "n": 170,
+    "style": "",
+    "text": "Presents a structured, plan-specific response"
+  },
+  {
+    "n": 171,
+    "style": "",
+    "text": "Clarify"
+  },
+  {
+    "n": 172,
+    "style": "",
+    "text": "Ask a focused follow-up when needed"
+  },
+  {
+    "n": 173,
+    "style": "",
+    "text": "Maintains permitted conversational context"
+  },
+  {
+    "n": 174,
+    "style": "",
+    "text": "Resolve"
+  },
+  {
+    "n": 175,
+    "style": "",
+    "text": "Apply required review procedures and communicate with the customer"
+  },
+  {
+    "n": 176,
+    "style": "",
+    "text": "Supports—but does not replace—the representative's judgment"
+  },
+  {
+    "n": 177,
+    "style": "",
+    "text": "Improve"
+  },
+  {
+    "n": 178,
+    "style": "",
+    "text": "Submit feedback when an answer is incomplete or incorrect"
+  },
+  {
+    "n": 179,
+    "style": "",
+    "text": "Routes feedback into the quality-review process"
+  },
+  {
+    "n": 180,
+    "style": "Heading2",
+    "text": "5.2 Operations journey"
+  },
+  {
+    "n": 181,
+    "style": "ListBullet",
+    "text": "Define the representative population, benefit scope, and measurable outcomes."
+  },
+  {
+    "n": 182,
+    "style": "ListBullet",
+    "text": "Review answer patterns, terminology, and required disclosures."
+  },
+  {
+    "n": 183,
+    "style": "ListBullet",
+    "text": "Validate accuracy and workflow fit before live use."
+  },
+  {
+    "n": 184,
+    "style": "ListBullet",
+    "text": "Monitor adoption, performance, and feedback after launch."
+  },
+  {
+    "n": 185,
+    "style": "ListBullet",
+    "text": "Prioritize configuration, data, training, or workflow improvements."
+  },
+  {
+    "n": 186,
+    "style": "Heading2",
+    "text": "5.3 Implementation journey"
+  },
+  {
+    "n": 187,
+    "style": "",
+    "text": "A customer implementation moves through discovery and design, data integration, answer configuration, validation, pilot, and production rollout. The companion Implementation & Integration Guide describes prerequisites, resources, authentication, integration patterns, testing, and go-live responsibilities."
+  },
+  {
+    "n": 188,
+    "style": "Heading1",
+    "text": "6. Responsible Use and Boundaries"
+  },
+  {
+    "n": 189,
+    "style": "",
+    "text": "These boundaries define the conditions under which Compass CSR Chat should be positioned and used. They protect the distinction between decision support and authoritative systems or determinations."
+  },
+  {
+    "n": 190,
+    "style": "ListBullet",
+    "text": "The representative remains responsible for following approved procedures and communicating the final answer."
+  },
+  {
+    "n": 191,
+    "style": "ListBullet",
+    "text": "Compass CSR Chat does not replace formal plan documents, legal determinations, claims adjudication, or coverage decisions."
+  },
+  {
+    "n": 192,
+    "style": "ListBullet",
+    "text": "The calling application supplies the applicable customer and plan context; Compass CSR Chat does not independently identify a member or determine which plan applies."
+  },
+  {
+    "n": 193,
+    "style": "ListBullet",
+    "text": "Questions outside the available approved context are not answered."
+  },
+  {
+    "n": 194,
+    "style": "ListBullet",
+    "text": "Customer-specific privacy, security, retention, and PHI requirements are governed by the applicable agreements and the Technical Architecture & Security Overview."
+  },
+  {
+    "n": 195,
+    "style": "ListBullet",
+    "text": "Roadmap capabilities must not be represented as available until their source data, integration, controls, and validation are complete."
+  },
+  {
+    "n": 196,
+    "style": "Heading1",
+    "text": "7. Getting Started"
+  },
+  {
+    "n": 197,
+    "style": "",
+    "text": "Product adoption begins with a joint discovery and decision session across Product, Implementation, customer operations, data, identity, security, and benefit subject matter experts. The objective is to establish an implementation-ready scope, accountable owners, validated data sources, review criteria, and measurable launch outcomes before configuration or pilot activity begins."
+  },
+  {
+    "n": 198,
+    "style": "",
+    "text": "Discovery decision"
+  },
+  {
+    "n": 199,
+    "style": "",
+    "text": "Output"
+  },
+  {
+    "n": 200,
+    "style": "",
+    "text": "Priority use cases and representative population"
+  },
+  {
+    "n": 201,
+    "style": "",
+    "text": "Initial implementation scope and pilot group"
+  },
+  {
+    "n": 202,
+    "style": "",
+    "text": "Plan data availability and ownership"
+  },
+  {
+    "n": 203,
+    "style": "",
+    "text": "Data inventory, transfer approach, and refresh expectations"
+  },
+  {
+    "n": 204,
+    "style": "",
+    "text": "Delivery and authentication model"
+  },
+  {
+    "n": 205,
+    "style": "",
+    "text": "Hosted, embedded, or API path with identity responsibilities"
+  },
+  {
+    "n": 206,
+    "style": "",
+    "text": "Answer requirements"
+  },
+  {
+    "n": 207,
+    "style": "",
+    "text": "Terminology, presentation, disclosures, and validation criteria"
+  },
+  {
+    "n": 208,
+    "style": "",
+    "text": "Outcome measures"
+  },
+  {
+    "n": 209,
+    "style": "",
+    "text": "Baseline metrics and launch success criteria"
+  },
+  {
+    "n": 210,
+    "style": "",
+    "text": "Security and compliance review"
+  },
+  {
+    "n": 211,
+    "style": "",
+    "text": "Required agreements, approvals, and architecture review"
+  },
+  {
+    "n": 212,
+    "style": "Heading1",
+    "text": "8. Product Success and Decision Framework"
+  },
+  {
+    "n": 213,
+    "style": "",
+    "text": "The product should advance from discovery to pilot and broader rollout only when the customer and Stellarus have explicit evidence that the intended use cases are supported, answers meet the agreed quality bar, representatives can use the workflow safely, and operating ownership is clear."
+  },
+  {
+    "n": 214,
+    "style": "",
+    "text": "READINESS DIMENSION"
+  },
+  {
+    "n": 215,
+    "style": "",
+    "text": "EVIDENCE / DECISION"
+  },
+  {
+    "n": 216,
+    "style": "",
+    "text": "PRIMARY OWNERS"
+  },
+  {
+    "n": 217,
+    "style": "",
+    "text": "Use-case readiness"
+  },
+  {
+    "n": 218,
+    "style": "",
+    "text": "Priority benefit questions, plan populations, source data, and exclusions are explicitly defined."
+  },
+  {
+    "n": 219,
+    "style": "",
+    "text": "Product / Customer Operations"
+  },
+  {
+    "n": 220,
+    "style": "",
+    "text": "Data readiness"
+  },
+  {
+    "n": 221,
+    "style": "",
+    "text": "Required benefit data is available, current, mapped to the correct plan identifiers, and validated for the agreed scope."
+  },
+  {
+    "n": 222,
+    "style": "",
+    "text": "Customer Data / Stellarus Data"
+  },
+  {
+    "n": 223,
+    "style": "",
+    "text": "Answer quality"
+  },
+  {
+    "n": 224,
+    "style": "",
+    "text": "Validation set performance and required-disclosure behavior meet the customer-approved launch criteria."
+  },
+  {
+    "n": 225,
+    "style": "",
+    "text": "Product / Benefit SMEs / Quality"
+  },
+  {
+    "n": 226,
+    "style": "",
+    "text": "User readiness"
+  },
+  {
+    "n": 227,
+    "style": "",
+    "text": "Representatives complete required training and demonstrate correct review, fallback, and escalation behavior."
+  },
+  {
+    "n": 228,
+    "style": "",
+    "text": "Customer Operations / Training"
+  },
+  {
+    "n": 229,
+    "style": "",
+    "text": "Technical and security readiness"
+  },
+  {
+    "n": 230,
+    "style": "",
+    "text": "Authentication, delivery pattern, security controls, privacy requirements, and production dependencies are approved."
+  },
+  {
+    "n": 231,
+    "style": "",
+    "text": "Engineering / Security / Customer Technology"
+  },
+  {
+    "n": 232,
+    "style": "",
+    "text": "Operational readiness"
+  },
+  {
+    "n": 233,
+    "style": "",
+    "text": "Monitoring, feedback, escalation, support ownership, known limitations, and release communications are established."
+  },
+  {
+    "n": 234,
+    "style": "",
+    "text": "Product / Operations / Support"
+  },
+  {
+    "n": 235,
+    "style": "Heading1",
+    "text": "Related Product Documentation"
+  },
+  {
+    "n": 236,
+    "style": "ListBullet",
+    "text": "Technical Architecture & Security Overview — architecture, data flow, AI hosting, integrations, security, privacy, and technical control details."
+  },
+  {
+    "n": 237,
+    "style": "ListBullet",
+    "text": "Implementation & Integration Guide — implementation prerequisites, phases, responsibilities, validation, pilot, rollout, and handoff."
+  },
+  {
+    "n": 238,
+    "style": "ListBullet",
+    "text": "User & Training Guide and User Training Deck — representative workflows, responsible use, fallback, feedback, and training."
+  },
+  {
+    "n": 239,
+    "style": "ListBullet",
+    "text": "AI Quality, Governance, Support & Service Model — post-launch quality management, change control, monitoring, incidents, recovery, and ownership."
+  },
+  {
+    "n": 240,
+    "style": "ListBullet",
+    "text": "Release Notes / Known Limitations — current capabilities, changes, fixes, known constraints, and user or training impacts."
+  }
+]

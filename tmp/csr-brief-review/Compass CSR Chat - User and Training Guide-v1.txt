@@ -1,0 +1,506 @@
+  Stellarus
+COMPASS
+CSR Chat
+User & Training Guide
+Prepared by    Stellarus
+Document owner    Product and Customer Operations / Training
+Date    August 2026
+Version    v1.1 Draft
+ABOUT THIS DOCUMENT
+This guide explains how authorized customer service representatives use Compass CSR Chat during live interactions. It covers session readiness, effective questions, response review, follow-up, fallback handling, responsible use, feedback, troubleshooting, and training readiness. Customer-specific access, privacy, support, and operating procedures remain authoritative for each deployment.
+Contents
+1. Purpose, Audience, and Document Boundaries
+1.1 Intended audience
+1.2 User responsibility
+1.3 Document family
+2. How CSR Chat Fits into the User Workflow
+2.1 Standard workflow
+2.2 Information and context
+3. Access and Session Readiness
+3.1 Before starting
+3.2 Verify context
+4. Ask Effective Questions
+4.1 Question pattern
+4.2 Examples and practices
+5. Review and Validate Responses
+5.1 Response review
+5.2 Before customer communication
+6. Follow-Up and Conversation Management
+7. Common User Workflows
+8. When CSR Chat Cannot Answer
+9. Responsible Use, Feedback, and Issue Reporting
+10. Troubleshooting and Getting Help
+11. Training and User Readiness
+12. FAQs, Current Limitations, and Glossary
+Appendix A. Practice Scenarios
+Appendix B. User Quick Reference
+
+1. Purpose, Audience, and Document Boundaries
+Compass CSR Chat is an AI-powered decision-support assistant for benefit inquiries. It helps representatives retrieve and interpret plan-specific benefit information during live customer interactions. This guide establishes a safe, repeatable way to use the product without replacing customer procedures, authoritative sources, or human judgment.
+Core user principle
+CSR Chat supports the representative. The representative remains responsible for confirming the applicable context, reviewing the complete response, following required procedures, and communicating the final answer.
+
+1.1 Intended audience
+Authorized customer service representatives who use CSR Chat during member or provider interactions.
+Supervisors, coaches, and trainers who prepare users and reinforce expected behavior.
+Quality and benefit reviewers who assess answer use and provide feedback.
+1.2 User responsibility
+Use CSR Chat only for approved business purposes and supported benefit inquiries.
+Confirm that the correct customer and plan context is active before asking a question.
+Review the full response and apply required validation before communicating it.
+Use an approved source or escalation path when the answer is missing, unclear, conflicting, or appears incorrect.
+Protect PHI and PII according to the health plan's policies and approved product procedures.
+1.3 Document family
+Document
+Question it answers
+Authoritative content
+Product Brief
+Why use CSR Chat and what does it do?
+Problem, value, current capabilities, use cases, journeys, and product boundaries
+Implementation & Integration Guide
+How is CSR Chat deployed?
+Readiness, implementation phases, resources, data, authentication, integration, testing, and launch
+Technical Architecture & Security Overview
+How does CSR Chat work and protect data?
+Architecture, data flow, storage, security controls, retention, PHI, and HIPAA assurance
+User & Training Guide
+How should a representative use CSR Chat?
+User workflow, question quality, review, fallback, responsible use, troubleshooting, and training
+Customer operating procedures
+What exact steps and contacts apply here?
+Launch path, roles, source precedence, PHI rules, session rules, screenshots, support, and escalation
+
+2. How CSR Chat Fits into the User Workflow
+2.1 Standard workflow
+SCREENSHOT TODO
+Add an approved overview screenshot of the primary CSR Chat workspace. Annotate the major regions a user needs to recognize—active context, conversation area, question entry, response area, supporting-source area when enabled, and feedback controls. Use the current production release and mask or replace all PHI, PII, customer names, member identifiers, and plan-specific data.
+
+Stage
+User action
+CSR Chat role
+1. Receive
+Understand the customer's question and identify the applicable member, plan, benefit, and effective period in approved systems
+Does not independently search for a member or determine which plan applies
+2. Prepare
+Open CSR Chat through the approved launch path and verify the displayed or inherited context
+Receives authenticated customer and plan context from the calling application
+3. Ask
+Enter one clear, specific benefit question using only permitted information
+Retrieves relevant information from the approved plan context
+4. Review
+Read the full answer, conditions, disclosures, and any displayed supporting context
+Presents a structured response grounded in available benefit data
+5. Resolve
+Ask a focused follow-up, validate in approved sources, use another process, or escalate
+Continues within permitted context or reports that the question cannot be answered
+6. Communicate
+Provide the customer response only after completing required review
+Supports but does not replace representative judgment
+7. Improve
+Submit feedback when an answer is helpful, incomplete, or incorrect
+Routes available feedback for quality review
+
+2.2 Information and context
+CSR Chat answers from approved benefit data associated with the plan context supplied for the request. The calling application supplies that context; CSR Chat does not select a member or determine which plan applies.
+Plan identifiers determine which benefit data is available.
+Effective dates may determine which plan version applies.
+Available answers depend on the plans and information domains loaded and validated for the deployment.
+CSR Chat is not permitted to answer unsupported questions from general knowledge.
+Customer-specific rule
+The health plan's operating procedure defines which member, case, plan, and effective-date context must be confirmed before a question is asked. That procedure takes precedence over general examples in this guide.
+
+3. Access and Session Readiness
+3.1 Before starting
+SCREENSHOT TODO
+Add screenshots of the approved launch entry point and authenticated landing state for each supported delivery model used by the customer. Show only the controls required to reach CSR Chat. Capture the release/version and environment, and do not expose identity details, internal URLs, or live customer data.
+
+Use only the launch path, environment, and authentication method approved by the health plan. CSR Chat may be delivered through a Stellarus-hosted interface, embedded in the representative desktop, or accessed through a customer-built interface.
+Readiness check
+Confirm
+Authorization
+You are assigned an approved role and have completed required training
+Authentication
+You signed in through the approved health plan identity process
+Environment
+You are using the correct production or training environment
+Customer context
+The correct customer or tenant is active
+Plan context
+The applicable plan identifiers and effective period are present or inherited
+Support path
+You know the approved procedure for access, product, privacy, or answer-quality issues
+
+3.2 Verify context
+SCREENSHOT TODO
+Add a close-up screenshot showing where the user confirms customer, member or case context when applicable, plan identifiers, and effective period. Label which fields are inherited versus user-selected. Use synthetic data and include a caption explaining what must be verified before asking a question.
+
+Before asking a question, confirm the context required by the health plan's procedure. Do not assume that a previously selected member, plan, case, or effective period remains applicable.
+Stop if required context is missing, unclear, or inconsistent with the customer inquiry.
+Correct the context in the authoritative customer system before using CSR Chat.
+Begin a new conversation when required by customer session rules or when the member, plan, effective period, or primary topic changes.
+UI labels vary
+Exact application URLs, buttons, field names, screenshots, and session controls depend on the selected delivery model and release. Use the current training materials approved for your deployment.
+
+4. Ask Effective Questions
+4.1 Question pattern
+SCREENSHOT TODO
+Add a screenshot of the question composer with a strong example question entered but not yet submitted. Annotate the entry field, submit control, any character or content guidance, and the context that makes the question specific. Use an approved benefit example with synthetic data.
+
+A strong CSR Chat question asks for one benefit decision at a time and includes only the context needed to distinguish the service, network level, cost-share type, or effective period.
+Question element
+Guidance
+Example
+Benefit or service
+Name the benefit or service precisely
+Physical therapy, specialist visit, durable medical equipment
+Information needed
+Ask for coverage, cost sharing, limitations, or another specific detail
+Is it covered? What cost sharing applies?
+Network or tier
+Include when the answer may differ by network level
+In-network specialist
+Conditions
+Ask about limits, exclusions, or authorization when relevant
+What limitations apply?
+Effective period
+Confirm the applicable plan year or effective date in the approved context
+Current plan version
+
+4.2 Examples and practices
+Use case
+Illustrative question
+Coverage
+Is physical therapy covered under this plan?
+Cost sharing
+What cost sharing applies to an in-network specialist visit?
+Benefit conditions
+What limitations apply to this durable medical equipment benefit?
+Deductible relationship
+Does the deductible apply before coinsurance for this benefit?
+Clarification
+Does that answer apply only to in-network services?
+
+Ask one primary question at a time.
+Use the health plan's approved terminology.
+Include only information permitted by privacy and security policy.
+Use a focused follow-up instead of combining unrelated questions.
+Do not ask CSR Chat to select a plan, make a legal determination, adjudicate a claim, or answer from general knowledge.
+Do not assume that a fluent or confident response is correct.
+5. Review and Validate Responses
+5.1 Response review
+SCREENSHOT TODO
+Add an annotated response-anatomy screenshot showing the main answer, plan or benefit detail, conditions and limitations, disclosure language, and supporting source or citation when enabled. The image should demonstrate what the representative must review before communicating the answer.
+
+Response presentation varies by delivery model and customer configuration. A response may include an answer, plan details, conditions, disclosure language, and supporting context. Review every displayed element before using the response.
+Review area
+Question to answer
+Context
+Is this the correct customer, member or case context when required, plan, and effective period?
+Direct answer
+Does the response address the question that was actually asked?
+Benefit detail
+Is the benefit, service, network tier, and cost-share type correct?
+Conditions
+Are applicable limits, exclusions, deductible rules, or other conditions included?
+Disclosure
+Is required health plan or regulatory language present?
+Supporting context
+When displayed, is the source applicable, current, and consistent with approved records?
+Completeness
+Could the response be misunderstood without another detail or follow-up?
+Consistency
+Does the response conflict with an authoritative system, document, or procedure?
+
+5.2 Before customer communication
+Mandatory review
+Do not communicate a CSR Chat response until you have reviewed it and completed every validation step required by the health plan's operating procedure.
+
+Read the entire response, not only its first sentence.
+Confirm material conditions and disclosure language.
+Use an authoritative source when required by policy or when confidence is reduced.
+Do not silently choose between conflicting sources.
+If the response cannot be validated, use the approved fallback or escalation process.
+Record or communicate information only through approved systems and channels.
+6. Follow-Up and Conversation Management
+SCREENSHOT TODO
+Add a two-state screenshot showing a focused follow-up within the same verified context and the approved control for starting a new conversation. Annotate the visual cues that confirm whether prior context remains active. Use only synthetic conversation content.
+
+A focused follow-up can clarify a response when it clearly refers to the same context and topic. Do not rely on conversational context when the applicable member, plan, effective period, service, or question has changed.
+Situation
+Recommended action
+Clarify the same benefit
+Ask a focused follow-up, such as whether a limitation applies to in-network services
+Request a missing condition
+Ask specifically about the deductible, visit limit, exclusion, or other missing detail
+Change member, plan, or effective period
+Start a new conversation using the procedure approved for the deployment
+Change to an unrelated topic
+Start a new conversation when required by customer session rules
+Context is unclear
+Stop, verify the authoritative context, and restart before continuing
+Response conflicts with a source
+Do not use a follow-up to resolve the conflict without verification; follow source-precedence and escalation procedures
+
+Session boundaries
+Conversation duration, expiration, history, and new-session controls are deployment-specific. Follow the current customer procedure and approved UI training rather than assuming that prior context persists.
+
+7. Common User Workflows
+SCREENSHOT TODO
+Add a worked-example screenshot sequence for one coverage inquiry and one cost-share inquiry: verified context, submitted question, complete response, and the user's final review points. Keep each sequence short enough to scan and label it as illustrative rather than a guaranteed response format.
+
+Workflow
+Representative steps
+Review focus
+Benefit coverage
+Verify context; ask whether the service is covered; read the full response; validate; communicate or escalate
+Service category, network, limits, exclusions, effective period, and required disclosure
+Cost-share inquiry
+Verify context; ask for the applicable copay, coinsurance, or deductible relationship; validate before use
+Network tier, benefit category, deductible, visit limits, and effective period
+Benefit conditions
+Ask a focused question about limits, exclusions, authorization, or other conditions; verify against required sources
+Applicable conditions and whether the available data fully supports the answer
+Plan-language clarification
+Ask CSR Chat to summarize the applicable benefit detail; compare with the authoritative source when required
+Correct plan version, interpretation, and customer-approved terminology
+Focused follow-up
+Keep the same verified context; ask for one missing or clarifying detail; review the complete combined understanding
+Connection to the original question and continued context accuracy
+
+Capability boundary
+Eligibility, accumulators, formulary, claims, provider navigation, and other roadmap domains must not be treated as available unless the health plan has explicitly enabled and validated them for the deployment.
+
+8. When CSR Chat Cannot Answer
+SCREENSHOT TODO
+Add approved screenshots of the most common fallback states: unsupported question or no answer, incomplete answer, and technical error or timeout. Pair each image with the approved user action. Confirm exact messages and controls against the current release before publication.
+
+Do not guess, fill gaps, or alter CSR Chat's answer. Use the response condition to determine the next approved action.
+Condition
+User action
+No answer or unsupported question
+Rephrase once only when the question may be unclear; otherwise use the approved authoritative source or fallback process
+Response is incomplete
+Ask one focused follow-up; if the missing information remains unavailable, use another approved source
+Response appears incorrect
+Stop; verify in an authoritative source; do not communicate the response; report it through the approved quality path
+Sources conflict
+Do not choose silently; apply the documented source-precedence rule or escalate
+Required context is missing
+Correct or re-establish context in the authoritative system before asking again
+Supporting source is unavailable
+Do not rely on an unsupported statement when source review is required
+Application error or timeout
+Use the approved technical support process and preserve only permitted diagnostic information
+Potential privacy or security issue
+Stop using the affected session and follow the health plan's privacy or security incident procedure
+
+9. Responsible Use, Feedback, and Issue Reporting
+9.1 Responsible use
+Use CSR Chat only for approved work and supported benefit inquiries.
+Enter only PHI or PII permitted by the health plan's approved policy and workflow.
+Do not copy, export, print, or share responses unless the action is explicitly permitted.
+Do not use CSR Chat as a substitute for plan documents, legal determinations, claims adjudication, or coverage decisions.
+Do not use unsupported domains or roadmap features as though they are available.
+Report suspected inaccurate information, privacy concerns, or security issues through approved channels.
+9.2 Feedback
+SCREENSHOT TODO
+Add screenshots of the available feedback control and feedback form or confirmation state. Annotate how a user classifies helpful, incomplete, or inaccurate answers and where permitted supporting detail is entered. Do not show live prompts, responses, screenshots, PHI, or PII.
+
+When a feedback control is available, use it to identify helpful, incomplete, or inaccurate responses. Feedback supports quality review; it does not replace an operational escalation when a customer interaction, privacy event, or product incident requires immediate action.
+Feedback type
+Include when permitted
+Helpful response
+What made the answer clear, complete, or efficient
+Incomplete response
+The specific missing condition or detail
+Inaccurate response
+The expected answer and authoritative source used to verify it
+Context issue
+Which plan, effective period, or request context was incorrect or missing
+Usability issue
+What prevented the representative from completing the workflow
+
+9.3 Issue reporting
+Use the customer-designated support or escalation channel. Share only diagnostic information permitted by policy, such as the environment, time, error condition, affected workflow, and approved reference identifier. Do not move PHI, PII, prompts, responses, or screenshots into an unapproved channel.
+10. Troubleshooting and Getting Help
+SCREENSHOT TODO
+Add a screenshot of the customer-approved help entry point or support path visible to representatives, plus one representative application-error state. Show where users find assistance without publishing internal-only contacts, diagnostic secrets, or customer-specific routing in the reusable master guide.
+
+Issue
+Checks
+Next action
+Cannot access CSR Chat
+Confirm approved launch path, role, identity sign-in, environment, and service status
+Follow the customer access-support process
+Wrong or missing context
+Confirm the authoritative member, case, plan, identifiers, and effective period
+Correct context before asking another question
+No response or timeout
+Confirm connectivity and whether the service reports an error
+Do not repeatedly submit; use the approved fallback and technical support path
+Unexpected or incomplete answer
+Review the question, context, conditions, and available source
+Ask one focused follow-up or validate through another approved source
+Answer appears incorrect
+Compare with the authoritative source and required procedure
+Stop use of the answer and submit quality feedback or escalation
+Displayed source cannot be opened
+Confirm source permission and whether review is mandatory
+Use the approved source-access or support process
+Feedback control unavailable
+Confirm whether feedback is enabled for the deployment
+Use the customer-designated quality-reporting channel
+
+Getting help
+Use the support contacts, severity definitions, and escalation paths approved for your deployment. Supervisors should ensure these procedures are available in the representative's normal workspace.
+
+11. Training and User Readiness
+11.1 Recommended curriculum
+SCREENSHOT TODO
+Add a screenshot of the approved training or demonstration environment and label how users can distinguish it from production. If no dedicated training environment exists, use a synthetic product walkthrough image and clearly mark it as training-only.
+
+Module
+Learning objective
+Practice
+1. Product role and boundaries
+Explain what CSR Chat does, what it does not do, and the representative's responsibility
+Classify supported, unsupported, and escalation scenarios
+2. Access and context
+Open the approved experience and confirm required context
+Identify correct and incorrect session setup
+3. Effective questions
+Write specific, single-purpose benefit questions
+Rewrite vague or multi-part questions
+4. Response review
+Apply the response-review checklist before communication
+Review complete, incomplete, and conflicting answers
+5. Follow-up and fallback
+Use follow-ups safely and select the correct fallback
+Practice topic changes, missing answers, and source conflicts
+6. Responsible use and feedback
+Apply privacy rules and report quality issues appropriately
+Practice compliant feedback and incident escalation
+
+11.2 User readiness criteria
+Before production access, a user should be able to:
+Explain the supported product scope and current limitations.
+Verify the correct plan and customer context.
+Write a clear benefit question and an appropriate follow-up.
+Review an answer for context, completeness, conditions, disclosures, and conflicts.
+Choose the approved fallback when CSR Chat cannot answer.
+Follow customer privacy, support, feedback, and escalation procedures.
+11.3 Supervisor and coach observation
+The representative does not skip context verification.
+Questions are clear, bounded, and appropriate for the available scope.
+The full response is reviewed before customer communication.
+The representative recognizes incomplete, incorrect, or conflicting information.
+Follow-up, fallback, and feedback actions follow approved procedures.
+12. FAQs, Current Limitations, and Glossary
+12.1 Frequently asked questions
+Question
+Answer
+Does CSR Chat replace benefit documents or authoritative systems?
+No. It assists the representative and does not replace required sources, procedures, or human judgment.
+Are CSR Chat responses always correct?
+No. Every response requires representative review and any validation required by the health plan.
+What information does CSR Chat use?
+Approved benefit data associated with the plan context supplied for the request. Exact sources are deployment-specific.
+Can I enter PHI or PII?
+Only when and how the health plan's approved privacy, security, and operating procedures permit it.
+Can I use CSR Chat for claims, eligibility, formulary, or provider questions?
+Only if that information domain has been explicitly enabled and validated for your deployment. These are not baseline capabilities.
+What should I do if an answer looks wrong?
+Do not communicate it. Verify against an authoritative source and use the approved feedback or escalation path.
+How do I get technical help?
+Use the customer-designated support channel and include only permitted diagnostic information.
+
+12.2 Current baseline limitations
+Limitation
+User implication
+Benefit inquiry scope
+Do not assume that other information domains are available
+Loaded plan coverage
+A plan can be answered only after its data has been integrated and validated
+Context dependency
+CSR Chat relies on the calling application to supply the applicable customer and plan context
+No member or plan selection
+The representative must establish the correct context in approved systems
+No general-knowledge answers
+Unsupported questions are declined rather than answered from general model knowledge
+Not a system of record
+Authoritative documents and systems remain controlling
+Deployment-specific UI and features
+Controls, citations, history, export, feedback, and session behavior may vary
+
+12.3 Glossary
+Term
+Definition
+CSR
+Customer Service Representative
+CSR Chat
+Compass CSR Chat, the representative-facing AI decision-support product described in this guide
+Authoritative source
+A system, document, or procedure designated by the health plan as controlling
+Benefit data
+Approved plan information used to support benefit answers
+Plan context
+Identifiers and effective-period information used to select applicable benefit data
+Supporting context
+Source information displayed with a response when enabled for the deployment
+PHI
+Protected Health Information, handled only under approved privacy and security procedures
+PII
+Personally Identifiable Information, handled only under approved privacy and security procedures
+
+Appendix A. Practice Scenarios
+Scenario
+Learner task
+Successful behavior
+Coverage inquiry
+Ask whether a defined service is covered and prepare a response
+Verifies context, asks one clear question, reviews conditions, and validates before communication
+Cost-share inquiry
+Determine the applicable specialist cost sharing
+Includes network context and checks deductible or other conditions
+Incomplete answer
+Respond to an answer missing a material limitation
+Asks one focused follow-up and uses an approved source if still incomplete
+Unsupported domain
+Handle a claims or formulary question when the domain is not enabled
+Does not force an answer; uses the approved fallback
+Context change
+Move from one plan or effective period to another
+Starts a new conversation under customer session rules and reconfirms context
+Source conflict
+Handle a response that conflicts with an authoritative source
+Stops, follows source precedence, and escalates rather than choosing silently
+Inaccurate response
+Report a verified quality issue
+Uses approved feedback, provides permitted evidence, and avoids unapproved PHI or screenshots
+Technical error
+Handle a timeout during a live interaction
+Uses the fallback, avoids repeated submissions, and follows technical support procedures
+
+Appendix B. User Quick Reference
+Before asking
+Use the approved launch path and environment.
+Confirm authorization and sign-in.
+Verify customer, member or case context when required, plan identifiers, and effective period.
+When asking
+Ask one clear benefit question at a time.
+Name the service, information needed, and network or conditions when relevant.
+Enter only information permitted by policy.
+Before communicating
+Read the entire response.
+Confirm context, benefit details, conditions, disclosures, and any required source.
+Complete required validation and resolve conflicts.
+If CSR Chat cannot answer
+Do not guess or fill gaps.
+Rephrase once only when the question is unclear.
+Use an authoritative source, approved fallback, or escalation path.
+If something looks wrong
+Do not communicate the response.
+Verify against an authoritative source.
+Report the issue through the approved quality or support channel.
+Remember
+CSR Chat helps you find and interpret benefit information. You remain responsible for the context, review, required validation, and final customer communication.

@@ -1,0 +1,11 @@
+# Intake aligned Compass for BSC presentation
+
+Create a revised six-slide PPT while preserving the previous deck. Audience: BSC executives. Sources: GAI-174 and GAI-663 HTML-formatted DOC exports, the user's original roadmap and confirmed dates, and local Compass CSR Chat product/implementation documents. Full source mapping and notes: reports/Compass-BSC-Intake-Aligned-Slide-Outline-2026-11-06.md.
+
+Narrative: BSC agent productivity priorities; Compass Voice call context and summary features; Compass CSR Chat knowledge, coaching and drafting features; combined roadmap; intake-aligned outcome measures; detailed roadmap appendix. Exactly five executive slides plus one detail appendix, not ten filler slides. Preserve December 2026 through Q4 2027 and mark Q3/Q4 allocation, January readiness and candidate coaching/drafting scope as proposed.
+
+Use the original Stellarus product-pitch template, Geist/Geist Light, navy headings, coral rule, white background, blue footer and the existing Stellarus logo. Keep native editable text and tables. Use the established flat layout with generous margins; avoid illustrative assets or fabricated charts. Native imagegen is unavailable and no new visual artwork is necessary for this source-aligned revision. Reuse the actual source brand assets.
+
+Specific boundaries: Shield Advisor remains the desktop. Compass products replace the proposed Pega AI products in this proposal. Documented Compass foundation is plan-grounded benefit Q&A. SMP retrieval, case context/rules, drafting, voice-summary and desktop integration are BSC scope/extensions requiring validation. Keep live audio in Voice rather than implying the described Coach processes audio. CSR case coaching is distinct from later supervisory copilots. Pega-design testing approvals do not prove Compass production approval. No numeric targets, parity claims, delivery commitments or presumed backend availability.
+
+Author via the existing presentation builder and runtime. Save final artifact in this revision directory as output.pptx. Record editability/structural checks, export and reopen, render all six exported slides, inspect each at readable size and fix actionable issues within three loops. Include detailed source, stage, owner, risk and discussion notes. Do not alter source exports or the prior delivered PPT.

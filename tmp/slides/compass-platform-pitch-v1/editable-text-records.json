@@ -1,0 +1,198 @@
+[
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "Title 1",
+    "text": "COMPASS Platform",
+    "textChars": 16,
+    "textLines": 1,
+    "bbox": {
+      "left": 82.77,
+      "top": 72.46,
+      "width": 1109.23,
+      "height": 57.02
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "Content Placeholder 6",
+    "text": "Compass Platform  /  Jason Jackson  /  October 26, 2026  /  v1",
+    "textChars": 62,
+    "textLines": 1,
+    "bbox": {
+      "left": 81.44,
+      "top": 662.77,
+      "width": 794.13,
+      "height": 29.08
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "pitch-label",
+    "text": "Platform Overview",
+    "textChars": 17,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 170,
+      "width": 1080,
+      "height": 26
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "pitch",
+    "text": "Compass Platform provides reusable integration, identity, orchestration and governance building blocks for products such as CSR Chat and Member Chat.",
+    "textChars": 149,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 204,
+      "width": 1090,
+      "height": 68
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "customer-heading",
+    "text": "The customer and problem",
+    "textChars": 24,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 286,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "customer-body",
+    "text": "Product and engineering teams need AI experiences across customers. Bespoke identity, data and vendor integrations duplicate effort and complicate launches.",
+    "textChars": 156,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 320,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-heading",
+    "text": "The foundational building blocks",
+    "textChars": 32,
+    "textLines": 1,
+    "bbox": {
+      "left": 674,
+      "top": 286,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-body",
+    "text": "SDK/API and UI. Tenant identity and configuration.\nAgent broker and adapters. Benefits Service.\nContent, telemetry and quality controls.",
+    "textChars": 136,
+    "textLines": 3,
+    "bbox": {
+      "left": 674,
+      "top": 320,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "value-heading",
+    "text": "The value proposition",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 416,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "value-body",
+    "text": "One integration foundation for multiple products.\nReusable contracts for customer policy and data.\nGoal: less bespoke delivery and simpler support.",
+    "textChars": 147,
+    "textLines": 3,
+    "bbox": {
+      "left": 98,
+      "top": 450,
+      "width": 506,
+      "height": 80
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "offer-heading",
+    "text": "The offer and next step",
+    "textChars": 23,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 554,
+      "width": 1080,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "offer-body",
+    "text": "Build & Integrate. Next: validate the shared foundation across CSR Chat and Member Chat with Jason Jackson.\nTarget: one approved tenant, two product journeys, with tenant isolation, grounded answers and traceability verified.",
+    "textChars": 225,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 588,
+      "width": 1080,
+      "height": 60
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-heading",
+    "text": "Products it enables",
+    "textChars": 19,
+    "textLines": 1,
+    "bbox": {
+      "left": 674,
+      "top": 418.77,
+      "width": 506,
+      "height": 28
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "solution-body",
+    "text": "CSR Chat: benefit support for representatives.\nMember Chat: conversational member support.\nReadiness is validated by product and customer.",
+    "textChars": 138,
+    "textLines": 3,
+    "bbox": {
+      "left": 674,
+      "top": 452.77,
+      "width": 506,
+      "height": 80
+    }
+  }
+]

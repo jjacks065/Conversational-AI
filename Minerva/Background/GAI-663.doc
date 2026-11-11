@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#GAI-663] Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (Risk - Medium)</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://blueshieldca.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [GAI-663]&nbsp;<a href="https://blueshieldca.atlassian.net/browse/GAI-663">Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (Risk - Medium)</a>
+            <span class="subText">
+               Created: 22/Jun/26                   &nbsp;Updated: 08/Sep/26
+
+                                    &nbsp;Due: 31/Jul/26
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Approved for Testing</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://blueshieldca.atlassian.net/secure/BrowseProject.jspa?id=21890">Stellarus AI Governance Intake</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Intake
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                3 - Minor
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_reporter_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_assignee_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10857959-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            business-form, business-form-11143, med-risk, security-has-questions                    </td>
+    </tr>
+    
+    	<tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Time Spent:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Σ Original Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+                    </td>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap>
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    Coach and Content Buddy - BSC AI Use Case Template.xlsx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image - 2026-06-22T111243.697.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    AI Use Case Risk Assessment Questionnaire - Template (1)_SMM.xlsx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    Screenshot 2026-07-30 103817.png &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    Copy of Coach and Content Buddy - BSC AI Use Case Template.xlsx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    GAI-663_AIRiskAssessment_Edited.xlsx &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    GAI-663 Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor.xlsm &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/excel.gif" height="16" width="16" border="0" alt="Microsoft Word">
+                    GAI-663 Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (1).xlsm &nbsp;&nbsp;&nbsp;
+                                    <img src="https://blueshieldca.atlassian.net/images/icons/attach/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20260904-234221.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+            <tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sub-tasks:</b></td>
+    <td bgcolor="#ffffff" valign="top">
+        <table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr bgcolor="#f0f0f0">
+                <td>
+                    <b>Key</b><br/>
+                </td>
+                <td>
+                    <b>Summary</b><br/>
+                </td>
+                <td>
+                    <b>Type</b><br/>
+                </td>
+                <td>
+                    <b>Status</b><br/>
+                </td>
+                <td>
+                    <b>Assignee</b><br/>
+                </td>
+            </tr>
+                            <tr>
+                    <td>
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-730">GAI-730</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-730">EA Assessment</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Completed
+                    </td>
+                    <td>
+                                                     Aman Sharma  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-731">GAI-731</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-731">Risk Assessment</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Completed
+                    </td>
+                    <td>
+                                                     Saipradeep Bomma  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-732">GAI-732</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-732">Security Assessment</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Completed
+                    </td>
+                    <td>
+                                                     Andres Hermosilla  &nbsp;
+                                            </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-733">GAI-733</a>
+                    </td>
+                    <td valign="top" width="25%">
+                        <a href="https://blueshieldca.atlassian.net/browse/GAI-733">Compliance Assessment</a>
+                    </td>
+                    <td>
+                        Subtask
+                    </td>
+                    <td>
+                        Completed
+                    </td>
+                    <td>
+                                                     Delia Johnson  &nbsp;
+                                            </td>
+                </tr>
+                    </table>
+    </td>
+</tr>
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Use Case Driver (POC):</b></td>
+                <td id="customfield_22860-10857959-value" class="value" bgcolor="#ffffff" width="80%">      Sonya Wade
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Business Sponsor:</b></td>
+                <td id="customfield_20710-10857959-value" class="value" bgcolor="#ffffff" width="80%">      Kari Hayes
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>AI Capabilities / Usage:</b></td>
+                <td id="customfield_28984-10857959-value" class="value" bgcolor="#ffffff" width="80%">      <p>The proposed solution leverages <b>Generative AI capabilities within Pega (Coach AI and Knowledge/Content Buddy)</b> to enhance agent productivity and customer interactions.</p>
+
+<p>Generative AI is used to:</p>
+
+<ul>
+	<li><b>Generate real-time responses</b> to agent queries using natural language, grounded in enterprise knowledge sources</li>
+	<li><b>Summarize customer interactions, cases, and historical data</b> to provide quick context and reduce manual effort</li>
+	<li><b>Recommend relevant knowledge articles and next-best actions</b> during live member calls</li>
+	<li><b>Draft responses and assist with communication</b>, improving consistency and reducing response time</li>
+	<li><b>Automate routine tasks</b> such as case summaries, follow-ups, and documentation</li>
+</ul>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>MVP Success Criteria / Expected Benefit:</b></td>
+                <td id="customfield_20663-10857959-value" class="value" bgcolor="#ffffff" width="80%">      <h3><a name="SuccessCriteria%28Pilot%2FMVPPhase%29"></a><b>Success Criteria (Pilot / MVP Phase)</b></h3>
+
+<ul>
+	<li><b>Reduction in Average Handle Time (AHT)</b> for member calls through faster information retrieval</li>
+	<li><b>Improved First Call Resolution (FCR)</b> by enabling agents with real-time, accurate guidance</li>
+	<li><b>Reduction in agent research time</b> for knowledge articles and process lookups</li>
+	<li><b>Positive pilot user feedback</b> on usability, relevance, and accuracy of AI recommendations</li>
+	<li><b>Adoption rate by pilot agents</b> using Coach AI and Content Buddy during live interactions</li>
+	<li><b>Accuracy and relevance of AI-generated responses</b> based on enterprise knowledge sources</li>
+	<li><b>Compliance adherence</b> with no security or data access violations observed</li>
+</ul>
+
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Intended Users &amp; Delivery Timing:</b></td>
+                <td id="customfield_20658-10857959-value" class="value" bgcolor="#ffffff" width="80%">      <p>By end of Q3, 2026</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Vendor Involvement:</b></td>
+                <td id="customfield_25524-10857959-value" class="value" bgcolor="#ffffff" width="80%">
+
+
+    <div class="shorten" id="customfield_25524-field">
+        							<span>Yes</span>			            </div>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Technical Approach/Platform/Vendors:</b></td>
+                <td id="customfield_20660-10857959-value" class="value" bgcolor="#ffffff" width="80%">      <p>Pega Partners are engaged</p>
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Willingness to Fund:</b></td>
+                <td id="customfield_20664-10857959-value" class="value" bgcolor="#ffffff" width="80%">
+
+
+    <div class="shorten" id="customfield_20664-field">
+        							<span>Yes</span>			            </div>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Requires BSC Data:</b></td>
+                <td id="customfield_25525-10857959-value" class="value" bgcolor="#ffffff" width="80%">
+
+
+    <div class="shorten" id="customfield_25525-field">
+        							<span>Yes</span>			            </div>
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Data Classification:</b></td>
+                <td id="customfield_25940-10857959-value" class="value" bgcolor="#ffffff" width="80%">    Public Data - Data shown publicly
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Does the vendor(s) have access to data today?:</b></td>
+                <td id="customfield_27611-10857959-value" class="value" bgcolor="#ffffff" width="80%">    No
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Does the vendor(s) share data to third parties?*:</b></td>
+                <td id="customfield_27612-10857959-value" class="value" bgcolor="#ffffff" width="80%">    No
+</td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Start date:</b></td>
+                <td id="customfield_19111-10857959-value" class="value" bgcolor="#ffffff" width="80%">          <span title="19/Jun/26"><time datetime="2026-06-19">19/Jun/26</time></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Business Area:</b></td>
+                <td id="customfield_27679-10857959-value" class="value" bgcolor="#ffffff" width="80%">      Shawna Maitia, Sonya Wade
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_13750-10857959-value" class="value" bgcolor="#ffffff" width="80%">      2|i4wqgv:
+  </td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>This user story focuses on implementing <b>Pega Knowledge (Content Buddy)</b> and <b>Coach AI</b> capabilities within <b>Shield Advisor (Pega)</b> to improve agent efficiency and customer experience.</p>
+
+<p>The solution will enable:</p>
+
+<ul>
+	<li>Real-time agent guidance using natural language responses during member calls</li>
+	<li>Intelligent retrieval of knowledge articles and process information</li>
+	<li>Faster navigation of information lookup tools and reduced manual research effort</li>
+</ul>
+
+
+<p>This aligns with the business goal of improving agent productivity, reducing training time, and enhancing member interaction quality.</p>
+
+<h3><a name="ProblemStatement"></a><b>Problem Statement</b></h3>
+
+<p>Agents currently face delays in:</p>
+
+<ul>
+	<li>Training for sentiment-based interactions</li>
+	<li>Navigating knowledge articles</li>
+	<li>Researching member inquiries</li>
+	<li>Accessing benefit quoting and lookup tools</li>
+</ul>
+
+
+<p>This impacts operational efficiency and multiple business metrics.</p>
+
+<h3><a name="BusinessValue%2FExpectedOutcomes"></a><b>Business Value / Expected Outcomes</b></h3>
+
+<ul>
+	<li>Reduced average handle time (AHT)</li>
+	<li>Improved first call resolution (FCR)</li>
+	<li>Faster agent onboarding and training</li>
+	<li>Enhanced customer experience through real-time assistance</li>
+	<li>Reduced manual effort for information lookup</li>
+</ul>
+
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-7267474"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_commented_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">22/Jun/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7267474"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=61099c519798100070a55d79" class="user-hover" rel="61099c519798100070a55d79" data-account-id="61099c519798100070a55d79" accountid="61099c519798100070a55d79" rel="noreferrer">Karen Levine-Flandrup</a> could we add this to the AI governance list? It aligns with EA, and we need it treated as a priority for Q3 delivery. I’m happy to set up a workshop to help speed up the process.</p>
+
+<p>Thank you!!</p>
+        </td></tr>
+                <tr id="comment-header-7270508"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:73331039-9d56-4d90-8955-dd58aacf4022"
+                id="word_commented_712020:73331039-9d56-4d90-8955-dd58aacf4022"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A73331039-9d56-4d90-8955-dd58aacf4022">
+                    Dawn Kinneer (Inactive)
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">23/Jun/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7270508"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762" class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762" data-account-id="557058:a202c244-8bed-40ab-a122-b4c52da1c762" accountid="557058:a202c244-8bed-40ab-a122-b4c52da1c762" rel="noreferrer">Hina Khan</a> In addition to the BSC worksheet, <em>all intake requests must include a completed</em> <a href="https://blueshieldca.atlassian.net/wiki/pages/viewpageattachments.action?pageId=1912897561&amp;fromFileId=1912307812&amp;preview=/1912897561/1912307812/AI%20Use%20Case%20Risk%20Assessment%20Questionnaire%20-%20Template.xlsx" class="external-link" rel="nofollow noreferrer"><b><em>AI Use Case Risk Assessment Questionnaire</em></b></a> <em>attached at the time of submission. This questionnaire is required</em> <em>for all requests submitted for Stellarus review.</em>  </p>
+        </td></tr>
+                <tr id="comment-header-7339969"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_commented_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">08/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7339969"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A73331039-9d56-4d90-8955-dd58aacf4022" class="user-hover" rel="712020:73331039-9d56-4d90-8955-dd58aacf4022" data-account-id="712020:73331039-9d56-4d90-8955-dd58aacf4022" accountid="712020:73331039-9d56-4d90-8955-dd58aacf4022" rel="noreferrer">Dawn Kinneer</a>  I have attached the document please let me know if you need any additional details.</p>
+        </td></tr>
+                <tr id="comment-header-7391228"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+                id="word_commented_557058:f58131cb-b67d-43c7-b30d-6b58d40bd077"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Af58131cb-b67d-43c7-b30d-6b58d40bd077">
+                    Automation for Jira
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7391228"><td bgcolor="#ffffff">
+            <p>07/24/2026 11:50 PDT <br/>
+AI &amp; Analytics Review has been completed and ready for assessment.</p>
+        </td></tr>
+                <tr id="comment-header-7391748"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                id="word_commented_712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525">
+                    Saipradeep Bomma
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">24/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7391748"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762" class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762" data-account-id="557058:a202c244-8bed-40ab-a122-b4c52da1c762" accountid="557058:a202c244-8bed-40ab-a122-b4c52da1c762" rel="noreferrer">Hina Khan</a> Please fill out the Risk Score and Rating section in the BSC worksheet.</p>
+        </td></tr>
+                <tr id="comment-header-7410393"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_commented_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7410393"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a>  please review the comment from <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525" class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" data-account-id="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" accountid="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" rel="noreferrer">Saipradeep Bomma</a> , this is holding the process from moving forward. I know we discussed this before, but this can’t proceed without this information filled in. I appreciate your help with this.</p>
+
+<p>Also <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525" class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" data-account-id="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" accountid="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" rel="noreferrer">Saipradeep Bomma</a> ,could you point out which sections are still missing?</p>
+        </td></tr>
+                <tr id="comment-header-7411120"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7411120"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762" class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762" data-account-id="557058:a202c244-8bed-40ab-a122-b4c52da1c762" accountid="557058:a202c244-8bed-40ab-a122-b4c52da1c762" rel="noreferrer">Hina Khan</a> I have shared this excel file already. <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525" class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" data-account-id="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" accountid="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" rel="noreferrer">Saipradeep Bomma</a> what specifically was missing?</p>
+        </td></tr>
+                <tr id="comment-header-7411186"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                id="word_commented_712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525">
+                    Saipradeep Bomma
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7411186"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a>  Please fill out the attached section in the BSC AI use case workbook.</p>
+
+<p><span class="image-wrap" style=""><img src="https://blueshieldca.atlassian.net/rest/api/3/attachment/content/3080001" alt="Screenshot 2026-07-30 103817.png" width="649" style="border: 0px solid black" /></span></p>
+        </td></tr>
+                <tr id="comment-header-7412182"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">30/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7412182"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762" class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762" data-account-id="557058:a202c244-8bed-40ab-a122-b4c52da1c762" accountid="557058:a202c244-8bed-40ab-a122-b4c52da1c762" rel="noreferrer">Hina Khan</a> <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525" class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" data-account-id="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" accountid="712020:efc9ce40-9a67-4d81-be61-30d8958f6525" rel="noreferrer">Saipradeep Bomma</a> see the attachment</p>
+        </td></tr>
+                <tr id="comment-header-7415392"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                id="word_commented_712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525">
+                    Saipradeep Bomma
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">31/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7415392"><td bgcolor="#ffffff">
+            <p>Editing previous assessment based on additional information provided by the <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a>  and <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762" class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762" data-account-id="557058:a202c244-8bed-40ab-a122-b4c52da1c762" accountid="557058:a202c244-8bed-40ab-a122-b4c52da1c762" rel="noreferrer">Hina Khan</a> </p>
+
+<p>This use case is <b>Medium Risk</b>. This is an advisory rating and does not approve/deny the use case. Per question support available: <a href="https://blueshieldca.atlassian.net/wiki/spaces/ISRM/pages/1917255764/AI+Risk+Assessment+Process+Support+Guide" title="smart-link" class="external-link" rel="nofollow noreferrer">https://blueshieldca.atlassian.net/wiki/spaces/ISRM/pages/1917255764/AI+Risk+Assessment+Process+Support+Guide</a> </p>
+
+<p><b>Overall Risk Profile:</b></p>
+
+<p>The rating is driven by use of generative AI in agent-facing member service workflows, third-party Pega capabilities, regulated health plan operations, and potential member impact through guidance, searches, summaries, and recommendations. Risk is reduced by the requestor’s clarification that Knowledge and Coach do not access, store, or save PHI or PII, Knowledge retrieves procedural SMP articles, Coach operates on configured business rules and masked case context, prompts are not used for model training, and BSC controls data exposure, knowledge sources, user access, and partner access.</p>
+
+<p><b>Recommended Mitigation Actions:</b></p>
+
+<p>To reduce the risk, document the confirmed PHI and PII exclusion design, identify the exact data fields and knowledge sources available to Knowledge and Coach, maintain masking and role-based access controls, confirm prompt and output retention settings, complete contract and governance approvals, validate security and resilience controls, and establish monitoring for accuracy, relevance, compliance adherence, access violations, and inappropriate data exposure.</p>
+
+<p><span class="nobr"><a href="/rest/api/3/attachment/content/3081408" title="GAI-663_AIRiskAssessment_Edited.xlsx attached to GAI-663" data-attachment-type="file" data-attachment-name="GAI-663_AIRiskAssessment_Edited.xlsx" data-media-services-type="file" data-media-services-id="413116e9-e24e-4a22-8b18-b8f29c6e7c15" rel="noreferrer">GAI-663_AIRiskAssessment_Edited.xlsx<sup><img class="rendericon" src="/images/icons/link_attachment_7.gif" height="7" width="7" align="absmiddle" alt="" border="0"/></sup></a></span> </p>
+
+        </td></tr>
+                <tr id="comment-header-7418614"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                id="word_commented_712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525">
+                    Saipradeep Bomma
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">31/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7418614"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a>  thanks for the clarification. To make sure the assessment is documented correctly, can you please confirm the following or attach supporting documentation?</p>
+
+<ul>
+	<li>Does Knowledge Buddy access, store, save, transmit, or retain any PHI or PII?</li>
+	<li>Does Knowledge Buddy only retrieve SMP knowledge articles?</li>
+	<li>Can you confirm SMP knowledge articles contain only agent desktop procedures and do not store PHI/PII?</li>
+	<li>Does Coach access, store, save, transmit, or retain any PHI or PII?</li>
+	<li>Does Coach only use business rules and summarize interaction history for the user?</li>
+	<li>Where is the interaction history stored?</li>
+	<li>Can you confirm the data remains stored in Pega Customer Service and that this storage has been in place since 2019?</li>
+	<li>Do the AI capabilities only help execute searches and make recommendations?</li>
+	<li>Are prompts, outputs, summaries, logs, telemetry, or interaction history stored by Knowledge Buddy, Coach, Pega, or any partner outside the existing Pega Customer Service environment?</li>
+	<li>Are any prompts, outputs, summaries, logs, telemetry, or interaction history used for model training, tuning, or improvement?</li>
+</ul>
+
+
+<p>Once this is documented, I can use it to update the assessment as appropriate.</p>
+        </td></tr>
+                <tr id="comment-header-7418669"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">31/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7418669"><td bgcolor="#ffffff">
+            <ul>
+	<li>Does Knowledge Buddy access, store, save, transmit, or retain any PHI or PII? No</li>
+	<li>Does Knowledge Buddy only retrieve SMP knowledge articles? It can retrieve knowledge from other sources as we determine necessary.  For customer service their knowledge base is SMP Knowledge Articles.</li>
+	<li>Can you confirm SMP knowledge articles contain only agent desktop procedures and do not store PHI/PII? Yes.</li>
+	<li>Does Coach access, store, save, transmit, or retain any PHI or PII? No</li>
+	<li>Does Coach only use business rules and summarize interaction history for the user? Yes, and it can make recommendations based on rules.</li>
+	<li>Where is the interaction history stored? Interaction history is stored in a couple places. Pega Customer Service and also other various sources such as Facets which Pega Customer Service pulls in via API service calls.  Coach and Knowledge is not pulling in PHI or PII data from these API service calls.</li>
+	<li>Can you confirm the data remains stored in Pega Customer Service and that this storage has been in place since 2019? Yes</li>
+	<li>Do the AI capabilities only help execute searches and make recommendations? Yes</li>
+	<li>Are prompts, outputs, summaries, logs, telemetry, or interaction history stored by Knowledge Buddy, Coach, Pega, or any partner outside the existing Pega Customer Service environment? No</li>
+	<li>Are any prompts, outputs, summaries, logs, telemetry, or interaction history used for model training, tuning, or improvement? No, customer prompts submitted to GenAI Coach are not used for model training, tuning, or product improvement. Coach receives its prompt instruction from within Infinity Studio through Pega.  Additionally, the Coach can be contained to only use information contained within Pega or your content/data behind the firewall and not be exposed to the internet</li>
+</ul>
+
+        </td></tr>
+                <tr id="comment-header-7418782"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                id="word_commented_712020:efc9ce40-9a67-4d81-be61-30d8958f6525"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aefc9ce40-9a67-4d81-be61-30d8958f6525">
+                    Saipradeep Bomma
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">31/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7418782"><td bgcolor="#ffffff">
+            <p>Thanks<a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a>, that clarification helps.<br/>
+Can you please clarify whether Coach receives, processes, or uses any of the following:</p>
+
+<ol>
+	<li>Live call audio</li>
+	<li>Call transcripts</li>
+	<li>Call recordings</li>
+	<li>Interaction notes</li>
+	<li>Interaction summaries</li>
+	<li>Prompts used for model training, tuning, or improvement</li>
+</ol>
+
+
+<p>If yes to any of the above, please confirm whether the data contains any PHI, PII, member-specific information, claims, benefits, or other identifiable member data. If the data is anonymized, de-identified, or limited to procedural/business-rule content only, please confirm that as well.</p>
+
+<p>Also, please describe what controls prevent PHI/PII from being provided to Coach, and whether Pega or any partner has rights to use prompts or related data beyond BSC’s controlled purpose.</p>
+        </td></tr>
+                <tr id="comment-header-7419089"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">31/Jul/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7419089"><td bgcolor="#ffffff">
+            <p>Can you please clarify whether Coach receives, processes, or uses any of the following:</p>
+
+<ol>
+	<li>Live call audio - No</li>
+	<li>Call transcripts - No</li>
+	<li>Call recordings - No</li>
+	<li>Interaction notes - Potentially, if interaction notes are stored within the host application and intentionally provided as case context to Coach. GenAI Coach is designed to provide guidance based on application and case data.</li>
+	<li>Interaction summaries - Not out of the box.  If BSC so chooses, you could add these as a knowledge source or tool for Coach later on if it is a requirement for the Coach to use this info. </li>
+	<li>Prompts used for model training, tuning, or improvement - No, customer prompts submitted to GenAI Coach are not used for model training, tuning, or product improvement. Coach receives its prompt instruction from within Infinity Studio through Pega.  Additionally, the Coach can be contained to only use information contained within Pega or your content/data behind the firewall and not be exposed to the internet.</li>
+</ol>
+
+
+<p>If yes to any of the above, please confirm whether the data contains any PHI, PII, member-specific information, claims, benefits, or other identifiable member data. If the data is anonymized, de-identified, or limited to procedural/business-rule content only, please confirm that as well. - This data can be masked (configured in the data portion of Infinity Studio) and will only be available to Coach in its masked form.</p>
+
+<p>Also, please describe what controls prevent PHI/PII from being provided to Coach, and whether Pega or any partner has rights to use prompts or related data beyond BSC’s controlled purpose. - You maintain access to which case data is made available to the Coach, which knowledge sources it can see and which user populations can access the coaching capabilities and what is exposed to end users.</p>
+
+<p>In summary, GenAI Coach is a case guidance and workflow coaching capability. Based on the information reviewed, it is <b>not designed to process live call audio, call recordings, or transcription streams</b>. Coach operates on application and case context configured by the BSC and therefore only accesses member, claims, benefits, PHI, or PII information if such data is intentionally made available through the hosting application. This is a great source for additional trust and security information <a href="https://urldefense.com/v3/__http://www.pega.com/trust__;!!NvsU1QEulwjNNrcOZ0amcNU!gxsqif-a1AMcMtCtz7Zq-DG3Z6X4vVXIp7HSxGG48xP0CgYv1l3esZIVFtOAuvNA7dEHWpTz6d8HCwRGSXiT8JOlAgsl$" class="external-link" rel="nofollow noreferrer"><ins>http://www.pega.com/trust</ins></a>.</p>
+
+<p> The only way Pega and Partner access would be granted to view your data would be based on roles BSC provides to those respective individuals to the respective applications.</p>
+        </td></tr>
+                <tr id="comment-header-7441464"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                id="word_commented_712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aabf20bfc-ead7-40ab-96e9-8412d17fa0bc">
+                    Delia Johnson
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">06/Aug/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7441464"><td bgcolor="#ffffff">
+            <p>Does <b>Pega Knowledge (Content Buddy)</b> and <b>Coach AI</b> provide any decisions to members on calls?  Does it provide medical/clinical information to members on calls? If yes - how is the determination made to provide specific replies that are medical or clinical in nature?</p>
+        </td></tr>
+                <tr id="comment-header-7441573"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">06/Aug/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7441573"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aabf20bfc-ead7-40ab-96e9-8412d17fa0bc" class="user-hover" rel="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc" data-account-id="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc" accountid="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc" rel="noreferrer">Delia Johnson</a> Knowledge and Coach AI are not interacting with the member directly.  The CSR is interacting with Knowledge Buddy and Coach, so there is always a human in the loop.</p>
+        </td></tr>
+                <tr id="comment-header-7441591"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                id="word_commented_712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aabf20bfc-ead7-40ab-96e9-8412d17fa0bc">
+                    Delia Johnson
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">06/Aug/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7441591"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a> thanks for clarifying.</p>
+        </td></tr>
+                <tr id="comment-header-7441596"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                id="word_commented_712020:abf20bfc-ead7-40ab-96e9-8412d17fa0bc"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aabf20bfc-ead7-40ab-96e9-8412d17fa0bc">
+                    Delia Johnson
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">06/Aug/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7441596"><td bgcolor="#ffffff">
+            <p>The AI tool use case and associated functionality as presented during the review process, are considered acceptable. This is not approval of the software or the vendor.  Changes to data types, integrations, users, model behavior, or functionality require re-review.  Compliance with documented safeguards is required.  Due to the associated level, risk will require mitigation controls as presented by Risk review.</p>
+        </td></tr>
+                <tr id="comment-header-7514940"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="62fec9832cbfba0566ad733d"
+                id="word_commented_62fec9832cbfba0566ad733d"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=62fec9832cbfba0566ad733d">
+                    Mukul Sinvhal
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">26/Aug/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7514940"><td bgcolor="#ffffff">
+            <p>This use case has been approved conditionally by BSC AI Governance Steering Committee.</p>
+        </td></tr>
+                <tr id="comment-header-7535447"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="62fec9832cbfba0566ad733d"
+                id="word_commented_62fec9832cbfba0566ad733d"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=62fec9832cbfba0566ad733d">
+                    Mukul Sinvhal
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">01/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7535447"><td bgcolor="#ffffff">
+            <p>All conditions have been met and this use case has been fully approved by BSC AI Governance Steering Committee.</p>
+        </td></tr>
+                <tr id="comment-header-7541046"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                id="word_commented_557058:a202c244-8bed-40ab-a122-b4c52da1c762"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=557058%3Aa202c244-8bed-40ab-a122-b4c52da1c762">
+                    Hina Khan
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">02/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7541046"><td bgcolor="#ffffff">
+            <p>Thank you for the updates,  <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=621e9a13db58c1006878f2b7" class="user-hover" rel="621e9a13db58c1006878f2b7" data-account-id="621e9a13db58c1006878f2b7" accountid="621e9a13db58c1006878f2b7" rel="noreferrer">Freyda Tran</a>  please let us know if you need anything else from our side.</p>
+
+<p>CC: <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddda1f6da6a006a49c084" class="user-hover" rel="617ddda1f6da6a006a49c084" data-account-id="617ddda1f6da6a006a49c084" accountid="617ddda1f6da6a006a49c084" rel="noreferrer">Rajeev Haswani</a> , <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=610826c275ad9600691e3d30" class="user-hover" rel="610826c275ad9600691e3d30" data-account-id="610826c275ad9600691e3d30" accountid="610826c275ad9600691e3d30" rel="noreferrer">Amiya Kumar Rath</a> , <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=60677739b30f0d0070562bcd" class="user-hover" rel="60677739b30f0d0070562bcd" data-account-id="60677739b30f0d0070562bcd" accountid="60677739b30f0d0070562bcd" rel="noreferrer">Vidya Rai</a> , <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a> , <a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A7360c36f-2b13-4ee2-a1f5-e21308c5a381" class="user-hover" rel="712020:7360c36f-2b13-4ee2-a1f5-e21308c5a381" data-account-id="712020:7360c36f-2b13-4ee2-a1f5-e21308c5a381" accountid="712020:7360c36f-2b13-4ee2-a1f5-e21308c5a381" rel="noreferrer">Sonya Wade</a> </p>
+        </td></tr>
+                <tr id="comment-header-7554707"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="61099c519798100070a55d79"
+                id="word_commented_61099c519798100070a55d79"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=61099c519798100070a55d79">
+                    Karen Levine-Flandrup
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">04/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7554707"><td bgcolor="#ffffff">
+            <p>Stellarus AI Governance has completed the assessment on 09/02/2026. This use case request is now <b>approved for testing purposes in a test environment</b>.</p>
+
+<p><b>Next steps:</b></p>
+
+<ul>
+	<li>Upload your testing results</li>
+	<li>Update the ticket with your production plan</li>
+</ul>
+
+
+<p>Once those items are submitted, the committee will review everything offline and confirm readiness for production approval.</p>
+        </td></tr>
+                <tr id="comment-header-7554818"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">04/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7554818"><td bgcolor="#ffffff">
+            <p>This was approved by BSC (8/25/2026) and Promise AI Governance (8/31/2026) already.</p>
+        </td></tr>
+                <tr id="comment-header-7554913"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="617ddcb525f313007008badb"
+                id="word_commented_617ddcb525f313007008badb"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb">
+                    Shawna Maitia
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">04/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7554913"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=61099c519798100070a55d79" class="user-hover" rel="61099c519798100070a55d79" data-account-id="61099c519798100070a55d79" accountid="61099c519798100070a55d79" rel="noreferrer">Karen Levine-Flandrup</a> I am a bit confused, the AI Intake form is for Production use not testing or in a test environment.</p>
+
+<p><span class="image-wrap" style=""><img src="https://blueshieldca.atlassian.net/rest/api/3/attachment/content/3115636" alt="image-20260904-234221.png" width="1103" style="border: 0px solid black" /></span></p>
+        </td></tr>
+                <tr id="comment-header-7568124"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="61099c519798100070a55d79"
+                id="word_commented_61099c519798100070a55d79"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=61099c519798100070a55d79">
+                    Karen Levine-Flandrup
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">08/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7568124"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a> Correct, how you get to production is by testing and proving the use case.  Thanks.</p>
+        </td></tr>
+                <tr id="comment-header-7568125"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="61099c519798100070a55d79"
+                id="word_commented_61099c519798100070a55d79"
+                href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=61099c519798100070a55d79">
+                    Karen Levine-Flandrup
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">08/Sep/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-7568125"><td bgcolor="#ffffff">
+            <p><a href="https://blueshieldca.atlassian.net/secure/ViewProfile.jspa?accountId=617ddcb525f313007008badb" class="user-hover" rel="617ddcb525f313007008badb" data-account-id="617ddcb525f313007008badb" accountid="617ddcb525f313007008badb" rel="noreferrer">Shawna Maitia</a> Stellarus needs to approve you as well for production.</p>
+        </td></tr>
+            </table>
+Generated at Fri Nov 06 18:48:22 UTC 2026 by Jason Jackson using Jira 1001.0.0-SNAPSHOT#100295-rev:30f301faa123fbef7f33006c52a9db372ad7afa7.
+
+</body>
+</html>

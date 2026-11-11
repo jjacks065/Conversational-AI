@@ -1,0 +1,52 @@
+Compass CSR Chat  ·  Product Brief
+5 of 12
+1. Product Snapshot
+Compass CSR Chat s a AI-powered decso-support product for health pla customer servce 
+represetatves. Durg a lve member or provder teracto, a represetatve asks a beefint questo  
+atural laguage ad receves a structured, pla-specfinc respose grouded  the health pla's approved 
+beefint data. Thie product s desged to reduce the effoort requred to locate ad terpret beefint formato 
+whle preservg huma revew ad establshed customer procedures.
+PRODUCT PROMISE
+Help representatives find, interpret, and communicate plan-specific benefit information faster and 
+more consistently, while keeping the representative accountable for the final customer 
+communication.
+1.1 What Compass CSR Chat is
+Compass CSR Chat brgs beefint terpretato to the represetatve workfloow. It retreves the pla 
+cotext suppled wth the request, detfines relevat beefint formato, ad geerates a aswer usg that 
+cotext. Whe the avalable cotext does ot support a aswer, the product s desged to say that t 
+caot aswer rather tha rely o geeral kowledge.
+1.2 Who it serves
+AUDIENCE NEED HOW COMPASS CSR CHAT SUPPORTS THEM
+Customer service 
+representatives
+Find and explain plan-specificc benefic 
+informaion during live ineracions
+Naural-language quesions and srucured answers 
+grounded in approved plan daa
+Supervisors and 
+operations leaders
+Improve consisency, conficdence, and 
+service efficciency
+Sandardized answer patteerns, feedback, and 
+operaional monioring
+Benefit and quality 
+reviewers
+Validae accuracy, disclosures, and 
+produc behavior
+Cusomer-specificc validaion ses, human review, 
+and release conrols
+Technology and security 
+teams
+Conficrm inegraion, access, and 
+operaing requiremens
+Deficned delivery patteerns and a separae 
+archiecure and securiy review
+1.3 Product scope
+Thie curret product scope s represetatve-asssted beefint qury. Supported pla populatos deped o 
+whch beefint data has bee tegrated ad valdated for the health pla. Addtoal domas are eabled 
+oly afteer ther source data, rules, ad valdato are complete.
+ Aget-facg: Compass CSR Chat supports represetatves; t s ot a member-facg chatbot.
+ Decso support: It asssts wth beefint questos; t s ot a system of record or clams adjudcato 
+system.
+ Pla-grouded: It aswers from approved customer cotext; t s ot permtteed to aswer from geeral 
+kowledge.

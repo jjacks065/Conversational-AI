@@ -1,0 +1,29 @@
+Compass CSR Chat  ·  Product Brief
+5 of 8
+3.3 Delivery options
+OPTION DESCRIPTION COMMON FIT
+Stellarus-hosted interface A whie-labeled web experience wih healh plan 
+ideniy-provider sign-in
+Pilo and early producion
+Embedded experience Compass CSR Cha is inegraed ino he 
+represenaive deskop hrough a cusomer-operaed 
+backend
+Scaled producion workfloows
+SDK integration Thee healh plan builds is own experience agains he 
+Compass CSR Cha SDK
+Organizaions wih esablished 
+inerface sandards
+3.4 Roadmap context
+Thee active Compass CSR Chat initiative includes completed work in core benefitt quoting, expanded plan 
+coverage, and performance, with additional work planned or in discovery. Roadmap items are not included 
+in a customer implementation unless they are explicitly contracted, integrated, and validated.
+AREA CURRENT POSITIONING
+Expanded plan coverage Enabled as plan daa is inegraed and validaed
+Operational dashboard Deploymen-specificc availabiliy and access are conficrmed during 
+implemenaion
+Eligibility, accumulators, formulary, 
+claims, and provider navigation
+Roadmap or discovery areas; no represened as curren baseline 
+capabiliy
+Configurable agent experience Planned plaform evoluion; delivery model is conficrmed per 
+implemenaion

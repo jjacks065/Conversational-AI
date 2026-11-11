@@ -1,0 +1,36 @@
+Compass CSR Chat  ·  Product Brief
+6 of 12
+2. Problem and Value
+2.1 The customer service challenge
+Beefint qures create a tme-sestve kowledge problem. Represetatves may eed to avgate multple 
+pla documets, teral tools, ad polcy sources whle a member or provder wats, the terpret 
+specalzed laguage ad commucate the applcable codtos cosstetly. Thie result ca be avodable 
+search effoort, varable terpretato, ad lmted vsblty to recurrg kowledge gaps.
+CHALLENGE OPERATIONAL EFFECT
+Manual navigation across sources Longer ime o locae and inerpre he relevan benefic deail
+Complex plan language Dependence on individual experience and benefic lieracy
+Inconsistent interpretation Variaion in responses, disclosures, and escalaion behavior
+Context switching Higher represenaive effoor and reduced conficdence during live calls
+Limited visibility Difficculy idenifying recurring gaps and improvemen opporuniies
+2.2 How Compass CSR Chat helps
+Compass CSR Chat creates a cotrolled path from approved beefint data to a represetatve-ready respose. 
+Thie applcato uses the suppled health pla ad pla cotext, retreves relevat beefint formato, ad 
+geerates a structured aswer for represetatve revew. Customer-specfinc cofingurato cotrols 
+termology, presetato, ad requred dsclosure laguage. Usupported questos are decled whe the 
+approved cotext caot support a aswer.
+2.3 Expected outcomes
+Value hypothesis
+Compass CSR Chat s teded to mprove represetatve efficcecy ad cosstecy wthout trasferrg 
+decso accoutablty to the AI. Thie value case should be measured agast each health pla’s basele 
+before ad afteer deploymet.
+ Faster access to beefint formato durg lve teractos.
+ More cosstet terpretato ad presetato across represetatves.
+ Greater represetatve cofindece whe hadlg complex beefint questos.
+ A repeatable valdato ad feedback loop for mprovg aswer qualty.
+ A scalable foudato for addtoal plas ad approved formato domas.
+MEASUREMENT APPROACH
+Baseline and target measures are established with each health plan before launch. Recommended measures 
+include median time to answer, validated-answer accuracy, required-disclosure compliance, representative 
+adoption, feedback rate, unsupported-question rate, and benefit-inquiry handle time. Results depend on 
+source-data quality, implementation scope, workflow design, and adoption; the brief does not commit to 
+unvalidated performance targets.

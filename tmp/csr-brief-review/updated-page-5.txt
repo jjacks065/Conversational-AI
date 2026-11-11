@@ -1,0 +1,31 @@
+Compass CSR Chat  ·  Product Brief
+5 of 9
+3.3 Delivery options
+OPTION DESCRIPTION COMMON FIT
+Stellarus-hosted interface A whie-labeled web experience wih healh plan 
+ideniy-provider sign-in
+Pilo and early producion
+Embedded experience Compass CSR Cha is inegraed ino he 
+represenaive deskop hrough a cusomer-operaed 
+backend
+Scaled producion workfloows
+SDK integration Thee healh plan builds is own experience agains he 
+Compass CSR Cha SDK
+Organizaions wih esablished 
+inerface sandards
+3.4 Roadmap context
+Thie basele product descrbed  ths bref s represetatve-asssted beefint qury grouded  tegrated 
+ad valdated pla data. Addtoal formato domas ad platform capabltes rema roadmap or 
+deploymet-specfinc utl ther source data, tegrato, cotrols, ad customer valdato are complete. 
+Roadmap tems should ot be represeted as commtteed customer fuctoalty uless explctly approved 
+for the mplemetato.
+AREA CURRENT POSITIONING
+Expanded plan coverage Enabled as plan daa is inegraed and validaed
+Operational dashboard Deploymen-specificc availabiliy and access are conficrmed during 
+implemenaion
+Eligibility, accumulators, formulary, 
+claims, and provider navigation
+Roadmap or discovery areas; no represened as curren baseline 
+capabiliy
+Configurable agent experience Planned plaform evoluion; delivery model is conficrmed per 
+implemenaion

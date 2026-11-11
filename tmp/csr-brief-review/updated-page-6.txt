@@ -1,0 +1,19 @@
+Compass CSR Chat  ·  Product Brief
+6 of 9
+4. Use Cases
+4.1 Benefit coverage
+A represetatve asks whether a servce s covered uder the applcable pla. Compass CSR Chat returs the 
+avalable pla-specfinc coverage detal ad relevat codtos for revew.
+Illustrative question: “Is physical therapy covered under this plan?”
+4.2 Cost sharing and conditions
+A represetatve asks about copays, cosurace, deductbles, vst lmts, etwork ters, or other codtos 
+cotaed  the loaded beefint data.
+Illustrative question: “What cost sharing applies to an in-network specialist visit?”
+4.3 Plan interpretation
+A represetatve asks for the applcable beefint laguage to be summarzed  a cosstet, customer-
+approved aswer structure, cludg relevat lmtatos or dsclosure laguage.
+Illustrative question: “What limitations apply to this durable medical equipment benefitt?”
+Use-case boundary
+Illustratve questos do ot guaratee that every pla or formato doma s avalable. A use case s 
+supported oly whe the requred source data ad rules are  scope ad have passed customer 
+valdato.

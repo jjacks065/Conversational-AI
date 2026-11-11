@@ -1,0 +1,590 @@
+[
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "title",
+    "text": "Compass agent roadmap",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "x": 64,
+      "y": 47,
+      "w": 1152,
+      "h": 56
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "subtitle",
+    "text": "Two coordinated tracks on a shared ATLASIQ foundation",
+    "textChars": 53,
+    "textLines": 1,
+    "bbox": {
+      "x": 64,
+      "y": 111,
+      "w": 1152,
+      "h": 31
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "horizon-0",
+    "text": "Q4 2026",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 280,
+      "y": 170,
+      "w": 162,
+      "h": 31
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "horizon-1",
+    "text": "H1 2027",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 170,
+      "w": 330,
+      "h": 31
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "horizon-2",
+    "text": "H2 2027 onward",
+    "textChars": 14,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 170,
+      "w": 334,
+      "h": 31
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-track-name",
+    "text": "Shield Advisor\n+ Compass",
+    "textChars": 24,
+    "textLines": 2,
+    "bbox": {
+      "x": 84,
+      "y": 244,
+      "w": 174,
+      "h": 59
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-track-purpose",
+    "text": "CSR assistance",
+    "textChars": 14,
+    "textLines": 1,
+    "bbox": {
+      "x": 84,
+      "y": 320,
+      "w": 163,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-track-name",
+    "text": "Voice /\nCCaaS",
+    "textChars": 13,
+    "textLines": 2,
+    "bbox": {
+      "x": 84,
+      "y": 438,
+      "w": 165,
+      "h": 62
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-track-purpose",
+    "text": "Intent front door",
+    "textChars": 17,
+    "textLines": 1,
+    "bbox": {
+      "x": 84,
+      "y": 516,
+      "w": 165,
+      "h": 26
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-prototype-heading",
+    "text": "Prototype",
+    "textChars": 9,
+    "textLines": 1,
+    "bbox": {
+      "x": 280,
+      "y": 244,
+      "w": 162,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-prototype-detail",
+    "text": "Documents by intent",
+    "textChars": 19,
+    "textLines": 1,
+    "bbox": {
+      "x": 280,
+      "y": 269,
+      "w": 162,
+      "h": 64
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-assist-heading",
+    "text": "CSR guided / AI assisted",
+    "textChars": 24,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 234,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-assist-detail",
+    "text": "Benefits & knowledge base",
+    "textChars": 25,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 259,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-transcribe-heading",
+    "text": "CSR guided / AI transcribed",
+    "textChars": 27,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 288,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-transcribe-detail",
+    "text": "Intent & call summary",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 313,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-guide-heading",
+    "text": "AI guided / CSR empowered",
+    "textChars": 25,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 342,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-guide-detail",
+    "text": "Verify early value",
+    "textChars": 18,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 367,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-expand-heading",
+    "text": "Expand",
+    "textChars": 6,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 234,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-expand-detail",
+    "text": "Content & intents",
+    "textChars": 17,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 259,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-journey-heading",
+    "text": "Next horizon",
+    "textChars": 12,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 288,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-journey-detail",
+    "text": "Journey context",
+    "textChars": 15,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 313,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-supervisor-heading",
+    "text": "Explore",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 342,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "csr-supervisor-detail",
+    "text": "Supervisor copilot",
+    "textChars": 18,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 367,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-prototype-heading",
+    "text": "Stage 0",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 280,
+      "y": 438,
+      "w": 162,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-prototype-detail",
+    "text": "Listening & intent demo",
+    "textChars": 23,
+    "textLines": 1,
+    "bbox": {
+      "x": 280,
+      "y": 463,
+      "w": 162,
+      "h": 64
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-discovery-heading",
+    "text": "Discovery",
+    "textChars": 9,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 426,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-discovery-detail",
+    "text": "Intents & integrations",
+    "textChars": 22,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 451,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-build-heading",
+    "text": "Build / test",
+    "textChars": 12,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 480,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-build-detail",
+    "text": "Stream & agent-leg test",
+    "textChars": 23,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 505,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-mvp-heading",
+    "text": "MVP target",
+    "textChars": 10,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 534,
+      "w": 330,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-mvp-detail",
+    "text": "Selected deflection",
+    "textChars": 19,
+    "textLines": 1,
+    "bbox": {
+      "x": 486,
+      "y": 559,
+      "w": 330,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage2-heading",
+    "text": "Stage 2",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 426,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage2-detail",
+    "text": "Expand to top 20 intents",
+    "textChars": 24,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 451,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage3-heading",
+    "text": "Stage 3",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 480,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage3-detail",
+    "text": "Micro-route / callback",
+    "textChars": 22,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 505,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage4-heading",
+    "text": "Stage 4",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 534,
+      "w": 334,
+      "h": 25
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "voice-stage4-detail",
+    "text": "Predictive reach",
+    "textChars": 16,
+    "textLines": 1,
+    "bbox": {
+      "x": 866,
+      "y": 559,
+      "w": 334,
+      "h": 27
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "foundation-title",
+    "text": "ATLASIQ",
+    "textChars": 7,
+    "textLines": 1,
+    "bbox": {
+      "x": 84,
+      "y": 618,
+      "w": 184,
+      "h": 29
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "foundation-caption",
+    "text": "Shared foundation",
+    "textChars": 17,
+    "textLines": 1,
+    "bbox": {
+      "x": 84,
+      "y": 647,
+      "w": 200,
+      "h": 22
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "foundation-capabilities",
+    "text": "Approved sources, member/plan matching, service contracts\nFreshness, provenance and tenant controls",
+    "textChars": 99,
+    "textLines": 2,
+    "bbox": {
+      "x": 322,
+      "y": 618,
+      "w": 872,
+      "h": 49
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "footer",
+    "text": "November 2026. Internal discussion draft. Planning windows require product and engineering approval.",
+    "textChars": 100,
+    "textLines": 1,
+    "bbox": {
+      "x": 64,
+      "y": 688,
+      "w": 1093,
+      "h": 23
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "page-number",
+    "text": "10",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "x": 1180,
+      "y": 688,
+      "w": 36,
+      "h": 23
+    }
+  }
+]

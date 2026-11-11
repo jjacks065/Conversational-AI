@@ -1,0 +1,350 @@
+[#GAI-663] Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (Risk - Medium)
+[GAI-663] Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (Risk - Medium)
+Created: 22/Jun/26                    Updated: 08/Sep/26
+Due: 31/Jul/26
+Status:
+Approved for Testing
+Project:
+Stellarus AI Governance Intake
+Components:
+None
+Affects versions:
+None
+Fix versions:
+None
+Type:
+Intake
+Priority:
+3 - Minor
+Reporter:
+Hina Khan
+Assignee:
+Hina Khan
+Resolution:
+Unresolved
+Votes:
+0
+Labels:
+business-form, business-form-11143, med-risk, security-has-questions
+Σ Remaining Estimate:
+Not Specified
+Remaining Estimate:
+Not Specified
+Σ Time Spent:
+Not Specified
+Time Spent:
+Not Specified
+Σ Original Estimate:
+Not Specified
+Original estimate:
+Not Specified
+Attachments:
+Coach and Content Buddy - BSC AI Use Case Template.xlsx
+image - 2026-06-22T111243.697.png
+AI Use Case Risk Assessment Questionnaire - Template (1)_SMM.xlsx
+Screenshot 2026-07-30 103817.png
+Copy of Coach and Content Buddy - BSC AI Use Case Template.xlsx
+GAI-663_AIRiskAssessment_Edited.xlsx
+GAI-663 Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor.xlsm
+GAI-663 Implement Pega Knowledge (Content Buddy) and Coach AI for Shield Advisor (1).xlsm
+image-20260904-234221.png
+Sub-tasks:
+Key
+Summary
+Type
+Status
+Assignee
+GAI-730
+EA Assessment
+Subtask
+Completed
+Aman Sharma
+GAI-731
+Risk Assessment
+Subtask
+Completed
+Saipradeep Bomma
+GAI-732
+Security Assessment
+Subtask
+Completed
+Andres Hermosilla
+GAI-733
+Compliance Assessment
+Subtask
+Completed
+Delia Johnson
+Use Case Driver (POC):
+Sonya Wade
+Business Sponsor:
+Kari Hayes
+AI Capabilities / Usage:
+The proposed solution leverages Generative AI capabilities within Pega (Coach AI and Knowledge/Content Buddy) to enhance agent productivity and customer interactions.
+Generative AI is used to:
+Generate real-time responses to agent queries using natural language, grounded in enterprise knowledge sources
+Summarize customer interactions, cases, and historical data to provide quick context and reduce manual effort
+Recommend relevant knowledge articles and next-best actions during live member calls
+Draft responses and assist with communication, improving consistency and reducing response time
+Automate routine tasks such as case summaries, follow-ups, and documentation
+MVP Success Criteria / Expected Benefit:
+Success Criteria (Pilot / MVP Phase)
+Reduction in Average Handle Time (AHT) for member calls through faster information retrieval
+Improved First Call Resolution (FCR) by enabling agents with real-time, accurate guidance
+Reduction in agent research time for knowledge articles and process lookups
+Positive pilot user feedback on usability, relevance, and accuracy of AI recommendations
+Adoption rate by pilot agents using Coach AI and Content Buddy during live interactions
+Accuracy and relevance of AI-generated responses based on enterprise knowledge sources
+Compliance adherence with no security or data access violations observed
+Intended Users & Delivery Timing:
+By end of Q3, 2026
+Vendor Involvement:
+Yes
+Technical Approach/Platform/Vendors:
+Pega Partners are engaged
+Willingness to Fund:
+Yes
+Requires BSC Data:
+Yes
+Data Classification:
+Public Data - Data shown publicly
+Does the vendor(s) have access to data today?:
+No
+Does the vendor(s) share data to third parties?*:
+No
+Start date:
+19/Jun/26
+Business Area:
+Shawna Maitia, Sonya Wade
+Rank:
+2|i4wqgv:
+Description
+This user story focuses on implementing Pega Knowledge (Content Buddy) and Coach AI capabilities within Shield Advisor (Pega) to improve agent efficiency and customer experience.
+The solution will enable:
+Real-time agent guidance using natural language responses during member calls
+Intelligent retrieval of knowledge articles and process information
+Faster navigation of information lookup tools and reduced manual research effort
+This aligns with the business goal of improving agent productivity, reducing training time, and enhancing member interaction quality.
+Problem Statement
+Agents currently face delays in:
+Training for sentiment-based interactions
+Navigating knowledge articles
+Researching member inquiries
+Accessing benefit quoting and lookup tools
+This impacts operational efficiency and multiple business metrics.
+Business Value / Expected Outcomes
+Reduced average handle time (AHT)
+Improved first call resolution (FCR)
+Faster agent onboarding and training
+Enhanced customer experience through real-time assistance
+Reduced manual effort for information lookup
+Comments
+Comment by
+Hina Khan
+[
+22/Jun/26
+]
+Karen Levine-Flandrup could we add this to the AI governance list? It aligns with EA, and we need it treated as a priority for Q3 delivery. I’m happy to set up a workshop to help speed up the process.
+Thank you!!
+Comment by
+Dawn Kinneer (Inactive)
+[
+23/Jun/26
+]
+Hina Khan In addition to the BSC worksheet, all intake requests must include a completed AI Use Case Risk Assessment Questionnaire attached at the time of submission. This questionnaire is required for all requests submitted for Stellarus review.
+Comment by
+Hina Khan
+[
+08/Jul/26
+]
+Dawn Kinneer  I have attached the document please let me know if you need any additional details.
+Comment by
+Automation for Jira
+[
+24/Jul/26
+]
+07/24/2026 11:50 PDT
+AI & Analytics Review has been completed and ready for assessment.
+Comment by
+Saipradeep Bomma
+[
+24/Jul/26
+]
+Hina Khan Please fill out the Risk Score and Rating section in the BSC worksheet.
+Comment by
+Hina Khan
+[
+30/Jul/26
+]
+Shawna Maitia  please review the comment from Saipradeep Bomma , this is holding the process from moving forward. I know we discussed this before, but this can’t proceed without this information filled in. I appreciate your help with this.
+Also Saipradeep Bomma ,could you point out which sections are still missing?
+Comment by
+Shawna Maitia
+[
+30/Jul/26
+]
+Hina Khan I have shared this excel file already. Saipradeep Bomma what specifically was missing?
+Comment by
+Saipradeep Bomma
+[
+30/Jul/26
+]
+Shawna Maitia  Please fill out the attached section in the BSC AI use case workbook.
+Comment by
+Shawna Maitia
+[
+30/Jul/26
+]
+Hina Khan Saipradeep Bomma see the attachment
+Comment by
+Saipradeep Bomma
+[
+31/Jul/26
+]
+Editing previous assessment based on additional information provided by the Shawna Maitia  and Hina Khan
+This use case is Medium Risk. This is an advisory rating and does not approve/deny the use case. Per question support available: https://blueshieldca.atlassian.net/wiki/spaces/ISRM/pages/1917255764/AI+Risk+Assessment+Process+Support+Guide
+Overall Risk Profile:
+The rating is driven by use of generative AI in agent-facing member service workflows, third-party Pega capabilities, regulated health plan operations, and potential member impact through guidance, searches, summaries, and recommendations. Risk is reduced by the requestor’s clarification that Knowledge and Coach do not access, store, or save PHI or PII, Knowledge retrieves procedural SMP articles, Coach operates on configured business rules and masked case context, prompts are not used for model training, and BSC controls data exposure, knowledge sources, user access, and partner access.
+Recommended Mitigation Actions:
+To reduce the risk, document the confirmed PHI and PII exclusion design, identify the exact data fields and knowledge sources available to Knowledge and Coach, maintain masking and role-based access controls, confirm prompt and output retention settings, complete contract and governance approvals, validate security and resilience controls, and establish monitoring for accuracy, relevance, compliance adherence, access violations, and inappropriate data exposure.
+GAI-663_AIRiskAssessment_Edited.xlsx
+Comment by
+Saipradeep Bomma
+[
+31/Jul/26
+]
+Shawna Maitia  thanks for the clarification. To make sure the assessment is documented correctly, can you please confirm the following or attach supporting documentation?
+Does Knowledge Buddy access, store, save, transmit, or retain any PHI or PII?
+Does Knowledge Buddy only retrieve SMP knowledge articles?
+Can you confirm SMP knowledge articles contain only agent desktop procedures and do not store PHI/PII?
+Does Coach access, store, save, transmit, or retain any PHI or PII?
+Does Coach only use business rules and summarize interaction history for the user?
+Where is the interaction history stored?
+Can you confirm the data remains stored in Pega Customer Service and that this storage has been in place since 2019?
+Do the AI capabilities only help execute searches and make recommendations?
+Are prompts, outputs, summaries, logs, telemetry, or interaction history stored by Knowledge Buddy, Coach, Pega, or any partner outside the existing Pega Customer Service environment?
+Are any prompts, outputs, summaries, logs, telemetry, or interaction history used for model training, tuning, or improvement?
+Once this is documented, I can use it to update the assessment as appropriate.
+Comment by
+Shawna Maitia
+[
+31/Jul/26
+]
+Does Knowledge Buddy access, store, save, transmit, or retain any PHI or PII? No
+Does Knowledge Buddy only retrieve SMP knowledge articles? It can retrieve knowledge from other sources as we determine necessary.  For customer service their knowledge base is SMP Knowledge Articles.
+Can you confirm SMP knowledge articles contain only agent desktop procedures and do not store PHI/PII? Yes.
+Does Coach access, store, save, transmit, or retain any PHI or PII? No
+Does Coach only use business rules and summarize interaction history for the user? Yes, and it can make recommendations based on rules.
+Where is the interaction history stored? Interaction history is stored in a couple places. Pega Customer Service and also other various sources such as Facets which Pega Customer Service pulls in via API service calls.  Coach and Knowledge is not pulling in PHI or PII data from these API service calls.
+Can you confirm the data remains stored in Pega Customer Service and that this storage has been in place since 2019? Yes
+Do the AI capabilities only help execute searches and make recommendations? Yes
+Are prompts, outputs, summaries, logs, telemetry, or interaction history stored by Knowledge Buddy, Coach, Pega, or any partner outside the existing Pega Customer Service environment? No
+Are any prompts, outputs, summaries, logs, telemetry, or interaction history used for model training, tuning, or improvement? No, customer prompts submitted to GenAI Coach are not used for model training, tuning, or product improvement. Coach receives its prompt instruction from within Infinity Studio through Pega.  Additionally, the Coach can be contained to only use information contained within Pega or your content/data behind the firewall and not be exposed to the internet
+Comment by
+Saipradeep Bomma
+[
+31/Jul/26
+]
+ThanksShawna Maitia, that clarification helps.
+Can you please clarify whether Coach receives, processes, or uses any of the following:
+Live call audio
+Call transcripts
+Call recordings
+Interaction notes
+Interaction summaries
+Prompts used for model training, tuning, or improvement
+If yes to any of the above, please confirm whether the data contains any PHI, PII, member-specific information, claims, benefits, or other identifiable member data. If the data is anonymized, de-identified, or limited to procedural/business-rule content only, please confirm that as well.
+Also, please describe what controls prevent PHI/PII from being provided to Coach, and whether Pega or any partner has rights to use prompts or related data beyond BSC’s controlled purpose.
+Comment by
+Shawna Maitia
+[
+31/Jul/26
+]
+Can you please clarify whether Coach receives, processes, or uses any of the following:
+Live call audio - No
+Call transcripts - No
+Call recordings - No
+Interaction notes - Potentially, if interaction notes are stored within the host application and intentionally provided as case context to Coach. GenAI Coach is designed to provide guidance based on application and case data.
+Interaction summaries - Not out of the box.  If BSC so chooses, you could add these as a knowledge source or tool for Coach later on if it is a requirement for the Coach to use this info.
+Prompts used for model training, tuning, or improvement - No, customer prompts submitted to GenAI Coach are not used for model training, tuning, or product improvement. Coach receives its prompt instruction from within Infinity Studio through Pega.  Additionally, the Coach can be contained to only use information contained within Pega or your content/data behind the firewall and not be exposed to the internet.
+If yes to any of the above, please confirm whether the data contains any PHI, PII, member-specific information, claims, benefits, or other identifiable member data. If the data is anonymized, de-identified, or limited to procedural/business-rule content only, please confirm that as well. - This data can be masked (configured in the data portion of Infinity Studio) and will only be available to Coach in its masked form.
+Also, please describe what controls prevent PHI/PII from being provided to Coach, and whether Pega or any partner has rights to use prompts or related data beyond BSC’s controlled purpose. - You maintain access to which case data is made available to the Coach, which knowledge sources it can see and which user populations can access the coaching capabilities and what is exposed to end users.
+In summary, GenAI Coach is a case guidance and workflow coaching capability. Based on the information reviewed, it is not designed to process live call audio, call recordings, or transcription streams. Coach operates on application and case context configured by the BSC and therefore only accesses member, claims, benefits, PHI, or PII information if such data is intentionally made available through the hosting application. This is a great source for additional trust and security information http://www.pega.com/trust.
+The only way Pega and Partner access would be granted to view your data would be based on roles BSC provides to those respective individuals to the respective applications.
+Comment by
+Delia Johnson
+[
+06/Aug/26
+]
+Does Pega Knowledge (Content Buddy) and Coach AI provide any decisions to members on calls?  Does it provide medical/clinical information to members on calls? If yes - how is the determination made to provide specific replies that are medical or clinical in nature?
+Comment by
+Shawna Maitia
+[
+06/Aug/26
+]
+Delia Johnson Knowledge and Coach AI are not interacting with the member directly.  The CSR is interacting with Knowledge Buddy and Coach, so there is always a human in the loop.
+Comment by
+Delia Johnson
+[
+06/Aug/26
+]
+Shawna Maitia thanks for clarifying.
+Comment by
+Delia Johnson
+[
+06/Aug/26
+]
+The AI tool use case and associated functionality as presented during the review process, are considered acceptable. This is not approval of the software or the vendor.  Changes to data types, integrations, users, model behavior, or functionality require re-review.  Compliance with documented safeguards is required.  Due to the associated level, risk will require mitigation controls as presented by Risk review.
+Comment by
+Mukul Sinvhal
+[
+26/Aug/26
+]
+This use case has been approved conditionally by BSC AI Governance Steering Committee.
+Comment by
+Mukul Sinvhal
+[
+01/Sep/26
+]
+All conditions have been met and this use case has been fully approved by BSC AI Governance Steering Committee.
+Comment by
+Hina Khan
+[
+02/Sep/26
+]
+Thank you for the updates,  Freyda Tran  please let us know if you need anything else from our side.
+CC: Rajeev Haswani , Amiya Kumar Rath , Vidya Rai , Shawna Maitia , Sonya Wade
+Comment by
+Karen Levine-Flandrup
+[
+04/Sep/26
+]
+Stellarus AI Governance has completed the assessment on 09/02/2026. This use case request is now approved for testing purposes in a test environment.
+Next steps:
+Upload your testing results
+Update the ticket with your production plan
+Once those items are submitted, the committee will review everything offline and confirm readiness for production approval.
+Comment by
+Shawna Maitia
+[
+04/Sep/26
+]
+This was approved by BSC (8/25/2026) and Promise AI Governance (8/31/2026) already.
+Comment by
+Shawna Maitia
+[
+04/Sep/26
+]
+Karen Levine-Flandrup I am a bit confused, the AI Intake form is for Production use not testing or in a test environment.
+Comment by
+Karen Levine-Flandrup
+[
+08/Sep/26
+]
+Shawna Maitia Correct, how you get to production is by testing and proving the use case.  Thanks.
+Comment by
+Karen Levine-Flandrup
+[
+08/Sep/26
+]
+Shawna Maitia Stellarus needs to approve you as well for production.
+Generated at Fri Nov 06 18:48:22 UTC 2026 by Jason Jackson using Jira 1001.0.0-SNAPSHOT#100295-rev:30f301faa123fbef7f33006c52a9db372ad7afa7.

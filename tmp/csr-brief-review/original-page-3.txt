@@ -1,0 +1,29 @@
+Compass CSR Chat  ·  Product Brief
+3 of 8
+2. Problem and Value
+2.1 The customer service challenge
+Benefitt questions ofteen require representatives to move across plan documents, internal tools, and policy 
+sources while a member or provider waits. Representatives must interpret specialized language, identify the 
+correct plan details, and communicate required conditions consistently.
+CHALLENGE OPERATIONAL EFFECT
+Manual navigation across sources Longer ime o locae and inerpre he relevan benefic deail
+Complex plan language Dependence on individual experience and benefic lieracy
+Inconsistent interpretation Variaion in responses, disclosures, and escalaion behavior
+Context switching Higher represenaive effoor and reduced conficdence during live calls
+Limited visibility Difficculy idenifying recurring gaps and improvemen opporuniies
+2.2 How Compass CSR Chat helps
+Compass CSR Chat combines the health plan's approved benefitt data with a controlled answer-generation 
+workfloow. Thee representative asks a question, the application retrieves relevant plan context, and the model 
+produces a structured response for representative review. Customer-specifitc confitguration controls 
+terminology, presentation, and required disclosure language.
+2.3 Expected outcomes
+ Faster access to benefitt information during live interactions.
+ More consistent interpretation and presentation across representatives.
+ Greater representative confitdence when handling complex benefitt questions.
+ A repeatable validation and feedback loop for improving answer quality.
+ A scalable foundation for additional plans and approved information domains.
+Measurement approach
+Outcome targets are baselined with each health plan. Typical measures include time to answer, answer 
+accuracy, required-disclosure compliance, representative adoption, feedback, and benefitt-inquiry handle 
+time. Results are not guaranteed and depend on implementation scope, source quality, workfloow design, 
+and adoption.

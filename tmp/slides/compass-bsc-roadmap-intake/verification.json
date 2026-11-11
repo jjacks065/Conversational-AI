@@ -1,0 +1,33 @@
+{
+  "output": "/Users/jjacks20/jjacks/Conversational-AI/outputs/01a1b226-71b1-7090-817e-da53a9413d41/intake-aligned/output.pptx",
+  "slides": 6,
+  "loop": 2,
+  "editableTextboxes": 52,
+  "nativeTables": "PASS: five",
+  "template": "/Users/jjacks20/jjacks/Conversational-AI/Communications/STL_Product_Pitch_Template.pptx",
+  "sourceMatched": [
+    "Geist",
+    "Geist Light",
+    "1280x720",
+    "navy headings",
+    "coral rule",
+    "Stellarus logo"
+  ],
+  "sourceIntakes": [
+    "GAI-174",
+    "GAI-663"
+  ],
+  "reimport": "PASS",
+  "content": "PASS",
+  "visualReview": "PASS: all six final exported slides inspected",
+  "packageIntegrity": "PASS",
+  "relationships": "PASS",
+  "sourceCoverage": "PASS: both intakes, original roadmap, feature boundaries and measures",
+  "notes": "PASS: six source-referenced notes sections",
+  "geometryBounds": "PASS",
+  "sourceHashes": {
+    "GAI-174": "a3e4a5c9076fed2f5bb45151979ef381f8f95c89f49b7454ff841a0c65ec8b2d",
+    "GAI-663": "42a51b00029deb6c0b0d1bbb397be74636c04df73048a2267f25c875fcaa8aa0"
+  },
+  "priorDeckPreserved": true
+}

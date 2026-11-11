@@ -1,0 +1,26 @@
+{
+  "output": "/Users/jjacks20/jjacks/Conversational-AI/outputs/01a1b226-71b1-7090-817e-da53a9413d41/source-reconciled/output.pptx",
+  "slides": 6,
+  "loop": 2,
+  "editableTextboxes": 49,
+  "nativeTables": 5,
+  "template": "/Users/jjacks20/jjacks/Conversational-AI/Communications/STL_Product_Pitch_Template.pptx",
+  "sourceMatched": [
+    "Geist",
+    "Geist Light",
+    "1280x720",
+    "navy headings",
+    "coral rule",
+    "Stellarus logo"
+  ],
+  "sourceIntakes": [
+    "GAI-174",
+    "GAI-663"
+  ],
+  "reimport": "PASS",
+  "content": "PASS",
+  "visualReview": "PASS — all six exported slides inspected at 1280x720 after loop 2; no clipping, collisions or unresolved visual issues",
+  "sourceReconciliation": "PASS — supplied Notion export and 11-page briefing mapped alongside GAI-174/GAI-663",
+  "scheduleDecision": "User retains Feb 1–28, 2027 target; source-plan Mar–Apr pilot / May–Jun production conflict visible on both roadmap slides",
+  "residualRisk": "Delivery feasibility, exact Pega overlap, identity/interface/Atlas readiness, destination acceptance, owners/capacity and production approval remain unvalidated planning dependencies. No product implementation performed."
+}

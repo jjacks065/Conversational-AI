@@ -1,0 +1,57 @@
+{"id":"sh/9sf6dsja","kind":"textbox","text":"COMPASS  /  PERSONAL HEALTH ASSISTANT","position":{"left":98,"top":76,"width":980,"height":40}}
+{"id":"sh/mpon2d0j","kind":"textbox","text":"Compass","position":{"left":98,"top":174,"width":760,"height":82}}
+{"id":"sh/nqx4bi14","kind":"textbox","text":"Your care, carried forward.","position":{"left":98,"top":253,"width":1080,"height":70}}
+{"id":"sh/0nm50nid","kind":"textbox","text":"A trusted health companion that starts with grounded answers and stays with members through what comes next—across benefits, providers, prescriptions, and care.","position":{"left":98,"top":347,"width":1080,"height":105}}
+{"id":"sh/lovm98jy","kind":"shape","position":{"left":98,"top":491,"width":58,"height":4}}
+{"id":"sh/yl4nyd07","kind":"textbox","text":"Know what’s true.","position":{"left":98,"top":509,"width":335,"height":39}}
+{"id":"sh/zmd47i1s","kind":"textbox","text":"Grounded answers","position":{"left":98,"top":548,"width":335,"height":34}}
+{"id":"sh/cjm5w3ih","kind":"shape","position":{"left":467,"top":491,"width":58,"height":4}}
+{"id":"sh/dkvm58j2","kind":"textbox","text":"Choose what’s next.","position":{"left":467,"top":509,"width":335,"height":39}}
+{"id":"sh/l87mx03u","kind":"textbox","text":"Member-directed journeys","position":{"left":467,"top":548,"width":335,"height":34}}
+{"id":"sh/07yl4vm9","kind":"shape","position":{"left":836,"top":491,"width":58,"height":4}}
+{"id":"sh/z654vqlo","kind":"textbox","text":"Keep moving.","position":{"left":836,"top":509,"width":335,"height":39}}
+{"id":"sh/y5w32l4j","kind":"textbox","text":"Authorized, human-backed help","position":{"left":836,"top":548,"width":335,"height":34}}
+{"id":"sh/d4nmtg3y","kind":"textbox","text":"On demand when needed. Proactive by permission. In control, always.","position":{"left":98,"top":608,"width":1040,"height":42}}
+{"id":"sh/c3el0bmd","kind":"textbox","text":"Compass  /  Product Vision  /  October 2026","position":{"left":91,"top":663,"width":780,"height":28}}
+{"id":"im/cvelsf6h","kind":"image","position":{"left":1129,"top":657,"width":113,"height":27}}
+{"id":"sh/547294r6","kind":"textbox","text":"COMPASS – Trusted Health Companion","position":{"left":82.77,"top":72.46,"width":1109.23,"height":57.02}}
+{"id":"sh/7qp4be9c","kind":"textbox","text":"Compass  /  Product Vision  /  October 2026","position":{"left":81.44,"top":662.77,"width":794.13,"height":29.08}}
+{"id":"sh/65g3298r","kind":"textbox","text":"Product Overview","position":{"left":98,"top":170,"width":1080,"height":26}}
+{"id":"sh/ts7md4r2","kind":"textbox","text":"Compass helps members make progress through care with grounded answers, permissioned outreach, and continuity across member-owned journeys.","position":{"left":98,"top":204,"width":1090,"height":55}}
+{"id":"sh/sryl4zqx","kind":"textbox","text":"The customer and problem","position":{"left":98,"top":286,"width":506,"height":28}}
+{"id":"sh/fu94fe98","kind":"textbox","text":"Members piece together benefits, claims, providers, medications, and care plans across disconnected channels. Every handoff can lose context and stall progress.","position":{"left":98,"top":320,"width":506,"height":74}}
+{"id":"sh/utg3698n","kind":"textbox","text":"The solution","position":{"left":674,"top":286,"width":506,"height":28}}
+{"id":"sh/wn6dc7eh","kind":"textbox","text":"Surfaces (Member, CSR, Provider) → Spine (Auth, Agent Broker, AI Agents) → Brain (governed knowledge). Journeys carry goals, events, choices, next steps, and human help.","position":{"left":674,"top":320,"width":506,"height":74}}
+{"id":"sh/hofulsf2","kind":"textbox","text":"The value proposition","position":{"left":98,"top":416,"width":506,"height":28}}
+{"id":"sh/ul4vaxgb","kind":"textbox","text":"From answer engine to advocate, navigator, and companion: grounded resolution, visible progress, fewer restarts, and trust earned over time.","position":{"left":98,"top":450,"width":506,"height":74}}
+{"id":"sh/5sfepcfe","kind":"textbox","text":"Roadmap and next step","position":{"left":98,"top":554,"width":1080,"height":28}}
+{"id":"sh/ipovexwn","kind":"textbox","text":"M0 journey foundation → Eligibility → Claims → Accumulators → Formulary → Provider Lookup → Scheduling. Validate each as a whole journey increment; rebaseline delivery scope before commitment.","position":{"left":98,"top":588,"width":1080,"height":60}}
+{"id":"sh/3qxwn2x8","kind":"textbox","text":"The alternative today","position":{"left":674,"top":418.77,"width":506,"height":28}}
+{"id":"sh/sfqdkrep","kind":"textbox","text":"Transaction-by-transaction portals, chats, and calls can address an immediate need without carrying the member’s goal, permissions, and context across care.","position":{"left":674,"top":452.77,"width":506,"height":74}}
+{"id":"im/mh4v6dwr","kind":"image","position":{"left":1129,"top":657,"width":113,"height":27}}
+{"id":"sh/wzqxgb2l","kind":"textbox","text":"Six questions to shape Compass","position":{"left":92,"top":72,"width":1100,"height":58}}
+{"id":"sh/byhw76l0","kind":"textbox","text":"Start with member value and trust; let evidence define the boundaries for memory, action, and coordination.","position":{"left":98,"top":170,"width":1080,"height":58}}
+{"id":"sh/ax8fe1kf","kind":"textbox","text":"01","position":{"left":98,"top":254,"width":42,"height":32}}
+{"id":"sh/54jydg32","kind":"textbox","text":"What first member moment should Compass help carry forward—not merely answer?","position":{"left":146,"top":252,"width":458,"height":59}}
+{"id":"sh/k3axkb2h","kind":"textbox","text":"Find the next meaningful step and member outcome.","position":{"left":146,"top":314,"width":458,"height":35}}
+{"id":"sh/j2hgb6lw","kind":"textbox","text":"02","position":{"left":674,"top":254,"width":42,"height":32}}
+{"id":"sh/y18fi1kb","kind":"textbox","text":"What must a conversation do to earn trust?","position":{"left":722,"top":252,"width":458,"height":59}}
+{"id":"sh/18fehc3y","kind":"textbox","text":"Test evidence, uncertainty, privacy, and correction.","position":{"left":722,"top":314,"width":458,"height":35}}
+{"id":"sh/076x8r2d","kind":"shape","position":{"left":98,"top":355,"width":506,"height":1}}
+{"id":"sh/y9gjel0z","kind":"textbox","text":"03","position":{"left":98,"top":367,"width":42,"height":32}}
+{"id":"sh/zupk7qhk","kind":"textbox","text":"What should Compass remember as a member-owned journey?","position":{"left":146,"top":365,"width":458,"height":59}}
+{"id":"sh/kvi1gvi5","kind":"textbox","text":"Define goals, events, barriers, and member control.","position":{"left":146,"top":427,"width":458,"height":35}}
+{"id":"sh/lwr290zq","kind":"shape","position":{"left":674,"top":355,"width":506,"height":1}}
+{"id":"sh/mx0ji50v","kind":"textbox","text":"04","position":{"left":674,"top":367,"width":42,"height":32}}
+{"id":"sh/7y9kbahg","kind":"textbox","text":"When may Compass reach out or act?","position":{"left":722,"top":365,"width":458,"height":59}}
+{"id":"sh/8zi1kfi1","kind":"textbox","text":"Set outreach, standing-approval, and fresh-consent limits.","position":{"left":722,"top":427,"width":458,"height":35}}
+{"id":"sh/90r2dkzm","kind":"shape","position":{"left":98,"top":468,"width":506,"height":1}}
+{"id":"sh/u10jmp07","kind":"textbox","text":"05","position":{"left":98,"top":480,"width":42,"height":32}}
+{"id":"sh/v2tkfahs","kind":"textbox","text":"How does continuity survive a change of surface or a human intervention?","position":{"left":146,"top":478,"width":458,"height":59}}
+{"id":"sh/r6t03uxk","kind":"textbox","text":"Carry context across Member, CSR, Provider, and human help.","position":{"left":146,"top":540,"width":458,"height":35}}
+{"id":"sh/q5kjapwf","kind":"shape","position":{"left":674,"top":468,"width":506,"height":1}}
+{"id":"sh/dsbi5kfq","kind":"textbox","text":"06","position":{"left":674,"top":480,"width":42,"height":32}}
+{"id":"sh/s721cfe5","kind":"textbox","text":"What would show that Compass is becoming a trusted companion?","position":{"left":722,"top":478,"width":458,"height":59}}
+{"id":"sh/32t0zaxo","kind":"textbox","text":"Measure progress and trust alongside quality and safety.","position":{"left":722,"top":540,"width":458,"height":35}}
+{"id":"sh/i10j65w3","kind":"textbox","text":"Compass  /  Product Discovery  /  October 2026","position":{"left":91,"top":663,"width":780,"height":28}}
+{"id":"im/edojeh0f","kind":"image","position":{"left":1129,"top":657,"width":113,"height":27}}

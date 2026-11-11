@@ -1,0 +1,27 @@
+{
+  "output": "/Users/jjacks20/jjacks/Conversational-AI/outputs/01a1b226-71b1-7090-817e-da53a9413d41/output.pptx",
+  "slides": 6,
+  "loop": 2,
+  "editableTextboxes": 72,
+  "nativeTables": "PASS: 3 editable tables",
+  "template": "/Users/jjacks20/jjacks/Conversational-AI/Communications/STL_Product_Pitch_Template.pptx",
+  "sourceMatched": [
+    "Geist",
+    "Geist Light",
+    "1280x720",
+    "navy headings",
+    "coral rule",
+    "Stellarus logo"
+  ],
+  "reimport": "PASS",
+  "content": "PASS",
+  "visualReview": "PASS: all six final exported slides inspected at full slide size",
+  "packageIntegrity": "PASS",
+  "relationships": "PASS",
+  "slideAndNotesCount": "PASS: 6 slides and 6 notes",
+  "sourceFonts": "PASS: Geist and Geist Light",
+  "geometryBounds": "PASS",
+  "placeholderCheck": "PASS",
+  "accentRule": "PASS: single source accent",
+  "limitations": "Original BSC intake and slide 10 unavailable. Roadmap is proposed, not a delivery commitment."
+}

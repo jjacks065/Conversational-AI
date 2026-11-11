@@ -1,0 +1,427 @@
+PAGE 1
+S T EL L A R U S ·  E XE C U T IV E  BR I E F IN G
+Compass
+One front door for every member conversation
+Why it matters, what it brings together, and how the platform matures stage by stage
+Understand · resolve · route Works with any CCaaS Grows stage by stage
+November 2026
+
+PAGE 2
+EXECU TIVE SUMMA RY
+From many doors to one front door
+1
+The problem
+Calls are routed by line of 
+business, CSRs start 
+without context, and AI is 
+split across Pega AI, 
+Shield Advisor and Nexus. 
+Long calls cost time and 
+contact-center minutes.
+2
+The vision
+Compass becomes the 
+one front door. It 
+understands why a 
+member is reaching out, 
+resolves what it can, and 
+routes everything else with 
+context.
+3
+The approach
+The CCaaS carries the 
+call: telephony and 
+queues. Compass owns 
+the conversation: speech, 
+recording, intent 
+recognition and deflection, 
+and replaces Pega AI over 
+time.
+4
+The path
+Five stages, each gated by 
+results: prove it, an MVP 
+for one line of business, 
+widen the door, take over 
+routing, then one 
+Compass offering.
+In one line: Compass grows from a voice pilot into the single front door for every member conversation, one proven 
+stage at a time.
+Compass · Executive briefing · November 2026 02
+
+PAGE 3
+WHY C HA NG E · A MEMBER'S C ALL TOD AY
+Maria calls about her MRI prior authorization
+An illustrative member journey through today's systems.
+1
+Picks from a 
+menu
+The phone menu asks 
+for her line of business. 
+Her question isn't an 
+option.
+2
+Proves who she 
+is
+She authenticates in 
+the menu before 
+anyone knows what 
+she needs.
+3
+Waits in a 
+general queue
+Routing knows her line 
+of business, not why 
+she's calling.
+4
+Explains it again
+The CSR asks why 
+she's calling, then 
+searches Pega, Nexus 
+and Shield Advisor.
+5
+Gets transferred
+Prior authorization is 
+another team. She 
+waits and tells her story 
+again.
+Routed by line of business
+The menu decides the queue, not her need.
+Context is lost
+Every handoff starts from zero.
+Answers are scattered
+Several tools each hold part of the answer.
+Nobody here is doing anything wrong. Each system only sees its own part of the call.
+Compass · Executive briefing · November 2026 03
+
+PAGE 4
+WHY C HA NG E · TODA Y'S LA ND SC APE
+One member, many doors
+Client systems Stellarus AI AI element # Problem today
+Members Contact center (CCaaS) CSR desktop Outbound and side systems
+Member or provider
+Calls the plan's number
+Portal and app
+Chat
+Members called
+IHA · care gaps
+IVR
+Menus · authentication · routing 
+by line of business
+Queues
+One per line of business
+Dialer
+Daily call lists
+CSR
+Calls and chats
+Pega
+Cases · workflow
+Pega AI
+Decisioning · 
+suggestions
+AI
+Shield Advisor
+CSR chat assistant
+AI
+Nexus
+Benefits Q&A · plan and product data
+AI
+Care Connect
+IHA member lists → dialer
+Facets + Avaya
+Care-gap manual calls
+Vendors and spreadsheets
+Call details tracked by hand
+1
+2
+3
+4
+1 · Routed by line of business
+Menus decide the queue, not the 
+need.
+2 · AI in three places
+Pega AI, Shield Advisor and Nexus 
+each hold part of the answer.
+3 · Outbound in three tools
+Care Connect, the dialer and 
+manual Avaya calls.
+4 · Context is lost
+The CSR starts over; transfers 
+repeat it.
+Compass · Executive briefing · November 2026 04
+
+PAGE 5
+THE VISION · THE SA ME CA LL WITH  C OMPA SS
+Maria says what she needs, and the system takes it from there
+Same member, same phone number. Compass hears, understands and records the call.
+1
+Says what she 
+needs
+“I'm checking on my 
+MRI approval.” No 
+menu to work through.
+2
+Compass 
+recognizes intent
+It hears her, recognizes 
+a prior-authorization 
+status request, and 
+checks it is in scope.
+3
+Authenticates 
+when needed
+Identity is checked 
+because this request 
+needs her plan data.
+4
+Deflected, or 
+routed
+An AI agent answers 
+with the status, or 
+Compass sends her to 
+the right team.
+5
+No repeating
+The CSR sees the 
+intent and a summary 
+in Shield Advisor. The 
+call is stored once.
+Routed by need
+The request picks the path, not the menu.
+Context travels with her
+The summary arrives before the CSR says hello.
+Nothing is lost
+Anything Compass can't handle yet is routed by 
+the contact center as today.
+What changes is that one system understands the call from start to finish.
+Compass · Executive briefing · November 2026 05
+
+PAGE 6
+THE VISION
+Compass recognizes intent, deflects, and routes
+Compass owns the conversation: it hears the member, understands them, and records every call.
+1 · Recognize intent
+Compass turns speech into text and 
+works out the member's intent from 
+what they say, not from a menu option 
+or line of business.
+2 · Deflect
+Well-defined, high-volume requests 
+are answered by AI agents, using plan 
+data through one secure gateway, so 
+they never reach a CSR queue.
+3 · Route with context
+Everything else goes to the right team, 
+with the intent and a summary passed 
+to the CSR through Shield Advisor.
+Replaces Pega AI over time
+Intent detection, summaries and suggestions move from Pega AI to Compass 
+as each stage proves itself. Pega's role in cases and workflow is decided with 
+its roadmap.
+One offering, not more tools
+Inbound voice and chat, agent assist and, later, outreach run on one platform 
+with one view of member intent.
+Compass doesn't replace the contact center. It replaces the guesswork about where a call should go.
+Compass · Executive briefing · November 2026 06
+
+PAGE 7
+THE VISION · WHERE TH E VALUE IS
+Shorter calls and a better member experience
+Less time on calls, a better experience. Build where the value is; leave the rest where it already works.
+Deeper intent
+Compass knows what the 
+call is actually about
+Right place, first time
+Fewer menus, misroutes 
+and transfers
+CSR has context
+Intent and summary arrive 
+with the call
+Shorter calls
+Less handle time, and 
+fewer paid contact -center 
+minutes
+Better experience
+Members say it once and 
+get an answer
+Hypothesis to prove in Stage 1: deeper intent understanding shortens calls enough to offset per-minute CCaaS pricing on longer calls.
+Compass does
+• Speech: speech-to-text and text-to-speech
+• Intent recognition and the routing decision
+• Deflection of high-volume requests
+• Context and summary for the CSR
+• Recording of every conversation
+CCaaS keeps · white-labeled
+• T elephony and phone numbers
+• Queues and agent routing
+• IVR authentication
+• The outbound dialer
+Other systems keep
+• Pega: cases and workflow (role to 
+confirm)
+• Facets and plan systems of record
+• CSR apps and Atlas IQ connect to 
+Compass
+Pick by value: call data ranks requests by volume and handle time, so we start where the minutes are.
+Compass · Executive briefing · November 2026 07
+
+PAGE 8
+THE VISION · ON E CO MPA SS OFFERING
+What comes together, and what stays
+TODA Y · SEPAR ATE TOO LS STA YS · COMPA SS 
+CO NN EC TS
+CO MPA SS · ONE OFFERINGIVR menus
+Routing logic
+Pega AI
+Decisioning · suggestions
+Shield Advisor
+CSR chat
+Nexus Benefits
+Benefits Q&A
+Care Connect · Avaya
+Outbound calling
+Member front door
+Voice and chat · recognize, 
+deflect, route
+Agent assist
+Shield Advisor · intent and 
+summary for CSRs
+Outreach
+IHA and care gaps · consent built 
+in
+Record and insight
+Every interaction stored · reporting 
+· learning
+Shared platform
+Speech (STT and TTS) · intent recognition and routing · AI agents 
+· recording and conversation history · secure data gateway
+Contact center (CCaaS)
+Telephony · numbers · queues · dialer
+Pega
+Cases and workflow · role to confirm
+Facets and plan systems
+Systems of record
+Nexus Product API
+Plan and product data
+Consolidation follows maturity: a tool is retired only after Compass has proven it can do the same job.
+Compass · Executive briefing · November 2026 08
+
+PAGE 9
+HO W IT WORK S · A T A GLAN CE
+Four layers, one clear job each
+The contact center carries the call. Compass hears it, understands it, records it, and decides what happens to it.
+Members and CSRs
+Who we serve
+Phone Portal and app chat CSR desktop · Pega · Shield Advisor
+Contact center (CCaaS)
+White-labeled · carries the call
+T elephony and numbers IVR authentication Queues and agents Dialer
+Compass · the front door
+Owns the conversation
+Speech in and 
+out
+Intent 
+recognition
+Deflect, route or 
+defer AI agents Context for 
+CSRs Recording
+Plan data
+Through one secure gateway
+Benefits Eligibility Claims Prior authorization Cases
+Anything Compass doesn't handle yet is routed by the contact center as today, so members never lose a path that works.
+Compass · Executive briefing · November 2026 09
+
+PAGE 10
+HO W IT GR OWS · MATU RITY ROA DMA P
+Five stages. Each stage earns the next.
+STA GE 0
+Prove it
+• Simple working prototype
+• One request, end to end
+• Something concrete for 
+Shield
+Exit: demo works; approach 
+validated
+STAGE 1 · MVP
+First line of defense
+• One line of business
+• Recognize and deflect a 
+few high-volume requests
+• Everything else stays with 
+the CCaaS
+Exit: accuracy and containment 
+baselines met; no rise in transfers
+STAGE 2
+Widen the door
+• More requests and lines of 
+business
+• AI intent replaces menus
+• Intent and summary in 
+Shield Advisor
+Exit: most in-scope volume flows 
+through Compass
+STA GE 3
+Take over routing
+• Routing policy moves to 
+Compass
+• Pega AI replaced for 
+migrated flows
+• Learns new requests from 
+transcripts
+Exit: Pega AI retired for migrated 
+flows
+STA GE 4
+One Compass 
+offering
+• Outreach: IHA and care 
+gaps
+• SMS and Apple Business 
+Chat
+• Fewer vendors and tools
+Exit: one engagement platform
+Compass takes over one flow at a time. Anything it doesn't handle yet stays with the CCaaS as today, so each step is safe. St ages 
+move on evidence, not dates.
+Compass · Executive briefing · November 2026 10
+
+PAGE 11
+HO W IT GR OWS · CA PA BILITY MA TU RITY
+How the platform matures, stage by stage
+Capability Stage 0 · Prove it Stage 1 · MVP Stage 2 · Widen Stage 3 · Routing Stage 4 · One offering
+Intent recognition One scripted request AI · a few requests AI across lines of 
+business Learned from transcripts Shared by voice, chat, 
+outreach
+Deflection Demo only A few high-volume 
+questions More requests per line Broad coverage Proactive, through 
+outreach
+Speech and recording Compass speech in the 
+demo
+Compass speech; every 
+call recorded + chat transcripts + QA sampling on 
+recordings
+Every channel, recorded 
+once
+Routing CCaaS, as today The rest stays with the 
+CCaaS
+By intent for in-scope 
+lines
+Compass owns routing 
+policy
+One policy for every 
+channel
+CSR context — Summary at handoff Intent and summary in 
+Shield Advisor
+Replaces Pega AI 
+suggestions
+One agent-assist 
+experience
+Lines of business Test data One Several Most All
+Channels Voice demo Inbound voice Voice and chat Voice and chat + SMS, Apple Business 
+Chat, outbound
+Consolidation — — Shield Advisor uses 
+Compass context
+Pega AI retired for 
+migrated flows
+Outbound tools and 
+vendors consolidated
+Compass grows from a voice pilot into the single front door for every member conversation, one proven stage at a time.
+Compass · Executive briefing · November 2026 11

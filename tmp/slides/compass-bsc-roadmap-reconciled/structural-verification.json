@@ -1,0 +1,24 @@
+{
+  "slides": 6,
+  "notes": 6,
+  "nativeTables": 5,
+  "slideSize": "1280x720",
+  "fonts": [
+    "Geist",
+    "Geist Light"
+  ],
+  "relationshipTargets": 182,
+  "content": "PASS",
+  "sourceNotes": "PASS",
+  "zipIntegrity": "PASS",
+  "editableRecords": 54,
+  "exportedRenders": 6,
+  "sourceHashes": {
+    "Compass + ShieldAdvisor.md": "cb9d40c1297de85d71ecf8852569fe185163a6d6829f1ee33c41562995c5fe9e",
+    "Compass-Executive-Briefing.pdf": "4377f21accb3f4846afad06eba32fba25c35b5ba23060a7ef9630e539e800e1a",
+    "GAI-174.doc": "a3e4a5c9076fed2f5bb45151979ef381f8f95c89f49b7454ff841a0c65ec8b2d",
+    "GAI-663.doc": "42a51b00029deb6c0b0d1bbb397be74636c04df73048a2267f25c875fcaa8aa0"
+  },
+  "outputSha256": "62b8cebdd8fd2f39589c8b6e6183593e6a756ff1383b61ac58545357db78c45e",
+  "visualReview": "PASS — all six exported slides inspected after loop 2"
+}

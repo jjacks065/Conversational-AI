@@ -1,0 +1,431 @@
+  Stellarus
+COMPASS
+CSR Chat
+Implementation & Integration Guide
+Prepared by    Stellarus
+Date    August 2026
+ABOUT THIS DOCUMENT
+This guide defines the joint path for onboarding Compass CSR Chat—from readiness and implementation planning through data integration, authentication, answer configuration, validation, pilot, and production rollout. Detailed architecture, security controls, data retention, and HIPAA assurance are maintained in the Technical Architecture & Security Overview.
+Contents
+1. Implementation Overview
+1.1 Delivery principles
+1.2 Scope decisions
+1.3 Success criteria
+2. Readiness and Prerequisites
+2.1 Commercial and compliance readiness
+2.2 Customer roles
+2.3 Source-data readiness
+3. Implementation Timeline
+3.1 Six-phase delivery model
+3.2 Timeline drivers and gates
+4. Resource Requirements and Responsibilities
+5. Data Integration
+5.1 Required data
+5.2 Formats and transfer
+5.3 Plan context and refresh
+6. Chat Delivery and Authentication
+6.1 Delivery options
+6.2 Authentication
+6.3 Request context
+7. Environments and Configuration
+8. Validation and Launch
+8.1 Validation
+8.2 Pilot
+8.3 Production rollout
+9. Dependencies, Risks, and Change Control
+10. Implementation Checklist
+
+1. Implementation Overview
+CSR Chat implementation is a joint program between Stellarus and the health plan. The work combines benefit-data onboarding, workflow and answer design, identity integration, customer validation, representative readiness, and controlled production rollout.
+Implementation outcome
+A validated CSR Chat experience that uses the health plan's approved data, authenticates the intended users, fits the selected representative workflow, meets agreed quality and performance criteria, and transitions to supported production operations.
+
+1.1 Delivery principles
+Start with a bounded representative group, plan population, and benefit scope.
+Use customer-approved source data and customer-supplied request context.
+Define answer correctness and launch criteria before configuration begins.
+Validate with the health plan's benefit subject matter experts and business owner.
+Move through staging, pilot, and production using explicit entry and exit gates.
+1.2 Scope decisions
+Decision
+Examples
+When confirmed
+Representative population
+Pilot team, location, line of business, or role
+Discovery
+Benefit scope
+Plan types, products, effective periods, and question categories
+Discovery and data inventory
+Delivery model
+Stellarus-hosted, embedded, or API
+Discovery and technical design
+Identity model
+Health plan identity provider and system credentials
+Technical design
+Answer configuration
+Terminology, presentation, disclosures, and fallback language
+Configuration
+Launch criteria
+Accuracy, performance, adoption, training, and operational readiness
+Discovery, finalized before validation
+
+1.3 Success criteria
+Implementation success criteria are agreed during discovery and measured before pilot and production. They typically cover:
+Source-data completeness, effective dating, and refresh reliability.
+Answer accuracy and required-disclosure compliance against an agreed question set.
+Response-time and availability expectations for the selected delivery model.
+Identity, access, and security approval.
+Representative readiness, training completion, and support procedures.
+Pilot adoption, feedback, and agreed production-exit criteria.
+2. Readiness and Prerequisites
+2.1 Commercial and compliance readiness
+Benefit data cannot be loaded into the implementation environment until the required agreements and data-sharing approvals are complete.
+Prerequisite
+Primary responsibility
+Evidence
+Platform Services Agreement executed
+Health plan and Stellarus
+Executed agreement
+Business Associate Agreement executed
+Health plan and Stellarus
+Executed BAA
+Approval to share applicable PHI with AtlasIQ
+Health plan
+Customer privacy and security approval
+Implementation scope approved
+Health plan and Stellarus
+Scope, users, plans, and target outcomes
+Identity-provider integration approved
+Health plan security
+Approved authentication design
+Architecture and security review complete
+Health plan and Stellarus
+Approved Technical Architecture & Security Overview and findings
+
+2.2 Customer roles
+The following roles should be named before implementation planning is baselined. One person may fill more than one role when appropriate.
+Role
+Core responsibility
+Critical participation
+Executive sponsor
+Removes organizational blockers and confirms business priority
+Major scope and launch decisions
+Customer implementation lead
+Coordinates customer workstreams, decisions, and dependencies
+All phases
+Technical and data owner
+Owns source data, transfer, schemas, identifiers, and refresh
+Discovery through production
+Identity and security lead
+Reviews authentication, access, and security requirements
+Discovery, design, and launch approval
+Benefit subject matter expert
+Defines correct interpretation and reviews answer behavior
+Discovery, configuration, and validation
+Business owner
+Owns success criteria and signs off on answer accuracy
+Discovery, validation, pilot, and launch
+Operations and training lead
+Prepares supervisors, representatives, training, and support
+Pilot and rollout
+
+2.3 Source-data readiness
+Identify each line of business and plan population in scope.
+Confirm the authoritative benefit source, format, owner, and refresh process.
+Provide plan identifiers and effective dates needed to select the correct plan version.
+Identify data-quality gaps, incomplete fields, and unsupported plan populations.
+Confirm the secure delivery method and expected change cadence.
+3. Implementation Timeline
+Implementation follows six gated phases. The calendar is baselined after discovery because source-data readiness, security review, integration depth, customer review cycles, and subject matter expert availability determine the critical path.
+Timeline planning basis
+Use the phase sequence below as the baseline plan. Stellarus and the health plan assign dates, dependencies, and exit criteria during Phase 1. No fixed duration should be treated as a commitment before discovery is complete.
+
+3.1 Six-phase delivery model
+Phase
+Primary work
+Exit gate
+1. Discovery and design
+Confirm use cases, plan scope, data, delivery model, identity, answer requirements, metrics, and pilot population
+Approved solution and implementation plan
+2. Data integration
+Establish secure transfer, load benefit data, validate schemas, completeness, identifiers, and effective dates
+Data accepted in staging and refresh path agreed
+3. Answer configuration
+Configure terminology, response structure, disclosures, and customer-specific answer behavior
+Configuration ready for formal validation
+4. Validation
+Run agreed question sets, human expert review, workflow tests, and performance checks; remediate gaps
+Business owner approves validation results
+5. Pilot
+Enable a controlled representative group, train users, monitor behavior, and refine configuration
+Pilot outcomes meet agreed exit criteria
+6. Production rollout
+Expand access, confirm operations and support, and transition to steady-state governance
+Production acceptance and support handoff
+
+3.2 Timeline drivers and gates
+Timeline driver
+Potential effect
+Planning response
+Agreements or PHI approval
+Prevents data loading
+Complete before the data-integration start gate
+Source-data quality and schema stability
+Extends ingestion and validation
+Inventory early; test representative files during discovery
+Identity and security approval
+Blocks user access or production launch
+Begin architecture and identity review in parallel with data work
+Benefit SME availability
+Slows configuration and answer validation
+Reserve named reviewers and review windows in the baseline plan
+Embedded or API delivery
+Adds customer development and end-to-end testing
+Plan customer backlog, environments, and release windows explicitly
+Scope expansion
+Adds data, configuration, and validation cycles
+Use formal change control and phase additional scope
+
+4. Resource Requirements and Responsibilities
+Activity
+Stellarus
+Health plan
+Program coordination
+Provide implementation lead and integrated plan
+Provide customer implementation lead and decision coordination
+Benefit data
+Define intake requirements; receive, normalize, and validate
+Produce, explain, and securely deliver authoritative data
+Data quality
+Report schema, completeness, and ingestion exceptions
+Resolve source issues and confirm business meaning
+Answer configuration
+Author initial configuration and apply approved adjustments
+Specify terminology, disclosures, and customer requirements
+Answer validation
+Provide test support, results, and remediation
+Provide SMEs and business-owner sign-off
+Authentication
+Configure gateway and product-side integration
+Configure and approve identity-provider and access requirements
+Customer integration
+Provide interface specifications and integration support
+Build and operate customer components for embedded or API options
+Training
+Provide product materials and train-the-trainer support
+Adapt procedures and deliver representative training
+Operations
+Operate and monitor Stellarus-managed services
+Operate customer systems, user access, and first-line support
+
+4.1 Customer capacity expectations
+During active phases, the customer should plan recurring participation from the implementation lead and reserve focused working sessions for data, identity, security, benefit review, operations, and training. The integrated plan will estimate effort after the selected delivery model and data complexity are known.
+Implementation lead: weekly coordination and decision tracking.
+Technical and data owner: recurring working sessions during discovery and integration.
+Benefit SME and business owner: concentrated review during configuration and validation.
+Identity and security lead: design review, testing, and approval checkpoints.
+Operations and training lead: pilot preparation, training, feedback, and rollout readiness.
+5. Data Integration
+5.1 Required data
+Data element
+Purpose
+Readiness check
+Benefit plan definitions
+Authoritative source for benefit answers
+In-scope plans and fields are complete
+Plan identifiers
+Select the correct plan context for a request
+Identifiers map consistently from the representative workflow
+Effective dates and versions
+Apply the plan in force for the applicable period
+Historical and future-dated behavior is defined
+Customer terminology and disclosures
+Configure approved presentation and required language
+Owners and approval process are named
+
+5.2 Formats and transfer
+CSR Chat can be implemented from structured extracts and unstructured plan documents such as PDFs. Unstructured documents require parsing and additional validation before they can support answers. Source data is normalized into the AtlasIQ data model.
+Design decision
+Items to confirm
+Transfer method
+Approved secure channel, ownership, credentials, and failure handling
+File or API structure
+Schema, required fields, data types, identifiers, and sample payloads
+Load pattern
+Initial full load, incremental changes, and backfill requirements
+Refresh cadence
+Source change timing, service expectation, and reconciliation process
+Exception handling
+Rejected records, incomplete data, correction ownership, and reprocessing
+
+5.3 Plan context and refresh
+The calling application supplies the plan context with each question. CSR Chat does not search for a member or determine which plan applies. During discovery, the teams define the identifiers that make up a plan reference, including any effective date required to select the applicable version.
+Reconcile source counts and identifiers before configuration begins.
+Validate that the same plan context is used consistently across environments.
+Test changed and future-dated plans before production refreshes.
+Define how failed, partial, or late refreshes are detected and resolved.
+6. Chat Delivery and Authentication
+6.1 Delivery options
+Option
+Customer responsibility
+Integration considerations
+Stellarus-hosted interface
+Approve identity integration, branding, users, and launch path
+Fastest delivery path; white-labeled experience
+Embedded experience
+Build and operate the customer-side desktop integration and backend
+Requires request-context mapping, end-to-end testing, and coordinated releases
+API integration
+Design, build, test, and support the customer user experience
+Requires interface design, error handling, accessibility, analytics, and support planning
+
+6.2 Authentication
+All CSR Chat access is routed through the Stellarus AI Gateway; underlying services are not directly exposed.
+Representatives authenticate through the health plan identity provider using OAuth 2.0 for the hosted experience.
+System-to-system integrations use customer-specific credentials that are issued and rotated through the agreed operating process.
+Roles, groups, provisioning, deprovisioning, and environment access are confirmed during design.
+Detailed authorization controls, trust boundaries, and security evidence are maintained in the Technical Architecture & Security Overview.
+6.3 Request context
+Each request carries authenticated health plan context and the plan reference supplied by the calling application. The teams define the request contract, required and optional fields, validation behavior, and safe error responses during technical design.
+Context area
+Confirm during design
+Customer context
+How tenant identity is authenticated and propagated
+Plan reference
+Identifier fields, effective date, and validation rules
+User context
+Role or group information required for access and audit
+Conversation context
+Session boundaries, expiration, and topic or member changes
+Error behavior
+Missing, invalid, expired, or unauthorized context handling
+
+7. Environments and Configuration
+7.1 Environments
+A staging environment approved for PHI is used to load and validate customer benefit data before promotion to production. Staging remains available after launch for release, plan-change, and configuration testing.
+Environment
+Primary use
+Customer participation
+Staging
+Data validation, answer configuration, integration testing, and formal validation
+Customer test users, identity access, data review, and SME validation
+Production
+Pilot and scaled representative use
+Production access, operational readiness, training, and acceptance
+
+7.2 Answer configuration
+Stellarus provides an initial answer configuration and validates it before customer review. The health plan identifies changes required for its products, terminology, presentation, and disclosures; Stellarus applies and retests the approved adjustments.
+Configuration area
+Customer input
+Validation
+Voice and terminology
+Preferred health plan, product, program, network, and benefit terms
+SME review across representative question set
+Answer presentation
+Required structure and plan details
+Workflow and usability review
+Disclosure language
+Required wording by plan, regulator, or line of business
+Compliance and business-owner approval
+Fallback behavior
+Approved wording and representative next step when an answer is unavailable
+Unsupported-question and error-path testing
+
+8. Validation and Launch
+8.1 Validation
+Validation combines automated checks with human review. The health plan's benefit experts assess answers against the applicable benefit sources and agreed interpretation, including routine, complex, and unsupported questions.
+Validation layer
+Purpose
+Evidence
+Data validation
+Confirm completeness, schema, identifiers, and effective dating
+Load and reconciliation results
+Answer validation
+Confirm accuracy, conditions, terminology, and disclosures
+Approved question set and reviewer results
+Guardrail validation
+Confirm unsupported questions are declined appropriately
+Negative and boundary test results
+Integration validation
+Confirm authentication, context, errors, and end-to-end workflow
+Environment test and defect results
+Performance validation
+Confirm agreed response-time and load expectations
+Performance test and monitoring results
+Operational validation
+Confirm training, support, monitoring, and change process
+Readiness checklist and owner approval
+
+8.2 Pilot
+Enable a limited, trained representative population.
+Monitor answer quality, response time, errors, adoption, and feedback.
+Review issues jointly and route them to data, configuration, integration, training, or product owners.
+Apply approved adjustments in staging before production release.
+Exit when the business owner confirms that agreed pilot criteria are met.
+8.3 Production rollout
+Expand access according to the approved representative rollout plan.
+Confirm production identity groups, support paths, monitoring, and escalation.
+Transition the integrated plan, decisions, known limitations, and open risks to steady-state owners.
+Establish the recurring review cadence for performance, quality, feedback, data refreshes, and product changes.
+9. Dependencies, Risks, and Change Control
+Risk or dependency
+Effect
+Management approach
+Incomplete contractual or PHI prerequisites
+Data cannot be loaded
+Track as an entry gate; run non-PHI discovery in parallel where appropriate
+Source-data gaps or instability
+Incomplete answers or extended integration
+Inventory, profile, reconcile, and resolve source issues before configuration sign-off
+Unavailable benefit SME
+Delayed configuration and validation
+Name reviewers and reserve working sessions during planning
+Undefined answer criteria
+Validation cannot reach a defensible decision
+Agree correctness, disclosures, and exit criteria in discovery
+Identity or security dependency
+Blocks pilot or production access
+Start reviews early and track approval evidence as launch gates
+Scope beyond integrated data
+Unsupported use cases or inaccurate expectations
+Phase additional domains only after source, integration, and validation readiness
+Customer integration release timing
+End-to-end workflow cannot be tested or launched
+Coordinate backlogs, environments, test windows, and release approvals
+
+9.1 Change control
+Changes to plan scope, source data, identifiers, answer behavior, delivery model, security requirements, or launch criteria are documented with their impact on timeline, validation, and responsibilities. Material changes require joint approval before they are added to the implementation baseline.
+10. Implementation Checklist
+Checkpoint
+Required evidence
+Owner
+Scope approved
+Users, plans, use cases, delivery model, outcomes, and exclusions
+Product and customer business owner
+Prerequisites complete
+Agreements, BAA, PHI approval, security review path
+Commercial, privacy, and security owners
+Resources assigned
+Named implementation, data, identity, SME, business, and operations leads
+Health plan and Stellarus
+Data accepted
+Schema, transfer, completeness, identifiers, effective dates, and refresh approved
+Data owners
+Authentication validated
+Users and systems authenticate with approved roles and contexts
+Identity and security leads
+Configuration approved
+Terminology, structure, disclosures, and fallback behavior
+Benefit SME and business owner
+Validation passed
+Data, answer, guardrail, integration, performance, and operational evidence
+Joint validation team
+Pilot accepted
+Pilot measures, issues, remediations, and exit approval
+Business owner
+Production ready
+Training, support, monitoring, escalation, change control, and rollout plan
+Implementation and operations leads
+Handoff complete
+Runbook, decisions, known limitations, open risks, and governance cadence
+Joint operations owners

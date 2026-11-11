@@ -1,0 +1,41 @@
+Compass CSR Chat  ·  Product Brief
+4 of 9
+3. Capabilities
+3.1 Current capabilities
+CAPABILITY DESCRIPTION CUSTOMER VALUE
+Natural-language benefit 
+inquiry
+Represenaives ask benefic quesions in plain 
+language
+Reduces manual navigaion and 
+specialized query synax
+Plan-grounded answers Answers are generaed from benefic daa 
+associaed wih supplied plan idenificers
+Keeps responses ied o approved 
+cusomer informaion
+Structured answer 
+presentation
+Responses can presen plan deails, condiions, 
+and required language in a consisen patteern
+Suppors clariy and consisency 
+during live calls
+Answer guardrails Unsuppored quesions are declined when he 
+rerieved conex canno suppor an answer
+Reduces reliance on unsuppored 
+model knowledge
+Human feedback Represenaives can provide feedback on answers 
+for qualiy review
+Creaes a pah for idenifying and 
+addressing recurring issues
+Performance monitoring Availability, response time, error behavior, and 
+operational signals are monitored
+Provides the operational visibility needed 
+to manage reliability and improvement
+3.2 Answer configuration
+Thie health pla's data determes the substace of a aswer. Customer-specfinc cofingurato determes 
+how that formato s expressed ad preseted.
+CONFIGURATION AREA EXAMPLES
+Voice and terminology Preferred produc, program, nework, and benefic erms
+Presentation Answer srucure and he plan deails shown ogeher
+Disclosure language Required wording by healh plan, regulaor, or line of business
+Branding Healh plan visual ideniy for he Sellarus-hosed inerface

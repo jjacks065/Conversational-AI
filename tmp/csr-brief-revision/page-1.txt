@@ -1,0 +1,26 @@
+  Stellarus
+COMPASS
+Compass CSR Chat
+Product Brief
+Prepared by Stellarus  |  November 2026
+Executive summary
+Compass CSR Chat helps health plan customer service representatives answer benefit questions during 
+live member and provider interactions. Representatives ask questions in natural language and receive 
+structured, plan-specific responses grounded in approved benefit data. The product helps bring coverage 
+details, cost sharing, conditions, and required disclosure language into a consistent workflow for 
+representative review.
+Current product scope
+The core product supports representative-assisted benefit inquiry: locating relevant benefit information, 
+explaining plan terms, and presenting the applicable conditions together. It includes answer guardrails, 
+representative feedback, and operational monitoring. Plan coverage and enabled features depend on the 
+data, configuration, and validation completed for each customer.
+Value for health plans
+CSR Chat is intended to reduce the effort required to find and interpret benefit information and improve 
+consistency across representatives. Each health plan establishes its own baseline and success measures for 
+answer quality, required disclosures, representative adoption, and benefit-inquiry handling. Results 
+depend on source quality, workflow design, and adoption.
+Responsible adoption
+Representatives retain responsibility for reviewing responses, following approved procedures, and 
+communicating with the customer. Additional information domains and delivery options require 
+confirmation for the agreed implementation. CSR Chat does not independently determine member 
+eligibility, adjudicate claims, or make authoritative coverage decisions.

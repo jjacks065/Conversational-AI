@@ -1,0 +1,41 @@
+Compass CSR Chat  ·  Product Brief
+11 of 12
+6. Responsible Use and Boundaries
+Thiese boudares define the codtos uder whch Compass CSR Chat should be postoed ad used. Thiey 
+protect the dstcto betwee decso support ad authortatve systems or determatos.
+ Thie represetatve remas resposble for followg approved procedures ad commucatg the final 
+aswer.
+ Compass CSR Chat does ot replace formal pla documets, legal determatos, clams adjudcato, 
+or coverage decsos.
+ Thie callg applcato supples the applcable customer ad pla cotext; Compass CSR Chat does ot 
+depedetly detfy a member or determe whch pla apples.
+ Queestos outsde the avalable approved cotext are ot aswered.
+ Customer-specfinc prvacy, securty, reteto, ad PHI requremets are govered by the applcable 
+agreemets ad the Techcal Archtecture & Securty Overvew.
+ Roadmap capabltes must ot be represeted as avalable utl ther source data, tegrato, cotrols, 
+ad valdato are complete.
+7. Getting Started
+Product adopto begs wth a jot dscovery ad decso sesso across Product, Implemetato, 
+customer operatos, data, detty, securty, ad beefint subject matteer experts. Thie objectve s to establsh 
+a mplemetato-ready scope, accoutable owers, valdated data sources, revew crtera, ad measurable 
+lauch outcomes before cofingurato or plot actvty begs.
+DISCOVERY DECISION OUTPUT
+Priority use cases and representative 
+population
+Iniial implemenaion scope and pilo group
+Plan data availability and ownership Daa invenory, ransfer approach, and refresh expecaions
+Delivery and authentication model Hosed, embedded, or API pah wih ideniy responsibiliies
+Answer requirements Terminology, presenaion, disclosures, and validaion crieria
+Outcome measures Baseline merics and launch success crieria
+Security and compliance review Required agreemens, approvals, and archiecure review
+8. Product Success and Decision Framework
+Thie product should advace from dscovery to plot ad broader rollout oly whe the customer ad 
+Stellarus have explct evdece that the teded use cases are supported, aswers meet the agreed qualty 
+bar, represetatves ca use the workfloow safely, ad operatg owershp s clear.
+READINESS DIMENSION EVIDENCE / DECISION PRIMARY OWNERS
+Use-case readiness Priority benefitt questions, plan populations, source data, and exclusions are explicitly 
+defitned. Product / Customer Operations
+Data readiness Required benefitt data is available, current, mapped to the correct plan identifiters, and 
+validated for the agreed scope. Customer Data / Stellarus Data
+Answer quality Validation set performance and required-disclosure behavior meet the customer-
+approved launch criteria. Product / Benefitt SMEs / Quaality

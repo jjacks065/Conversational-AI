@@ -1,0 +1,240 @@
+[001]  |   Stellarus
+[002]  | COMPASS
+[003]  | Compass CSR Chat
+[004]  | Product Brief
+[005]  | Prepared by    Stellarus
+[006]  | Date    October 2026
+[007]  | ABOUT THIS DOCUMENT
+[008]  | This brief defines the product strategy and current-state positioning for Compass CSR Chat: the customer problem it solves, target users, product promise, current capabilities, measurable value, supported use cases, product boundaries, and the decisions required to adopt it responsibly. Technical design, implementation execution, training, and post-launch operating procedures are maintained in companion documents.
+[009]  | Contents
+[010]  | 1. Product Snapshot
+[011]  | 1.1 What Compass CSR Chat is
+[012]  | 1.2 Who it serves
+[013]  | 1.3 Product scope
+[014]  | 2. Problem and Value
+[015]  | 2.1 The customer service challenge
+[016]  | 2.2 How Compass CSR Chat helps
+[017]  | 2.3 Expected outcomes
+[018]  | 3. Capabilities
+[019]  | 3.1 Current capabilities
+[020]  | 3.2 Answer configuration
+[021]  | 3.3 Delivery options
+[022]  | 3.4 Roadmap context
+[023]  | 4. Use Cases
+[024]  | 4.1 Benefit coverage
+[025]  | 4.2 Cost sharing and conditions
+[026]  | 4.3 Plan interpretation
+[027]  | 5. Customer Journeys
+[028]  | 5.1 Representative journey
+[029]  | 5.2 Operations journey
+[030]  | 5.3 Implementation journey
+[031]  | 6. Responsible Use and Boundaries
+[032]  | 7. Getting Started
+[033] Heading1 | 1. Product Snapshot
+[034]  | Compass CSR Chat is an AI-powered decision-support product for health plan customer service representatives. During a live member or provider interaction, a representative asks a benefit question in natural language and receives a structured, plan-specific response grounded in the health plan's approved benefit data. The product is designed to reduce the effort required to locate and interpret benefit information while preserving human review and established customer procedures.
+[035]  | PRODUCT PROMISEHelp representatives find, interpret, and communicate plan-specific benefit information faster and more consistently, while keeping the representative accountable for the final customer communication.
+[036] Heading2 | 1.1 What Compass CSR Chat is
+[037]  | Compass CSR Chat brings benefit interpretation into the representative workflow. It retrieves the plan context supplied with the request, identifies relevant benefit information, and generates an answer using that context. When the available context does not support an answer, the product is designed to say that it cannot answer rather than rely on general knowledge.
+[038] Heading2 | 1.2 Who it serves
+[039]  | Audience
+[040]  | Need
+[041]  | How Compass CSR Chat supports them
+[042]  | Customer service representatives
+[043]  | Find and explain plan-specific benefit information during live interactions
+[044]  | Natural-language questions and structured answers grounded in approved plan data
+[045]  | Supervisors and operations leaders
+[046]  | Improve consistency, confidence, and service efficiency
+[047]  | Standardized answer patterns, feedback, and operational monitoring
+[048]  | Benefit and quality reviewers
+[049]  | Validate accuracy, disclosures, and product behavior
+[050]  | Customer-specific validation sets, human review, and release controls
+[051]  | Technology and security teams
+[052]  | Confirm integration, access, and operating requirements
+[053]  | Defined delivery patterns and a separate architecture and security review
+[054] Heading2 | 1.3 Product scope
+[055]  | The current product scope is representative-assisted benefit inquiry. Supported plan populations depend on which benefit data has been integrated and validated for the health plan. Additional domains are enabled only after their source data, rules, and validation are complete.
+[056] ListBullet | Agent-facing: Compass CSR Chat supports representatives; it is not a member-facing chatbot.
+[057] ListBullet | Decision support: It assists with benefit questions; it is not a system of record or claims adjudication system.
+[058] ListBullet | Plan-grounded: It answers from approved customer context; it is not permitted to answer from general knowledge.
+[059] Heading1 | 2. Problem and Value
+[060] Heading2 | 2.1 The customer service challenge
+[061]  | Benefit inquiries create a time-sensitive knowledge problem. Representatives may need to navigate multiple plan documents, internal tools, and policy sources while a member or provider waits, then interpret specialized language and communicate the applicable conditions consistently. The result can be avoidable search effort, variable interpretation, and limited visibility into recurring knowledge gaps.
+[062]  | Challenge
+[063]  | Operational effect
+[064]  | Manual navigation across sources
+[065]  | Longer time to locate and interpret the relevant benefit detail
+[066]  | Complex plan language
+[067]  | Dependence on individual experience and benefit literacy
+[068]  | Inconsistent interpretation
+[069]  | Variation in responses, disclosures, and escalation behavior
+[070]  | Context switching
+[071]  | Higher representative effort and reduced confidence during live calls
+[072]  | Limited visibility
+[073]  | Difficulty identifying recurring gaps and improvement opportunities
+[074] Heading2 | 2.2 How Compass CSR Chat helps
+[075]  | Compass CSR Chat creates a controlled path from approved benefit data to a representative-ready response. The application uses the supplied health plan and plan context, retrieves relevant benefit information, and generates a structured answer for representative review. Customer-specific configuration controls terminology, presentation, and required disclosure language. Unsupported questions are declined when the approved context cannot support an answer.
+[076] Heading2 | 2.3 Expected outcomes
+[077] Heading3 | Value hypothesis
+[078]  | Compass CSR Chat is intended to improve representative efficiency and consistency without transferring decision accountability to the AI. The value case should be measured against each health plan’s baseline before and after deployment.
+[079] ListBullet | Faster access to benefit information during live interactions.
+[080] ListBullet | More consistent interpretation and presentation across representatives.
+[081] ListBullet | Greater representative confidence when handling complex benefit questions.
+[082] ListBullet | A repeatable validation and feedback loop for improving answer quality.
+[083] ListBullet | A scalable foundation for additional plans and approved information domains.
+[084]  | MEASUREMENT APPROACHBaseline and target measures are established with each health plan before launch. Recommended measures include median time to answer, validated-answer accuracy, required-disclosure compliance, representative adoption, feedback rate, unsupported-question rate, and benefit-inquiry handle time. Results depend on source-data quality, implementation scope, workflow design, and adoption; the brief does not commit to unvalidated performance targets.
+[085] Heading1 | 3. Capabilities
+[086] Heading2 | 3.1 Current capabilities
+[087]  | Capability
+[088]  | Description
+[089]  | Customer value
+[090]  | Natural-language benefit inquiry
+[091]  | Representatives ask benefit questions in plain language
+[092]  | Reduces manual navigation and specialized query syntax
+[093]  | Plan-grounded answers
+[094]  | Answers are generated from benefit data associated with supplied plan identifiers
+[095]  | Keeps responses tied to approved customer information
+[096]  | Structured answer presentation
+[097]  | Responses can present plan details, conditions, and required language in a consistent pattern
+[098]  | Supports clarity and consistency during live calls
+[099]  | Answer guardrails
+[100]  | Unsupported questions are declined when the retrieved context cannot support an answer
+[101]  | Reduces reliance on unsupported model knowledge
+[102]  | Human feedback
+[103]  | Representatives can provide feedback on answers for quality review
+[104]  | Creates a path for identifying and addressing recurring issues
+[105]  | Performance monitoring
+[106]  | Availability, response time, error behavior, and operational signals are monitored
+[107]  | Provides the operational visibility needed to manage reliability and improvement
+[108] Heading2 | 3.2 Answer configuration
+[109]  | The health plan's data determines the substance of an answer. Customer-specific configuration determines how that information is expressed and presented.
+[110]  | Configuration area
+[111]  | Examples
+[112]  | Voice and terminology
+[113]  | Preferred product, program, network, and benefit terms
+[114]  | Presentation
+[115]  | Answer structure and the plan details shown together
+[116]  | Disclosure language
+[117]  | Required wording by health plan, regulator, or line of business
+[118]  | Branding
+[119]  | Health plan visual identity for the Stellarus-hosted interface
+[120] Heading2 | 3.3 Delivery options
+[121]  | Option
+[122]  | Description
+[123]  | Common fit
+[124]  | Stellarus-hosted interface
+[125]  | A white-labeled web experience with health plan identity-provider sign-in
+[126]  | Pilot and early production
+[127]  | Embedded experience
+[128]  | Compass CSR Chat is integrated into the representative desktop through a customer-operated backend
+[129]  | Scaled production workflows
+[130]  | SDK integration
+[131]  | The health plan builds its own experience against the Compass CSR Chat SDK
+[132]  | Organizations with established interface standards
+[133] Heading2 | 3.4 Roadmap context
+[134]  | The baseline product described in this brief is representative-assisted benefit inquiry grounded in integrated and validated plan data. Additional information domains and platform capabilities remain roadmap or deployment-specific until their source data, integration, controls, and customer validation are complete. Roadmap items should not be represented as committed customer functionality unless explicitly approved for the implementation.
+[135]  | Area
+[136]  | Current positioning
+[137]  | Expanded plan coverage
+[138]  | Enabled as plan data is integrated and validated
+[139]  | Operational dashboard
+[140]  | Deployment-specific availability and access are confirmed during implementation
+[141]  | Eligibility, accumulators, formulary, claims, and provider navigation
+[142]  | Roadmap or discovery areas; not represented as current baseline capability
+[143]  | Configurable agent experience
+[144]  | Planned platform evolution; delivery model is confirmed per implementation
+[145] Heading1 | 4. Use Cases
+[146] Heading2 | 4.1 Benefit coverage
+[147]  | A representative asks whether a service is covered under the applicable plan. Compass CSR Chat returns the available plan-specific coverage detail and relevant conditions for review.
+[148]  | Illustrative question: “Is physical therapy covered under this plan?”
+[149] Heading2 | 4.2 Cost sharing and conditions
+[150]  | A representative asks about copays, coinsurance, deductibles, visit limits, network tiers, or other conditions contained in the loaded benefit data.
+[151]  | Illustrative question: “What cost sharing applies to an in-network specialist visit?”
+[152] Heading2 | 4.3 Plan interpretation
+[153]  | A representative asks for the applicable benefit language to be summarized in a consistent, customer-approved answer structure, including relevant limitations or disclosure language.
+[154]  | Illustrative question: “What limitations apply to this durable medical equipment benefit?”
+[155]  | Use-case boundary
+[156]  | Illustrative questions do not guarantee that every plan or information domain is available. A use case is supported only when the required source data and rules are in scope and have passed customer validation.
+[157] Heading1 | 5. Customer Journeys
+[158] Heading2 | 5.1 Representative journey
+[159]  | Stage
+[160]  | Representative action
+[161]  | Compass CSR Chat role
+[162]  | Prepare
+[163]  | Open the approved application and confirm the correct plan context
+[164]  | Receives authenticated customer and plan context
+[165]  | Ask
+[166]  | Enter one clear benefit question
+[167]  | Retrieves relevant approved information
+[168]  | Review
+[169]  | Read the answer, conditions, and any displayed supporting context
+[170]  | Presents a structured, plan-specific response
+[171]  | Clarify
+[172]  | Ask a focused follow-up when needed
+[173]  | Maintains permitted conversational context
+[174]  | Resolve
+[175]  | Apply required review procedures and communicate with the customer
+[176]  | Supports—but does not replace—the representative's judgment
+[177]  | Improve
+[178]  | Submit feedback when an answer is incomplete or incorrect
+[179]  | Routes feedback into the quality-review process
+[180] Heading2 | 5.2 Operations journey
+[181] ListBullet | Define the representative population, benefit scope, and measurable outcomes.
+[182] ListBullet | Review answer patterns, terminology, and required disclosures.
+[183] ListBullet | Validate accuracy and workflow fit before live use.
+[184] ListBullet | Monitor adoption, performance, and feedback after launch.
+[185] ListBullet | Prioritize configuration, data, training, or workflow improvements.
+[186] Heading2 | 5.3 Implementation journey
+[187]  | A customer implementation moves through discovery and design, data integration, answer configuration, validation, pilot, and production rollout. The companion Implementation & Integration Guide describes prerequisites, resources, authentication, integration patterns, testing, and go-live responsibilities.
+[188] Heading1 | 6. Responsible Use and Boundaries
+[189]  | These boundaries define the conditions under which Compass CSR Chat should be positioned and used. They protect the distinction between decision support and authoritative systems or determinations.
+[190] ListBullet | The representative remains responsible for following approved procedures and communicating the final answer.
+[191] ListBullet | Compass CSR Chat does not replace formal plan documents, legal determinations, claims adjudication, or coverage decisions.
+[192] ListBullet | The calling application supplies the applicable customer and plan context; Compass CSR Chat does not independently identify a member or determine which plan applies.
+[193] ListBullet | Questions outside the available approved context are not answered.
+[194] ListBullet | Customer-specific privacy, security, retention, and PHI requirements are governed by the applicable agreements and the Technical Architecture & Security Overview.
+[195] ListBullet | Roadmap capabilities must not be represented as available until their source data, integration, controls, and validation are complete.
+[196] Heading1 | 7. Getting Started
+[197]  | Product adoption begins with a joint discovery and decision session across Product, Implementation, customer operations, data, identity, security, and benefit subject matter experts. The objective is to establish an implementation-ready scope, accountable owners, validated data sources, review criteria, and measurable launch outcomes before configuration or pilot activity begins.
+[198]  | Discovery decision
+[199]  | Output
+[200]  | Priority use cases and representative population
+[201]  | Initial implementation scope and pilot group
+[202]  | Plan data availability and ownership
+[203]  | Data inventory, transfer approach, and refresh expectations
+[204]  | Delivery and authentication model
+[205]  | Hosted, embedded, or API path with identity responsibilities
+[206]  | Answer requirements
+[207]  | Terminology, presentation, disclosures, and validation criteria
+[208]  | Outcome measures
+[209]  | Baseline metrics and launch success criteria
+[210]  | Security and compliance review
+[211]  | Required agreements, approvals, and architecture review
+[212] Heading1 | 8. Product Success and Decision Framework
+[213]  | The product should advance from discovery to pilot and broader rollout only when the customer and Stellarus have explicit evidence that the intended use cases are supported, answers meet the agreed quality bar, representatives can use the workflow safely, and operating ownership is clear.
+[214]  | READINESS DIMENSION
+[215]  | EVIDENCE / DECISION
+[216]  | PRIMARY OWNERS
+[217]  | Use-case readiness
+[218]  | Priority benefit questions, plan populations, source data, and exclusions are explicitly defined.
+[219]  | Product / Customer Operations
+[220]  | Data readiness
+[221]  | Required benefit data is available, current, mapped to the correct plan identifiers, and validated for the agreed scope.
+[222]  | Customer Data / Stellarus Data
+[223]  | Answer quality
+[224]  | Validation set performance and required-disclosure behavior meet the customer-approved launch criteria.
+[225]  | Product / Benefit SMEs / Quality
+[226]  | User readiness
+[227]  | Representatives complete required training and demonstrate correct review, fallback, and escalation behavior.
+[228]  | Customer Operations / Training
+[229]  | Technical and security readiness
+[230]  | Authentication, delivery pattern, security controls, privacy requirements, and production dependencies are approved.
+[231]  | Engineering / Security / Customer Technology
+[232]  | Operational readiness
+[233]  | Monitoring, feedback, escalation, support ownership, known limitations, and release communications are established.
+[234]  | Product / Operations / Support
+[235] Heading1 | Related Product Documentation
+[236] ListBullet | Technical Architecture & Security Overview — architecture, data flow, AI hosting, integrations, security, privacy, and technical control details.
+[237] ListBullet | Implementation & Integration Guide — implementation prerequisites, phases, responsibilities, validation, pilot, rollout, and handoff.
+[238] ListBullet | User & Training Guide and User Training Deck — representative workflows, responsible use, fallback, feedback, and training.
+[239] ListBullet | AI Quality, Governance, Support & Service Model — post-launch quality management, change control, monitoring, incidents, recovery, and ownership.
+[240] ListBullet | Release Notes / Known Limitations — current capabilities, changes, fixes, known constraints, and user or training impacts.

@@ -1,0 +1,197 @@
+{
+  "source": "/Users/jjacks20/jjacks/Conversational-AI/Minerva/_Data/compass-csr-chat-all-time.xlsx",
+  "sheet_name": "compass-csr-chat-questions-answ",
+  "headers": [
+    "Event Time",
+    "Facets Product ID",
+    "Effective Date",
+    "User ID",
+    "Response Time (Seconds)",
+    "Retry Count",
+    "Question",
+    "Answer",
+    "Feedback Type",
+    "Feedback Reason Code",
+    "Feedback Additional Comments"
+  ],
+  "source_data_rows": 77651,
+  "invalid_timestamp_rows": [],
+  "utc_counts": {
+    "2026-04": 6358,
+    "2026-05": 10585,
+    "2026-06": 13560,
+    "2026-07": 24843,
+    "2026-08": 22305
+  },
+  "pacific_counts": {
+    "2026-04": 6392,
+    "2026-05": 10551,
+    "2026-06": 13607,
+    "2026-07": 24852,
+    "2026-08": 22249
+  },
+  "pacific_bounds": {
+    "2026-04": [
+      "2026-04-07T10:04:27.457000-07:00",
+      "2026-04-30T20:08:24.395000-07:00"
+    ],
+    "2026-05": [
+      "2026-05-01T08:09:39.881000-07:00",
+      "2026-05-30T17:34:38.541000-07:00"
+    ],
+    "2026-06": [
+      "2026-06-01T03:26:32.130000-07:00",
+      "2026-06-30T19:58:11.827000-07:00"
+    ],
+    "2026-07": [
+      "2026-07-01T02:43:14.545000-07:00",
+      "2026-07-31T22:24:29.566000-07:00"
+    ],
+    "2026-08": [
+      "2026-08-01T07:49:34.245000-07:00",
+      "2026-08-24T21:35:14.720000-07:00"
+    ]
+  },
+  "shifted_month_row_sample": [
+    {
+      "source_row": 6360,
+      "event_time_utc": "2026-05-01T00:02:59.488Z",
+      "event_time_pacific": "2026-04-30T17:02:59.488000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6361,
+      "event_time_utc": "2026-05-01T00:07:29.667Z",
+      "event_time_pacific": "2026-04-30T17:07:29.667000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6362,
+      "event_time_utc": "2026-05-01T00:08:13.932Z",
+      "event_time_pacific": "2026-04-30T17:08:13.932000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6363,
+      "event_time_utc": "2026-05-01T00:08:48.466Z",
+      "event_time_pacific": "2026-04-30T17:08:48.466000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6364,
+      "event_time_utc": "2026-05-01T00:13:28.521Z",
+      "event_time_pacific": "2026-04-30T17:13:28.521000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6365,
+      "event_time_utc": "2026-05-01T00:14:04.880Z",
+      "event_time_pacific": "2026-04-30T17:14:04.880000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6366,
+      "event_time_utc": "2026-05-01T00:14:17.331Z",
+      "event_time_pacific": "2026-04-30T17:14:17.331000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6367,
+      "event_time_utc": "2026-05-01T00:15:21.020Z",
+      "event_time_pacific": "2026-04-30T17:15:21.020000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6368,
+      "event_time_utc": "2026-05-01T00:15:27.940Z",
+      "event_time_pacific": "2026-04-30T17:15:27.940000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6369,
+      "event_time_utc": "2026-05-01T00:16:38.234Z",
+      "event_time_pacific": "2026-04-30T17:16:38.234000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6370,
+      "event_time_utc": "2026-05-01T00:16:55.410Z",
+      "event_time_pacific": "2026-04-30T17:16:55.410000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6371,
+      "event_time_utc": "2026-05-01T00:21:15.676Z",
+      "event_time_pacific": "2026-04-30T17:21:15.676000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6372,
+      "event_time_utc": "2026-05-01T00:26:14.439Z",
+      "event_time_pacific": "2026-04-30T17:26:14.439000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6373,
+      "event_time_utc": "2026-05-01T00:26:18.383Z",
+      "event_time_pacific": "2026-04-30T17:26:18.383000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6374,
+      "event_time_utc": "2026-05-01T00:27:53.124Z",
+      "event_time_pacific": "2026-04-30T17:27:53.124000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6375,
+      "event_time_utc": "2026-05-01T00:29:02.734Z",
+      "event_time_pacific": "2026-04-30T17:29:02.734000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6376,
+      "event_time_utc": "2026-05-01T00:31:06.816Z",
+      "event_time_pacific": "2026-04-30T17:31:06.816000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6377,
+      "event_time_utc": "2026-05-01T00:33:43.593Z",
+      "event_time_pacific": "2026-04-30T17:33:43.593000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6378,
+      "event_time_utc": "2026-05-01T00:40:45.138Z",
+      "event_time_pacific": "2026-04-30T17:40:45.138000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    },
+    {
+      "source_row": 6379,
+      "event_time_utc": "2026-05-01T00:41:53.970Z",
+      "event_time_pacific": "2026-04-30T17:41:53.970000-07:00",
+      "utc_month": "2026-05",
+      "pacific_month": "2026-04"
+    }
+  ]
+}

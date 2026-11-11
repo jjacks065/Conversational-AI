@@ -1,0 +1,852 @@
+[
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "title",
+    "text": "Compass addresses BSC’s agent productivity priorities",
+    "textChars": 53,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "page-number",
+    "text": "1",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "lead",
+    "text": "Proposed solution: Compass Voice and Compass CSR Chat\nin the existing Shield Advisor workflow.",
+    "textChars": 94,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1090,
+      "height": 90
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-01",
+    "text": "01",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-01",
+    "text": "Less research\nand navigation",
+    "textChars": 28,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-01",
+    "text": "Approved knowledge and\nbenefit information in CSR Chat.",
+    "textChars": 55,
+    "textLines": 2,
+    "bbox": {
+      "left": 98,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-02",
+    "text": "02",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 467,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-02",
+    "text": "Less manual\ncall documentation",
+    "textChars": 30,
+    "textLines": 2,
+    "bbox": {
+      "left": 467,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-02",
+    "text": "Voice transcription and draft\nsummaries for CSR review.",
+    "textChars": 55,
+    "textLines": 2,
+    "bbox": {
+      "left": 467,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-03",
+    "text": "03",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 836,
+      "top": 273,
+      "width": 60,
+      "height": 35
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-title-03",
+    "text": "More consistent\nmember service",
+    "textChars": 30,
+    "textLines": 2,
+    "bbox": {
+      "left": 836,
+      "top": 333,
+      "width": 337,
+      "height": 83
+    },
+    "fontSize": 29
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "outcome-copy-03",
+    "text": "Case and workflow guidance\nin the Shield Advisor desktop.",
+    "textChars": 57,
+    "textLines": 2,
+    "bbox": {
+      "left": 836,
+      "top": 434,
+      "width": 337,
+      "height": 81
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "priority-label",
+    "text": "BSC PRIORITY MEASURES",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 574,
+      "width": 1080,
+      "height": 25
+    },
+    "fontSize": 17
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "priority-0",
+    "text": "AHT and research time",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 609,
+      "width": 330,
+      "height": 32
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "priority-1",
+    "text": "First-call resolution",
+    "textChars": 21,
+    "textLines": 1,
+    "bbox": {
+      "left": 467,
+      "top": 609,
+      "width": 330,
+      "height": 32
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "textbox",
+    "slide": 1,
+    "role": "priority-2",
+    "text": "Onboarding and quality",
+    "textChars": 22,
+    "textLines": 1,
+    "bbox": {
+      "left": 836,
+      "top": 609,
+      "width": 350,
+      "height": 32
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "title",
+    "text": "Compass Voice for live context and call summaries",
+    "textChars": 49,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "page-number",
+    "text": "2",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "voice-subtitle",
+    "text": "Proposed response to GAI-174: automate summary work and improve call context.",
+    "textChars": 77,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 67
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 2,
+    "role": "voice-features",
+    "text": "Compass Voice feature\nAgent experience\nBSC delivery focus\nVoice intent and\ntranscription\nIdentify the service need and\nproduce a call transcript.\nConfirm secure live audio\nconnectivity and APIs.\nDraft call\nsummaries\nGenerate a structured summary\nfor the CSR to review and edit.\nValidate completeness, accuracy\nand the review workflow.\nDesktop context\nand handoff\nSurface intent and the reviewed\nsummary through CSR Chat.\nIntegrate with Shield Advisor.\nAgree any case writeback.",
+    "textChars": 477,
+    "textLines": 4,
+    "bbox": {
+      "left": 98,
+      "top": 258,
+      "width": 1080,
+      "height": 295
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "voice-extension-label",
+    "text": "ADDITIONAL ROADMAP SCOPE",
+    "textChars": 24,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 581,
+      "width": 1080,
+      "height": 27
+    },
+    "fontSize": 17
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "voice-extension",
+    "text": "Inbound self-service and high-volume intent deflection.",
+    "textChars": 55,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 615,
+      "width": 1080,
+      "height": 34
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "textbox",
+    "slide": 2,
+    "role": "voice-source-note",
+    "text": "GAI-174 is agent assist. The Compass design must define recording and retention.",
+    "textChars": 80,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 644,
+      "width": 1080,
+      "height": 20
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "title",
+    "text": "Compass CSR Chat for knowledge and workflow support",
+    "textChars": 51,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "page-number",
+    "text": "3",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-subtitle",
+    "text": "Proposed response to GAI-663: faster lookup and guidance during member calls.",
+    "textChars": 77,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 67
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 3,
+    "role": "csr-features",
+    "text": "Compass CSR Chat feature\nAgent experience\nScope for BSC\nKnowledge and\nbenefit answers\nAsk natural-language questions.\nRetrieve SMP procedures and\napproved benefit information.\nBenefit Q&A foundation.\nSMP connection to validate.\nCase and workflow\nguidance\nUse approved case context and\nconfigured rules to suggest\nnext actions.\nProposed extension.\nCase/rule integration to validate.\nResponse and case\ndocumentation\nDraft responses, follow-ups and\ncase summaries for CSR review.\nProposed extension.\nAgree sources and writeback.",
+    "textChars": 525,
+    "textLines": 4,
+    "bbox": {
+      "left": 98,
+      "top": 258,
+      "width": 1080,
+      "height": 328
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-accountability",
+    "text": "The CSR remains responsible for the member interaction and final communication.",
+    "textChars": 79,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 611,
+      "width": 1080,
+      "height": 35
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "textbox",
+    "slide": 3,
+    "role": "csr-source-note",
+    "text": "Source: GAI-663. Host context, source access and desktop integration require scoped validation.",
+    "textChars": 95,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 644,
+      "width": 1080,
+      "height": 20
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "title",
+    "text": "One Compass roadmap connects the intake needs",
+    "textChars": 45,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "page-number",
+    "text": "4",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "roadmap-summary-subtitle",
+    "text": "Proposed stages from December 2026 through Q4 2027",
+    "textChars": 50,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 39
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 4,
+    "role": "roadmap-summary",
+    "text": "Stage\nTiming\nCompass focus\n0  Prototype\nDec 2026\nReview inbound voice, intent, recording/transcription,\ndocument retrieval and CSR Chat in Shield Advisor.\n1  MVP\nFeb 1–28, 2027\nLaunch self-service intents at the Compass front door.\nIntent and summary in CSR Chat within Shield Advisor.\n2  Expand intents\nMar–Jun 2027\nMonthly releases\nTarget the Top 20 intents. Q1 discovery scopes candidate\nknowledge, case-guidance and drafting extensions.*\n3 / 4  Expand\nreach*\nQ2 discovery\nQ3 pilots / Q4 scale\nIntelligent routing and predictive engagement.\nDigital context and enhanced callbacks. Supervisory copilots\nfor QM, queues and analytics.",
+    "textChars": 634,
+    "textLines": 5,
+    "bbox": {
+      "left": 98,
+      "top": 240,
+      "width": 1080,
+      "height": 373
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 4,
+    "role": "roadmap-summary-note",
+    "text": "*Proposed scope and allocation. CSR workflow coaching is distinct from later supervisory copilots.",
+    "textChars": 98,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 637,
+      "width": 1080,
+      "height": 25
+    },
+    "fontSize": 17
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "title",
+    "text": "Success follows the BSC intake measures",
+    "textChars": 39,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "page-number",
+    "text": "5",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "measurement-subtitle",
+    "text": "Pilot evidence for agent productivity and member service quality",
+    "textChars": 64,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 39
+    },
+    "fontSize": 24
+  },
+  {
+    "kind": "table",
+    "slide": 5,
+    "role": "outcome-scorecard",
+    "text": "Outcome\nMeasures to baseline and track\nHandling effort\nAHT, research time and\nmanual summary effort\nResolution\nand quality\nFCR, answer accuracy, source relevance\nand summary completeness\nAgent readiness\nTime to proficiency and\npilot user feedback\nAdoption\nUse during live calls\nand repeated usage\nData and access\nSecurity, access and\ndata-exposure incidents",
+    "textChars": 357,
+    "textLines": 6,
+    "bbox": {
+      "left": 98,
+      "top": 238,
+      "width": 726,
+      "height": 364
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decisions-heading",
+    "text": "Pilot decisions",
+    "textChars": 15,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 243,
+      "width": 300,
+      "height": 40
+    },
+    "fontSize": 26
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-01",
+    "text": "01",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 309,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-01",
+    "text": "Named owners\nand pilot agents",
+    "textChars": 29,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 308,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-02",
+    "text": "02",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 405,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-02",
+    "text": "Baselines and\nsuccess thresholds",
+    "textChars": 32,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 404,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-number-03",
+    "text": "03",
+    "textChars": 2,
+    "textLines": 1,
+    "bbox": {
+      "left": 887,
+      "top": 501,
+      "width": 38,
+      "height": 28
+    },
+    "fontSize": 19
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "decision-text-03",
+    "text": "Compass data flow and\nproduction approval",
+    "textChars": 41,
+    "textLines": 2,
+    "bbox": {
+      "left": 935,
+      "top": 500,
+      "width": 253,
+      "height": 70
+    },
+    "fontSize": 22
+  },
+  {
+    "kind": "textbox",
+    "slide": 5,
+    "role": "measurement-note",
+    "text": "Baseline before launch. Measure assisted calls and self-service separately.",
+    "textChars": 75,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 625,
+      "width": 1080,
+      "height": 32
+    },
+    "fontSize": 20
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "title",
+    "text": "Compass roadmap: December 2026 through Q4 2027",
+    "textChars": 46,
+    "textLines": 1,
+    "bbox": {
+      "left": 92,
+      "top": 74,
+      "width": 1105,
+      "height": 60
+    },
+    "fontSize": 40
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "footer",
+    "text": "Compass / BSC roadmap / November 2026",
+    "textChars": 37,
+    "textLines": 1,
+    "bbox": {
+      "left": 91,
+      "top": 665,
+      "width": 870,
+      "height": 26
+    },
+    "fontSize": 16
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "page-number",
+    "text": "6",
+    "textChars": 1,
+    "textLines": 1,
+    "bbox": {
+      "left": 43,
+      "top": 668,
+      "width": 28,
+      "height": 22
+    },
+    "fontSize": 15
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "roadmap-subtitle",
+    "text": "Proposed stages, delivery approach, and decisions to proceed",
+    "textChars": 60,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 175,
+      "width": 1080,
+      "height": 32
+    },
+    "fontSize": 23
+  },
+  {
+    "kind": "table",
+    "slide": 6,
+    "role": "detailed-roadmap",
+    "text": "Stage\nTiming\nDelivery approach\nDecision to proceed\n0  Prototype\nDec 2026\nReview voice, transcription, source retrieval\nand the Shield Advisor experience.\nAgree refinements\nand MVP scope.\nMVP readiness*\nJan 2027\nValidate audio, SMP/benefit sources, access,\nsummary review and desktop integration.\nConfirm Compass-specific\nlaunch readiness.\n1  MVP\nFeb 1–28, 2027\nLaunch initial high-volume intents with\nself-service and a CSR handoff.\nApprove the first\nexpansion release.\n2  Expand\nintents\nMar–Jun 2027\nMonthly releases\nPhase intents toward Top 20. Q1 discovery\nscopes knowledge/coaching extensions.*\nReview performance\nbefore each release.\nPhase 2\ndiscovery\nQ2 2027\nParallel work\nDesign routing and callbacks. Define journey\ncontext and supervisory workflows.*\nAgree pilot scope,\nowners and measures.\n3  Pilots*\nQ3 2027\nPilot routing, context/callbacks and\nsupervisory assistance in selected scopes.\nReview value and\nservice quality.\n4  Expansion*\nQ4 2027\nExtend proven capabilities to eligible\nqueues, LOBs, journeys and channels.\nConfirm continued\nvalue and ownership.",
+    "textChars": 1069,
+    "textLines": 8,
+    "bbox": {
+      "left": 98,
+      "top": 214,
+      "width": 1080,
+      "height": 411
+    }
+  },
+  {
+    "kind": "textbox",
+    "slide": 6,
+    "role": "roadmap-note",
+    "text": "*Proposed refinement. Expansion depends on readiness and results. Outbound voice remains future scope.",
+    "textChars": 102,
+    "textLines": 1,
+    "bbox": {
+      "left": 98,
+      "top": 639,
+      "width": 1080,
+      "height": 23
+    },
+    "fontSize": 17
+  }
+]
